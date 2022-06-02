@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sensitive Filter View Controller-->
+        <scene sceneID="bcV-L7-NRs">
+            <objects>
+                <viewController storyboardIdentifier="SensitiveFilter" id="aNs-1q-64W" customClass="KGSensitiveFilterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NVO-Si-1kh"/>
+                        <viewControllerLayoutGuide type="bottom" id="yOr-cB-IZH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="twB-UY-Ud1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="点击这里输入敏感词!!!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hm9-ct-Nqa">
+                                <rect key="frame" x="0.0" y="8" width="375" height="262"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="65Z-7U-9tk">
+                                <rect key="frame" x="0.0" y="308" width="375" height="97"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="5uN-fj-Ga2"/>
+                                </constraints>
+                                <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4e-Ed-47a">
+                                <rect key="frame" x="116" y="278" width="259" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="类型(可复选)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCJ-pG-NnM">
+                                <rect key="frame" x="9" y="283" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyN-HA-eZJ">
+                                <rect key="frame" x="157.5" y="417" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2ix-9S-WX1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="分析">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doCheckAction:" destination="aNs-1q-64W" eventType="touchUpInside" id="H8T-ei-ywh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KyN-HA-eZJ" firstAttribute="top" secondItem="65Z-7U-9tk" secondAttribute="bottom" constant="12" id="1SI-Ap-jGu"/>
+                            <constraint firstAttribute="trailing" secondItem="Hm9-ct-Nqa" secondAttribute="trailing" id="3Yf-eb-Iui"/>
+                            <constraint firstItem="65Z-7U-9tk" firstAttribute="centerX" secondItem="KyN-HA-eZJ" secondAttribute="centerX" id="8Mo-l9-wNn"/>
+                            <constraint firstItem="yOr-cB-IZH" firstAttribute="top" secondItem="KyN-HA-eZJ" secondAttribute="bottom" constant="220" id="Fpu-vU-FOU"/>
+                            <constraint firstItem="w4e-Ed-47a" firstAttribute="leading" secondItem="mCJ-pG-NnM" secondAttribute="trailing" constant="8" symbolic="YES" id="Hcf-NA-aea"/>
+                            <constraint firstItem="w4e-Ed-47a" firstAttribute="top" secondItem="Hm9-ct-Nqa" secondAttribute="bottom" constant="8" symbolic="YES" id="Iem-MI-yTP"/>
+                            <constraint firstItem="w4e-Ed-47a" firstAttribute="trailing" secondItem="65Z-7U-9tk" secondAttribute="trailing" id="LSg-ZK-VHu"/>
+                            <constraint firstItem="mCJ-pG-NnM" firstAttribute="top" secondItem="Hm9-ct-Nqa" secondAttribute="bottom" constant="13" id="O0X-CT-dJ5"/>
+                            <constraint firstItem="Hm9-ct-Nqa" firstAttribute="leading" secondItem="65Z-7U-9tk" secondAttribute="leading" id="UUT-EK-Hag"/>
+                            <constraint firstItem="65Z-7U-9tk" firstAttribute="top" secondItem="mCJ-pG-NnM" secondAttribute="bottom" constant="4" id="f77-gX-Auu"/>
+                            <constraint firstItem="65Z-7U-9tk" firstAttribute="top" secondItem="w4e-Ed-47a" secondAttribute="bottom" id="i8m-W0-4gd"/>
+                            <constraint firstItem="Hm9-ct-Nqa" firstAttribute="top" secondItem="NVO-Si-1kh" secondAttribute="bottom" constant="8" symbolic="YES" id="lcl-l3-fjP"/>
+                            <constraint firstItem="mCJ-pG-NnM" firstAttribute="leading" secondItem="twB-UY-Ud1" secondAttribute="leadingMargin" constant="-7" id="lvF-OK-bKZ"/>
+                            <constraint firstItem="Hm9-ct-Nqa" firstAttribute="trailing" secondItem="w4e-Ed-47a" secondAttribute="trailing" id="yTI-5I-Rdu"/>
+                            <constraint firstItem="Hm9-ct-Nqa" firstAttribute="leading" secondItem="twB-UY-Ud1" secondAttribute="leading" id="zij-Ka-CI9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="Hm9-ct-Nqa" id="fQz-md-qn5"/>
+                        <outlet property="selectTypeView" destination="65Z-7U-9tk" id="Mgv-H5-9zQ"/>
+                        <outlet property="typeTextView" destination="w4e-Ed-47a" id="j8e-JV-8Ih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVn-fu-n8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>

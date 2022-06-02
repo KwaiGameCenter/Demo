@@ -1,0 +1,35 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "UIViewController+DemoSupport.h"
+    #import "DemoUIDefine.h"
+    #import "KGUtil.h"
+    #import "KGUtil+QASupport.h"
+    #import "KGTokenHelper.h"
+
+#define GLOBAL_RUN_IN_MAIN_THREAD_START dispatch_async(dispatch_get_main_queue(), ^{
+#define GLOBAL_RUN_IN_MAIN_THREAD_END });
+
+#define GLOBAL_RUN_IN_BACKGROUND_THREAD_START dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
+#define GLOBAL_RUN_IN_BACKGROUND_THREAD_END });
+
+#define GLOBAL_RUN_IN_MAIN_THREAD_AFTER_BEGIN(sec)                                                                               \
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(sec * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{             \
+
+#define GLOBAL_RUN_IN_MAIN_THREAD_AFTER_END                                    \
+});
+
+
+#endif

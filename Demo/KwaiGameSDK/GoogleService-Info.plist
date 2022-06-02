@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>32793569519-4cnars1nbkbpvoq9cqsu0te7l9eag9mj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.32793569519-4cnars1nbkbpvoq9cqsu0te7l9eag9mj</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>32793569519-rb77a5mlojgb69gq7eukeu8nblub3k63.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDFSd92lyFlxtHkGr1n11dLFQKYK2i7X7E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>32793569519</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kwai.gamesdk.debug</string>
+	<key>PROJECT_ID</key>
+	<string>sdk-testing-android-3af67</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sdk-testing-android-3af67.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:32793569519:ios:20ef1cccb09e043641931a</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-7161895754133675~2651040889</string>
+</dict>
+</plist>

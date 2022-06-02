@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pay View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Pay" id="BYZ-38-t0r" customClass="KGPayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JSR-Ug-BrK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nal-eW-sqE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pWb-Y5-gxi">
+                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qf5-aw-lwj">
+                                <rect key="frame" x="9" y="17" width="359" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="QwP-9Z-P6g"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="正常"/>
+                                    <segment title="崩溃"/>
+                                    <segment title="错单"/>
+                                    <segment title="错误回调"/>
+                                    <segment title="125"/>
+                                    <segment title="延时消单"/>
+                                    <segment title="扩展信息"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pWb-Y5-gxi" firstAttribute="bottom" secondItem="Nal-eW-sqE" secondAttribute="top" id="7eS-ga-7zs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qf5-aw-lwj" secondAttribute="trailing" constant="-9" id="8sx-qj-sBq"/>
+                            <constraint firstItem="qf5-aw-lwj" firstAttribute="top" secondItem="JSR-Ug-BrK" secondAttribute="bottom" constant="17" id="NDE-1E-lUb"/>
+                            <constraint firstAttribute="trailing" secondItem="pWb-Y5-gxi" secondAttribute="trailing" id="qKr-sb-fyt"/>
+                            <constraint firstItem="qf5-aw-lwj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-7" id="vqq-st-a2g"/>
+                            <constraint firstItem="pWb-Y5-gxi" firstAttribute="top" secondItem="qf5-aw-lwj" secondAttribute="bottom" constant="14" id="w1O-l8-SzN"/>
+                            <constraint firstItem="pWb-Y5-gxi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wn5-Sq-jA3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="qf5-aw-lwj" id="Bk9-SX-dHX"/>
+                        <outlet property="tableView" destination="pWb-Y5-gxi" id="n3P-oR-dsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>

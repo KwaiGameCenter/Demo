@@ -1,0 +1,6080 @@
+GAMESDK_VERSION: 1.2.27
+
+GAME_SDK_INFO:
+  AUTHOR: gamecenter
+  AUTHOR_EMAIL: "gamecenter@kuaishou.com"
+  BRANCH: "1.32.0/alpha+1.32.0"
+  DEMO_GIT: "git@github.com:KwaiGameCenter/Demo.git"
+  DESC: "快手游戏融合SDK"
+  HOMEPAGE: "https://sdkdocs.game.kuaishou.com/#/"
+  NAME: KwaiGameSDK
+  SDK_GIT: "git@github.com:KwaiGameCenter/kwaigame-sdk-spec.git"
+  SUMMARY: "快手游戏融合SDK"
+  VERSION: 1.32.0
+
+GAMESDK_FRAMEWORK_INFO:
+  feak_target_KwaiGameSDK_Example:
+    dependency_sdk_targets:
+      - MainFrameworks_dependency
+    dependency_target:
+      - FLAnimatedImage
+      - KwaiGameSDK-UnitTest
+      - KwaiNetworking
+      - lottie-ios
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - feak_target_KwaiGameSDK_Example
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - Photos
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK:
+    dependency_sdk_targets:
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameADPath
+      - KwaiGameSDK
+      - KwaiGameSDK-AntiAddict
+      - KwaiGameSDK-CrashReport
+      - KwaiGameSDK-KwaiJump
+      - KwaiGameSDK-Push
+      - KwaiGameSDK-PushReport
+      - KwaiGameSDK-UniApi
+      - KwaiGameSDK-WebView
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - allin
+      - channelphonebind
+      - gamebridge
+      - KwaiGameSDK
+      - kwaisdk
+      - kwaisdk_qq
+      - kwaisdk_wechat
+      - push_apn
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AddressBook
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreLocation
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - GLKit
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - sqlite3
+        - "stdc++"
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+        - Contacts
+        - CoreHaptics
+    tags:
+      - support_oversea
+  KwaiGameSDK-ABtest-Firebase:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-GoogleCommon
+      - MainFrameworks_dependency
+    dependency_target:
+      - FirebaseABTesting
+      - FirebaseRemoteConfig
+      - KwaiGameSDK-ABtest-Firebase
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - firebasesdk
+      - KwaiGameSDK-ABtest-Firebase
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+  KwaiGameSDK-AD:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - AutoCoding
+      - KwaiAppBox
+      - KwaiGameAD
+      - KwaiGameAD-KwaiAppBox
+      - KwaiGameAD-Manager
+      - KwaiGameSDK-AD
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - adguaranteed
+      - KwaiGameSDK-AD
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+  KwaiGameSDK-AD-BUAdSDK:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-AD
+      - MainFrameworks_dependency
+    dependency_target:
+      - Ads-Global
+      - KwaiGameAD-BUAdSDK
+      - OneKit-Pangle
+      - RangersAPM-Pangle
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - adbytedance
+      - KwaiGameSDK-AD-BUAdSDK
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreImage
+        - CoreLocation
+        - CoreMedia
+        - CoreMotion
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - JavaScriptCore
+        - MapKit
+        - MediaPlayer
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - bz2
+        - "c++"
+        - "c++abi"
+        - iconv
+        - resolv
+        - sqlite3
+        - xml2
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+  KwaiGameSDK-AD-KSAdSDK:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-AD
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameAD-KSAdSDK
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - adkwai
+      - KwaiGameSDK-AD-KSAdSDK
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AudioToolBox
+        - AVFoundation
+        - AVKit
+        - CFNetwork
+        - CoreData
+        - CoreFoundation
+        - CoreGraphics
+        - CoreLocation
+        - CoreMedia
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - JavaScriptCore
+        - MediaPlayer
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - resolv.9
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-AD-MintAdSDK:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-AD
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameAD-Mintegral
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - admintegral
+      - KwaiGameSDK-AD-MintAdSDK
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-AD-MobAdSDK:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-AD
+      - KwaiGameSDK-GoogleCommon
+      - MainFrameworks_dependency
+    dependency_target:
+      - Google-Mobile-Ads-SDK
+      - KwaiGameAD-MobAdSDK
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-AD-MobAdSDK
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreMedia
+        - CoreTelephony
+        - CoreText
+        - CoreVideo
+        - Foundation
+        - ImageIO
+        - MediaPlayer
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AdSupport
+        - AppTrackingTransparency
+        - JavaScriptCore
+        - SafariServices
+        - WebKit
+    tags:
+      - support_oversea
+  KwaiGameSDK-AD-OverSeaSDK:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-AD-BUAdSDK
+      - KwaiGameSDK-AD-MobAdSDK
+      - KwaiGameSDK-Oversea
+      - MainFrameworks_dependency
+    dependency_target:
+      - AppLovinSDK
+      - FBAudienceNetwork
+      - GoogleMobileAdsMediationAppLovin
+      - GoogleMobileAdsMediationFacebook
+      - GoogleMobileAdsMediationIronSource
+      - GoogleMobileAdsMediationUnity
+      - GoogleMobileAdsMediationVungle
+      - IronSourceSDK
+      - KwaiGameAD-OverSeaSDK
+      - UnityAds
+      - VungleSDK-iOS
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - admob
+      - KwaiGameSDK-AD-OverSeaSDK
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreImage
+        - CoreLocation
+        - CoreMedia
+        - CoreMotion
+        - CoreTelephony
+        - CoreText
+        - CoreVideo
+        - Foundation
+        - ImageIO
+        - JavaScriptCore
+        - MapKit
+        - MediaPlayer
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - SafariServices
+        - Security
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - bz2
+        - "c++"
+        - "c++abi"
+        - iconv
+        - resolv
+        - resolv.9
+        - sqlite3
+        - xml2
+        - z
+      weak_frameworks:
+        - AdSupport
+        - AppTrackingTransparency
+        - CFNetwork
+        - CoreMotion
+        - CoreTelephony
+        - Foundation
+        - JavaScriptCore
+        - LocalAuthentication
+        - SafariServices
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+    tags:
+      - support_oversea
+    uses_swift: true
+  KwaiGameSDK-AD-TXAdSDK:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-AD
+      - MainFrameworks_dependency
+    dependency_target:
+      - GDTMobSDK
+      - KwaiGameAD-TXAdSDK
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - adgdt
+      - KwaiGameSDK-AD-TXAdSDK
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreLocation
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+      libraries:
+        - "c++"
+        - xml2
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+        - WebKit
+  KwaiGameSDK-ADPath-AppsFlyer:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-AppsflyerCommon
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-ADPath-AppsFlyer
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-ADPath-AppsFlyer
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - iAd
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+      libraries:
+        - "c++"
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+  KwaiGameSDK-ADPath-Reyun:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameADPath-TrackingIO
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-ADPath-Reyun
+      - reyunactivemonitor
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreMotion
+        - CoreTelephony
+        - iAd
+        - Security
+        - SystemConfiguration
+        - WebKit
+      libraries:
+        - resolv
+        - sqlite3
+        - z
+      weak_frameworks:
+        []
+  KwaiGameSDK-ADPath-SKAdNetwork:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameADPath-SKAdNetwork
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-ADPath-SKAdNetwork
+      - skadnetwork_monitor
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+      libraries:
+        - "c++"
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-AppBox:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-AD
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-AppBox
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - box
+      - KwaiGameSDK-AppBox
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreMedia
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - Metal
+        - MetalKit
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - iconv
+        - resolv
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+  KwaiGameSDK-AppsflyerCommon:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - AppsFlyerFramework
+      - KwaiGameSDK-AppsflyerCommon
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-AppsflyerCommon
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+  KwaiGameSDK-Audio:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-LongLink
+      - KwaiGameSDK-Media
+      - MainFrameworks_dependency
+    dependency_target:
+      - KGAryaManager
+      - klp
+      - KSRtcKit-codeCore-core-game-part-no-arc
+      - KWArya
+      - libuv
+      - p2pstun
+      - ycnn2
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Audio
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreMedia
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - GLKit
+        - ImageIO
+        - MessageUI
+        - MetalPerformanceShaders
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+      libraries:
+        - "c++"
+        - "c++abi"
+        - iconv
+        - resolv
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-Community:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-Community
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Community
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-Community-Kwai:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-Community
+      - MainFrameworks_dependency
+    dependency_target:
+      - BVLinearGradient
+      - DoubleConversion
+      - FBReactNativeSpec
+      - Folly
+      - glog
+      - kdiff
+      - KRNSDK
+      - KSXPackageManager
+      - KwaiGameSDK-Community-Kwai
+      - RCTTypeSafety
+      - React-Core
+      - React-CoreModules
+      - React-cxxreact
+      - React-jsi
+      - React-jsiexecutor
+      - React-jsinspector
+      - react-native-image-picker
+      - react-native-netinfo
+      - react-native-safe-area-context
+      - react-native-webview
+      - React-RCTActionSheet
+      - React-RCTAnimation
+      - React-RCTBlob
+      - React-RCTImage
+      - React-RCTLinking
+      - React-RCTNetwork
+      - React-RCTSettings
+      - React-RCTText
+      - React-RCTVibration
+      - React-trace
+      - ReactCommon
+      - RNCMaskedView
+      - RNFastImage
+      - RNGestureHandler
+      - RNReanimated
+      - RNScreens
+      - RNSVG
+      - Tweaks
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - community
+      - KwaiGameSDK-Community-Kwai
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - JavaScriptCore
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - "stdc++"
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-CrashReport-Bugly:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - Bugly
+      - KwaiGameSDK-CrashReport-Bugly
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - blog
+      - KwaiGameSDK-CrashReport-Bugly
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-CrashReport-Firebase:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-GoogleCommon
+      - MainFrameworks_dependency
+    dependency_target:
+      - FirebaseCrashlytics
+      - KwaiGameSDK-CrashReport-Firebase
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - firebasesdk
+      - KwaiGameSDK-CrashReport-Firebase
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+  KwaiGameSDK-Downloader:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-Video
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-Downloader
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - kwai_downloader
+      - KwaiGameSDK-Downloader
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreMedia
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - Metal
+        - MetalKit
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - iconv
+        - resolv
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-GameCapture:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-Audio
+      - KwaiGameSDK-Media
+      - KwaiGameSDK-VideoShare
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameVideoAryaEncode
+      - KwaiGameVideoCapture
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-GameCapture
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - GLKit
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+      libraries:
+        - "c++"
+        - "stdc++"
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-GameRecord:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-GameCapture
+      - KwaiGameSDK-VideoShare
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameVideoRecord
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - gamevideorecord
+      - KwaiGameSDK-GameRecord
+      - systemvideorecord
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - GLKit
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+      libraries:
+        - "c++"
+        - "stdc++"
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-GoogleCommon:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - FirebaseAnalytics
+      - FirebaseCore
+      - FirebaseCoreDiagnostics
+      - FirebaseInstallations
+      - GoogleAppMeasurement
+      - GoogleDataTransport
+      - GoogleUserMessagingPlatform
+      - GoogleUtilities-00567490
+      - nanopb
+      - PromisesObjC
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-GoogleCommon
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - CoreTelephony
+        - Foundation
+        - Security
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AdSupport
+  KwaiGameSDK-IM:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-LongLink
+      - MainFrameworks_dependency
+    dependency_target:
+      - IMSDKProto
+      - KSUploader
+      - KSUploaderKit
+      - KwaiGameSDK-IM
+      - KwaiIMSDK
+      - KwaiIMXFDB
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-IM
+      - messagesdk
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - compression
+        - resolv
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-Live:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-Audio
+      - KwaiGameSDK-LiveRoom
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiCaptcha
+      - KwaiCaptcha.default-ALiVerify
+      - KwaiGameLive
+      - KwaiGameLive-LiveMartPlugin
+      - KwaiGameLive-NativeUIPlugin
+      - KwaiGameSDK-Live
+      - WBCloudFace
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - gamelive
+      - KwaiGameSDK-Live
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AssetsLibrary
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreLocation
+        - CoreMedia
+        - CoreMotion
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - CoreVideo
+        - Foundation
+        - GLKit
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - Photos
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++.1"
+        - "c++abi"
+        - iconv
+        - resolv
+        - sqlite3
+        - "stdc++"
+        - z
+        - z.1.2.8
+      weak_frameworks:
+        - AppTrackingTransparency
+        - CoreHaptics
+  KwaiGameSDK-LiveRoom:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - GameLiveProtoModel
+      - KSUAccount
+      - KSULiveStream
+      - KSULNetworking
+      - KSUStatistics
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-LiveRoom
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - Contacts
+        - CoreFoundation
+        - CoreGraphics
+        - CoreLocation
+        - CoreMedia
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - Photos
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-LongLink:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KSAVLogProtoModel
+      - KwaiGameSDK-LongLink
+      - KwaiIMKwaiLink
+      - Pigeon
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-LongLink
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - compression
+        - resolv
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-Media:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-LongLink
+      - MainFrameworks_dependency
+    dependency_target:
+      - Aegon_iOS
+      - KSAudioProcessLib.default-TFLite
+      - KSFFmpeg_iOS
+      - KSProtobufCpp_iOS
+      - KSXLog_iOS
+      - KwaiGameSDK-Media
+      - KWStannis_iOS
+      - libyuv
+      - TensorFlow-Lite
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Media
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreMedia
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+      libraries:
+        - "c++"
+        - "c++abi"
+        - iconv
+        - resolv
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-Mock:
+    dependency_sdk_targets: 
+    dependency_target:
+      - JhtFloatingBall
+      - KwaiGameSDK-Mock
+    dynamic_group: 
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks#KwaiGameSDK-Mock"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Mock
+      - mock
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks#KwaiGameSDK-Mock"
+    system:
+      frameworks:
+        - Accelerate
+        - AddressBook
+        - AdSupport
+        - AssetsLibrary
+        - AudioToolBox
+        - AudioToolbox
+        - AVFoundation
+        - AVKit
+        - CFNetwork
+        - Contacts
+        - CoreData
+        - CoreFoundation
+        - CoreGraphics
+        - CoreImage
+        - CoreLocation
+        - CoreMedia
+        - CoreMotion
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - CoreVideo
+        - Foundation
+        - GLKit
+        - iAd
+        - ImageIO
+        - JavaScriptCore
+        - LocalAuthentication
+        - MapKit
+        - MediaPlayer
+        - MessageUI
+        - Metal
+        - MetalKit
+        - MetalPerformanceShaders
+        - MobileCoreServices
+        - OpenGLES
+        - Photos
+        - QuartzCore
+        - QuickLook
+        - SafariServices
+        - Security
+        - StoreKit
+        - storekit
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+      libraries:
+        - bz2
+        - "c++"
+        - "c++.1"
+        - "c++abi"
+        - compression
+        - iconv
+        - resolv
+        - resolv.9
+        - sqlite3
+        - "stdc++"
+        - xml2
+        - z
+        - z.1.2.8
+      weak_frameworks:
+        - Accelerate
+        - Accounts
+        - AdSupport
+        - AppTrackingTransparency
+        - AudioToolbox
+        - AuthenticationServices
+        - CFNetwork
+        - Contacts
+        - CoreGraphics
+        - CoreHaptics
+        - CoreMotion
+        - CoreTelephony
+        - Foundation
+        - JavaScriptCore
+        - LocalAuthentication
+        - QuartzCore
+        - SafariServices
+        - Security
+        - Social
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+    uses_swift: true
+  KwaiGameSDK-OpenPlatform:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - Diplomat
+      - KwaiGameSDK-OpenPlatform
+      - WechatSDK
+      - WeiboSDK
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-OpenPlatform
+      - share
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - Photos
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - iconv
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-Oversea:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - AppAuth
+      - FBSDKCoreKit
+      - FBSDKCoreKit_Basics
+      - FBSDKLoginKit
+      - FBSDKShareKit
+      - GoogleSignIn
+      - GTMAppAuth
+      - GTMSessionFetcher
+      - KwaiGameSDK-Oversea
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - googlesdk
+      - KwaiGameSDK-Oversea
+      - kwaisdk_facebook
+      - kwaisdk_google
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - LocalAuthentication
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - SafariServices
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - "stdc++"
+        - z
+      weak_frameworks:
+        - Accelerate
+        - Accounts
+        - AdSupport
+        - AppTrackingTransparency
+        - AudioToolbox
+        - AuthenticationServices
+        - CoreGraphics
+        - Foundation
+        - QuartzCore
+        - Security
+        - Social
+        - StoreKit
+        - UIKit
+    tags:
+      - support_oversea
+    uses_swift: true
+  KwaiGameSDK-Pay:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-Pay
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - autorenewal
+      - KwaiGameSDK-Pay
+      - kwaisdk
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - storekit
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+  KwaiGameSDK-PushReport:
+    dependency_sdk_targets:
+      - NotificationService_dependency
+    dependency_target:
+      - AFNetworking
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - CocoaLumberjack
+      - FCFileManager
+      - JNKeychain
+      - JRSwizzle
+      - KGSDKBase-Env-Utils
+      - KSCommon
+      - KSDiskCache
+      - KSMWAzeroth-NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiBase.default-LiteProxy
+      - KwaiGameBase
+      - KwaiGameSDK-PushReport
+      - KwaiSwizzle
+      - libwebp
+      - MMKV
+      - MMKVCore
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/NotificationService"
+    group: NotificationService
+    nicknames:
+      - KwaiGameSDK-PushReport
+      - push_apn
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/NotificationService"
+    system:
+      frameworks:
+        - Accelerate
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+      libraries:
+        - "c++"
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-QRScan:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-QRScan
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-QRScan
+      - qrcode
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-QuickLogin:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KSChinaMobileQuickLogin
+      - KSChinaTelecomSDK
+      - KSChinaUnicomSDK
+      - KwaiGameSDK-QuickLogin
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - allin
+      - KwaiGameSDK-QuickLogin
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-Relation:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-Relation
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Relation
+      - kwaishare
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-Report-Appsflyer:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-AppsflyerCommon
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-Report-Appsflyer
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Report-Appsflyer
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+  KwaiGameSDK-Report-Firebase:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-GoogleCommon
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-Report-Firebase
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Report-Firebase
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+  KwaiGameSDK-SpringFestival:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-SpringFestival
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-SpringFestival
+      - kwaisdk
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-Subgame:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-Pay
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-Subgame
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - allin
+      - KwaiGameSDK-Subgame
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreLocation
+        - CoreMedia
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - CoreVideo
+        - Foundation
+        - GLKit
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - storekit
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - iconv
+        - resolv
+        - sqlite3
+        - "stdc++"
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+        - CoreHaptics
+  KwaiGameSDK-Video:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-Media
+      - MainFrameworks_dependency
+    dependency_target:
+      - Hodor-883881af
+      - KSLivePlayer
+      - KSSmartDns
+      - KSVodPlayer
+      - KwaiMediaPlayer
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Video
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - AdSupport
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreMedia
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - MessageUI
+        - Metal
+        - MetalKit
+        - MobileCoreServices
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - iconv
+        - resolv
+        - sqlite3
+        - z
+      weak_frameworks:
+        []
+  KwaiGameSDK-VideoShare:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-VideoRecordBase
+      - KwaiGameSDK-VideoShare
+      - KwaiGameVideoBase
+      - KwaiGameVideoShare
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-VideoShare
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-VisitorPasswordLogin:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-VisitorPasswordLogin
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - allin
+      - KwaiGameSDK-VisitorPasswordLogin
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-Voip:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-Audio
+      - KwaiGameSDK-LongLink
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-Voip
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Voip
+      - voip
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreMedia
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - GLKit
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - compression
+        - iconv
+        - resolv
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-WeaponArmy:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KSWeaponArmy
+      - KwaiGameSDK-WeaponArmy
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-WeaponArmy
+      - weapon
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreLocation
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - resolv
+        - resolv.9
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  KwaiGameSDK-WWP:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-Audio
+      - KwaiGameSDK-LiveRoom
+      - KwaiGameSDK-Video
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-WWP
+      - KwaiGameWWP
+      - KwaiGameWWP-NativeUIPlugin
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-WWP
+      - liveroom
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreLocation
+        - CoreMedia
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - Metal
+        - MetalKit
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - iconv
+        - resolv
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+  MainFrameworks_dependency:
+    dependency_target:
+      - AFNetworking
+      - Aspects
+      - BlocksKit
+      - Bolts
+      - boost
+      - CocoaAsyncSocket
+      - CocoaLumberjack
+      - FCFileManager
+      - FMDB
+      - Godzippa
+      - JNKeychain
+      - JRSwizzle
+      - KGSDKBase
+      - KSCommon
+      - KSDFP
+      - KSDiskCache
+      - KSecurityWrapper
+      - KSFastFolderSize
+      - KSKanas
+      - KSKanasProtoModel
+      - KSMWAzeroth-29eb09f9
+      - KSMWDataCompress
+      - KSORM
+      - KSPromise
+      - KSRSAUtil
+      - KSSecuring
+      - KSSecurityRelease
+      - KSTLog
+      - KSUProtoModel-common-ds
+      - KSUserDefaults
+      - KSVader
+      - ktp
+      - KwaiAnalytics.default-Kanas
+      - KwaiBase.default-DDLog-LiteProxy
+      - KwaiBridgeCenter
+      - KwaiGameBase-DemoSupport
+      - KwaiGameBase.default-ActionLog-Log
+      - KwaiGameImagePicker
+      - KwaiGameNetworking
+      - KwaiGameNetworkStatusMonitor
+      - KwaiIMTrace
+      - KwaiReportCenter
+      - KwaiSDK
+      - KwaiSwizzle
+      - KwaiUIRecorder
+      - libwebp
+      - Masonry
+      - MBProgressHUD
+      - MJExtension
+      - MMKV
+      - MMKVCore
+      - Obiwan
+      - OpenSSL-Universal
+      - Protobuf
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - SSZipArchive
+      - Toast
+      - TransitionKit
+      - twitter-text
+      - XFDB
+      - XFMulticastDelegate
+      - Yoda
+      - Yoga
+      - ZipKit
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - MainFrameworks_dependency
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AddressBook
+        - AdSupport
+        - AssetsLibrary
+        - AudioToolBox
+        - AudioToolbox
+        - AVFoundation
+        - AVKit
+        - CFNetwork
+        - Contacts
+        - CoreData
+        - CoreFoundation
+        - CoreGraphics
+        - CoreImage
+        - CoreLocation
+        - CoreMedia
+        - CoreMotion
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - CoreVideo
+        - Foundation
+        - GLKit
+        - iAd
+        - ImageIO
+        - JavaScriptCore
+        - LocalAuthentication
+        - MapKit
+        - MediaPlayer
+        - MessageUI
+        - Metal
+        - MetalKit
+        - MetalPerformanceShaders
+        - MobileCoreServices
+        - OpenGLES
+        - Photos
+        - QuartzCore
+        - QuickLook
+        - SafariServices
+        - Security
+        - StoreKit
+        - storekit
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+      libraries:
+        - bz2
+        - "c++"
+        - "c++.1"
+        - "c++abi"
+        - compression
+        - iconv
+        - resolv
+        - resolv.9
+        - sqlite3
+        - "stdc++"
+        - xml2
+        - z
+        - z.1.2.8
+      weak_frameworks:
+        - Accelerate
+        - Accounts
+        - AdSupport
+        - AppTrackingTransparency
+        - AudioToolbox
+        - AuthenticationServices
+        - CFNetwork
+        - Contacts
+        - CoreGraphics
+        - CoreHaptics
+        - CoreMotion
+        - CoreTelephony
+        - Foundation
+        - JavaScriptCore
+        - LocalAuthentication
+        - QuartzCore
+        - SafariServices
+        - Security
+        - Social
+        - StoreKit
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+    uses_swift: true
+  NotificationService_dependency:
+    dependency_target:
+      []
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/NotificationService"
+    group: NotificationService
+    nicknames:
+      - NotificationService_dependency
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/NotificationService"
+    system:
+      frameworks:
+        - Accelerate
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+      libraries:
+        - "c++"
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+
+PODS_INFO:
+  CHECKOUT OPTIONS:
+    BlocksKit:
+      :git: "git@git.corp.kuaishou.com:ios/BlockKit.git"
+      :tag: 102.2.16
+    Bolts:
+      :git: "git@git.corp.kuaishou.com:ios/Bolts-ObjC.git"
+      :tag: 1.9.1.0
+    Diplomat:
+      :git: "git@git.corp.kuaishou.com:im-client/Diplomat.git"
+      :tag: 0.5.6_whtiout_wechat
+    FLAnimatedImage:
+      :git: "git@git.corp.kuaishou.com:ios/FLAnimatedImage.git"
+      :tag: 1.0.14
+    GameLiveProtoModel:
+      :git: "git@git.corp.kuaishou.com:lib-iOS/GameLiveProtoModel.git"
+      :tag: 1.142.10
+    Hodor:
+      :commit: 36a59839
+      :git: "git@git.corp.kuaishou.com:video/pruned-ijkplayer.git"
+    KGAryaManager:
+      :git: "git@git.corp.kuaishou.com:lib-iOS/KWArya-Packager.git"
+      :tag: 1.0.11
+    KRNSDK:
+      :git: "git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git"
+      :tag: 0.1.139.ks
+    KSAudioProcessLib:
+      :git: "git@git.corp.kuaishou.com:video/KSAudioProcessLib.git"
+      :tag: v4.0.0.6.g.1
+    KSChinaMobileQuickLogin:
+      :commit: 3ba3130a48eee4b7b1519e4bbbc0fa3c69a533f3
+      :git: "git@git.corp.kuaishou.com:ios/KSChinaMobileQuickLogin.git"
+    KSChinaTelecomSDK:
+      :git: "git@git.corp.kuaishou.com:ios/KSChinaTelecomSDK.git"
+      :tag: 3.7.0
+    KSChinaUnicomSDK:
+      :git: "git@git.corp.kuaishou.com:ios/KSChinaUnicomSDK.git"
+      :tag: 4.0.0
+    KSFFmpeg_iOS:
+      :git: "git@git.corp.kuaishou.com:video/KSFFmpeg_iOS.git"
+      :tag: 3.9.4_x264_game
+    KSLivePlayer:
+      :git: "git@git.corp.kuaishou.com:video/KSLivePlayer.git"
+      :tag: v1.6.2.1
+    KSPromise:
+      :commit: 82d19a505c94427bbff4e6b9aee87c122adba52f
+      :git: "git@git.corp.kuaishou.com:ios/KSPromise.git"
+    KSProtobufCpp_iOS:
+      :commit: 4e162ab
+      :git: "git@git.corp.kuaishou.com:video/KSProtobufCpp_iOS.git"
+    KSRtcKit:
+      :git: "git@git.corp.kuaishou.com:video/KSRtcKit.git"
+      :tag: v1.6.0.1.fix
+    KSSmartDns:
+      :git: "git@git.corp.kuaishou.com:video/KSSmartDNS"
+      :tag: v1.1.7
+    KSUAccount:
+      :git: "git@git.corp.kuaishou.com:ios/KSUAccount.git"
+      :tag: 0.5.2_remove_afnetworking
+    KSULiveStream:
+      :commit: df395cf5453d0ab9923e1c7e0f61cc6dfe80ec11
+      :git: "git@git.corp.kuaishou.com:ios/KSULiveStream.git"
+    KSULNetworking:
+      :git: "git@git.corp.kuaishou.com:open-iOS/GameKSUNetworking.git"
+      :tag: 1.1.0_new_afnetworking
+    KSUploader:
+      :git: "git@git.corp.kuaishou.com:video/KWRickon_iOS.git"
+      :tag: 5.0.9.7bd49386
+    KSUProtoModel:
+      :git: "git@git.corp.kuaishou.com:ios/KSUProtoModel.git"
+      :tag: 1.1084.0
+    KSUStatistics:
+      :commit: 35e8e3264e87242fbad0cb86ee4a6d17c79d984f
+      :git: "git@git.corp.kuaishou.com:ios/KSUStatistics.git"
+    KSVodPlayer:
+      :commit: d1f2e04d
+      :git: "git@git.corp.kuaishou.com:video/KSVodPlayerKit.git"
+    KSWeaponArmy:
+      :git: "git@git.corp.kuaishou.com:ios/KSWeaponArmy.git"
+      :tag: 3.12.0_timo
+    KSXLog_iOS:
+      :commit: 822eb9d1301ad79245bd552191c8481b624723f5
+      :git: "git@git.corp.kuaishou.com:video/KSXLog_iOS.git"
+    KwaiAnalytics:
+      :git: "git@git.corp.kuaishou.com:lib-iOS/KwaiAnalytics.git"
+      :tag: 0.2.10
+    KwaiAppBox:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiAppBox.git"
+      :tag: KwaiAppBox-1.0.34
+    KwaiBase:
+      :git: "git@git.corp.kuaishou.com:im-client/KwaiBase.git"
+      :tag: 0.1.32-bridge.1
+    KwaiGameAD:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-BUAdSDK:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-KSAdSDK:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-KwaiAppBox:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-Manager:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-Mintegral:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-MobAdSDK:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-OverSeaSDK:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-TXAdSDK:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameADPath:
+      :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
+      :tag: 0.0.18
+    KwaiGameADPath-SKAdNetwork:
+      :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
+      :tag: 0.0.18
+    KwaiGameADPath-TrackingIO:
+      :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
+      :tag: 0.0.18
+    KwaiGameBase:
+      :git: "git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git"
+      :tag: 0.0.41
+    KwaiGameBase-DemoSupport:
+      :git: "git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git"
+      :tag: 0.0.41
+    KwaiGameLive:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git"
+      :tag: KwaiGameLive-1.0.16
+    KwaiGameLive-LiveMartPlugin:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git"
+      :tag: KwaiGameLive-LiveMartPlugin-1.0.35
+    KwaiGameLive-NativeUIPlugin:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git"
+      :tag: KwaiGameLive-NativeUIPlugin-1.0.31
+    KwaiGameNetworking:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameNetworking.git"
+      :tag: KwaiGameNetworking-0.0.7.3
+    KwaiGameVideoAryaEncode:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
+      :tag: KwaiGameVideoRecord-0.0.21
+    KwaiGameVideoBase:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
+      :tag: KwaiGameVideoRecord-0.0.21
+    KwaiGameVideoCapture:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
+      :tag: KwaiGameVideoRecord-0.0.21
+    KwaiGameVideoRecord:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
+      :tag: KwaiGameVideoRecord-0.0.21
+    KwaiGameVideoShare:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
+      :tag: KwaiGameVideoRecord-0.0.21
+    KwaiGameWWP:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameWWP.git"
+      :tag: 0.1.17
+    KwaiGameWWP-NativeUIPlugin:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameWWP.git"
+      :tag: 0.1.17
+    KwaiMediaPlayer:
+      :commit: df209bfe
+      :git: "git@git.corp.kuaishou.com:video/pruned-ijkplayer.git"
+    KWArya:
+      :git: "git@git.corp.kuaishou.com:video/kuaishou-voip-sdk.git"
+      :tag: 4.47.163.83e717f37
+    KWStannis_iOS:
+      :git: "git@git.corp.kuaishou.com:video/stannis.git"
+      :tag: r4.0.2.2
+    libuv:
+      :git: "git@git.corp.kuaishou.com:video/kuaishou-libuv.git"
+      :tag: 1.21.0
+    libyuv:
+      :git: "git@git.corp.kuaishou.com:video/kuaishou-libyuv.git"
+      :tag: '0.3'
+    OpenSSL-Universal:
+      :git: "git@git.corp.kuaishou.com:ios/OpenSSL-Universal.git"
+      :tag: 1.0.2.11
+    Protobuf:
+      :git: "git@git.corp.kuaishou.com:ios/protobuf.git"
+      :tag: v3.3.0_2019.10.31_fix_arm32_crash
+    react-native-image-picker:
+      :git: https://github.com/react-native-image-picker/react-native-image-picker.git
+      :tag: v4.1.1
+    react-native-netinfo:
+      :git: https://github.com/react-native-community/react-native-netinfo.git
+      :tag: v5.9.5
+    react-native-safe-area-context:
+      :git: https://github.com/th3rdwave/react-native-safe-area-context.git
+      :tag: v3.1.1
+    react-native-webview:
+      :git: https://github.com/react-native-webview/react-native-webview.git
+      :tag: v11.14.0
+    RNCMaskedView:
+      :git: https://github.com/react-native-community/react-native-masked-view.git
+      :tag: v0.1.10
+    RNFastImage:
+      :git: https://github.com/DylanVann/react-native-fast-image.git
+      :tag: v8.3.3
+    RNGestureHandler:
+      :git: https://github.com/software-mansion/react-native-gesture-handler
+      :tag: 1.7.0
+    RNReanimated:
+      :git: https://github.com/software-mansion/react-native-reanimated.git
+      :tag: 1.9.0
+    RNScreens:
+      :git: https://github.com/kmagiera/react-native-screens.git
+      :tag: 2.8.0
+    RNSVG:
+      :git: https://github.com/react-native-community/react-native-svg.git
+      :tag: v12.1.1
+    SSZipArchive:
+      :http: https://static.yximgs.com/udata/pkg/GameSource-CDN/SSZipArchive_1.2.1.tgz
+    WechatSDK:
+      :git: "git@git.corp.kuaishou.com:open-iOS/wechatsdk.git"
+      :tag: 1.8.7.1_no_pay
+    WeiboSDK:
+      :git: "git@git.corp.kuaishou.com:hanzhongchao/KSWeiboSDK.git"
+      :tag: 3.2.6.0_for_game_zt
+    ycnn2:
+      :git: "git@git.corp.kuaishou.com:ylab/libycnn2_ios.git"
+      :tag: 3.1.3-11-9
+    ZipKit:
+      :git: "git@git.corp.kuaishou.com:open-iOS/zipkit.git"
+      :tag: 1.0.3.1
+  COCOAPODS: 1.11.3
+  DEPENDENCIES:
+    - Ads-Global
+    - Aegon_iOS (= 1.36.6)
+    - AFNetworking (= 3.2.1.4)
+    - AppsFlyerFramework (= 6.5.4)
+    - AutoCoding
+    - "BlocksKit (from `git@git.corp.kuaishou.com:ios/BlockKit.git`, tag `102.2.16`)"
+    - "Bolts (from `git@git.corp.kuaishou.com:ios/Bolts-ObjC.git`, tag `1.9.1.0`)"
+    - boost (= 1.64.4)
+    - Bugly (= 2.5.71)
+    - BVLinearGradient (~> 2.5.6)
+    - CocoaLumberjack (= 2.4.0.9)
+    - "Diplomat/Tencent (from `git@git.corp.kuaishou.com:im-client/Diplomat.git`, tag `0.5.6_whtiout_wechat`)"
+    - "Diplomat/Wechat (from `git@git.corp.kuaishou.com:im-client/Diplomat.git`, tag `0.5.6_whtiout_wechat`)"
+    - "Diplomat/Weibo (from `git@git.corp.kuaishou.com:im-client/Diplomat.git`, tag `0.5.6_whtiout_wechat`)"
+    - FBSDKCoreKit (= 11.0.0)
+    - FBSDKLoginKit (= 11.0.0)
+    - FBSDKShareKit (= 11.0.0)
+    - Firebase/Analytics (= 8.14.0)
+    - Firebase/Crashlytics (= 8.14.0)
+    - Firebase/RemoteConfig (= 8.14.0)
+    - FirebaseCore (= 8.14.0)
+    - "FLAnimatedImage (from `git@git.corp.kuaishou.com:ios/FLAnimatedImage.git`, tag `1.0.14`)"
+    - "GameLiveProtoModel/common (from `git@git.corp.kuaishou.com:lib-iOS/GameLiveProtoModel.git`, tag `1.142.10`)"
+    - "GameLiveProtoModel/livestream (from `git@git.corp.kuaishou.com:lib-iOS/GameLiveProtoModel.git`, tag `1.142.10`)"
+    - "GameLiveProtoModel/log (from `git@git.corp.kuaishou.com:lib-iOS/GameLiveProtoModel.git`, tag `1.142.10`)"
+    - "GameLiveProtoModel/music (from `git@git.corp.kuaishou.com:lib-iOS/GameLiveProtoModel.git`, tag `1.142.10`)"
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement (= 8.14.0)
+    - GoogleDataTransport
+    - GoogleSignIn
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - "Hodor (from `git@git.corp.kuaishou.com:video/pruned-ijkplayer.git`, commit `36a59839`)"
+    - IMSDKProto (= 0.8.2)
+    - JhtFloatingBall
+    - JNKeychain (= 0.1.6)
+    - "KGAryaManager (from `git@git.corp.kuaishou.com:lib-iOS/KWArya-Packager.git`, tag `1.0.11`)"
+    - KGSDKBase (from `./../KGSDKBase.podspec`)
+    - klp (= 1.12.0.7.1a61a0cf)
+    - "KRNSDK (from `git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git`, tag `0.1.139.ks`)"
+    - "KRNSDK/Container (from `git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git`, tag `0.1.139.ks`)"
+    - "KRNSDK/Debug (from `git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git`, tag `0.1.139.ks`)"
+    - "KRNSDK/Default (from `git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git`, tag `0.1.139.ks`)"
+    - "KRNSDK/KdsAnimated (from `git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git`, tag `0.1.139.ks`)"
+    - "KRNSDK/KRNStorage (from `git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git`, tag `0.1.139.ks`)"
+    - "KRNSDK/WebLoggerHelper (from `git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git`, tag `0.1.139.ks`)"
+    - "KSAudioProcessLib/Core (from `git@git.corp.kuaishou.com:video/KSAudioProcessLib.git`, tag `v4.0.0.6.g.1`)"
+    - "KSAudioProcessLib/TFLite (from `git@git.corp.kuaishou.com:video/KSAudioProcessLib.git`, tag `v4.0.0.6.g.1`)"
+    - KSAVLogProtoModel (= 1.1.9)
+    - "KSChinaMobileQuickLogin (from `git@git.corp.kuaishou.com:ios/KSChinaMobileQuickLogin.git`, commit `3ba3130a48eee4b7b1519e4bbbc0fa3c69a533f3`)"
+    - "KSChinaTelecomSDK (from `git@git.corp.kuaishou.com:ios/KSChinaTelecomSDK.git`, tag `3.7.0`)"
+    - "KSChinaUnicomSDK (from `git@git.corp.kuaishou.com:ios/KSChinaUnicomSDK.git`, tag `4.0.0`)"
+    - KSCommon (= 1.15.18)
+    - KSDFP (= 4.9.2.230.2b11104e)
+    - KSecurityWrapper (= 0.0.21)
+    - "KSFFmpeg_iOS (from `git@git.corp.kuaishou.com:video/KSFFmpeg_iOS.git`, tag `3.9.4_x264_game`)"
+    - KSKanas (= 0.9.2)
+    - "KSLivePlayer (from `git@git.corp.kuaishou.com:video/KSLivePlayer.git`, tag `v1.6.2.1`)"
+    - KSMWAzeroth/Core (= 0.5.37)
+    - KSMWAzeroth/NetworkingWrapper (= 0.5.37)
+    - "KSPromise (from `git@git.corp.kuaishou.com:ios/KSPromise.git`, commit `82d19a505c94427bbff4e6b9aee87c122adba52f`)"
+    - "KSProtobufCpp_iOS (from `git@git.corp.kuaishou.com:video/KSProtobufCpp_iOS.git`, commit `4e162ab`)"
+    - KSRSAUtil (= 0.1.7)
+    - "KSRtcKit/game (from `git@git.corp.kuaishou.com:video/KSRtcKit.git`, tag `v1.6.0.1.fix`)"
+    - KSSecurityRelease (= 4.10.1.131.67150f9d)
+    - "KSSmartDns/Core (from `git@git.corp.kuaishou.com:video/KSSmartDNS`, tag `v1.1.7`)"
+    - KSTLog (= 0.1.15)
+    - "KSUAccount (from `git@git.corp.kuaishou.com:ios/KSUAccount.git`, tag `0.5.2_remove_afnetworking`)"
+    - "KSULiveStream/AnchorWithFeed (from `git@git.corp.kuaishou.com:ios/KSULiveStream.git`, commit `df395cf5453d0ab9923e1c7e0f61cc6dfe80ec11`)"
+    - "KSULNetworking (from `git@git.corp.kuaishou.com:open-iOS/GameKSUNetworking.git`, tag `1.1.0_new_afnetworking`)"
+    - "KSUploader (from `git@git.corp.kuaishou.com:video/KWRickon_iOS.git`, tag `5.0.9.7bd49386`)"
+    - "KSUProtoModel/common (from `git@git.corp.kuaishou.com:ios/KSUProtoModel.git`, tag `1.1084.0`)"
+    - "KSUProtoModel/ds (from `git@git.corp.kuaishou.com:ios/KSUProtoModel.git`, tag `1.1084.0`)"
+    - KSUserDefaults (= 1.0.0)
+    - "KSUStatistics (from `git@git.corp.kuaishou.com:ios/KSUStatistics.git`, commit `35e8e3264e87242fbad0cb86ee4a6d17c79d984f`)"
+    - KSVader (= 0.1.2)
+    - "KSVodPlayer (from `git@git.corp.kuaishou.com:video/KSVodPlayerKit.git`, commit `d1f2e04d`)"
+    - "KSWeaponArmy (from `git@git.corp.kuaishou.com:ios/KSWeaponArmy.git`, tag `3.12.0_timo`)"
+    - "KSXLog_iOS (from `git@git.corp.kuaishou.com:video/KSXLog_iOS.git`, commit `822eb9d1301ad79245bd552191c8481b624723f5`)"
+    - KSXPackageManager (= 0.0.1.42)
+    - ktp (= 7.1.2-core)
+    - "KwaiAnalytics/Core (from `git@git.corp.kuaishou.com:lib-iOS/KwaiAnalytics.git`, tag `0.2.10`)"
+    - "KwaiAnalytics/Kanas (from `git@git.corp.kuaishou.com:lib-iOS/KwaiAnalytics.git`, tag `0.2.10`)"
+    - "KwaiAppBox (from `git@git.corp.kuaishou.com:open-iOS/KwaiAppBox.git`, tag `KwaiAppBox-1.0.34`)"
+    - "KwaiBase/DDLog (from `git@git.corp.kuaishou.com:im-client/KwaiBase.git`, tag `0.1.32-bridge.1`)"
+    - "KwaiBase/LiteProxy (from `git@git.corp.kuaishou.com:im-client/KwaiBase.git`, tag `0.1.32-bridge.1`)"
+    - KwaiCaptcha/ALiVerify (= 0.4.0)
+    - KwaiCaptcha/TXVerify (= 0.4.0)
+    - "KwaiGameAD (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
+    - "KwaiGameAD-BUAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
+    - "KwaiGameAD-KSAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
+    - "KwaiGameAD-KwaiAppBox (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
+    - "KwaiGameAD-Manager (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
+    - "KwaiGameAD-Mintegral (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
+    - "KwaiGameAD-MobAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
+    - "KwaiGameAD-OverSeaSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
+    - "KwaiGameAD-TXAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
+    - "KwaiGameADPath (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.18`)"
+    - "KwaiGameADPath-SKAdNetwork (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.18`)"
+    - "KwaiGameADPath-TrackingIO (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.18`)"
+    - "KwaiGameBase-DemoSupport (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
+    - "KwaiGameBase/ActionLog (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
+    - "KwaiGameBase/Core (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
+    - "KwaiGameBase/Log (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
+    - KwaiGameImagePicker (= 0.0.6)
+    - "KwaiGameLive (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git`, tag `KwaiGameLive-1.0.16`)"
+    - "KwaiGameLive-LiveMartPlugin (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git`, tag `KwaiGameLive-LiveMartPlugin-1.0.35`)"
+    - "KwaiGameLive-NativeUIPlugin (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git`, tag `KwaiGameLive-NativeUIPlugin-1.0.31`)"
+    - "KwaiGameNetworking (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameNetworking.git`, tag `KwaiGameNetworking-0.0.7.3`)"
+    - KwaiGameNetworkStatusMonitor (= 1.0.6)
+    - KwaiGameSDK (from `./../KwaiGameSDK.podspec`)
+    - KwaiGameSDK-ABtest-Firebase (from `./../KwaiGameSDK-ABtest-Firebase.podspec`)
+    - KwaiGameSDK-AD (from `./../KwaiGameSDK-AD.podspec`)
+    - KwaiGameSDK-ADPath-AppsFlyer (from `./../KwaiGameSDK-ADPath-AppsFlyer.podspec`)
+    - KwaiGameSDK-AntiAddict (from `./../KwaiGameSDK-AntiAddict.podspec`)
+    - KwaiGameSDK-AppBox (from `./../KwaiGameSDK-AppBox.podspec`)
+    - KwaiGameSDK-AppsflyerCommon (from `./../KwaiGameSDK-AppsflyerCommon.podspec`)
+    - KwaiGameSDK-Audio (from `./../KwaiGameSDK-Audio.podspec`)
+    - KwaiGameSDK-Community (from `./../KwaiGameSDK-Community.podspec`)
+    - KwaiGameSDK-Community-Kwai (from `./../KwaiGameSDK-Community-Kwai.podspec`)
+    - KwaiGameSDK-CrashReport (from `./../KwaiGameSDK-CrashReport.podspec`)
+    - KwaiGameSDK-CrashReport-Bugly (from `./../KwaiGameSDK-CrashReport-Bugly.podspec`)
+    - KwaiGameSDK-CrashReport-Firebase (from `./../KwaiGameSDK-CrashReport-Firebase.podspec`)
+    - KwaiGameSDK-Downloader (from `./../KwaiGameSDK-Downloader.podspec`)
+    - KwaiGameSDK-IM (from `./../KwaiGameSDK-IM.podspec`)
+    - KwaiGameSDK-KwaiJump (from `./../KwaiGameSDK-KwaiJump.podspec`)
+    - KwaiGameSDK-Live (from `./../KwaiGameSDK-Live.podspec`)
+    - KwaiGameSDK-LongLink (from `./../KwaiGameSDK-LongLink.podspec`)
+    - KwaiGameSDK-Media (from `./../KwaiGameSDK-Media.podspec`)
+    - KwaiGameSDK-Mock (from `./../KwaiGameSDK-Mock.podspec`)
+    - KwaiGameSDK-OpenPlatform (from `./../KwaiGameSDK-OpenPlatform.podspec`)
+    - KwaiGameSDK-Oversea (from `./../KwaiGameSDK-Oversea.podspec`)
+    - KwaiGameSDK-Pay (from `./../KwaiGameSDK-Pay.podspec`)
+    - KwaiGameSDK-Push (from `./../KwaiGameSDK-Push.podspec`)
+    - KwaiGameSDK-PushReport (from `./../KwaiGameSDK-PushReport.podspec`)
+    - KwaiGameSDK-QRScan (from `./../KwaiGameSDK-QRScan.podspec`)
+    - KwaiGameSDK-QuickLogin (from `./../KwaiGameSDK-QuickLogin.podspec`)
+    - KwaiGameSDK-Relation (from `./../KwaiGameSDK-Relation.podspec`)
+    - KwaiGameSDK-Report-Appsflyer (from `./../KwaiGameSDK-Report-Appsflyer.podspec`)
+    - KwaiGameSDK-Report-Firebase (from `./../KwaiGameSDK-Report-Firebase.podspec`)
+    - KwaiGameSDK-SpringFestival (from `./../KwaiGameSDK-SpringFestival.podspec`)
+    - KwaiGameSDK-Subgame (from `./../KwaiGameSDK-Subgame.podspec`)
+    - KwaiGameSDK-UniApi (from `./../KwaiGameSDK-UniApi.podspec`)
+    - KwaiGameSDK-UnitTest (from `./../KwaiGameSDK-UnitTest.podspec`)
+    - KwaiGameSDK-VideoRecordBase (from `./../KwaiGameSDK-VideoRecordBase.podspec`)
+    - KwaiGameSDK-VideoShare (from `./../KwaiGameSDK-VideoShare.podspec`)
+    - KwaiGameSDK-VisitorPasswordLogin (from `./../KwaiGameSDK-VisitorPasswordLogin.podspec`)
+    - KwaiGameSDK-Voip (from `./../KwaiGameSDK-Voip.podspec`)
+    - KwaiGameSDK-WeaponArmy (from `./../KwaiGameSDK-WeaponArmy.podspec`)
+    - KwaiGameSDK-WebView (from `./../KwaiGameSDK-WebView.podspec`)
+    - KwaiGameSDK-WWP (from `./../KwaiGameSDK-WWP.podspec`)
+    - "KwaiGameVideoAryaEncode (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git`, tag `KwaiGameVideoRecord-0.0.21`)"
+    - "KwaiGameVideoBase (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git`, tag `KwaiGameVideoRecord-0.0.21`)"
+    - "KwaiGameVideoCapture (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git`, tag `KwaiGameVideoRecord-0.0.21`)"
+    - "KwaiGameVideoRecord (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git`, tag `KwaiGameVideoRecord-0.0.21`)"
+    - "KwaiGameVideoShare (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git`, tag `KwaiGameVideoRecord-0.0.21`)"
+    - "KwaiGameWWP (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameWWP.git`, tag `0.1.17`)"
+    - "KwaiGameWWP-NativeUIPlugin (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameWWP.git`, tag `0.1.17`)"
+    - KwaiIMKwaiLink (= 0.7.40)
+    - KwaiIMSDK (= 3.14.13)
+    - KwaiIMSDK/Core (= 3.14.13)
+    - KwaiIMSDK/KTPKit (= 3.14.13)
+    - KwaiIMSDK/NetworkingWrapper (= 3.14.13)
+    - KwaiIMXFDB (= 0.3.17)
+    - "KwaiMediaPlayer (from `git@git.corp.kuaishou.com:video/pruned-ijkplayer.git`, commit `df209bfe`)"
+    - KwaiNetworking (= 0.1.0)
+    - KwaiSDK (= 3.6.3)
+    - KwaiUIRecorder (= 1.0.6)
+    - "KWArya/Game (from `git@git.corp.kuaishou.com:video/kuaishou-voip-sdk.git`, tag `4.47.163.83e717f37`)"
+    - "KWStannis_iOS (from `git@git.corp.kuaishou.com:video/stannis.git`, tag `r4.0.2.2`)"
+    - "libuv/bin (from `git@git.corp.kuaishou.com:video/kuaishou-libuv.git`, tag `1.21.0`)"
+    - libwebp (= 1.1.0.1)
+    - "libyuv (from `git@git.corp.kuaishou.com:video/kuaishou-libyuv.git`, tag `0.3`)"
+    - lottie-ios (= 2.5.4)
+    - Masonry (= 1.1.0)
+    - MBProgressHUD (= 0.9.1)
+    - MJExtension (= 3.2.1.18)
+    - MMKV
+    - MMKVCore
+    - nanopb
+    - "OpenSSL-Universal (from `git@git.corp.kuaishou.com:ios/OpenSSL-Universal.git`, tag `1.0.2.11`)"
+    - p2pstun (= 0.4.9.5.22150be)
+    - Pigeon (= 0.6.8)
+    - PromisesObjC
+    - "Protobuf (from `git@git.corp.kuaishou.com:ios/protobuf.git`, tag `v3.3.0_2019.10.31_fix_arm32_crash`)"
+    - Reachability (= 3.2)
+    - React (= 0.62.2.22)
+    - react-native-image-picker (from `https://github.com/react-native-image-picker/react-native-image-picker.git`, tag `v4.1.1`)
+    - react-native-netinfo (from `https://github.com/react-native-community/react-native-netinfo.git`, tag `v5.9.5`)
+    - react-native-safe-area-context (from `https://github.com/th3rdwave/react-native-safe-area-context.git`, tag `v3.1.1`)
+    - react-native-webview (from `https://github.com/react-native-webview/react-native-webview.git`, tag `v11.14.0`)
+    - RNCMaskedView (from `https://github.com/react-native-community/react-native-masked-view.git`, tag `v0.1.10`)
+    - RNFastImage (from `https://github.com/DylanVann/react-native-fast-image.git`, tag `v8.3.3`)
+    - RNGestureHandler (from `https://github.com/software-mansion/react-native-gesture-handler`, tag `1.7.0`)
+    - RNReanimated (from `https://github.com/software-mansion/react-native-reanimated.git`, tag `1.9.0`)
+    - RNScreens (from `https://github.com/kmagiera/react-native-screens.git`, tag `2.8.0`)
+    - RNSVG (from `https://github.com/react-native-community/react-native-svg.git`, tag `v12.1.1`)
+    - SDWebImage (= 5.8.3.22)
+    - SDWebImageWebPCoder (= 0.6.1.1)
+    - "SSZipArchive (from `{:http=>\"https://static.yximgs.com/udata/pkg/GameSource-CDN/SSZipArchive_1.2.1.tgz\"}`)"
+    - TensorFlow-Lite (= 1.0.0)
+    - Toast
+    - twitter-text (= 3.0.1d)
+    - WBCloudFace (= 6.3.2)
+    - "WechatSDK (from `git@git.corp.kuaishou.com:open-iOS/wechatsdk.git`, tag `1.8.7.1_no_pay`)"
+    - "WeiboSDK (from `git@git.corp.kuaishou.com:hanzhongchao/KSWeiboSDK.git`, tag `3.2.6.0_for_game_zt`)"
+    - "ycnn2 (from `git@git.corp.kuaishou.com:ylab/libycnn2_ios.git`, tag `3.1.3-11-9`)"
+    - Yoda (= 2.8.0.lite)
+    - Yoga (= 1.14.0.3)
+    - "ZipKit (from `git@git.corp.kuaishou.com:open-iOS/zipkit.git`, tag `1.0.3.1`)"
+  EXTERNAL SOURCES:
+    BlocksKit:
+      :git: "git@git.corp.kuaishou.com:ios/BlockKit.git"
+      :tag: 102.2.16
+    Bolts:
+      :git: "git@git.corp.kuaishou.com:ios/Bolts-ObjC.git"
+      :tag: 1.9.1.0
+    Diplomat:
+      :git: "git@git.corp.kuaishou.com:im-client/Diplomat.git"
+      :tag: 0.5.6_whtiout_wechat
+    FLAnimatedImage:
+      :git: "git@git.corp.kuaishou.com:ios/FLAnimatedImage.git"
+      :tag: 1.0.14
+    GameLiveProtoModel:
+      :git: "git@git.corp.kuaishou.com:lib-iOS/GameLiveProtoModel.git"
+      :tag: 1.142.10
+    Hodor:
+      :commit: 36a59839
+      :git: "git@git.corp.kuaishou.com:video/pruned-ijkplayer.git"
+    KGAryaManager:
+      :git: "git@git.corp.kuaishou.com:lib-iOS/KWArya-Packager.git"
+      :tag: 1.0.11
+    KGSDKBase:
+      :path: "./../KGSDKBase.podspec"
+    KRNSDK:
+      :git: "git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git"
+      :tag: 0.1.139.ks
+    KSAudioProcessLib:
+      :git: "git@git.corp.kuaishou.com:video/KSAudioProcessLib.git"
+      :tag: v4.0.0.6.g.1
+    KSChinaMobileQuickLogin:
+      :commit: 3ba3130a48eee4b7b1519e4bbbc0fa3c69a533f3
+      :git: "git@git.corp.kuaishou.com:ios/KSChinaMobileQuickLogin.git"
+    KSChinaTelecomSDK:
+      :git: "git@git.corp.kuaishou.com:ios/KSChinaTelecomSDK.git"
+      :tag: 3.7.0
+    KSChinaUnicomSDK:
+      :git: "git@git.corp.kuaishou.com:ios/KSChinaUnicomSDK.git"
+      :tag: 4.0.0
+    KSFFmpeg_iOS:
+      :git: "git@git.corp.kuaishou.com:video/KSFFmpeg_iOS.git"
+      :tag: 3.9.4_x264_game
+    KSLivePlayer:
+      :git: "git@git.corp.kuaishou.com:video/KSLivePlayer.git"
+      :tag: v1.6.2.1
+    KSPromise:
+      :commit: 82d19a505c94427bbff4e6b9aee87c122adba52f
+      :git: "git@git.corp.kuaishou.com:ios/KSPromise.git"
+    KSProtobufCpp_iOS:
+      :commit: 4e162ab
+      :git: "git@git.corp.kuaishou.com:video/KSProtobufCpp_iOS.git"
+    KSRtcKit:
+      :git: "git@git.corp.kuaishou.com:video/KSRtcKit.git"
+      :tag: v1.6.0.1.fix
+    KSSmartDns:
+      :git: "git@git.corp.kuaishou.com:video/KSSmartDNS"
+      :tag: v1.1.7
+    KSUAccount:
+      :git: "git@git.corp.kuaishou.com:ios/KSUAccount.git"
+      :tag: 0.5.2_remove_afnetworking
+    KSULiveStream:
+      :commit: df395cf5453d0ab9923e1c7e0f61cc6dfe80ec11
+      :git: "git@git.corp.kuaishou.com:ios/KSULiveStream.git"
+    KSULNetworking:
+      :git: "git@git.corp.kuaishou.com:open-iOS/GameKSUNetworking.git"
+      :tag: 1.1.0_new_afnetworking
+    KSUploader:
+      :git: "git@git.corp.kuaishou.com:video/KWRickon_iOS.git"
+      :tag: 5.0.9.7bd49386
+    KSUProtoModel:
+      :git: "git@git.corp.kuaishou.com:ios/KSUProtoModel.git"
+      :tag: 1.1084.0
+    KSUStatistics:
+      :commit: 35e8e3264e87242fbad0cb86ee4a6d17c79d984f
+      :git: "git@git.corp.kuaishou.com:ios/KSUStatistics.git"
+    KSVodPlayer:
+      :commit: d1f2e04d
+      :git: "git@git.corp.kuaishou.com:video/KSVodPlayerKit.git"
+    KSWeaponArmy:
+      :git: "git@git.corp.kuaishou.com:ios/KSWeaponArmy.git"
+      :tag: 3.12.0_timo
+    KSXLog_iOS:
+      :commit: 822eb9d1301ad79245bd552191c8481b624723f5
+      :git: "git@git.corp.kuaishou.com:video/KSXLog_iOS.git"
+    KwaiAnalytics:
+      :git: "git@git.corp.kuaishou.com:lib-iOS/KwaiAnalytics.git"
+      :tag: 0.2.10
+    KwaiAppBox:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiAppBox.git"
+      :tag: KwaiAppBox-1.0.34
+    KwaiBase:
+      :git: "git@git.corp.kuaishou.com:im-client/KwaiBase.git"
+      :tag: 0.1.32-bridge.1
+    KwaiGameAD:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-BUAdSDK:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-KSAdSDK:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-KwaiAppBox:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-Manager:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-Mintegral:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-MobAdSDK:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-OverSeaSDK:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameAD-TXAdSDK:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
+      :tag: "stable+1.31.0"
+    KwaiGameADPath:
+      :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
+      :tag: 0.0.18
+    KwaiGameADPath-SKAdNetwork:
+      :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
+      :tag: 0.0.18
+    KwaiGameADPath-TrackingIO:
+      :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
+      :tag: 0.0.18
+    KwaiGameBase:
+      :git: "git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git"
+      :tag: 0.0.41
+    KwaiGameBase-DemoSupport:
+      :git: "git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git"
+      :tag: 0.0.41
+    KwaiGameLive:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git"
+      :tag: KwaiGameLive-1.0.16
+    KwaiGameLive-LiveMartPlugin:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git"
+      :tag: KwaiGameLive-LiveMartPlugin-1.0.35
+    KwaiGameLive-NativeUIPlugin:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git"
+      :tag: KwaiGameLive-NativeUIPlugin-1.0.31
+    KwaiGameNetworking:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameNetworking.git"
+      :tag: KwaiGameNetworking-0.0.7.3
+    KwaiGameSDK:
+      :path: "./../KwaiGameSDK.podspec"
+    KwaiGameSDK-ABtest-Firebase:
+      :path: "./../KwaiGameSDK-ABtest-Firebase.podspec"
+    KwaiGameSDK-AD:
+      :path: "./../KwaiGameSDK-AD.podspec"
+    KwaiGameSDK-ADPath-AppsFlyer:
+      :path: "./../KwaiGameSDK-ADPath-AppsFlyer.podspec"
+    KwaiGameSDK-AntiAddict:
+      :path: "./../KwaiGameSDK-AntiAddict.podspec"
+    KwaiGameSDK-AppBox:
+      :path: "./../KwaiGameSDK-AppBox.podspec"
+    KwaiGameSDK-AppsflyerCommon:
+      :path: "./../KwaiGameSDK-AppsflyerCommon.podspec"
+    KwaiGameSDK-Audio:
+      :path: "./../KwaiGameSDK-Audio.podspec"
+    KwaiGameSDK-Community:
+      :path: "./../KwaiGameSDK-Community.podspec"
+    KwaiGameSDK-Community-Kwai:
+      :path: "./../KwaiGameSDK-Community-Kwai.podspec"
+    KwaiGameSDK-CrashReport:
+      :path: "./../KwaiGameSDK-CrashReport.podspec"
+    KwaiGameSDK-CrashReport-Bugly:
+      :path: "./../KwaiGameSDK-CrashReport-Bugly.podspec"
+    KwaiGameSDK-CrashReport-Firebase:
+      :path: "./../KwaiGameSDK-CrashReport-Firebase.podspec"
+    KwaiGameSDK-Downloader:
+      :path: "./../KwaiGameSDK-Downloader.podspec"
+    KwaiGameSDK-IM:
+      :path: "./../KwaiGameSDK-IM.podspec"
+    KwaiGameSDK-KwaiJump:
+      :path: "./../KwaiGameSDK-KwaiJump.podspec"
+    KwaiGameSDK-Live:
+      :path: "./../KwaiGameSDK-Live.podspec"
+    KwaiGameSDK-LongLink:
+      :path: "./../KwaiGameSDK-LongLink.podspec"
+    KwaiGameSDK-Media:
+      :path: "./../KwaiGameSDK-Media.podspec"
+    KwaiGameSDK-Mock:
+      :path: "./../KwaiGameSDK-Mock.podspec"
+    KwaiGameSDK-OpenPlatform:
+      :path: "./../KwaiGameSDK-OpenPlatform.podspec"
+    KwaiGameSDK-Oversea:
+      :path: "./../KwaiGameSDK-Oversea.podspec"
+    KwaiGameSDK-Pay:
+      :path: "./../KwaiGameSDK-Pay.podspec"
+    KwaiGameSDK-Push:
+      :path: "./../KwaiGameSDK-Push.podspec"
+    KwaiGameSDK-PushReport:
+      :path: "./../KwaiGameSDK-PushReport.podspec"
+    KwaiGameSDK-QRScan:
+      :path: "./../KwaiGameSDK-QRScan.podspec"
+    KwaiGameSDK-QuickLogin:
+      :path: "./../KwaiGameSDK-QuickLogin.podspec"
+    KwaiGameSDK-Relation:
+      :path: "./../KwaiGameSDK-Relation.podspec"
+    KwaiGameSDK-Report-Appsflyer:
+      :path: "./../KwaiGameSDK-Report-Appsflyer.podspec"
+    KwaiGameSDK-Report-Firebase:
+      :path: "./../KwaiGameSDK-Report-Firebase.podspec"
+    KwaiGameSDK-SpringFestival:
+      :path: "./../KwaiGameSDK-SpringFestival.podspec"
+    KwaiGameSDK-Subgame:
+      :path: "./../KwaiGameSDK-Subgame.podspec"
+    KwaiGameSDK-UniApi:
+      :path: "./../KwaiGameSDK-UniApi.podspec"
+    KwaiGameSDK-UnitTest:
+      :path: "./../KwaiGameSDK-UnitTest.podspec"
+    KwaiGameSDK-VideoRecordBase:
+      :path: "./../KwaiGameSDK-VideoRecordBase.podspec"
+    KwaiGameSDK-VideoShare:
+      :path: "./../KwaiGameSDK-VideoShare.podspec"
+    KwaiGameSDK-VisitorPasswordLogin:
+      :path: "./../KwaiGameSDK-VisitorPasswordLogin.podspec"
+    KwaiGameSDK-Voip:
+      :path: "./../KwaiGameSDK-Voip.podspec"
+    KwaiGameSDK-WeaponArmy:
+      :path: "./../KwaiGameSDK-WeaponArmy.podspec"
+    KwaiGameSDK-WebView:
+      :path: "./../KwaiGameSDK-WebView.podspec"
+    KwaiGameSDK-WWP:
+      :path: "./../KwaiGameSDK-WWP.podspec"
+    KwaiGameVideoAryaEncode:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
+      :tag: KwaiGameVideoRecord-0.0.21
+    KwaiGameVideoBase:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
+      :tag: KwaiGameVideoRecord-0.0.21
+    KwaiGameVideoCapture:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
+      :tag: KwaiGameVideoRecord-0.0.21
+    KwaiGameVideoRecord:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
+      :tag: KwaiGameVideoRecord-0.0.21
+    KwaiGameVideoShare:
+      :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
+      :tag: KwaiGameVideoRecord-0.0.21
+    KwaiGameWWP:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameWWP.git"
+      :tag: 0.1.17
+    KwaiGameWWP-NativeUIPlugin:
+      :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameWWP.git"
+      :tag: 0.1.17
+    KwaiMediaPlayer:
+      :commit: df209bfe
+      :git: "git@git.corp.kuaishou.com:video/pruned-ijkplayer.git"
+    KWArya:
+      :git: "git@git.corp.kuaishou.com:video/kuaishou-voip-sdk.git"
+      :tag: 4.47.163.83e717f37
+    KWStannis_iOS:
+      :git: "git@git.corp.kuaishou.com:video/stannis.git"
+      :tag: r4.0.2.2
+    libuv:
+      :git: "git@git.corp.kuaishou.com:video/kuaishou-libuv.git"
+      :tag: 1.21.0
+    libyuv:
+      :git: "git@git.corp.kuaishou.com:video/kuaishou-libyuv.git"
+      :tag: '0.3'
+    OpenSSL-Universal:
+      :git: "git@git.corp.kuaishou.com:ios/OpenSSL-Universal.git"
+      :tag: 1.0.2.11
+    Protobuf:
+      :git: "git@git.corp.kuaishou.com:ios/protobuf.git"
+      :tag: v3.3.0_2019.10.31_fix_arm32_crash
+    react-native-image-picker:
+      :git: https://github.com/react-native-image-picker/react-native-image-picker.git
+      :tag: v4.1.1
+    react-native-netinfo:
+      :git: https://github.com/react-native-community/react-native-netinfo.git
+      :tag: v5.9.5
+    react-native-safe-area-context:
+      :git: https://github.com/th3rdwave/react-native-safe-area-context.git
+      :tag: v3.1.1
+    react-native-webview:
+      :git: https://github.com/react-native-webview/react-native-webview.git
+      :tag: v11.14.0
+    RNCMaskedView:
+      :git: https://github.com/react-native-community/react-native-masked-view.git
+      :tag: v0.1.10
+    RNFastImage:
+      :git: https://github.com/DylanVann/react-native-fast-image.git
+      :tag: v8.3.3
+    RNGestureHandler:
+      :git: https://github.com/software-mansion/react-native-gesture-handler
+      :tag: 1.7.0
+    RNReanimated:
+      :git: https://github.com/software-mansion/react-native-reanimated.git
+      :tag: 1.9.0
+    RNScreens:
+      :git: https://github.com/kmagiera/react-native-screens.git
+      :tag: 2.8.0
+    RNSVG:
+      :git: https://github.com/react-native-community/react-native-svg.git
+      :tag: v12.1.1
+    SSZipArchive:
+      :http: https://static.yximgs.com/udata/pkg/GameSource-CDN/SSZipArchive_1.2.1.tgz
+    WechatSDK:
+      :git: "git@git.corp.kuaishou.com:open-iOS/wechatsdk.git"
+      :tag: 1.8.7.1_no_pay
+    WeiboSDK:
+      :git: "git@git.corp.kuaishou.com:hanzhongchao/KSWeiboSDK.git"
+      :tag: 3.2.6.0_for_game_zt
+    ycnn2:
+      :git: "git@git.corp.kuaishou.com:ylab/libycnn2_ios.git"
+      :tag: 3.1.3-11-9
+    ZipKit:
+      :git: "git@git.corp.kuaishou.com:open-iOS/zipkit.git"
+      :tag: 1.0.3.1
+  PODFILE CHECKSUM: a34600f1743ae58708c4d0f7d6050775a978acc8
+  PODS:
+    - Ads-Global (4.0.0.2):
+      - Ads-Global/APM (= 4.0.0.2)
+      - Ads-Global/BUAdSDK (= 4.0.0.2)
+      - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
+      - RangersAPM-Pangle/Global (= 2.3.2-pangle)
+    - Ads-Global/APM (4.0.0.2):
+      - RangersAPM-Pangle/Crash (= 2.3.2-pangle, = 2.3.2-pangle)
+      - RangersAPM-Pangle/Global (= 2.3.2-pangle, = 2.3.2-pangle)
+    - Ads-Global/BUAdSDK (4.0.0.2):
+      - Ads-Global/BUFoundation
+      - Ads-Global/International
+      - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
+      - RangersAPM-Pangle/Global (= 2.3.2-pangle)
+    - Ads-Global/BUFoundation (4.0.0.2):
+      - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
+      - RangersAPM-Pangle/Global (= 2.3.2-pangle)
+    - Ads-Global/Domestic (4.0.0.2):
+      - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
+      - RangersAPM-Pangle/Global (= 2.3.2-pangle)
+    - Ads-Global/International (4.0.0.2):
+      - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
+      - RangersAPM-Pangle/Global (= 2.3.2-pangle)
+    - Aegon_iOS (1.36.6)
+    - AFNetworking (3.2.1.4):
+      - AFNetworking/NSURLSession (= 3.2.1.4)
+      - AFNetworking/Reachability (= 3.2.1.4)
+      - AFNetworking/Security (= 3.2.1.4)
+      - AFNetworking/Serialization (= 3.2.1.4)
+      - AFNetworking/UIKit (= 3.2.1.4)
+    - AFNetworking/NSURLSession (3.2.1.4):
+      - AFNetworking/Reachability
+      - AFNetworking/Security
+      - AFNetworking/Serialization
+    - AFNetworking/Reachability (3.2.1.4)
+    - AFNetworking/Security (3.2.1.4)
+    - AFNetworking/Serialization (3.2.1.4)
+    - AFNetworking/UIKit (3.2.1.4):
+      - AFNetworking/NSURLSession
+    - AppAuth (1.5.0):
+      - AppAuth/Core (= 1.5.0)
+      - AppAuth/ExternalUserAgent (= 1.5.0)
+    - AppAuth/Core (1.5.0)
+    - AppAuth/ExternalUserAgent (1.5.0):
+      - AppAuth/Core
+    - AppLovinSDK (11.2.1)
+    - AppsFlyerFramework (6.5.4):
+      - AppsFlyerFramework/Main (= 6.5.4)
+    - AppsFlyerFramework/Main (6.5.4)
+    - Aspects (1.4.1.1)
+    - AutoCoding (2.2.3)
+    - BlocksKit (102.2.16):
+      - BlocksKit/All (= 102.2.16)
+    - BlocksKit/All (102.2.16):
+      - BlocksKit/Core
+      - BlocksKit/DynamicDelegate
+      - BlocksKit/MessageUI
+      - BlocksKit/QuickLook
+      - BlocksKit/UIKit
+    - BlocksKit/Core (102.2.16)
+    - BlocksKit/DynamicDelegate (102.2.16)
+    - BlocksKit/MessageUI (102.2.16):
+      - BlocksKit/Core
+      - BlocksKit/DynamicDelegate
+    - BlocksKit/QuickLook (102.2.16):
+      - BlocksKit/Core
+      - BlocksKit/DynamicDelegate
+    - BlocksKit/UIKit (102.2.16):
+      - BlocksKit/Core
+      - BlocksKit/DynamicDelegate
+    - Bolts (1.9.1.0):
+      - Bolts/AppLinks (= 1.9.1.0)
+      - Bolts/Tasks (= 1.9.1.0)
+    - Bolts/AppLinks (1.9.1.0):
+      - Bolts/Tasks
+    - Bolts/Tasks (1.9.1.0)
+    - boost (1.64.4)
+    - boost-for-react-native (1.63.0.1.1)
+    - Bugly (2.5.71)
+    - BVLinearGradient (2.5.8):
+      - React
+    - CocoaAsyncSocket (7.6.5)
+    - CocoaLumberjack (2.4.0.9):
+      - CocoaLumberjack/Default (= 2.4.0.9)
+      - CocoaLumberjack/Extensions (= 2.4.0.9)
+    - CocoaLumberjack/Core (2.4.0.9)
+    - CocoaLumberjack/Default (2.4.0.9):
+      - CocoaLumberjack/Core
+    - CocoaLumberjack/Extensions (2.4.0.9):
+      - CocoaLumberjack/Default
+    - Diplomat/Core (0.5.1.4)
+    - Diplomat/Tencent (0.5.1.4):
+      - Diplomat/Core
+    - Diplomat/Wechat (0.5.1.4):
+      - Diplomat/Core
+      - WechatSDK
+    - Diplomat/Weibo (0.5.1.4):
+      - Diplomat/Core
+      - WeiboSDK
+    - DoubleConversion (1.1.6.1.1)
+    - FBAudienceNetwork (6.9.0)
+    - FBLazyVector (0.62.2.22)
+    - FBReactNativeSpec (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - RCTRequired (= 0.62.2.22)
+      - RCTTypeSafety (= 0.62.2.22)
+      - React-Core (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - ReactCommon/turbomodule/core (= 0.62.2.22)
+    - FBSDKCoreKit (11.0.0):
+      - FBSDKCoreKit/Core (= 11.0.0)
+      - FBSDKCoreKit_Basics (~> 11.0.0)
+    - FBSDKCoreKit/Core (11.0.0):
+      - FBSDKCoreKit_Basics (~> 11.0.0)
+    - FBSDKCoreKit_Basics (11.0.1):
+      - FBSDKCoreKit_Basics/Basics (= 11.0.1)
+    - FBSDKCoreKit_Basics/Basics (11.0.1)
+    - FBSDKLoginKit (11.0.0):
+      - FBSDKCoreKit (~> 11.0.0)
+      - FBSDKCoreKit_Basics (~> 11.0.0)
+      - FBSDKLoginKit/Login (= 11.0.0)
+    - FBSDKLoginKit/Login (11.0.0):
+      - FBSDKCoreKit (~> 11.0.0)
+      - FBSDKCoreKit_Basics (~> 11.0.0)
+    - FBSDKShareKit (11.0.0):
+      - FBSDKCoreKit (~> 11.0.0)
+      - FBSDKCoreKit_Basics (~> 11.0.0)
+      - FBSDKShareKit/Share (= 11.0.0)
+    - FBSDKShareKit/Share (11.0.0):
+      - FBSDKCoreKit (~> 11.0.0)
+      - FBSDKCoreKit_Basics (~> 11.0.0)
+    - FCFileManager (1.0.21)
+    - Firebase/Analytics (8.14.0):
+      - Firebase/Core
+      - FirebaseAnalytics (~> 8.14.0)
+      - FirebaseCore (= 8.14.0)
+      - FirebaseCrashlytics (~> 8.14.0)
+      - FirebaseRemoteConfig (~> 8.14.0)
+    - Firebase/Core (8.14.0):
+      - Firebase/CoreOnly
+      - FirebaseAnalytics (~> 8.14.0)
+      - FirebaseCore (= 8.14.0)
+      - FirebaseCrashlytics (~> 8.14.0)
+      - FirebaseRemoteConfig (~> 8.14.0)
+    - Firebase/CoreOnly (8.14.0):
+      - FirebaseAnalytics (~> 8.14.0)
+      - FirebaseCore (= 8.14.0, = 8.14.0)
+      - FirebaseCrashlytics (~> 8.14.0)
+      - FirebaseRemoteConfig (~> 8.14.0)
+    - Firebase/Crashlytics (8.14.0):
+      - Firebase/CoreOnly
+      - FirebaseAnalytics (~> 8.14.0)
+      - FirebaseCore (= 8.14.0)
+      - FirebaseCrashlytics (~> 8.14.0)
+      - FirebaseRemoteConfig (~> 8.14.0)
+    - Firebase/RemoteConfig (8.14.0):
+      - Firebase/CoreOnly
+      - FirebaseAnalytics (~> 8.14.0)
+      - FirebaseCore (= 8.14.0)
+      - FirebaseCrashlytics (~> 8.14.0)
+      - FirebaseRemoteConfig (~> 8.14.0)
+    - FirebaseABTesting (8.14.0):
+      - FirebaseCore (~> 8.0)
+    - FirebaseAnalytics (8.14.0):
+      - FirebaseAnalytics/AdIdSupport (= 8.14.0)
+      - FirebaseCore (~> 8.0)
+      - FirebaseInstallations (~> 8.0)
+      - GoogleAppMeasurement (= 8.14.0)
+      - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+      - GoogleUtilities/MethodSwizzler (~> 7.7)
+      - GoogleUtilities/Network (~> 7.7)
+      - "GoogleUtilities/NSData+zlib (~> 7.7)"
+      - nanopb (~> 2.30908.0)
+    - FirebaseAnalytics/AdIdSupport (8.14.0):
+      - FirebaseCore (~> 8.0)
+      - FirebaseInstallations (~> 8.0)
+      - GoogleAppMeasurement (= 8.14.0, = 8.14.0)
+      - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+      - GoogleUtilities/MethodSwizzler (~> 7.7)
+      - GoogleUtilities/Network (~> 7.7)
+      - "GoogleUtilities/NSData+zlib (~> 7.7)"
+      - nanopb (~> 2.30908.0)
+    - FirebaseCore (8.14.0):
+      - FirebaseCoreDiagnostics (~> 8.0)
+      - GoogleUtilities/Environment (~> 7.7)
+      - GoogleUtilities/Logger (~> 7.7)
+    - FirebaseCoreDiagnostics (8.14.0):
+      - GoogleDataTransport (~> 9.1)
+      - GoogleUtilities/Environment (~> 7.7)
+      - GoogleUtilities/Logger (~> 7.7)
+      - nanopb (~> 2.30908.0)
+    - FirebaseCrashlytics (8.14.0):
+      - FirebaseCore (~> 8.0)
+      - FirebaseInstallations (~> 8.0)
+      - GoogleDataTransport (~> 9.1)
+      - GoogleUtilities/Environment (~> 7.7)
+      - nanopb (~> 2.30908.0)
+      - PromisesObjC (< 3.0, >= 1.2)
+    - FirebaseInstallations (8.14.0):
+      - FirebaseCore (~> 8.0)
+      - GoogleUtilities/Environment (~> 7.7)
+      - GoogleUtilities/UserDefaults (~> 7.7)
+      - PromisesObjC (< 3.0, >= 1.2)
+    - FirebaseRemoteConfig (8.14.0):
+      - FirebaseABTesting (~> 8.0)
+      - FirebaseCore (~> 8.0)
+      - FirebaseInstallations (~> 8.0)
+      - GoogleUtilities/Environment (~> 7.7)
+      - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - FLAnimatedImage (1.0.14)
+    - FMDB (2.7.5.1):
+      - FMDB/standard (= 2.7.5.1)
+    - FMDB/standard (2.7.5.1)
+    - Folly (2018.10.22.00.1.1):
+      - boost-for-react-native (= 1.63.0.1.1)
+      - DoubleConversion (= 1.1.6.1.1)
+      - Folly/Default (= 2018.10.22.00.1.1)
+      - glog (= 0.3.5.1.1)
+    - Folly/Default (2018.10.22.00.1.1):
+      - boost-for-react-native (= 1.63.0.1.1)
+      - DoubleConversion (= 1.1.6.1.1)
+      - glog (= 0.3.5.1.1)
+    - GameLiveProtoModel/common (1.151.0):
+      - Protobuf (= 3.3.0)
+    - GameLiveProtoModel/livestream (1.151.0):
+      - Protobuf (= 3.3.0)
+    - GameLiveProtoModel/log (1.151.0):
+      - KSUProtoModel/ds
+      - Protobuf (= 3.3.0)
+    - GameLiveProtoModel/music (1.151.0):
+      - Protobuf (= 3.3.0)
+    - GDTMobSDK (4.13.22):
+      - GDTMobSDK/GDTMobSDK (= 4.13.22)
+    - GDTMobSDK/GDTMobSDK (4.13.22)
+    - glog (0.3.5.1.1)
+    - Godzippa (1.1.0)
+    - Google-Mobile-Ads-SDK (9.1.0):
+      - GoogleAppMeasurement (< 9.0, >= 7.0)
+      - GoogleUserMessagingPlatform (>= 1.1)
+    - GoogleAppMeasurement (8.14.0):
+      - GoogleAppMeasurement/AdIdSupport (= 8.14.0)
+      - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+      - GoogleUtilities/MethodSwizzler (~> 7.7)
+      - GoogleUtilities/Network (~> 7.7)
+      - "GoogleUtilities/NSData+zlib (~> 7.7)"
+      - nanopb (~> 2.30908.0)
+    - GoogleAppMeasurement/AdIdSupport (8.14.0):
+      - GoogleAppMeasurement/WithoutAdIdSupport (= 8.14.0)
+      - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+      - GoogleUtilities/MethodSwizzler (~> 7.7)
+      - GoogleUtilities/Network (~> 7.7)
+      - "GoogleUtilities/NSData+zlib (~> 7.7)"
+      - nanopb (~> 2.30908.0)
+    - GoogleAppMeasurement/WithoutAdIdSupport (8.14.0):
+      - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+      - GoogleUtilities/MethodSwizzler (~> 7.7)
+      - GoogleUtilities/Network (~> 7.7)
+      - "GoogleUtilities/NSData+zlib (~> 7.7)"
+      - nanopb (~> 2.30908.0)
+    - GoogleDataTransport (9.1.2):
+      - GoogleUtilities/Environment (~> 7.2)
+      - nanopb (~> 2.30908.0)
+      - PromisesObjC (< 3.0, >= 1.2)
+    - GoogleMobileAdsMediationAppLovin (11.2.1.0):
+      - AppLovinSDK (= 11.2.1)
+      - Google-Mobile-Ads-SDK (~> 9.0)
+    - GoogleMobileAdsMediationFacebook (6.9.0.1):
+      - FBAudienceNetwork (= 6.9.0)
+      - Google-Mobile-Ads-SDK (~> 9.0)
+    - GoogleMobileAdsMediationIronSource (7.2.1.0):
+      - Google-Mobile-Ads-SDK (~> 9.0)
+      - IronSourceSDK (= 7.2.1)
+    - GoogleMobileAdsMediationUnity (4.0.1.0):
+      - Google-Mobile-Ads-SDK (~> 9.0)
+      - UnityAds (= 4.0.1)
+    - GoogleMobileAdsMediationVungle (6.10.6.0):
+      - Google-Mobile-Ads-SDK (~> 9.0)
+      - VungleSDK-iOS (= 6.10.6)
+    - GoogleSignIn (6.1.0):
+      - AppAuth (~> 1.4)
+      - GTMAppAuth (~> 1.0)
+      - GTMSessionFetcher/Core (~> 1.1)
+    - GoogleUserMessagingPlatform (2.0.0)
+    - GoogleUtilities/AppDelegateSwizzler (7.7.0):
+      - GoogleUtilities/Environment
+      - GoogleUtilities/Logger
+      - GoogleUtilities/Network
+      - PromisesObjC (< 3.0, >= 1.2)
+    - GoogleUtilities/Environment (7.7.0):
+      - PromisesObjC (< 3.0, >= 1.2, >= 1.2)
+    - GoogleUtilities/Logger (7.7.0):
+      - GoogleUtilities/Environment
+      - PromisesObjC (< 3.0, >= 1.2)
+    - GoogleUtilities/MethodSwizzler (7.7.0):
+      - GoogleUtilities/Logger
+      - PromisesObjC (< 3.0, >= 1.2)
+    - GoogleUtilities/Network (7.7.0):
+      - GoogleUtilities/Logger
+      - "GoogleUtilities/NSData+zlib"
+      - GoogleUtilities/Reachability
+      - PromisesObjC (< 3.0, >= 1.2)
+    - "GoogleUtilities/NSData+zlib (7.7.0)":
+      - PromisesObjC (< 3.0, >= 1.2)
+    - GoogleUtilities/Reachability (7.7.0):
+      - GoogleUtilities/Logger
+      - PromisesObjC (< 3.0, >= 1.2)
+    - GoogleUtilities/UserDefaults (7.7.0):
+      - GoogleUtilities/Logger
+      - PromisesObjC (< 3.0, >= 1.2)
+    - GTMAppAuth (1.2.3):
+      - AppAuth/Core (~> 1.4)
+      - GTMSessionFetcher/Core (~> 1.5)
+    - GTMSessionFetcher/Core (1.7.1)
+    - Hodor (4.2.0):
+      - Aegon_iOS
+      - boost (~> 1.64.0)
+      - Hodor/Default (= 4.2.0)
+      - KSFFmpeg_iOS
+      - Masonry
+      - Reachability
+    - Hodor/Core (4.2.0):
+      - Aegon_iOS
+      - boost (~> 1.64.0)
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - Hodor/third_party
+      - KSFFmpeg_iOS
+      - Masonry
+      - Reachability
+    - Hodor/Default (4.2.0):
+      - Aegon_iOS
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/ios/DebugInfo
+      - KSFFmpeg_iOS
+      - Masonry
+      - Reachability
+    - Hodor/Header (4.2.0):
+      - Aegon_iOS
+      - boost (~> 1.64.0)
+      - KSFFmpeg_iOS
+      - Masonry
+      - Reachability
+    - Hodor/ios/Classes (4.2.0):
+      - Aegon_iOS
+      - boost (~> 1.64.0)
+      - Hodor/native
+      - KSFFmpeg_iOS
+      - Masonry
+      - Reachability
+    - Hodor/ios/DebugInfo (4.2.0):
+      - Aegon_iOS
+      - boost (~> 1.64.0)
+      - Hodor/native
+      - KSFFmpeg_iOS
+      - Masonry
+      - Reachability
+    - Hodor/native (4.2.0):
+      - Aegon_iOS
+      - boost (~> 1.64.0)
+      - Hodor/third_party
+      - KSFFmpeg_iOS
+      - Masonry
+      - Reachability
+    - Hodor/third_party (4.2.0):
+      - Aegon_iOS
+      - boost (~> 1.64.0)
+      - Hodor/third_party/catelyn (= 4.2.0)
+      - Hodor/third_party/json (= 4.2.0)
+      - KSFFmpeg_iOS
+      - Masonry
+      - Reachability
+    - Hodor/third_party/catelyn (4.2.0):
+      - Aegon_iOS
+      - boost (~> 1.64.0)
+      - KSFFmpeg_iOS
+      - Masonry
+      - Reachability
+    - Hodor/third_party/json (4.2.0):
+      - Aegon_iOS
+      - boost (~> 1.64.0)
+      - KSFFmpeg_iOS
+      - Masonry
+      - Reachability
+    - IMSDKProto (0.8.2):
+      - Protobuf
+    - IronSourceSDK (7.2.1.0)
+    - JhtFloatingBall (1.0.3)
+    - JNKeychain (0.1.6)
+    - JRSwizzle (1.0)
+    - kdiff (1.0.5):
+      - kdiff/Core (= 1.0.5)
+    - kdiff/Core (1.0.5)
+    - KGAryaManager (0.0.2):
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KSProtobufCpp_iOS
+      - KSRtcKit/core
+      - KwaiBase/LiteProxy
+      - KWArya/Game
+    - KGSDKBase (1.30.4):
+      - KGSDKBase/Core (= 1.30.4)
+      - KGSDKBase/Env (= 1.30.4)
+      - KGSDKBase/Utils (= 1.30.4)
+      - KwaiBase
+      - KwaiGameBase
+    - KGSDKBase/Core (1.30.4):
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiGameBase
+      - KwaiGameBase/ActionLog
+      - KwaiGameBase/Log
+      - KwaiGameNetworkStatusMonitor
+      - KwaiReportCenter
+      - ZipKit
+    - KGSDKBase/Env (1.30.4):
+      - KGSDKBase/Utils
+      - KwaiBase
+      - KwaiGameBase
+    - KGSDKBase/Utils (1.30.4):
+      - KwaiBase
+      - KwaiGameBase
+    - klp (1.12.0.7.1a61a0cf)
+    - KRNSDK (0.1.139.ks):
+      - KRNSDK/Default (= 0.1.139.ks)
+      - KSXPackageManager
+      - KwaiBridgeCenter
+      - MMKV
+      - React
+      - SSZipArchive
+      - Tweaks
+      - Yoga
+    - KRNSDK/Container (0.1.139.ks):
+      - KRNSDK/Debug
+      - KSXPackageManager
+      - KwaiBridgeCenter
+      - MMKV
+      - React
+      - SSZipArchive
+      - Tweaks
+      - Yoga
+    - KRNSDK/Debug (0.1.139.ks):
+      - KRNSDK/Default
+      - KSXPackageManager
+      - KwaiBridgeCenter
+      - MMKV
+      - React
+      - SSZipArchive
+      - Tweaks
+      - Yoga
+    - KRNSDK/Default (0.1.139.ks):
+      - KSXPackageManager
+      - KwaiBridgeCenter
+      - MMKV
+      - React
+      - SSZipArchive
+      - Tweaks
+      - Yoga
+    - KRNSDK/KdsAnimated (0.1.139.ks):
+      - KRNSDK/Default
+      - KSXPackageManager
+      - KwaiBridgeCenter
+      - MMKV
+      - React
+      - SSZipArchive
+      - Tweaks
+      - Yoga
+    - KRNSDK/KRNStorage (0.1.139.ks):
+      - KSXPackageManager
+      - KwaiBridgeCenter
+      - MMKV
+      - React
+      - SSZipArchive
+      - Tweaks
+      - Yoga
+    - KRNSDK/WebLoggerHelper (0.1.139.ks):
+      - KSXPackageManager
+      - KwaiBridgeCenter
+      - MMKV
+      - React
+      - SSZipArchive
+      - Tweaks
+      - Yoga
+    - KSAudioProcessLib (3.4):
+      - KSAudioProcessLib/Core (= 3.4)
+    - KSAudioProcessLib/Core (3.4)
+    - KSAudioProcessLib/TFLite (3.4):
+      - KSAudioProcessLib/Core
+      - TensorFlow-Lite
+    - KSAVLogProtoModel (1.1.9):
+      - KSKanasProtoModel
+      - Protobuf
+    - KSChinaMobileQuickLogin (9.2.0)
+    - KSChinaTelecomSDK (3.7.0)
+    - KSChinaUnicomSDK (4.0.0)
+    - KSCommon (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/All (= 1.15.18)
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/All (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/AVFoundationUtils
+      - KSCommon/Base
+      - KSCommon/CollectionUtil
+      - KSCommon/Core
+      - KSCommon/DataUtil
+      - KSCommon/DateUtil
+      - KSCommon/DeviceUtil
+      - KSCommon/FileUtil
+      - KSCommon/GCDTimer
+      - KSCommon/Network
+      - KSCommon/NetworkUtil
+      - KSCommon/PasswordUtil
+      - KSCommon/PhotoLibrary
+      - KSCommon/StringUtil
+      - KSCommon/TaskUtil
+      - KSCommon/URLUtil
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/AVFoundationUtils (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/Base
+      - KSCommon/Core
+      - KSCommon/StringUtil
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/Base (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/CollectionUtil (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/Base
+      - KSCommon/StringUtil
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/Core (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/Base
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/DataUtil (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/DateUtil (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/CollectionUtil
+      - KSCommon/Network
+      - KSCommon/NetworkUtil
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/DeviceUtil (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/Core
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/FileUtil (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/CollectionUtil
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/GCDTimer (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/Base
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/Network (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/NetworkUtil (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/Base
+      - KSCommon/Core
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/PasswordUtil (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/Base
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/PhotoLibrary (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/StringUtil (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/Base
+      - KSCommon/DataUtil
+      - KSCommon/URLUtil
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/TaskUtil (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSCommon/Base
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSCommon/URLUtil (1.15.18):
+      - AFNetworking (~> 3.0)
+      - BlocksKit
+      - Bolts
+      - CocoaAsyncSocket
+      - JNKeychain
+      - JRSwizzle
+      - KSDiskCache
+      - KSMWAzeroth/NetworkingWrapper
+      - KSTLog
+      - KSUserDefaults
+      - KwaiSwizzle
+      - OpenSSL-Universal
+      - Reachability
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - twitter-text
+    - KSDFP (4.9.2.230.2b11104e):
+      - FCFileManager (~> 1.0.21)
+      - JNKeychain (~> 0.1.2)
+      - KSecurityWrapper (~> 0.0.20)
+      - KSFastFolderSize (~> 1.0)
+      - KSRSAUtil (~> 0.1.7)
+      - KSSecuring (~> 1.0)
+      - OpenSSL-Universal (~> 1.0.2.11)
+      - Protobuf
+      - Reachability (~> 3.2)
+    - KSDiskCache (0.2.20):
+      - FCFileManager
+      - KSDiskCache/Core (= 0.2.20)
+      - MMKV
+    - KSDiskCache/Core (0.2.20):
+      - FCFileManager
+      - MMKV
+    - KSecurityWrapper (0.0.21):
+      - MJExtension
+    - KSFastFolderSize (1.0.1)
+    - KSFFmpeg_iOS (3.9.4.1)
+    - KSKanas (0.9.2):
+      - KSKanas/Core (= 0.9.2)
+    - KSKanas/Core (0.9.2):
+      - BlocksKit
+      - Bolts
+      - CocoaLumberjack (>= 2.2.0)
+      - FMDB (>= 2.7)
+      - Godzippa (= 1.1.0)
+      - JNKeychain (>= 0.1.2)
+      - JRSwizzle (= 1.0)
+      - KSKanas/NoARC
+      - KSKanasProtoModel (>= 1.83.0)
+      - KSMWAzeroth (~> 0.5.2)
+      - KSORM
+      - KSVader (~> 0.1.0)
+      - MJExtension
+      - Reachability
+    - KSKanas/NoARC (0.9.2)
+    - KSKanasProtoModel (1.94.0):
+      - KSKanasProtoModel/ClientEvent (= 1.94.0)
+      - Protobuf
+    - KSKanasProtoModel/ClientEvent (1.94.0):
+      - Protobuf
+    - KSLivePlayer (1.0.0):
+      - KSLivePlayer/LivePlayerCore (= 1.0.0)
+    - KSLivePlayer/LivePlayerCore (1.0.0):
+      - KSFFmpeg_iOS
+      - KSKanas
+      - KSSmartDns/Core
+      - KwaiMediaPlayer
+    - KSMWAzeroth (0.5.37):
+      - AFNetworking (~> 3.0)
+      - JNKeychain (~> 0.1.2)
+      - KSecurityWrapper (~> 0.0.9)
+      - KSMWAzeroth/Core (= 0.5.37)
+      - MJExtension
+      - Reachability
+    - KSMWAzeroth/Core (0.5.37):
+      - AFNetworking (~> 3.0)
+      - JNKeychain (~> 0.1.2)
+      - KSecurityWrapper (~> 0.0.9)
+      - KSMWAzeroth/LoggerWrapper
+      - MJExtension
+      - Reachability
+    - KSMWAzeroth/DefaultNetworkingWrapper (0.5.37):
+      - AFNetworking (~> 3.0)
+      - JNKeychain (~> 0.1.2)
+      - KSecurityWrapper (~> 0.0.9)
+      - KSMWAzeroth/NetworkingWrapper
+      - MJExtension
+      - Reachability
+    - KSMWAzeroth/LoggerWrapper (0.5.37):
+      - AFNetworking (~> 3.0)
+      - JNKeychain (~> 0.1.2)
+      - KSecurityWrapper (~> 0.0.9)
+      - MJExtension
+      - Reachability
+    - KSMWAzeroth/NetworkingWrapper (0.5.37):
+      - AFNetworking (~> 3.0)
+      - JNKeychain (~> 0.1.2)
+      - KSecurityWrapper (~> 0.0.9)
+      - MJExtension
+      - Reachability
+    - KSMWDataCompress (0.1.2)
+    - KSORM (0.8.7):
+      - BlocksKit/Core
+      - FMDB (>= 2.7)
+      - MJExtension
+    - KSPromise (0.1.1):
+      - Bolts
+    - KSProtobufCpp_iOS (0.1.1)
+    - KSRSAUtil (0.1.7):
+      - OpenSSL-Universal
+    - KSRtcKit/codeCore (1.4.1):
+      - KSAVLogProtoModel
+      - KSFFmpeg_iOS
+      - KSMWAzeroth
+      - KSRtcKit/part-no-arc
+      - KWStannis_iOS
+      - Masonry
+      - Pigeon
+    - KSRtcKit/core (1.4.1):
+      - KSRtcKit/codeCore
+      - KWArya/Core
+      - Obiwan
+    - KSRtcKit/game (1.4.1):
+      - KSRtcKit/codeCore
+      - KWArya/Game
+      - Obiwan
+    - KSRtcKit/part-no-arc (1.4.1)
+    - KSSecuring (1.1.1)
+    - KSSecurityRelease (4.10.1.131.67150f9d):
+      - KSecurityWrapper (~> 0.0.19)
+    - KSSmartDns/Core (1.0.1):
+      - Aegon_iOS
+      - AFNetworking/NSURLSession
+      - KSMWAzeroth
+      - MJExtension
+    - KSTLog (0.1.15):
+      - CocoaLumberjack (~> 2.4.0.9)
+      - KSTLog/Core (= 0.1.15)
+    - KSTLog/Core (0.1.15):
+      - CocoaLumberjack (~> 2.4.0.9)
+    - KSUAccount (0.5.2):
+      - AFNetworking
+      - JNKeychain (~> 0.1.6)
+      - KSCommon
+      - KSUAccount/Core (= 0.5.2)
+      - KSUAccount/DeviceId (= 0.5.2)
+      - MJExtension
+    - KSUAccount/Core (0.5.2):
+      - AFNetworking
+      - JNKeychain (~> 0.1.6)
+      - KSCommon
+      - KSUAccount/DeviceId
+      - MJExtension
+    - KSUAccount/DeviceId (0.5.2):
+      - AFNetworking
+      - JNKeychain (~> 0.1.6)
+      - KSCommon
+      - MJExtension
+    - KSULiveStream/AnchorWithFeed (2.0.1):
+      - Aspects
+      - BlocksKit/Core
+      - KSULiveStream/Core
+    - KSULiveStream/Core (2.0.1):
+      - BlocksKit/Core
+      - Bolts/Tasks
+      - GameLiveProtoModel/common
+      - GameLiveProtoModel/livestream
+      - GameLiveProtoModel/log
+      - GameLiveProtoModel/music
+      - Godzippa (= 1.1.0)
+      - KSecurityWrapper (~> 0.0.9)
+      - KSUAccount
+      - KSULNetworking
+      - MJExtension
+      - Protobuf
+    - KSULNetworking (1.1.0):
+      - AFNetworking
+      - Bolts
+      - JRSwizzle (= 1.0)
+      - KSCommon
+      - KSULNetworking/All (= 1.1.0)
+      - MJExtension
+    - KSULNetworking/_JSONKit (1.1.0):
+      - AFNetworking
+      - Bolts
+      - JRSwizzle (= 1.0)
+      - KSCommon
+      - MJExtension
+    - KSULNetworking/All (1.1.0):
+      - AFNetworking
+      - Bolts
+      - JRSwizzle (= 1.0)
+      - KSCommon
+      - KSULNetworking/Core
+      - KSULNetworking/Downgrade
+      - KSULNetworking/Promise
+      - MJExtension
+    - KSULNetworking/Core (1.1.0):
+      - AFNetworking
+      - Bolts
+      - JRSwizzle (= 1.0, = 1.0)
+      - KSCommon
+      - KSULNetworking/_JSONKit
+      - MJExtension
+    - KSULNetworking/Downgrade (1.1.0):
+      - AFNetworking
+      - Bolts
+      - JRSwizzle (= 1.0, = 1.0)
+      - KSCommon
+      - KSULNetworking/Core
+      - MJExtension
+    - KSULNetworking/Promise (1.1.0):
+      - AFNetworking
+      - Bolts
+      - JRSwizzle (= 1.0)
+      - KSCommon
+      - KSULNetworking/Core
+      - MJExtension
+    - KSUploader (5.0.9.7bd49386):
+      - boost
+      - KSUProtoModel/common
+      - ktp (= 7.1.2-core)
+    - KSUploaderKit (3.1.8.4):
+      - KSAVLogProtoModel (>= 1.1.4)
+      - KSecurityWrapper (~> 0.0.9)
+      - KSMWAzeroth
+      - KSUploader (>= 3.10.7.63c2b176)
+      - MJExtension
+      - Reachability
+    - KSUProtoModel/common (1.1084.0):
+      - Protobuf (= 3.3.0)
+    - KSUProtoModel/ds (1.1084.0):
+      - Protobuf (= 3.3.0)
+    - KSUserDefaults (1.0.0):
+      - CocoaLumberjack
+      - MMKV
+      - MMKVCore
+    - KSUStatistics (3.2.5):
+      - KSUStatistics/Core (= 3.2.5)
+    - KSUStatistics/Core (3.2.5):
+      - Bolts/Tasks
+      - CocoaLumberjack
+      - GameLiveProtoModel/log
+      - KSCommon
+      - KSORM
+      - Reachability
+    - KSVader (0.1.2):
+      - KSVader/Core (= 0.1.2)
+    - KSVader/Core (0.1.2):
+      - BlocksKit
+      - FMDB (>= 2.7)
+      - MJExtension
+      - Protobuf
+    - KSVodPlayer (0.0.1):
+      - Hodor
+      - KSVodPlayer/VodPlayerCore (= 0.0.1)
+      - KwaiMediaPlayer
+    - KSVodPlayer/VodPlayerCore (0.0.1):
+      - Aegon_iOS
+      - Hodor
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer
+    - KSWeaponArmy (3.12.0)
+    - KSXLog_iOS (0.1.0)
+    - KSXPackageManager (0.0.1.42):
+      - FMDB
+      - kdiff
+      - KSXPackageManager/Core (= 0.0.1.42)
+      - MJExtension
+      - SSZipArchive
+    - KSXPackageManager/Core (0.0.1.42):
+      - FMDB
+      - kdiff
+      - MJExtension
+      - SSZipArchive
+    - ktp (7.1.2-core)
+    - KwaiAnalytics (0.2.8):
+      - KSKanas (>= 0.9.2)
+      - KwaiAnalytics/Core (= 0.2.8)
+      - XFMulticastDelegate
+    - KwaiAnalytics/Core (0.2.8):
+      - KSKanas (>= 0.9.2)
+      - XFMulticastDelegate
+    - KwaiAnalytics/Kanas (0.2.8):
+      - KSKanas (>= 0.9.2, >= 0.9.2)
+      - KwaiAnalytics/Core
+      - XFMulticastDelegate
+    - KwaiAppBox (1.0.34):
+      - AutoCoding
+      - KwaiAppBox/Data (= 1.0.34)
+      - KwaiAppBox/Launcher (= 1.0.34)
+      - KwaiAppBox/Utils (= 1.0.34)
+      - KwaiBase
+      - KwaiBase/LiteProxy
+      - KwaiGameNetworkStatusMonitor
+      - Masonry
+      - SDWebImage
+      - SSZipArchive
+    - KwaiAppBox/Data (1.0.34):
+      - AutoCoding
+      - KwaiAppBox/Utils
+      - KwaiBase
+      - KwaiBase/LiteProxy
+      - KwaiGameNetworking
+      - KwaiGameNetworkStatusMonitor
+      - Masonry
+      - SDWebImage
+      - SSZipArchive
+    - KwaiAppBox/Launcher (1.0.34):
+      - AutoCoding
+      - KwaiAppBox/Utils
+      - KwaiBase
+      - KwaiBase/LiteProxy
+      - KwaiGameNetworkStatusMonitor
+      - Masonry
+      - SDWebImage
+      - SSZipArchive
+    - KwaiAppBox/Utils (1.0.34):
+      - AutoCoding
+      - KwaiBase
+      - KwaiBase/LiteProxy
+      - KwaiGameNetworkStatusMonitor
+      - Masonry
+      - Reachability
+      - SDWebImage
+      - SSZipArchive
+    - KwaiBase (0.1.31):
+      - CocoaLumberjack/Extensions
+      - KSCommon
+      - KwaiBase/Core (= 0.1.31)
+    - KwaiBase/Core (0.1.31):
+      - CocoaLumberjack/Extensions
+      - KSCommon
+    - KwaiBase/DDLog (0.1.31):
+      - CocoaLumberjack/Extensions
+      - KSCommon
+      - KwaiBase/Core
+    - KwaiBase/LiteProxy (0.1.31):
+      - CocoaLumberjack/Extensions
+      - KSCommon
+      - KwaiBase/Core
+    - KwaiBridgeCenter (2.1.17)
+    - KwaiCaptcha (0.4.0):
+      - KSMWAzeroth
+      - KwaiCaptcha/TXVerify (= 0.4.0)
+      - Masonry
+      - MJExtension
+      - WBCloudFace (= 6.3.2)
+      - Yoda
+    - KwaiCaptcha/ALiVerify (0.4.0):
+      - KSMWAzeroth
+      - KwaiCaptcha/TXVerify
+      - Masonry
+      - MJExtension
+      - WBCloudFace (= 6.3.2)
+      - Yoda
+    - KwaiCaptcha/TXVerify (0.4.0):
+      - KSMWAzeroth
+      - Masonry
+      - MJExtension
+      - WBCloudFace (= 6.3.2, = 6.3.2)
+      - Yoda
+    - KwaiGameAD (1.31.0):
+      - KwaiGameAD/PrivateHeader (= 1.31.0)
+      - KwaiGameBase
+      - XFMulticastDelegate
+    - KwaiGameAD-BUAdSDK (1.31.0):
+      - Ads-Global/Domestic (= 4.0.0.2)
+      - KwaiBase
+      - KwaiGameAD
+      - KwaiGameBase
+    - KwaiGameAD-KSAdSDK (1.31.0):
+      - KwaiGameAD
+      - OpenSSL-Universal
+      - Yoga
+    - KwaiGameAD-KwaiAppBox (1.31.0):
+      - KwaiAppBox
+      - KwaiGameAD
+      - KwaiGameAD/PrivateHeader
+    - KwaiGameAD-Manager (1.31.0):
+      - KwaiBase
+      - KwaiGameAD
+      - KwaiGameAD/PrivateHeader
+      - KwaiGameBase
+      - KwaiGameNetworking (~> 0.0.7)
+      - KwaiGameNetworkStatusMonitor
+      - MBProgressHUD (= 0.9.1)
+      - XFMulticastDelegate
+    - KwaiGameAD-Mintegral (1.31.0):
+      - KwaiGameAD
+    - KwaiGameAD-MobAdSDK (1.31.0):
+      - Google-Mobile-Ads-SDK (= 9.1.0)
+      - KwaiGameAD
+      - KwaiGameBase
+    - KwaiGameAD-OverSeaSDK (1.31.0):
+      - Ads-Global/BUAdSDK (= 4.0.0.2)
+      - Google-Mobile-Ads-SDK (= 9.1.0)
+      - GoogleMobileAdsMediationAppLovin (= 11.2.1)
+      - GoogleMobileAdsMediationFacebook (= 6.9.0.1)
+      - GoogleMobileAdsMediationIronSource (= 7.2.1.0)
+      - GoogleMobileAdsMediationUnity (= 4.0.1)
+      - GoogleMobileAdsMediationVungle (= 6.10.6)
+      - KwaiGameAD
+      - KwaiGameAD-MobAdSDK
+    - KwaiGameAD-TXAdSDK (1.31.0):
+      - GDTMobSDK (= 4.13.22)
+      - KwaiGameAD
+    - KwaiGameAD/PrivateHeader (1.31.0):
+      - KwaiGameBase
+      - XFMulticastDelegate
+    - KwaiGameADPath (0.0.1):
+      - KwaiGameADPath/PrivateHeader (= 0.0.1)
+      - XFMulticastDelegate
+    - KwaiGameADPath-SKAdNetwork (0.0.1):
+      - KwaiBase
+      - KwaiGameADPath
+    - KwaiGameADPath-TrackingIO (1.8.4):
+      - KwaiGameADPath
+    - KwaiGameADPath/PrivateHeader (0.0.1):
+      - XFMulticastDelegate
+    - KwaiGameBase (0.0.34):
+      - CocoaLumberjack
+      - KwaiAnalytics/Core
+      - KwaiAnalytics/Kanas
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - KwaiGameBase/Core (= 0.0.34)
+      - ZipKit
+    - KwaiGameBase-DemoSupport (0.0.34):
+      - KwaiBase
+      - KwaiBase/LiteProxy
+      - KwaiGameBase-DemoSupport/DemoSupport (= 0.0.34)
+      - KwaiGameBase/Core
+      - Toast
+    - KwaiGameBase-DemoSupport/DemoSupport (0.0.34):
+      - KwaiBase
+      - KwaiBase/LiteProxy
+      - KwaiGameBase/Core
+      - Toast
+    - KwaiGameBase/ActionLog (0.0.34):
+      - CocoaLumberjack
+      - KwaiAnalytics/Core
+      - KwaiAnalytics/Kanas
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - KwaiGameBase/Core
+      - ZipKit
+    - KwaiGameBase/Core (0.0.34):
+      - CocoaLumberjack
+      - KwaiAnalytics/Core
+      - KwaiAnalytics/Kanas
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - ZipKit
+    - KwaiGameBase/Log (0.0.34):
+      - CocoaLumberjack
+      - KwaiAnalytics/Core
+      - KwaiAnalytics/Kanas
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - KwaiGameBase/Core
+      - ZipKit
+    - KwaiGameImagePicker (0.0.6):
+      - KwaiGameImagePicker/Standard (= 0.0.6)
+    - KwaiGameImagePicker/Standard (0.0.6)
+    - KwaiGameLive (1.0.16):
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - KwaiGameLive/Standard (= 1.0.16)
+      - KwaiUIRecorder
+    - KwaiGameLive-LiveMartPlugin (1.0.35):
+      - KSULiveStream/AnchorWithFeed
+      - KwaiBase
+      - KwaiBase/LiteProxy
+      - KwaiGameLive-LiveMartPlugin/Standard (= 1.0.35)
+      - KwaiGameLive/PluginHeader
+    - KwaiGameLive-LiveMartPlugin/Standard (1.0.35):
+      - KSULiveStream/AnchorWithFeed
+      - KwaiBase
+      - KwaiBase/LiteProxy
+      - KwaiGameLive/PluginHeader
+    - KwaiGameLive-NativeUIPlugin (1.0.31):
+      - KwaiBase
+      - KwaiGameImagePicker
+      - KwaiGameLive
+      - KwaiGameLive-NativeUIPlugin/Standard (= 1.0.31)
+      - Masonry
+      - SDWebImage
+      - Toast
+      - Yoda
+    - KwaiGameLive-NativeUIPlugin/Standard (1.0.31):
+      - KwaiBase
+      - KwaiGameImagePicker
+      - KwaiGameLive
+      - Masonry
+      - SDWebImage
+      - Toast
+      - Yoda
+    - KwaiGameLive/PluginHeader (1.0.16):
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - KwaiUIRecorder
+    - KwaiGameLive/Standard (1.0.16):
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - KwaiUIRecorder
+    - KwaiGameNetworking (0.0.7.3):
+      - AFNetworking
+      - KSCommon/Core
+      - Reachability
+      - XFMulticastDelegate
+    - KwaiGameNetworkStatusMonitor (1.0.6):
+      - AFNetworking
+      - XFMulticastDelegate
+    - KwaiGameSDK (1.30.4):
+      - KwaiGameSDK/Core (= 1.30.4)
+      - KwaiGameSDK/Header (= 1.30.4)
+    - KwaiGameSDK-ABtest-Firebase (1.30.4):
+      - Firebase/RemoteConfig
+      - KGSDKBase
+      - KwaiGameBase
+    - KwaiGameSDK-AD (1.30.4):
+      - KwaiGameAD-Manager
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-ADPath-AppsFlyer (1.8.4):
+      - AppsFlyerFramework
+      - KwaiGameADPath
+      - KwaiGameBase
+    - KwaiGameSDK-AntiAddict (1.30.4):
+      - KGSDKBase
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-AppBox (1.30.4):
+      - Aegon_iOS
+      - Hodor
+      - KSVodPlayer
+      - KwaiBase
+      - KwaiGameBase
+      - KwaiGameNetworkStatusMonitor
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-AppsflyerCommon (1.30.4):
+      - AppsFlyerFramework
+      - KGSDKBase
+      - KwaiAnalytics
+      - KwaiGameBase
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-Audio (1.30.4)
+    - KwaiGameSDK-Community (1.30.4):
+      - KGSDKBase
+      - KwaiGameSDK-Community/Protocol (= 1.30.4)
+      - KwaiGameSDK/Header
+      - SDWebImage
+    - KwaiGameSDK-Community-Kwai (1.30.4):
+      - BVLinearGradient
+      - KGSDKBase
+      - KRNSDK
+      - KRNSDK/Container
+      - KRNSDK/Debug
+      - KRNSDK/Default
+      - KRNSDK/KdsAnimated
+      - KRNSDK/KRNStorage
+      - KRNSDK/WebLoggerHelper
+      - KwaiGameSDK-Community/Protocol
+      - KwaiGameSDK/Header
+      - React
+      - react-native-image-picker
+      - react-native-netinfo
+      - react-native-safe-area-context
+      - RNCMaskedView
+      - RNFastImage
+      - RNGestureHandler
+      - RNReanimated
+      - RNScreens
+      - RNSVG
+      - Yoga
+    - KwaiGameSDK-Community/Protocol (1.30.4):
+      - KGSDKBase
+      - KwaiGameSDK/Header
+      - SDWebImage
+    - KwaiGameSDK-CrashReport (1.30.4):
+      - KGSDKBase
+      - KwaiGameBase
+      - KwaiGameSDK-CrashReport/Protocol (= 1.30.4)
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-CrashReport-Bugly (1.30.4):
+      - Bugly
+      - KGSDKBase
+      - KwaiGameBase
+      - KwaiGameSDK-CrashReport/Protocol
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-CrashReport-Firebase (1.30.4):
+      - Firebase/Crashlytics
+      - KGSDKBase
+      - KwaiGameBase
+      - KwaiGameSDK-CrashReport/Protocol
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-CrashReport/Protocol (1.30.4):
+      - KGSDKBase
+      - KwaiGameBase
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-Downloader (1.30.4):
+      - Aegon_iOS
+      - Hodor
+      - KSVodPlayer
+      - KwaiBase
+      - KwaiGameBase
+      - KwaiGameNetworkStatusMonitor
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-IM (1.30.4):
+      - boost
+      - ktp
+      - KwaiGameSDK-LongLink
+      - KwaiGameSDK/Header
+      - KwaiIMSDK/Core
+      - KwaiIMSDK/NetworkingWrapper
+    - KwaiGameSDK-KwaiJump (1.30.4):
+      - KGSDKBase
+      - KwaiBase
+      - KwaiGameBase
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-Live (1.30.4):
+      - KGAryaManager
+      - KwaiBase/LiteProxy
+      - KwaiCaptcha
+      - KwaiGameLive
+      - KwaiGameLive-LiveMartPlugin
+      - KwaiGameSDK/Header
+      - Yoda
+    - KwaiGameSDK-LongLink (1.30.4):
+      - Aegon_iOS
+      - KwaiGameSDK/Header
+      - KwaiIMKwaiLink (~> 0.7.0)
+      - Pigeon
+      - Reachability
+      - XFMulticastDelegate
+    - KwaiGameSDK-Media (1.30.4)
+    - KwaiGameSDK-Mock (1.30.4):
+      - JhtFloatingBall
+      - KGSDKBase
+      - KwaiGameBase
+      - KwaiGameSDK
+      - KwaiGameSDK-UniApi
+    - KwaiGameSDK-OpenPlatform (1.30.4):
+      - Diplomat/Tencent
+      - Diplomat/Wechat
+      - Diplomat/Weibo
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-Oversea (1.30.4):
+      - FBSDKCoreKit
+      - FBSDKLoginKit
+      - FBSDKShareKit
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-Pay (1.30.4):
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-Push (1.30.4):
+      - KwaiGameSDK-PushReport
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-PushReport (1.30.4):
+      - KGSDKBase/Env
+    - KwaiGameSDK-QRScan (1.30.4):
+      - KGSDKBase
+      - KwaiBase
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-QuickLogin (1.30.4):
+      - KGSDKBase
+      - KSChinaMobileQuickLogin
+      - KSChinaTelecomSDK
+      - KSChinaUnicomSDK
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-Relation (1.30.4):
+      - KwaiGameSDK/Header
+      - KwaiSDK
+    - KwaiGameSDK-Report-Appsflyer (1.30.4):
+      - AppsFlyerFramework
+      - KGSDKBase
+      - KwaiAnalytics
+      - KwaiGameBase
+    - KwaiGameSDK-Report-Firebase (1.30.4):
+      - Firebase/Analytics
+      - KGSDKBase
+      - KwaiAnalytics
+      - KwaiGameBase
+    - KwaiGameSDK-SpringFestival (1.30.4):
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-Subgame (1.30.4):
+      - KwaiGameSDK-Live
+      - KwaiGameSDK-Pay
+      - KwaiGameSDK/Header
+      - XFMulticastDelegate
+    - KwaiGameSDK-UniApi (1.30.4):
+      - KGSDKBase
+      - KwaiGameBase
+      - KwaiGameBase-DemoSupport
+    - KwaiGameSDK-UnitTest (1.30.4):
+      - KGSDKBase
+      - KwaiGameSDK/Header
+      - OpenSSL-Universal
+    - KwaiGameSDK-VideoRecordBase (1.30.4):
+      - KwaiGameSDK/Header
+      - KwaiGameVideoBase
+    - KwaiGameSDK-VideoShare (1.30.4):
+      - KwaiGameSDK/Header
+      - KwaiGameVideoShare
+    - KwaiGameSDK-VisitorPasswordLogin (1.30.4):
+      - KGSDKBase
+      - KwaiBase
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-Voip (1.30.4):
+      - KGAryaManager
+      - KwaiGameSDK-LongLink
+    - KwaiGameSDK-WeaponArmy (1.30.4):
+      - KGSDKBase
+      - KSWeaponArmy
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-WebView (1.30.4):
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-WWP (1.30.4):
+      - KSLivePlayer
+      - KwaiGameSDK/Header
+      - KwaiGameWWP
+      - KwaiGameWWP-NativeUIPlugin
+    - KwaiGameSDK/Core (1.30.4):
+      - AFNetworking
+      - KGSDKBase
+      - KSDFP
+      - KSKanasProtoModel
+      - KSMWAzeroth
+      - KSSecurityRelease
+      - KwaiAnalytics
+      - KwaiAnalytics/Kanas
+      - KwaiBase
+      - KwaiGameADPath
+      - KwaiGameBase
+      - KwaiGameNetworking
+      - KwaiGameSDK-AntiAddict
+      - KwaiGameSDK-CrashReport
+      - KwaiGameSDK-KwaiJump
+      - KwaiGameSDK-Push
+      - KwaiGameSDK-PushReport
+      - KwaiGameSDK-WebView
+      - KwaiSDK
+      - KwaiUIRecorder
+      - Masonry
+      - MBProgressHUD
+      - MJExtension
+      - Reachability
+      - Yoda
+    - KwaiGameSDK/Header (1.30.4):
+      - KwaiGameSDK-UniApi
+    - KwaiGameVideoAryaEncode (0.0.9):
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - KwaiGameVideoBase
+      - KwaiGameVideoCapture
+    - KwaiGameVideoBase (0.0.2):
+      - KwaiBase
+    - KwaiGameVideoCapture (0.0.1):
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - KwaiGameVideoBase
+      - KwaiUIRecorder
+    - KwaiGameVideoRecord (0.0.21):
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - KwaiGameVideoBase
+      - KwaiGameVideoCapture
+      - KwaiUIRecorder
+    - KwaiGameVideoShare (0.0.16):
+      - KwaiBase
+      - KwaiBase/LiteProxy
+      - KwaiGameVideoBase
+      - KwaiSDK (~> 3.6.3)
+    - KwaiGameWWP (0.0.3):
+      - BlocksKit/Core
+      - KSULiveStream/AnchorWithFeed
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - KwaiGameWWP/Standard (= 0.0.3)
+      - MJExtension
+      - Reachability
+    - KwaiGameWWP-NativeUIPlugin (0.0.2):
+      - KwaiBase
+      - KwaiGameWWP
+      - KwaiGameWWP-NativeUIPlugin/Standard (= 0.0.2)
+      - KwaiGameWWP/PluginHeader
+      - SDWebImage
+      - Toast
+    - KwaiGameWWP-NativeUIPlugin/Standard (0.0.2):
+      - KwaiBase
+      - KwaiGameWWP
+      - KwaiGameWWP/PluginHeader
+      - SDWebImage
+      - Toast
+    - KwaiGameWWP/PluginHeader (0.0.3):
+      - BlocksKit/Core
+      - KSULiveStream/AnchorWithFeed
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - MJExtension
+      - Reachability
+    - KwaiGameWWP/Standard (0.0.3):
+      - BlocksKit/Core
+      - KSULiveStream/AnchorWithFeed
+      - KwaiBase
+      - KwaiBase/DDLog
+      - KwaiBase/LiteProxy
+      - MJExtension
+      - Reachability
+    - KwaiIMKwaiLink (0.7.40):
+      - CocoaAsyncSocket
+      - KSCommon (~> 1.5)
+      - KSMWAzeroth (~> 0.5.0)
+      - KSMWDataCompress (~> 0.1.0)
+      - KSUserDefaults
+      - KwaiIMKwaiLink/Proto (= 0.7.40)
+      - KwaiIMTrace
+      - Protobuf
+      - Reachability
+      - TransitionKit
+      - XFMulticastDelegate
+    - KwaiIMKwaiLink/Proto (0.7.40):
+      - CocoaAsyncSocket
+      - KSCommon (~> 1.5)
+      - KSMWAzeroth (~> 0.5.0)
+      - KSMWDataCompress (~> 0.1.0)
+      - KSUserDefaults
+      - KwaiIMTrace
+      - Protobuf
+      - Reachability
+      - TransitionKit
+      - XFMulticastDelegate
+    - KwaiIMSDK (3.14.13):
+      - BlocksKit/Core
+      - Bolts/Tasks
+      - IMSDKProto (~> 0.8.2)
+      - KSCommon (~> 1.2)
+      - KSMWAzeroth/DefaultNetworkingWrapper (~> 0.5.18)
+      - KSUploader
+      - KSUploaderKit
+      - KSUserDefaults
+      - KwaiIMKwaiLink (~> 0.7.38)
+      - KwaiIMSDK/Core (= 3.14.13)
+      - KwaiIMSDK/KTPKit (= 3.14.13)
+      - KwaiIMSDK/NetworkingWrapper (= 3.14.13)
+      - KwaiIMTrace
+      - KwaiIMXFDB (~> 0.3.17)
+      - Pigeon/Core (~> 0.6.8)
+    - KwaiIMSDK/Core (3.14.13):
+      - BlocksKit/Core
+      - Bolts/Tasks
+      - IMSDKProto (~> 0.8.2)
+      - KSCommon (~> 1.2)
+      - KSMWAzeroth/DefaultNetworkingWrapper (~> 0.5.18)
+      - KSUploader
+      - KSUploaderKit
+      - KSUserDefaults
+      - KwaiIMKwaiLink (~> 0.7.38)
+      - KwaiIMTrace
+      - KwaiIMXFDB (~> 0.3.17)
+      - Pigeon/Core (~> 0.6.8)
+    - KwaiIMSDK/KTPKit (3.14.13):
+      - BlocksKit/Core
+      - Bolts/Tasks
+      - IMSDKProto (~> 0.8.2)
+      - KSCommon (~> 1.2)
+      - KSMWAzeroth/DefaultNetworkingWrapper (~> 0.5.18)
+      - KSUploader
+      - KSUploaderKit
+      - KSUserDefaults
+      - KwaiIMKwaiLink (~> 0.7.38)
+      - KwaiIMSDK/Core
+      - KwaiIMTrace
+      - KwaiIMXFDB (~> 0.3.17)
+      - Pigeon/Core (~> 0.6.8)
+    - KwaiIMSDK/NetworkingWrapper (3.14.13):
+      - BlocksKit/Core
+      - Bolts/Tasks
+      - IMSDKProto (~> 0.8.2)
+      - KSCommon (~> 1.2)
+      - KSMWAzeroth/DefaultNetworkingWrapper (~> 0.5.18)
+      - KSUploader
+      - KSUploaderKit
+      - KSUserDefaults
+      - KwaiIMKwaiLink (~> 0.7.38)
+      - KwaiIMSDK/Core
+      - KwaiIMTrace
+      - KwaiIMXFDB (~> 0.3.17)
+      - Pigeon/Core (~> 0.6.8)
+    - KwaiIMTrace (1.0.17):
+      - KSMWAzeroth/LoggerWrapper
+    - KwaiIMXFDB (0.3.17):
+      - FMDB
+      - KSCommon (~> 1.3)
+    - KwaiMediaPlayer (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/Default (= 4.2.0)
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/Classes-ARC/DebugInfo (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/Classes-Other
+      - KwaiMediaPlayer/native
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/Classes-ARC/Header (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/Classes-Other
+      - KwaiMediaPlayer/native
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/Classes-ARC/MediaPlayer (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/Classes-Other
+      - KwaiMediaPlayer/native
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/Classes-MRC (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/Classes-ARC/MediaPlayer
+      - KwaiMediaPlayer/native
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/Classes-Other (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/Core (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/Classes-ARC/Header
+      - KwaiMediaPlayer/Classes-ARC/MediaPlayer
+      - KwaiMediaPlayer/Classes-MRC
+      - KwaiMediaPlayer/Classes-Other
+      - KwaiMediaPlayer/KSAudioProcessLib
+      - KwaiMediaPlayer/native
+      - KwaiMediaPlayer/third_party
+      - KwaiMediaPlayer/tools-script
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/Default (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/Classes-ARC/DebugInfo
+      - KwaiMediaPlayer/Core
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/KSAudioProcessLib (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/native (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/native/ijkmedia (= 4.2.0)
+      - KwaiMediaPlayer/native/libkwaivpp (= 4.2.0)
+      - KwaiMediaPlayer/third_party
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/native/ijkmedia (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/native/libkwaivpp
+      - KwaiMediaPlayer/third_party
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/native/libkwaivpp (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/native/libkwaivpp/include (= 4.2.0)
+      - KwaiMediaPlayer/native/libkwaivpp/src (= 4.2.0)
+      - KwaiMediaPlayer/third_party
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/native/libkwaivpp/include (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/third_party
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/native/libkwaivpp/src (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/native/libkwaivpp/include
+      - KwaiMediaPlayer/third_party
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/third_party (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - KwaiMediaPlayer/third_party/placebo (= 4.2.0)
+      - KwaiMediaPlayer/third_party/soundtouch (= 4.2.0)
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/third_party/placebo (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/third_party/soundtouch (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - Masonry
+      - MJExtension
+    - KwaiMediaPlayer/tools-script (4.2.0):
+      - boost (~> 1.64.0)
+      - Hodor/Core
+      - Hodor/Header
+      - Hodor/ios/Classes
+      - Hodor/native
+      - KSAudioProcessLib
+      - KSFFmpeg_iOS
+      - Masonry
+      - MJExtension
+    - KwaiNetworking (0.1.0)
+    - KwaiReportCenter (0.1.6):
+      - AFNetworking
+      - KwaiBase
+      - Reachability
+      - XFDB
+      - XFMulticastDelegate
+    - KwaiSDK (3.6.3)
+    - KwaiSwizzle (0.1.2)
+    - KwaiUIRecorder (1.0.6):
+      - KwaiBase/LiteProxy
+    - KWArya/All (4.0):
+      - Aegon_iOS (>= 1.34.0)
+      - boost
+      - klp (~> 1.12.0)
+      - KSFFmpeg_iOS
+      - KSProtobufCpp_iOS
+      - ktp (= 7.1.2-core)
+      - KWStannis_iOS/Core
+      - libuv
+      - libyuv
+      - p2pstun
+      - Reachability
+    - KWArya/Core (4.0):
+      - KWArya/All
+    - KWArya/Game (4.0):
+      - ktp (= 7.1.2-core)
+      - KWArya/Core
+    - KWStannis_iOS (3.4):
+      - KWStannis_iOS/Core (= 3.4)
+    - KWStannis_iOS/Core (3.4):
+      - BlocksKit/Core
+      - boost
+      - KSAudioProcessLib
+      - KSCommon
+      - KSFFmpeg_iOS
+    - libuv (1.21.0):
+      - libuv/bin (= 1.21.0)
+    - libuv/bin (1.21.0)
+    - libwebp (1.1.0.1):
+      - libwebp/demux (= 1.1.0.1)
+      - libwebp/mux (= 1.1.0.1)
+      - libwebp/webp (= 1.1.0.1)
+    - libwebp/demux (1.1.0.1):
+      - libwebp/webp
+    - libwebp/mux (1.1.0.1):
+      - libwebp/demux
+    - libwebp/webp (1.1.0.1)
+    - libyuv (0.0.2)
+    - lottie-ios (2.5.4.0)
+    - Masonry (1.1.0)
+    - MBProgressHUD (0.9.1)
+    - MJExtension (3.2.1.18)
+    - MMKV (1.2.13):
+      - MMKVCore (~> 1.2.13)
+    - MMKVCore (1.2.13)
+    - nanopb (2.30908.0):
+      - nanopb/decode (= 2.30908.0)
+      - nanopb/encode (= 2.30908.0)
+    - nanopb/decode (2.30908.0)
+    - nanopb/encode (2.30908.0)
+    - Obiwan (2.2.0):
+      - BlocksKit/Core
+      - CocoaLumberjack
+      - FCFileManager (~> 1.0.14)
+      - JNKeychain (~> 0.1.2)
+      - KSMWAzeroth (~> 0.5.0)
+      - KSRSAUtil (~> 0.1.3)
+      - SSZipArchive
+    - OneKit-Pangle/BaseKit (1.1.21-pangle)
+    - OneKit-Pangle/Database (1.1.21-pangle):
+      - OneKit-Pangle/Service
+    - OneKit-Pangle/Service (1.1.21-pangle)
+    - OpenSSL-Universal (1.0.2.11)
+    - p2pstun (0.4.9.5.22150be)
+    - Pigeon (0.6.8):
+      - KSMWAzeroth (~> 0.5.3)
+      - KwaiIMKwaiLink (~> 0.7.2)
+      - Pigeon/Core (= 0.6.8)
+    - Pigeon/Core (0.6.8):
+      - KSMWAzeroth (~> 0.5.3)
+      - KwaiIMKwaiLink (~> 0.7.2)
+    - PromisesObjC (2.1.0)
+    - Protobuf (3.3.0)
+    - RangersAPM-Pangle/Core (2.3.2-pangle):
+      - OneKit-Pangle/BaseKit (= 1.1.21-pangle, = 1.1.21-pangle)
+      - OneKit-Pangle/Database (= 1.1.21-pangle)
+    - RangersAPM-Pangle/Crash (2.3.2-pangle):
+      - OneKit-Pangle/BaseKit (= 1.1.21-pangle)
+      - OneKit-Pangle/Database (= 1.1.21-pangle)
+      - RangersAPM-Pangle/Core
+      - RangersAPM-Pangle/HMD
+      - RangersAPM-Pangle/Public
+    - RangersAPM-Pangle/Global (2.3.2-pangle):
+      - OneKit-Pangle/BaseKit (= 1.1.21-pangle)
+      - OneKit-Pangle/Database (= 1.1.21-pangle)
+      - RangersAPM-Pangle/Core
+      - RangersAPM-Pangle/Public
+    - RangersAPM-Pangle/HMD (2.3.2-pangle):
+      - OneKit-Pangle/BaseKit (= 1.1.21-pangle)
+      - OneKit-Pangle/Database (= 1.1.21-pangle, = 1.1.21-pangle)
+      - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/Public (2.3.2-pangle):
+      - OneKit-Pangle/BaseKit (= 1.1.21-pangle)
+      - OneKit-Pangle/Database (= 1.1.21-pangle)
+      - RangersAPM-Pangle/Core
+    - RCTRequired (0.62.2.22)
+    - RCTTypeSafety (0.62.2.22):
+      - FBLazyVector (= 0.62.2.22)
+      - Folly (= 2018.10.22.00.1.1)
+      - RCTRequired (= 0.62.2.22)
+      - React-Core (= 0.62.2.22)
+    - Reachability (3.2)
+    - React (0.62.2.22):
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core (= 0.62.2.22)
+      - React-Core/DevSupport (= 0.62.2.22)
+      - React-Core/RCTWebSocket (= 0.62.2.22)
+      - React-CoreModules (= 0.62.2.22)
+      - React-RCTActionSheet (= 0.62.2.22)
+      - React-RCTAnimation (= 0.62.2.22)
+      - React-RCTBlob (= 0.62.2.22)
+      - React-RCTImage (= 0.62.2.22)
+      - React-RCTLinking (= 0.62.2.22)
+      - React-RCTNetwork (= 0.62.2.22)
+      - React-RCTSettings (= 0.62.2.22)
+      - React-RCTText (= 0.62.2.22)
+      - React-RCTVibration (= 0.62.2.22)
+      - React-trace (= 0.62.2.22)
+    - React-callinvoker (0.62.2.22)
+    - React-Core (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default (= 0.62.2.22)
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/CoreModulesHeaders (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/Default (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/DevSupport (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default (= 0.62.2.22)
+      - React-Core/RCTWebSocket (= 0.62.2.22)
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22, = 0.62.2.22)
+      - Yoga
+    - React-Core/RCTActionSheetHeaders (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/RCTAnimationHeaders (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/RCTBlobHeaders (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/RCTImageHeaders (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/RCTLinkingHeaders (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/RCTNetworkHeaders (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/RCTSettingsHeaders (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/RCTTextHeaders (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/RCTVibrationHeaders (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-Core/RCTWebSocket (0.62.2.22):
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core/Default (= 0.62.2.22)
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsiexecutor (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - Yoga
+    - React-CoreModules (0.62.2.22):
+      - FBReactNativeSpec (= 0.62.2.22)
+      - Folly (= 2018.10.22.00.1.1)
+      - RCTTypeSafety (= 0.62.2.22)
+      - React-Core/CoreModulesHeaders (= 0.62.2.22)
+      - React-Core/RCTWebSocket (= 0.62.2.22)
+      - React-RCTImage (= 0.62.2.22)
+      - ReactCommon/turbomodule/core (= 0.62.2.22)
+    - React-cxxreact (0.62.2.22):
+      - boost-for-react-native (= 1.63.0.1.1)
+      - DoubleConversion
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-callinvoker (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
+      - React-trace (= 0.62.2.22)
+    - React-jsi (0.62.2.22):
+      - boost-for-react-native (= 1.63.0.1.1)
+      - DoubleConversion
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-jsi/Default (= 0.62.2.22)
+    - React-jsi/Default (0.62.2.22):
+      - boost-for-react-native (= 1.63.0.1.1)
+      - DoubleConversion
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+    - React-jsiexecutor (0.62.2.22):
+      - DoubleConversion
+      - Folly (= 2018.10.22.00.1.1)
+      - glog
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+    - React-jsinspector (0.62.2.22)
+    - react-native-image-picker (4.1.1):
+      - React-Core
+    - react-native-netinfo (5.9.5):
+      - React
+    - react-native-safe-area-context (3.1.1):
+      - React
+    - react-native-webview (11.14.0):
+      - React-Core
+    - React-RCTActionSheet (0.62.2.22):
+      - React-Core/RCTActionSheetHeaders (= 0.62.2.22)
+    - React-RCTAnimation (0.62.2.22):
+      - FBReactNativeSpec (= 0.62.2.22)
+      - Folly (= 2018.10.22.00.1.1)
+      - RCTTypeSafety (= 0.62.2.22)
+      - React-Core/RCTAnimationHeaders (= 0.62.2.22)
+      - ReactCommon/turbomodule/core (= 0.62.2.22)
+    - React-RCTBlob (0.62.2.22):
+      - FBReactNativeSpec (= 0.62.2.22)
+      - Folly (= 2018.10.22.00.1.1)
+      - React-Core/CoreModulesHeaders (= 0.62.2.22)
+      - React-Core/RCTBlobHeaders (= 0.62.2.22)
+      - React-Core/RCTWebSocket (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
+      - React-RCTNetwork (= 0.62.2.22)
+      - ReactCommon/turbomodule/core (= 0.62.2.22)
+    - React-RCTImage (0.62.2.22):
+      - FBReactNativeSpec (= 0.62.2.22)
+      - Folly (= 2018.10.22.00.1.1)
+      - RCTTypeSafety (= 0.62.2.22)
+      - React-Core/RCTImageHeaders (= 0.62.2.22)
+      - React-RCTNetwork (= 0.62.2.22)
+      - ReactCommon/turbomodule/core (= 0.62.2.22)
+    - React-RCTLinking (0.62.2.22):
+      - FBReactNativeSpec (= 0.62.2.22)
+      - React-Core/RCTLinkingHeaders (= 0.62.2.22)
+      - ReactCommon/turbomodule/core (= 0.62.2.22)
+    - React-RCTNetwork (0.62.2.22):
+      - FBReactNativeSpec (= 0.62.2.22)
+      - Folly (= 2018.10.22.00.1.1)
+      - RCTTypeSafety (= 0.62.2.22)
+      - React-Core/RCTNetworkHeaders (= 0.62.2.22)
+      - ReactCommon/turbomodule/core (= 0.62.2.22)
+    - React-RCTSettings (0.62.2.22):
+      - FBReactNativeSpec (= 0.62.2.22)
+      - Folly (= 2018.10.22.00.1.1)
+      - RCTTypeSafety (= 0.62.2.22)
+      - React-Core/RCTSettingsHeaders (= 0.62.2.22)
+      - ReactCommon/turbomodule/core (= 0.62.2.22)
+    - React-RCTText (0.62.2.22):
+      - React-Core/RCTTextHeaders (= 0.62.2.22)
+    - React-RCTVibration (0.62.2.22):
+      - FBReactNativeSpec (= 0.62.2.22)
+      - Folly (= 2018.10.22.00.1.1)
+      - React-Core/RCTVibrationHeaders (= 0.62.2.22)
+      - ReactCommon/turbomodule/core (= 0.62.2.22)
+    - React-trace (0.62.2.22):
+      - React-jsi (= 0.62.2.22)
+    - ReactCommon/turbomodule/core (0.62.2.22):
+      - DoubleConversion
+      - Folly (= 2018.10.22.00.1.1, = 2018.10.22.00.1.1)
+      - glog
+      - RCTRequired (= 0.62.2.22, = 0.62.2.22)
+      - RCTTypeSafety (= 0.62.2.22, = 0.62.2.22)
+      - React-callinvoker (= 0.62.2.22, = 0.62.2.22)
+      - React-Core (= 0.62.2.22, = 0.62.2.22)
+      - React-cxxreact (= 0.62.2.22, = 0.62.2.22)
+      - React-jsi (= 0.62.2.22, = 0.62.2.22)
+    - RNCMaskedView (0.1.10):
+      - React
+    - RNFastImage (8.3.3):
+      - React-Core
+      - SDWebImage (~> 5.8)
+      - SDWebImageWebPCoder (~> 0.6.1)
+    - RNGestureHandler (1.7.0):
+      - React
+    - RNReanimated (1.9.0):
+      - React
+    - RNScreens (2.8.0):
+      - React
+    - RNSVG (12.1.1):
+      - React
+    - SDWebImage (5.8.3.22):
+      - SDWebImage/Core (= 5.8.3.22)
+    - SDWebImage/Core (5.8.3.22)
+    - SDWebImageWebPCoder (0.6.1.1):
+      - libwebp (~> 1.0)
+      - SDWebImage/Core (~> 5.7)
+    - SSZipArchive (1.2.1)
+    - TensorFlow-Lite (1.0.0)
+    - Toast (4.0.0)
+    - TransitionKit (2.2.1.1)
+    - Tweaks (2.3.1)
+    - twitter-text (3.0.1d)
+    - UnityAds (4.0.1)
+    - VungleSDK-iOS (6.10.6)
+    - WBCloudFace (6.3.2)
+    - WechatSDK (1.8.6.1)
+    - WeiboSDK (3.2.6)
+    - XFDB (0.0.5):
+      - FMDB
+      - KwaiBase
+    - XFMulticastDelegate (0.0.5)
+    - ycnn2 (0.9.65)
+    - Yoda (2.8.0.lite):
+      - BlocksKit
+      - Bolts
+      - CocoaLumberjack
+      - FMDB
+      - KSecurityWrapper
+      - KSMWAzeroth (>= 0.5.32)
+      - KwaiBridgeCenter
+      - MJExtension
+      - SSZipArchive
+      - Yoda/Core (= 2.8.0.lite)
+    - Yoda/Core (2.8.0.lite):
+      - BlocksKit
+      - Bolts
+      - CocoaLumberjack
+      - FMDB
+      - KSecurityWrapper
+      - KSMWAzeroth (>= 0.5.32)
+      - KwaiBridgeCenter
+      - MJExtension
+      - SSZipArchive
+    - Yoga (1.14.0.3)
+    - ZipKit (1.0.3)
+  SPEC CHECKSUMS:
+    Ads-Global: 3ac5655db23ed30c733d1c5647998667e262fcb1
+    Aegon_iOS: d5c09372904ded682df940ce225fbc6830fb2eac
+    AFNetworking: 3e7cc56c7fde99c70971bc959e8ec487e0ea7bc7
+    AppAuth: e3abcba8267fad0529a85efeadf5978a4bf3a6fc
+    AppLovinSDK: 06ab6745a863b866c4eca96dbcf660a8e8978555
+    AppsFlyerFramework: 492d4b5fc5aa0b75ca5ffa525ce7e79c49ee474f
+    Aspects: fbdb53f476042d0ba2a6f5046bdd8749eabfd8ca
+    AutoCoding: 2e8542e3c61a899d673635bfc98bca46027f20d8
+    BlocksKit: 7614a3c7a305c336abfdff0e65bfa82cf627bc36
+    Bolts: 734a58452b6a1abf317fd7da026d6eccdceb4974
+    boost: deef2dd23c5f5786c2252afcbae7b66ee3ae72a3
+    boost-for-react-native: ecc011d1c3609ce756064a73cc2a9c50570aa426
+    Bugly: bdd18ee5fef215d20c575623a4939cc4854233be
+    BVLinearGradient: 07befbf144bb5121bdcba8e65f1e60f015641bcd
+    CocoaAsyncSocket: 523894a99ea268a958bca3190fff90aad992c6b5
+    CocoaLumberjack: 4ed544efbaad5669700dd03152512ba71ae48b24
+    Diplomat: 955485cbc1d7b4b0882905d095293830ef7044fa
+    DoubleConversion: c306cfadd1be613d3d2cd6da1bbd4aca67d43032
+    FBAudienceNetwork: 454a55af4c22360e2489ebf1eab92169f9b1ee6b
+    FBLazyVector: b1b136a8af700c7bcf2941e55d0d19147cd736c7
+    FBReactNativeSpec: 0f82048de1a798e6141c6fe75c16c02450897569
+    FBSDKCoreKit: a87b605f759f3a161d2cd48b6658ef8db7cf0f0f
+    FBSDKCoreKit_Basics: 10d7ef69acd9946af0528875528d030bfe9fb62c
+    FBSDKLoginKit: 82c139b4d1dca52b59d566e17dd4bc25b2bb0a9f
+    FBSDKShareKit: 74e329d8761cb9d8592885eadd11abcad256a614
+    FCFileManager: 57e74e4e6bc37beb1c9bc863e8339df33bdb15cb
+    Firebase: e0e887866b6d6c9642739588a933636e85ec37fb
+    FirebaseABTesting: 7fabf9ed144d2478e244fbd693007e008df3ce05
+    FirebaseAnalytics: 7de592f45abd48a9720086bb5dedcbf9d4bf8911
+    FirebaseCore: 0cd51fc52bfa353b7bbdb2b1ac26a58ef74550e0
+    FirebaseCoreDiagnostics: ee7cda18ababc6ecb1703df7e773e2c75352bc4d
+    FirebaseCrashlytics: 195ba8b9a52a4c09fcfdf172c0220dddbfdbb9ca
+    FirebaseInstallations: 4163b491ff1323cefb578172db4eaa34c77ba989
+    FirebaseRemoteConfig: 2b3d8c4d4039c0445456b1224d6977e8bc3fd23c
+    FLAnimatedImage: 0a7443a4059f4ff8ded78a521a41c5b3eff099b5
+    FMDB: e1ecf4675780ad523a96f294ba86b78eb5b71cea
+    Folly: 1652b2f62dffc19d3f0d877ec502703031d05955
+    GameLiveProtoModel: 63fcf7443d3aa2e4c4070b6d2519bdb86a204ed6
+    GDTMobSDK: dfd768486cab89d52a081fe10eab8c57d081bb51
+    glog: d07a2d3d7c80ba9c1f57eb4f6468d8463369462e
+    Godzippa: a849b7881f5dfd4b3f3b1c4f0b730f9db3680992
+    Google-Mobile-Ads-SDK: e1e31758a59792318019f99546aaec1bae26f92f
+    GoogleAppMeasurement: 8c860cf99dbc188f112effc13887812a9d9a8311
+    GoogleDataTransport: 76bb41f8bcde5fd0dc7b8745ef594ac140139451
+    GoogleMobileAdsMediationAppLovin: 826b94b34a49b5b6a5897edd3af9962bd8607d4e
+    GoogleMobileAdsMediationFacebook: aef69c59e8de525da518a594ab8252cc0ce0f0cb
+    GoogleMobileAdsMediationIronSource: 33fe03ac618ce0a7ae015b07f5cf0e4b03581d18
+    GoogleMobileAdsMediationUnity: 354b577623fede37455d95403e9b53f9dfc21383
+    GoogleMobileAdsMediationVungle: b4db7d940f26f39c1cfc3189777d4cf3d4186c70
+    GoogleSignIn: 860454d6271955570c02570832ea635af870957f
+    GoogleUserMessagingPlatform: d0643167c465d6db11d4d68e5a7e82e61627108d
+    GoogleUtilities: 08e710795ec12d9a4f5181d4d6b8f25949363b41
+    GTMAppAuth: 478f1be4b1a74352d512af91042d5903db72f828
+    GTMSessionFetcher: e8b995757beaebc19f41b03d887c5e08caf816c1
+    Hodor: 5456692960bcc27f6fcb572ace965d4e85ca57be
+    IMSDKProto: 280aed11089f2c7ea809737bd068f4ccad5eecb7
+    IronSourceSDK: 778e501d0af02a4abe0242222fc4d44536f2a4a4
+    JhtFloatingBall: e4102be6625b0769b1ca4fecf8335f58f457ba85
+    JNKeychain: 63fb14ca9c6af8c9346d252929ca890f3f323ad8
+    JRSwizzle: 88721a5c2fb21849b53a1174954384c9472f6806
+    kdiff: 0681d31e533d8577206ed2fb2ecef949acd00198
+    KGAryaManager: f59fca2378320d7ceaf62ddf9fc6744d4c2e692f
+    KGSDKBase: 02dc7e466f0c17be51091489ab4fb9dcaba6394c
+    klp: 9b50b02dc210fcd8512ee1e98a3b98798931ed79
+    KRNSDK: c86c58ea2e5ff0c281ff12c4406d62558b3546a1
+    KSAudioProcessLib: 565cbffcaa2230562b6cb890d4588b5b6b3e71ed
+    KSAVLogProtoModel: 70967cec7df0c62c6db191afb8dc3f3bf70e4601
+    KSChinaMobileQuickLogin: a8a5a87a514dcf381eb1592ed563941a1fc386ef
+    KSChinaTelecomSDK: 2975a4408b5efa63eb2b83838b2bb64530fe7a10
+    KSChinaUnicomSDK: 86bc495d1b947caa7752c24bf0c74a7c5e285dc3
+    KSCommon: 6a91472c5cb4af064ee47516fb1a47cb3e99aec7
+    KSDFP: 8574fd7ed02b7893b5b5bc46ec2b4ea5df7443cc
+    KSDiskCache: 8d08fc37a636bc96e843f32106e202cd6c245a91
+    KSecurityWrapper: f07cde4f65f46b321fa81e1a2e71d2c9e2818475
+    KSFastFolderSize: 3aa5a4b209550206f733292dcfa4c54967c64356
+    KSFFmpeg_iOS: 56a37bcd887c6a1ccd5a780305cd7753bae77182
+    KSKanas: aefb5b0e69307f73099c714a63db8c8a95c93e53
+    KSKanasProtoModel: 78cf1c7d2390eca12ec2e5915c65ddb9f0e40b32
+    KSLivePlayer: 1a4a8bbce96131f25243c42a3a2cac7fe0a825b0
+    KSMWAzeroth: 9f10792831207cc90e56d7bc17807f5514f0680e
+    KSMWDataCompress: 94e87798577d9617c04cc74e38ec7069fb70e0a7
+    KSORM: b202a80cbf536c96d4c5be4b092f9f192ab80b0b
+    KSPromise: 96b647628ed1733c014d9bbafab5ba849f3658fa
+    KSProtobufCpp_iOS: c3717914a6916b17eb9e1b2fa8f43f88b6cc0387
+    KSRSAUtil: 4d4c948dab0538a4e08ae681002de535828d744b
+    KSRtcKit: b32494341d80720d7506f21a150679625707b1bb
+    KSSecuring: c51d4e64b8d6e8573adab535eb54d7259c8795e3
+    KSSecurityRelease: 478ca1123a4d1181490cc0e17cbfeee894070d7c
+    KSSmartDns: fa9ffa48b88abac438a7ee4bb5c18ca9f32b9e05
+    KSTLog: 9f0a845b925b39c5a556ae183cfd7f0a78704abb
+    KSUAccount: 2ed5a8f4d21d4246a3c14f37d8bc374e24bd61d4
+    KSULiveStream: 7c126dbc49c32c79b28aebe514a77e0730dadef7
+    KSULNetworking: 15b078ccfc7b1e0d2f08e62178a439dbd24393e7
+    KSUploader: 45eb5ed8e9f48ed87452cb896c19369fb286b03c
+    KSUploaderKit: dd416c098f934af4d3cf0fe94f199893fafdb0bc
+    KSUProtoModel: f77e3dee89c4806c9ed7ec983c1f77f931a86027
+    KSUserDefaults: d5196e93ba40a440ab9ac830ef224ecee4dc511b
+    KSUStatistics: aca31183326d57020dcd0053a91d33801d23b612
+    KSVader: 43bba47c39313e05986b1454687c0c1480fbe25f
+    KSVodPlayer: b86974db8c6ecc65a93a53d277300e4c7df8d215
+    KSWeaponArmy: 2a86f08559cad70236329b182e0bfd9206ff3479
+    KSXLog_iOS: 338458adf33606591a92978f1540251f32e5f321
+    KSXPackageManager: b0aab90a050b01516c2a2de5c13ad618c5983690
+    ktp: f834e3ad4340b2a90e6eeaf57f7a7ead8b996632
+    KwaiAnalytics: 0f5721f4b5264f5337a519fae69dad6b86b7509e
+    KwaiAppBox: 37a25855cb92238d54b1964465b9c5ff7bb487e3
+    KwaiBase: 57de03ad265fb14326bd523a8f15a4f8ac0c23eb
+    KwaiBridgeCenter: 5a48f9f9dc053b1de02f2c6691bae26e9d1f26a4
+    KwaiCaptcha: fe130d0acf964c835827550bfec99ff7de7d905b
+    KwaiGameAD: 7fd264ac64e71fe8058a1344c42eaf49e1cbb54d
+    KwaiGameAD-BUAdSDK: fada0224e457d302f8a647f5634eb7cad1945d31
+    KwaiGameAD-KSAdSDK: b9e632ff4945e2a8ddc714d5fa177c66d2405229
+    KwaiGameAD-KwaiAppBox: 318f015c555d5a1d6b3f58785e36bff4d5bf35d8
+    KwaiGameAD-Manager: 9a24ae2929cf5e0893742d8ac223ca4585aa9f7f
+    KwaiGameAD-Mintegral: 744311f54666ab3b43c3cab35f57ae5b61a4577c
+    KwaiGameAD-MobAdSDK: 6806418254fa3b32e2f4da68beecec1e6855fe37
+    KwaiGameAD-OverSeaSDK: 0a44b43bf5256af4276663186d846af5a6880882
+    KwaiGameAD-TXAdSDK: a4072da12d6360c6b1cb25a91341d69cb7c592df
+    KwaiGameADPath: a96180a1c0f89b838c4ab6281bcdb25bf2325adb
+    KwaiGameADPath-SKAdNetwork: be7cc2d5fb7c0cb2d01f094112ecab5214212ee4
+    KwaiGameADPath-TrackingIO: 8cf2a9409f9b072b3034c0abdaab4feb38393cf9
+    KwaiGameBase: 97c0e30c1086c7cca75d519d3a025c3aa968eec0
+    KwaiGameBase-DemoSupport: 83dde1fcd0ecb0b06b1203be705c7b5cc3bc4142
+    KwaiGameImagePicker: 7ca03f2f8dd250acfc93e10d0bc998e88521d03c
+    KwaiGameLive: 3975c40eba641d6fdbe83e9cfd9fe1623a675ff8
+    KwaiGameLive-LiveMartPlugin: 4cf9573c3f423d47ebe7c7f7c4d2496ba2243324
+    KwaiGameLive-NativeUIPlugin: ee09335668f72dcd84d3e63cacb262239bdf9da3
+    KwaiGameNetworking: 263addc8b380a847707d4a5de060f29157ef788c
+    KwaiGameNetworkStatusMonitor: 595fac8af9454bbd4bb2d13a6d61380de15b7f39
+    KwaiGameSDK: 3999ed66c3417d1e1e29d9bbf05c4e81d8b21f1f
+    KwaiGameSDK-ABtest-Firebase: 14f6432dc7d7225f55140a955a4ba31a4d8f2e18
+    KwaiGameSDK-AD: 233bdf011b4d0fd0f23a605fb351a1c8390eecbf
+    KwaiGameSDK-ADPath-AppsFlyer: 8c208c0141a6a9b15cf359e987aa60f5041fabb9
+    KwaiGameSDK-AntiAddict: f6539b63a9065a693c4d5ab90f62823811f94c84
+    KwaiGameSDK-AppBox: 3c54c8cec033af7cca22e60974255ce47bd0df13
+    KwaiGameSDK-AppsflyerCommon: 8d255f797148268299e7099b40d6e233f46fe1e7
+    KwaiGameSDK-Audio: 8c07259720e35d22f2e0d01ae0561a4366cc587b
+    KwaiGameSDK-Community: 2fe01c0f122d0937fe14587f162fae57acede075
+    KwaiGameSDK-Community-Kwai: 5fefc7ac5a7c8beea261d8b3396a96e76e411356
+    KwaiGameSDK-CrashReport: e6e8635c0e0baa99f64650f793e484b872af707e
+    KwaiGameSDK-CrashReport-Bugly: 432e407bf0e866b00c91f8d10149e0233c9332c3
+    KwaiGameSDK-CrashReport-Firebase: 3606d855949b547650f9b28fb7188e7c065b72b9
+    KwaiGameSDK-Downloader: 9c8980a585f5c908f31b34848ffa2b8b6563bbc2
+    KwaiGameSDK-IM: 6ea9a5d063a789408d89e4698c509280c134ebbd
+    KwaiGameSDK-KwaiJump: ecd3e34fcf1adc5dad1587e8508b7774fbb25053
+    KwaiGameSDK-Live: 3335200b210e19b7863428634a4ae54fde465bec
+    KwaiGameSDK-LongLink: 611d37825cc79a23c850eaecd239d1054abeba4a
+    KwaiGameSDK-Media: 95950bd5247df70dee8047f965da505a4a8965e8
+    KwaiGameSDK-Mock: c59f2a9f4814478c836060680d7a0f56e4f3ab34
+    KwaiGameSDK-OpenPlatform: ecda7afc284857f0b69cba38b6680d8f0c4db62d
+    KwaiGameSDK-Oversea: 7a00f516bfefbfc8b3eed58d2bbd15aa2d442bd0
+    KwaiGameSDK-Pay: 6fa377b67db09304afdb6d7c02251e549b5484f4
+    KwaiGameSDK-Push: 13c11039685a845b19d9bda66128145a393b85cf
+    KwaiGameSDK-PushReport: 7841e9cede2648f5e8f860b9739b413725e00623
+    KwaiGameSDK-QRScan: db7aee8fc027923aeaca891c33cfc32ddaacf0b7
+    KwaiGameSDK-QuickLogin: a4ecf062fde7b55676c3a33e96ac5bc99e4390f4
+    KwaiGameSDK-Relation: 92e90203b281acf08d5a8294070606b70fce71de
+    KwaiGameSDK-Report-Appsflyer: a60926e4adc54bb59416b7f86941fd80e027a5fe
+    KwaiGameSDK-Report-Firebase: a25c0ffc7faddc49c55d1c562651b67c1d09bc7b
+    KwaiGameSDK-SpringFestival: 472696df6c96e94f848ede8e847397d13d1450be
+    KwaiGameSDK-Subgame: 1e743af5b06406f9627ce2cc19b7a7afdb1f4b24
+    KwaiGameSDK-UniApi: f6ab74091ca149fe6c6641c0b182fd94005eeb6b
+    KwaiGameSDK-UnitTest: 3fb48d19d490463590a87f63d40ad633ee5305b7
+    KwaiGameSDK-VideoRecordBase: fd3a0cbf021d530c1596bf77687f33a34f92349b
+    KwaiGameSDK-VideoShare: 0f66cb86ce85f4c1981562fa725d1000336bf6e8
+    KwaiGameSDK-VisitorPasswordLogin: c42c1d76f38ddcc33deb994b4b4fc3b300f6db21
+    KwaiGameSDK-Voip: 8a75b9af2e3788b749aa3f87a330e9d272a1a3bc
+    KwaiGameSDK-WeaponArmy: 5e34d19a43299b3549eee97b431f913d1df2c22d
+    KwaiGameSDK-WebView: 457d4cda4f1b7595aa292a2d145412e5b9b7f2cf
+    KwaiGameSDK-WWP: 79ed48273dde53dba57d6dc27931386ed5b24a60
+    KwaiGameVideoAryaEncode: 24a799a89712d770f5ee8caeb7fe48367d999a2e
+    KwaiGameVideoBase: ad7f952c7b06cbc1c4c94da0acf1528a6ca09105
+    KwaiGameVideoCapture: 6839a23fad11552fb48d4f06c49d003b80fd931c
+    KwaiGameVideoRecord: 815cb896ffc0b1bbe0daa37f5daf1b743f394b1d
+    KwaiGameVideoShare: a3c707a70f9c9a7a092d94e0a349d0f2d7a8f0ec
+    KwaiGameWWP: 5c2b070b22500537871ae52a9f645a3006a4acf7
+    KwaiGameWWP-NativeUIPlugin: 556c0b0961c04e43f6ce481d7c3efd2b11d4112a
+    KwaiIMKwaiLink: ae5ad6bdfa24350fa39a981962fab0623256e963
+    KwaiIMSDK: f2983d524c49f3b9b9193a6e4c9e389ae405079b
+    KwaiIMTrace: 71e37ce14ea690c294b8fce4c72fe2936c6d9dbd
+    KwaiIMXFDB: 85bcc4e61657ffc367bf3bd1f1321a300fdc3974
+    KwaiMediaPlayer: 11a233c146b656249021268ad2c0fc57b472bd1a
+    KwaiNetworking: 88091a7eaa318ff5d6e77b8b4d669de7d8b7d88d
+    KwaiReportCenter: 7406d488534bf7bb16712fc7f73b3f078f0d66ff
+    KwaiSDK: 08054f26a1c8edaffbacaf2954af8c9704d871e3
+    KwaiSwizzle: 35a1b0b69d49419ddfd3d6d63e0af7a65d10e1bc
+    KwaiUIRecorder: cd9ec123c9ae62304fd81c2d022c11953ba57ccd
+    KWArya: 28232677aab3fb97552ebf15230b7cd6db255a89
+    KWStannis_iOS: 081b786bde8f30ce7df568bf8f6d1b155c1e0967
+    libuv: 165660dbf6c084b9d882f19c7ff9adcaa0401708
+    libwebp: 229abc0be8778457addaa3634abe77213d30499f
+    libyuv: a0e3ebe383372e7e21ebe6f854d5f0c7b0096f00
+    lottie-ios: 9ee5169897ef873174a253e4e7213449d312d247
+    Masonry: dac59332ad1f6b2bc005fdce402097b9c9622eb9
+    MBProgressHUD: e174982076b37655329511d00f384e44f7f56b11
+    MJExtension: b856d352f492b582ff9d57fbaa4604858126e645
+    MMKV: bae9184479d4935f48b142250477b0cdc17eff1e
+    MMKVCore: 83b6bcc35c9ca1da93cb25c634738286f62e40fa
+    nanopb: a4c4e0bbcbd6f47ecec374fca7a70bc9e76060b7
+    Obiwan: 140e9fb4b0095575f510e08035a997c189e49f29
+    OneKit-Pangle: 4f0e7233b2055a84f807ed46718f7332af40adaf
+    OpenSSL-Universal: 83aa3b08583eaf7f1a8cf96531eb7861ef780d5e
+    p2pstun: fc74ab0fd5aad5193b738702f9c0064fc7638ca3
+    Pigeon: c66df9d603179cbd4a35a04e770ca9f3a8522ad4
+    PromisesObjC: c775fd0f003fcdcf0fb6a46718607614fd7357d1
+    Protobuf: e6ee55d14b36108e09cc5c5b5ed2264cfd5bc520
+    RangersAPM-Pangle: 7e17cb56e2acda1ae08729f8fb14898946a940db
+    RCTRequired: 37b5fbffa18151ac6aafcdcb1bf4b9e3bd6627d1
+    RCTTypeSafety: dff12fde52925808fcc165f0a60b1c22cec153c0
+    Reachability: ff3656dc4ee74a95dad0a846d928f9feab1236f2
+    React: ae4350ba5b7fceda3597aaf6a6a85f0299f3ee0f
+    React-callinvoker: 5a1039ff2c1971432afa45cb9a35dc8ba81a84a0
+    React-Core: 81b8d61c7cd646834de47c1e2c73053805f85e44
+    React-CoreModules: 7f0a858ad4a6c3d4e98d0c486a411e5a89ddc971
+    React-cxxreact: 03e1b5d1cbe993adc93065b3e976bfaffdf2503a
+    React-jsi: 864b8fe7128af81b4630c6b61f0ba78402b69272
+    React-jsiexecutor: 147f9309984277d9baeddac8d76c492636039995
+    React-jsinspector: 367782a1c31598d2d6233b9f7bec48339a43e9b3
+    react-native-image-picker: 58d808af89a182e45a5f471413ca08938cf83ae0
+    react-native-netinfo: 5281361135cdc23283f3836552ee8528a428c6e4
+    react-native-safe-area-context: 75cb08f0c71b9550edcc9f1075c2ee04d4e16d92
+    react-native-webview: c8f8d41f866f3a9cfa21a1bc375f5f51acbfda53
+    React-RCTActionSheet: 79210c72fbf4c0e701baf0c950ea9a96d23abc39
+    React-RCTAnimation: 26a46d8a4eeadd22775aabe6f776ce709f856c86
+    React-RCTBlob: 9f7a4e37c5ca10fcd4b1e1f6f94252da6e5f8440
+    React-RCTImage: fc700baf080984b5ca2a86e448a0fc46a9fb990d
+    React-RCTLinking: 5bf36f6bdd62ade8d0de19e47caa5c7b08668a58
+    React-RCTNetwork: e4af0a45c694f53d4d09ca38b4cb953b4230e33f
+    React-RCTSettings: a2a8183d23e078fdd4fe1bedac5f8919def26cd4
+    React-RCTText: b7c97e2d9636ecf1494c869f5567a71e3b6fa808
+    React-RCTVibration: f3415bccbe20eb44b8b94bcf58643084ed3ba094
+    React-trace: 46e13581a268ee57fa1a793a8b5ae3089cb22220
+    ReactCommon: 85e00e51a0d511256843e25061f865ee99cf021e
+    RNCMaskedView: b2354f18f730e1cfebfd6313b41c7b2fdb3ad581
+    RNFastImage: 96908d8f3dae8b32f075d010212f1ae5268ecc5b
+    RNGestureHandler: 62a6e8d07e77be5ccf421c572a1c2a3036ff9ab3
+    RNReanimated: fb32ccb38fa00cd67bac69f2fa17a8d3694074cd
+    RNScreens: aff2e91c2c34efbcb0b83febadf593927e0fa5d4
+    RNSVG: a82fa0eccc5a2e106373c5280bbe61e826244b66
+    SDWebImage: 53d2283c78d75ba7fa518e08510b455c0546f0b8
+    SDWebImageWebPCoder: fb41b30518f1aa8418dee2904ba6debf2f2a2963
+    SSZipArchive: 281aba4be35be7e56654ec4fad81b9c67015a969
+    TensorFlow-Lite: d4ca85891b034e3d98a891e46cc249ba3f5e7c42
+    Toast: 488b144712cc3a0ee98ff3115bf621c56926546e
+    TransitionKit: f80c370dae06c5d8d7f9f13997823a64a6811c11
+    Tweaks: e0633ef70319570cf5ddf5c44edbffcebe418c6d
+    twitter-text: 7878556298f5e0adda742c2c6372bde44ae9d37c
+    UnityAds: 411edefed35e999488b892cd76047c072d14c4f8
+    VungleSDK-iOS: 4f7b84d6d45e88ef9594354f66547ca20d47ddd2
+    WBCloudFace: 9044e5d857374dcd2a60ac3b32157496a8371d08
+    WechatSDK: 2202f05f3a7811960198b84f0b853ef1b2067dfa
+    WeiboSDK: 5d20716d1e2663ea761344edfa8794e5a4727a25
+    XFDB: 45ea44f0b679917720d3034cc3574e4c2135344c
+    XFMulticastDelegate: d9b986b094b55551db0359b2bb93486c6f648322
+    ycnn2: 612261ba9fa946259dc183c3524b351fb01dbc55
+    Yoda: 596cd53692aef2f9d3d22fb94aa9a8ab4dc53255
+    Yoga: 48a3bfb7ba51146fe225a5d984d8bea7624319ab
+    ZipKit: c3d0a04b9832e9f19dfc445457d2f087644fb2ce
+  SPEC REPOS:
+    "git@git.corp.kuaishou.com:krn/tools/react-native-spec.git":
+      - boost-for-react-native
+    "git@git.corp.kuaishou.com:open-iOS/cocoapods-gamesdk-binspec.git":
+      - Ads-Global
+      - Aegon_iOS
+      - AFNetworking
+      - AppAuth
+      - AppLovinSDK
+      - AppsFlyerFramework
+      - Aspects
+      - AutoCoding
+      - BlocksKit
+      - Bolts
+      - boost
+      - Bugly
+      - BVLinearGradient
+      - CocoaAsyncSocket
+      - CocoaLumberjack
+      - Diplomat
+      - DoubleConversion
+      - FBAudienceNetwork
+      - FBLazyVector
+      - FBReactNativeSpec
+      - FBSDKCoreKit
+      - FBSDKCoreKit_Basics
+      - FBSDKLoginKit
+      - FBSDKShareKit
+      - FCFileManager
+      - Firebase
+      - FirebaseABTesting
+      - FirebaseAnalytics
+      - FirebaseCore
+      - FirebaseCoreDiagnostics
+      - FirebaseCrashlytics
+      - FirebaseInstallations
+      - FirebaseRemoteConfig
+      - FLAnimatedImage
+      - FMDB
+      - Folly
+      - GameLiveProtoModel
+      - GDTMobSDK
+      - glog
+      - Godzippa
+      - Google-Mobile-Ads-SDK
+      - GoogleAppMeasurement
+      - GoogleDataTransport
+      - GoogleMobileAdsMediationAppLovin
+      - GoogleMobileAdsMediationFacebook
+      - GoogleMobileAdsMediationIronSource
+      - GoogleMobileAdsMediationUnity
+      - GoogleMobileAdsMediationVungle
+      - GoogleSignIn
+      - GoogleUserMessagingPlatform
+      - GoogleUtilities
+      - GTMAppAuth
+      - GTMSessionFetcher
+      - Hodor
+      - IMSDKProto
+      - IronSourceSDK
+      - JhtFloatingBall
+      - JNKeychain
+      - JRSwizzle
+      - kdiff
+      - KGAryaManager
+      - klp
+      - KRNSDK
+      - KSAudioProcessLib
+      - KSAVLogProtoModel
+      - KSChinaMobileQuickLogin
+      - KSChinaTelecomSDK
+      - KSChinaUnicomSDK
+      - KSCommon
+      - KSDFP
+      - KSDiskCache
+      - KSecurityWrapper
+      - KSFastFolderSize
+      - KSFFmpeg_iOS
+      - KSKanas
+      - KSKanasProtoModel
+      - KSLivePlayer
+      - KSMWAzeroth
+      - KSMWDataCompress
+      - KSORM
+      - KSPromise
+      - KSProtobufCpp_iOS
+      - KSRSAUtil
+      - KSRtcKit
+      - KSSecuring
+      - KSSecurityRelease
+      - KSSmartDns
+      - KSTLog
+      - KSUAccount
+      - KSULiveStream
+      - KSULNetworking
+      - KSUploader
+      - KSUploaderKit
+      - KSUProtoModel
+      - KSUserDefaults
+      - KSUStatistics
+      - KSVader
+      - KSVodPlayer
+      - KSWeaponArmy
+      - KSXLog_iOS
+      - KSXPackageManager
+      - ktp
+      - KwaiAnalytics
+      - KwaiAppBox
+      - KwaiBase
+      - KwaiBridgeCenter
+      - KwaiCaptcha
+      - KwaiGameAD
+      - KwaiGameAD-BUAdSDK
+      - KwaiGameAD-KSAdSDK
+      - KwaiGameAD-KwaiAppBox
+      - KwaiGameAD-Manager
+      - KwaiGameAD-Mintegral
+      - KwaiGameAD-MobAdSDK
+      - KwaiGameAD-OverSeaSDK
+      - KwaiGameAD-TXAdSDK
+      - KwaiGameADPath
+      - KwaiGameADPath-SKAdNetwork
+      - KwaiGameADPath-TrackingIO
+      - KwaiGameBase
+      - KwaiGameBase-DemoSupport
+      - KwaiGameImagePicker
+      - KwaiGameLive
+      - KwaiGameLive-LiveMartPlugin
+      - KwaiGameLive-NativeUIPlugin
+      - KwaiGameNetworking
+      - KwaiGameNetworkStatusMonitor
+      - KwaiGameVideoAryaEncode
+      - KwaiGameVideoBase
+      - KwaiGameVideoCapture
+      - KwaiGameVideoRecord
+      - KwaiGameVideoShare
+      - KwaiGameWWP
+      - KwaiGameWWP-NativeUIPlugin
+      - KwaiIMKwaiLink
+      - KwaiIMSDK
+      - KwaiIMTrace
+      - KwaiIMXFDB
+      - KwaiMediaPlayer
+      - KwaiNetworking
+      - KwaiReportCenter
+      - KwaiSDK
+      - KwaiSwizzle
+      - KwaiUIRecorder
+      - KWArya
+      - KWStannis_iOS
+      - libuv
+      - libwebp
+      - libyuv
+      - lottie-ios
+      - Masonry
+      - MBProgressHUD
+      - MJExtension
+      - MMKV
+      - MMKVCore
+      - nanopb
+      - Obiwan
+      - OneKit-Pangle
+      - OpenSSL-Universal
+      - p2pstun
+      - Pigeon
+      - PromisesObjC
+      - Protobuf
+      - RangersAPM-Pangle
+      - RCTRequired
+      - RCTTypeSafety
+      - Reachability
+      - React
+      - React-callinvoker
+      - React-Core
+      - React-CoreModules
+      - React-cxxreact
+      - React-jsi
+      - React-jsiexecutor
+      - React-jsinspector
+      - react-native-image-picker
+      - react-native-netinfo
+      - react-native-safe-area-context
+      - react-native-webview
+      - React-RCTActionSheet
+      - React-RCTAnimation
+      - React-RCTBlob
+      - React-RCTImage
+      - React-RCTLinking
+      - React-RCTNetwork
+      - React-RCTSettings
+      - React-RCTText
+      - React-RCTVibration
+      - React-trace
+      - ReactCommon
+      - RNCMaskedView
+      - RNFastImage
+      - RNGestureHandler
+      - RNReanimated
+      - RNScreens
+      - RNSVG
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - SSZipArchive
+      - TensorFlow-Lite
+      - Toast
+      - TransitionKit
+      - Tweaks
+      - twitter-text
+      - UnityAds
+      - VungleSDK-iOS
+      - WBCloudFace
+      - WechatSDK
+      - WeiboSDK
+      - XFDB
+      - XFMulticastDelegate
+      - ycnn2
+      - Yoda
+      - Yoga
+      - ZipKit

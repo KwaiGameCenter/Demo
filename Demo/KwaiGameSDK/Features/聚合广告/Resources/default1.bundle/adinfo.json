@@ -1,0 +1,12 @@
+{
+	"name": "魔幻厨房",
+    "appId": "ks673288147689951145",
+    "id": "a41c44db51b4cc1252f7813341843148",
+	"package": "com.soulgame.shokudo.kuaishou",
+    "bundleId": "com.soulgame.shokudo.kuaishou",
+	"desc": "魔幻厨房今日公测！",
+	"apkUrl": "https://open.kuaishou.com/app/latest?app_id=ks673288147689951145&channel=dsp_gdt_mhcf01_01_register",
+	"appstore": "itms-apps://itunes.apple.com/app/id1475748489",
+	"video": "video.mp4",
+	"icon": "icon.png"
+}

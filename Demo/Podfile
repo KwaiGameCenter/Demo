@@ -1,0 +1,64 @@
+ 
+platform :ios, 10.0
+ 
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
+ 
+@sdk_version="1.32.0-alpha-1.32.0" # 使用中替换为SDK的版本号即可
+ 
+source "git@github.com:KwaiGameCenter/kwaigame-sdk-spec.git"
+ 
+target "KwaiGameSDK_Example" do
+   pod "KwaiGameSDK", @sdk_version
+   pod "MainFrameworks_dependency", @sdk_version
+   pod "KwaiGameSDK-WeaponArmy", @sdk_version
+   pod "KwaiGameSDK-LongLink", @sdk_version
+   pod "KwaiGameSDK-Pay", @sdk_version
+   pod "KwaiGameSDK-QRScan", @sdk_version
+   pod "KwaiGameSDK-VisitorPasswordLogin", @sdk_version
+   pod "KwaiGameSDK-QuickLogin", @sdk_version
+   pod "KwaiGameSDK-OpenPlatform", @sdk_version
+   pod "KwaiGameSDK-CrashReport-Bugly", @sdk_version
+   pod "KwaiGameSDK-CrashReport-Firebase", @sdk_version
+   pod "KwaiGameSDK-GoogleCommon", @sdk_version
+   pod "KwaiGameSDK-ABtest-Firebase", @sdk_version
+   pod "KwaiGameSDK-Community", @sdk_version
+   pod "KwaiGameSDK-Community-Kwai", @sdk_version
+   pod "KwaiGameSDK-Relation", @sdk_version
+   pod "KwaiGameSDK-SpringFestival", @sdk_version
+   pod "KwaiGameSDK-Subgame", @sdk_version
+   pod "KwaiGameSDK-IM", @sdk_version
+   pod "KwaiGameSDK-Voip", @sdk_version
+   pod "KwaiGameSDK-Audio", @sdk_version
+   pod "KwaiGameSDK-Media", @sdk_version
+   pod "KwaiGameSDK-Live", @sdk_version
+   pod "KwaiGameSDK-LiveRoom", @sdk_version
+   pod "KwaiGameSDK-WWP", @sdk_version
+   pod "KwaiGameSDK-Video", @sdk_version
+   pod "KwaiGameSDK-VideoShare", @sdk_version
+   pod "KwaiGameSDK-GameCapture", @sdk_version
+   pod "KwaiGameSDK-GameRecord", @sdk_version
+   pod "KwaiGameSDK-Downloader", @sdk_version
+   pod "KwaiGameSDK-AD", @sdk_version
+   pod "KwaiGameSDK-AD-BUAdSDK", @sdk_version
+   pod "KwaiGameSDK-AD-KSAdSDK", @sdk_version
+   pod "KwaiGameSDK-AD-TXAdSDK", @sdk_version
+   pod "KwaiGameSDK-AD-MintAdSDK", @sdk_version
+   pod "KwaiGameSDK-AD-MobAdSDK", @sdk_version
+   pod "KwaiGameSDK-AD-OverSeaSDK", @sdk_version
+   pod "KwaiGameSDK-Oversea", @sdk_version
+   pod "KwaiGameSDK-ADPath-Reyun", @sdk_version
+   pod "KwaiGameSDK-ADPath-AppsFlyer", @sdk_version
+   pod "KwaiGameSDK-AppsflyerCommon", @sdk_version
+   pod "KwaiGameSDK-ADPath-SKAdNetwork", @sdk_version
+   pod "KwaiGameSDK-Report-Firebase", @sdk_version
+   pod "KwaiGameSDK-Report-Appsflyer", @sdk_version
+   pod "KwaiGameSDK-AppBox", @sdk_version
+#   pod "KwaiGameSDK-Mock", @sdk_version
+end
+ 
+target "NotificationService" do
+   pod "KwaiGameSDK-PushReport", @sdk_version
+   pod "NotificationService_dependency", @sdk_version
+end
+ 
+ 

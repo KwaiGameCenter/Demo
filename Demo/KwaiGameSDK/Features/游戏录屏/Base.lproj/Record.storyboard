@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Record View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Record" id="BYZ-38-t0r" customClass="KGGameRecordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JSR-Ug-BrK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nal-eW-sqE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="159-gA-sy4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="录制屏幕:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFt-Ac-nes">
+                                        <rect key="frame" x="21" y="49" width="144" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZj-PG-1LU">
+                                        <rect key="frame" x="119" y="264" width="123" height="30"/>
+                                        <state key="normal" title="分享到快手剪裁页"/>
+                                        <connections>
+                                            <action selector="shareToKwaiEditor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhM-uR-RaV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgG-UT-UiC">
+                                        <rect key="frame" x="119" y="303" width="123" height="30"/>
+                                        <state key="normal" title="跳转至快手拍摄页"/>
+                                        <connections>
+                                            <action selector="shareToKwaiPublish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddm-mN-TSh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nes-6i-HkF">
+                                        <rect key="frame" x="142" y="345" width="77" height="30"/>
+                                        <state key="normal" title="保存到相册"/>
+                                        <connections>
+                                            <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kST-37-p7H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ey-g6-RnL">
+                                        <rect key="frame" x="126" y="381" width="108" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="调用系系统分享"/>
+                                        <connections>
+                                            <action selector="shareToAppleEditor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8it-fh-nin"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RD-xJ-yUd">
+                                        <rect key="frame" x="177" y="190" width="76" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="FJo-ZQ-J3B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否支持快手分享:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v14-Fe-Kya">
+                                        <rect key="frame" x="21" y="203" width="144" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="EAB-00-lVO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1ST-HF-ECU">
+                                        <rect key="frame" x="242" y="90" width="121" height="32"/>
+                                        <segments>
+                                            <segment title="静音"/>
+                                            <segment title="录音"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TVe-Sy-GgK">
+                                        <rect key="frame" x="9" y="91" width="225" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="225" id="iz9-19-56k"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="超清"/>
+                                            <segment title="高清"/>
+                                            <segment title="普清"/>
+                                        </segments>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="横屏:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsw-GY-YPT">
+                                        <rect key="frame" x="21" y="156" width="40" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="5wp-Db-E1L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Yu-TY-pJq">
+                                        <rect key="frame" x="77" y="151" width="51" height="31"/>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcJ-bV-V2c">
+                                        <rect key="frame" x="271" y="149" width="62" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="开始录制">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hF4-1c-sMC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XFt-Ac-nes" firstAttribute="leading" secondItem="Dsw-GY-YPT" secondAttribute="leading" id="0do-Ey-Lik"/>
+                                    <constraint firstItem="v14-Fe-Kya" firstAttribute="top" secondItem="1Yu-TY-pJq" secondAttribute="bottom" constant="21" id="0tv-VE-JHe"/>
+                                    <constraint firstAttribute="trailing" secondItem="TcJ-bV-V2c" secondAttribute="trailing" constant="42" id="1vy-8f-qnM"/>
+                                    <constraint firstAttribute="bottom" secondItem="nes-6i-HkF" secondAttribute="bottom" constant="295" id="2wM-gr-AJu"/>
+                                    <constraint firstItem="Dsw-GY-YPT" firstAttribute="leading" secondItem="v14-Fe-Kya" secondAttribute="leading" id="3oa-D6-bxP"/>
+                                    <constraint firstItem="TVe-Sy-GgK" firstAttribute="top" secondItem="XFt-Ac-nes" secondAttribute="bottom" constant="20" id="96j-aQ-4he"/>
+                                    <constraint firstItem="1ST-HF-ECU" firstAttribute="baseline" secondItem="TVe-Sy-GgK" secondAttribute="firstBaseline" id="Cor-Xa-Xt6"/>
+                                    <constraint firstItem="HZj-PG-1LU" firstAttribute="top" secondItem="1RD-xJ-yUd" secondAttribute="bottom" constant="26" id="F3k-EY-127"/>
+                                    <constraint firstItem="Dsw-GY-YPT" firstAttribute="centerY" secondItem="1Yu-TY-pJq" secondAttribute="centerY" id="GAV-2h-9Vq"/>
+                                    <constraint firstAttribute="trailing" secondItem="1ST-HF-ECU" secondAttribute="trailing" constant="12" id="Gj2-j8-eE3"/>
+                                    <constraint firstItem="HZj-PG-1LU" firstAttribute="leading" secondItem="fgG-UT-UiC" secondAttribute="leading" id="Hsk-sP-w1P"/>
+                                    <constraint firstItem="fgG-UT-UiC" firstAttribute="top" secondItem="HZj-PG-1LU" secondAttribute="bottom" constant="9" id="IgQ-3E-dSm"/>
+                                    <constraint firstItem="1Yu-TY-pJq" firstAttribute="top" secondItem="TVe-Sy-GgK" secondAttribute="bottom" constant="29" id="JxE-Vn-ubg"/>
+                                    <constraint firstItem="TVe-Sy-GgK" firstAttribute="leading" secondItem="159-gA-sy4" secondAttribute="leading" constant="9" id="M9l-f3-yiz"/>
+                                    <constraint firstItem="1ST-HF-ECU" firstAttribute="centerX" secondItem="TcJ-bV-V2c" secondAttribute="centerX" id="WJA-fo-s8G"/>
+                                    <constraint firstItem="1Yu-TY-pJq" firstAttribute="centerY" secondItem="TcJ-bV-V2c" secondAttribute="centerY" id="WOU-Vs-cqj"/>
+                                    <constraint firstItem="Dsw-GY-YPT" firstAttribute="baseline" secondItem="TcJ-bV-V2c" secondAttribute="baseline" id="YUg-Vg-i5w"/>
+                                    <constraint firstItem="XFt-Ac-nes" firstAttribute="leading" secondItem="159-gA-sy4" secondAttribute="leading" constant="21" id="Ybs-Ih-M2z"/>
+                                    <constraint firstItem="nes-6i-HkF" firstAttribute="top" secondItem="fgG-UT-UiC" secondAttribute="bottom" constant="12" id="YvV-a9-598"/>
+                                    <constraint firstItem="1ST-HF-ECU" firstAttribute="leading" secondItem="TVe-Sy-GgK" secondAttribute="trailing" constant="8" symbolic="YES" id="ZxX-Mc-4Ss"/>
+                                    <constraint firstItem="fgG-UT-UiC" firstAttribute="centerX" secondItem="nes-6i-HkF" secondAttribute="centerX" id="ckl-wL-0gr"/>
+                                    <constraint firstItem="1RD-xJ-yUd" firstAttribute="leading" secondItem="v14-Fe-Kya" secondAttribute="trailing" constant="12" id="dyl-tc-alX"/>
+                                    <constraint firstItem="1Yu-TY-pJq" firstAttribute="bottom" secondItem="TcJ-bV-V2c" secondAttribute="bottom" id="ehE-bQ-q5B"/>
+                                    <constraint firstItem="XFt-Ac-nes" firstAttribute="top" secondItem="159-gA-sy4" secondAttribute="top" constant="49" id="g00-wC-85W"/>
+                                    <constraint firstItem="Dsw-GY-YPT" firstAttribute="baseline" secondItem="TcJ-bV-V2c" secondAttribute="firstBaseline" id="gqY-5u-k1O"/>
+                                    <constraint firstItem="1RD-xJ-yUd" firstAttribute="top" secondItem="TVe-Sy-GgK" secondAttribute="bottom" constant="68" id="pNV-OA-cdd"/>
+                                    <constraint firstItem="HZj-PG-1LU" firstAttribute="top" secondItem="v14-Fe-Kya" secondAttribute="bottom" constant="39" id="qan-wt-xaW"/>
+                                    <constraint firstItem="HZj-PG-1LU" firstAttribute="leading" secondItem="159-gA-sy4" secondAttribute="leading" constant="119" id="u2X-PA-UT0"/>
+                                    <constraint firstItem="1ST-HF-ECU" firstAttribute="top" secondItem="159-gA-sy4" secondAttribute="top" constant="91" id="vwK-4k-xqY"/>
+                                    <constraint firstItem="1Yu-TY-pJq" firstAttribute="leading" secondItem="Dsw-GY-YPT" secondAttribute="trailing" constant="16" id="yk4-o3-NH7"/>
+                                    <constraint firstItem="XFt-Ac-nes" firstAttribute="trailing" secondItem="v14-Fe-Kya" secondAttribute="trailing" id="yrc-Kd-mIy"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="159-gA-sy4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2xl-tS-xb5"/>
+                            <constraint firstAttribute="trailing" secondItem="159-gA-sy4" secondAttribute="trailing" id="8ST-c2-3Qo"/>
+                            <constraint firstItem="159-gA-sy4" firstAttribute="bottom" secondItem="Nal-eW-sqE" secondAttribute="top" id="bPZ-ZC-UiA"/>
+                            <constraint firstItem="159-gA-sy4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u8f-kb-lwp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="audioSegmentedControl" destination="1ST-HF-ECU" id="C0y-PH-gpy"/>
+                        <outlet property="orientationSwitch" destination="1Yu-TY-pJq" id="KhY-i2-fBK"/>
+                        <outlet property="qualitySegmentedControl" destination="TVe-Sy-GgK" id="mwj-Tr-BIE"/>
+                        <outlet property="supportKwaiShareLabel" destination="1RD-xJ-yUd" id="Ov7-nn-LnJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>

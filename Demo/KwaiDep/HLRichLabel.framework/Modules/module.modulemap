@@ -1,0 +1,6 @@
+framework module HLRichLabel {
+  umbrella header "HLRichLabel.h"
+
+  export *
+  module * { export * }
+}
