@@ -53,10 +53,6 @@ SINGLETON_IMPLEMENTS(KGGlobalDelegate, {
     [[KwaiGameSDK sharedSDK] logoutWithCompletion:^(NSError *error) {}];
 }
 
--(void)accountBackup {
-    [[KwaiGameSDK sharedSDK] log:@"accountBackup回调,需要游戏方自主处理结果"];
-}
-
 - (void)fetchGameServiceToken:(void (^)(NSError *, NSString *))fetchComplete {
     // 涉及到的功能IM, Voip
     // 此部分需要游戏server实现通过游戏uid获取token的接口
@@ -190,6 +186,7 @@ SINGLETON_IMPLEMENTS(KGGlobalDelegate, {
             [KGGlobalDelegate delegate].rootController = navController;
             window.rootViewController = [KGGlobalDelegate delegate].rootController;
             [window makeKeyAndVisible];
+            [window setupFloatingBox];
         }
 
     } else {
@@ -284,15 +281,7 @@ SINGLETON_IMPLEMENTS(KGGlobalDelegate, {
 #pragma mark - UIViewController Style
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
-    #ifndef DISABLE_XCODE11_BUILD
-        if (@available(iOS 13.0, *)) {
-            return UIStatusBarStyleDarkContent;
-        } else {
-            return UIStatusBarStyleDefault;
-        }
-    #else
-        return UIStatusBarStyleDefault;
-    #endif
+    return UIStatusBarStyleDarkContent;
 }
 
 @end

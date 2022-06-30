@@ -1,16 +1,16 @@
-GAMESDK_VERSION: 1.2.27
+GAMESDK_VERSION: 1.2.28
 
 GAME_SDK_INFO:
   AUTHOR: gamecenter
   AUTHOR_EMAIL: "gamecenter@kuaishou.com"
-  BRANCH: "1.32.0/alpha+1.32.0"
+  BRANCH: "1.31.0/alpha+1.31.2"
   DEMO_GIT: "git@github.com:KwaiGameCenter/Demo.git"
   DESC: "快手游戏融合SDK"
   HOMEPAGE: "https://sdkdocs.game.kuaishou.com/#/"
   NAME: KwaiGameSDK
   SDK_GIT: "git@github.com:KwaiGameCenter/kwaigame-sdk-spec.git"
   SUMMARY: "快手游戏融合SDK"
-  VERSION: 1.32.0
+  VERSION: 1.31.2
 
 GAMESDK_FRAMEWORK_INFO:
   feak_target_KwaiGameSDK_Example:
@@ -18,6 +18,7 @@ GAMESDK_FRAMEWORK_INFO:
       - MainFrameworks_dependency
     dependency_target:
       - FLAnimatedImage
+      - KwaiGameBase-DemoSupport
       - KwaiGameSDK-UnitTest
       - KwaiNetworking
       - lottie-ios
@@ -58,6 +59,10 @@ GAMESDK_FRAMEWORK_INFO:
     dependency_sdk_targets:
       - MainFrameworks_dependency
     dependency_target:
+      - KSDFP
+      - KSFastFolderSize
+      - KSSecuring
+      - KSSecurityRelease
       - KwaiGameADPath
       - KwaiGameSDK
       - KwaiGameSDK-AntiAddict
@@ -97,7 +102,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -190,7 +194,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -541,6 +544,7 @@ GAMESDK_FRAMEWORK_INFO:
     example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks"
     group: MainFrameworks
     nicknames:
+      - appsflyermonitor
       - KwaiGameSDK-ADPath-AppsFlyer
     path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks"
     system:
@@ -668,7 +672,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MetalKit
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -713,7 +716,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -805,7 +807,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -925,7 +926,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -966,7 +966,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -1013,7 +1012,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MetalKit
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -1144,6 +1142,8 @@ GAMESDK_FRAMEWORK_INFO:
         - z
       weak_frameworks:
         - AdSupport
+    tags:
+      - support_oversea
   KwaiGameSDK-IM:
     dependency_sdk_targets:
       - KwaiGameSDK
@@ -1178,7 +1178,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -1331,7 +1330,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -1396,106 +1394,6 @@ GAMESDK_FRAMEWORK_INFO:
         - z
       weak_frameworks:
         - AppTrackingTransparency
-  KwaiGameSDK-Mock:
-    dependency_sdk_targets: 
-    dependency_target:
-      - JhtFloatingBall
-      - KwaiGameSDK-Mock
-    dynamic_group: 
-    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/example_dependency/MainFrameworks#KwaiGameSDK-Mock"
-    group: MainFrameworks
-    nicknames:
-      - KwaiGameSDK-Mock
-      - mock
-    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/Example/output/MainFrameworks#KwaiGameSDK-Mock"
-    system:
-      frameworks:
-        - Accelerate
-        - AddressBook
-        - AdSupport
-        - AssetsLibrary
-        - AudioToolBox
-        - AudioToolbox
-        - AVFoundation
-        - AVKit
-        - CFNetwork
-        - Contacts
-        - CoreData
-        - CoreFoundation
-        - CoreGraphics
-        - CoreImage
-        - CoreLocation
-        - CoreMedia
-        - CoreMotion
-        - CoreServices
-        - CoreTelephony
-        - CoreText
-        - CoreVideo
-        - Foundation
-        - GLKit
-        - iAd
-        - ImageIO
-        - JavaScriptCore
-        - LocalAuthentication
-        - MapKit
-        - MediaPlayer
-        - MessageUI
-        - Metal
-        - MetalKit
-        - MetalPerformanceShaders
-        - MobileCoreServices
-        - OpenGLES
-        - Photos
-        - QuartzCore
-        - QuickLook
-        - SafariServices
-        - Security
-        - StoreKit
-        - storekit
-        - SystemConfiguration
-        - UIKit
-        - VideoToolbox
-        - WebKit
-      libraries:
-        - bz2
-        - "c++"
-        - "c++.1"
-        - "c++abi"
-        - compression
-        - iconv
-        - resolv
-        - resolv.9
-        - sqlite3
-        - "stdc++"
-        - xml2
-        - z
-        - z.1.2.8
-      weak_frameworks:
-        - Accelerate
-        - Accounts
-        - AdSupport
-        - AppTrackingTransparency
-        - AudioToolbox
-        - AuthenticationServices
-        - CFNetwork
-        - Contacts
-        - CoreGraphics
-        - CoreHaptics
-        - CoreMotion
-        - CoreTelephony
-        - Foundation
-        - JavaScriptCore
-        - LocalAuthentication
-        - QuartzCore
-        - SafariServices
-        - Security
-        - Social
-        - StoreKit
-        - SystemConfiguration
-        - UIKit
-        - VideoToolbox
-        - WebKit
-    uses_swift: true
   KwaiGameSDK-OpenPlatform:
     dependency_sdk_targets:
       - KwaiGameSDK
@@ -1578,7 +1476,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - SafariServices
         - Security
@@ -1635,7 +1532,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - storekit
@@ -1736,7 +1632,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -1778,7 +1673,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -1817,7 +1711,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -1937,7 +1830,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -1983,7 +1875,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - storekit
@@ -2079,7 +1970,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -2118,7 +2008,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -2163,7 +2052,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -2209,7 +2097,6 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
-        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
@@ -2293,10 +2180,8 @@ GAMESDK_FRAMEWORK_INFO:
       - JRSwizzle
       - KGSDKBase
       - KSCommon
-      - KSDFP
       - KSDiskCache
       - KSecurityWrapper
-      - KSFastFolderSize
       - KSKanas
       - KSKanasProtoModel
       - KSMWAzeroth-29eb09f9
@@ -2304,8 +2189,6 @@ GAMESDK_FRAMEWORK_INFO:
       - KSORM
       - KSPromise
       - KSRSAUtil
-      - KSSecuring
-      - KSSecurityRelease
       - KSTLog
       - KSUProtoModel-common-ds
       - KSUserDefaults
@@ -2314,7 +2197,6 @@ GAMESDK_FRAMEWORK_INFO:
       - KwaiAnalytics.default-Kanas
       - KwaiBase.default-DDLog-LiteProxy
       - KwaiBridgeCenter
-      - KwaiGameBase-DemoSupport
       - KwaiGameBase.default-ActionLog-Log
       - KwaiGameImagePicker
       - KwaiGameNetworking
@@ -2600,10 +2482,10 @@ PODS_INFO:
       :tag: 0.0.18
     KwaiGameBase:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git"
-      :tag: 0.0.41
+      :tag: 0.0.40
     KwaiGameBase-DemoSupport:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git"
-      :tag: 0.0.41
+      :tag: 0.0.40
     KwaiGameLive:
       :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git"
       :tag: KwaiGameLive-1.0.16
@@ -2702,7 +2584,7 @@ PODS_INFO:
     ZipKit:
       :git: "git@git.corp.kuaishou.com:open-iOS/zipkit.git"
       :tag: 1.0.3.1
-  COCOAPODS: 1.11.3
+  COCOAPODS: 1.10.2
   DEPENDENCIES:
     - Ads-Global
     - Aegon_iOS (= 1.36.6)
@@ -2739,10 +2621,9 @@ PODS_INFO:
     - GoogleUtilities/Logger
     - "Hodor (from `git@git.corp.kuaishou.com:video/pruned-ijkplayer.git`, commit `36a59839`)"
     - IMSDKProto (= 0.8.2)
-    - JhtFloatingBall
     - JNKeychain (= 0.1.6)
     - "KGAryaManager (from `git@git.corp.kuaishou.com:lib-iOS/KWArya-Packager.git`, tag `1.0.11`)"
-    - KGSDKBase (from `./../KGSDKBase.podspec`)
+    - KGSDKBase (from `../KGSDKBase.podspec`)
     - klp (= 1.12.0.7.1a61a0cf)
     - "KRNSDK (from `git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git`, tag `0.1.139.ks`)"
     - "KRNSDK/Container (from `git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git`, tag `0.1.139.ks`)"
@@ -2805,57 +2686,56 @@ PODS_INFO:
     - "KwaiGameADPath (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.18`)"
     - "KwaiGameADPath-SKAdNetwork (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.18`)"
     - "KwaiGameADPath-TrackingIO (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.18`)"
-    - "KwaiGameBase-DemoSupport (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
-    - "KwaiGameBase/ActionLog (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
-    - "KwaiGameBase/Core (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
-    - "KwaiGameBase/Log (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
+    - "KwaiGameBase-DemoSupport (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.40`)"
+    - "KwaiGameBase/ActionLog (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.40`)"
+    - "KwaiGameBase/Core (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.40`)"
+    - "KwaiGameBase/Log (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.40`)"
     - KwaiGameImagePicker (= 0.0.6)
     - "KwaiGameLive (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git`, tag `KwaiGameLive-1.0.16`)"
     - "KwaiGameLive-LiveMartPlugin (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git`, tag `KwaiGameLive-LiveMartPlugin-1.0.35`)"
     - "KwaiGameLive-NativeUIPlugin (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git`, tag `KwaiGameLive-NativeUIPlugin-1.0.31`)"
     - "KwaiGameNetworking (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameNetworking.git`, tag `KwaiGameNetworking-0.0.7.3`)"
     - KwaiGameNetworkStatusMonitor (= 1.0.6)
-    - KwaiGameSDK (from `./../KwaiGameSDK.podspec`)
-    - KwaiGameSDK-ABtest-Firebase (from `./../KwaiGameSDK-ABtest-Firebase.podspec`)
-    - KwaiGameSDK-AD (from `./../KwaiGameSDK-AD.podspec`)
-    - KwaiGameSDK-ADPath-AppsFlyer (from `./../KwaiGameSDK-ADPath-AppsFlyer.podspec`)
-    - KwaiGameSDK-AntiAddict (from `./../KwaiGameSDK-AntiAddict.podspec`)
-    - KwaiGameSDK-AppBox (from `./../KwaiGameSDK-AppBox.podspec`)
-    - KwaiGameSDK-AppsflyerCommon (from `./../KwaiGameSDK-AppsflyerCommon.podspec`)
-    - KwaiGameSDK-Audio (from `./../KwaiGameSDK-Audio.podspec`)
-    - KwaiGameSDK-Community (from `./../KwaiGameSDK-Community.podspec`)
-    - KwaiGameSDK-Community-Kwai (from `./../KwaiGameSDK-Community-Kwai.podspec`)
-    - KwaiGameSDK-CrashReport (from `./../KwaiGameSDK-CrashReport.podspec`)
-    - KwaiGameSDK-CrashReport-Bugly (from `./../KwaiGameSDK-CrashReport-Bugly.podspec`)
-    - KwaiGameSDK-CrashReport-Firebase (from `./../KwaiGameSDK-CrashReport-Firebase.podspec`)
-    - KwaiGameSDK-Downloader (from `./../KwaiGameSDK-Downloader.podspec`)
-    - KwaiGameSDK-IM (from `./../KwaiGameSDK-IM.podspec`)
-    - KwaiGameSDK-KwaiJump (from `./../KwaiGameSDK-KwaiJump.podspec`)
-    - KwaiGameSDK-Live (from `./../KwaiGameSDK-Live.podspec`)
-    - KwaiGameSDK-LongLink (from `./../KwaiGameSDK-LongLink.podspec`)
-    - KwaiGameSDK-Media (from `./../KwaiGameSDK-Media.podspec`)
-    - KwaiGameSDK-Mock (from `./../KwaiGameSDK-Mock.podspec`)
-    - KwaiGameSDK-OpenPlatform (from `./../KwaiGameSDK-OpenPlatform.podspec`)
-    - KwaiGameSDK-Oversea (from `./../KwaiGameSDK-Oversea.podspec`)
-    - KwaiGameSDK-Pay (from `./../KwaiGameSDK-Pay.podspec`)
-    - KwaiGameSDK-Push (from `./../KwaiGameSDK-Push.podspec`)
-    - KwaiGameSDK-PushReport (from `./../KwaiGameSDK-PushReport.podspec`)
-    - KwaiGameSDK-QRScan (from `./../KwaiGameSDK-QRScan.podspec`)
-    - KwaiGameSDK-QuickLogin (from `./../KwaiGameSDK-QuickLogin.podspec`)
-    - KwaiGameSDK-Relation (from `./../KwaiGameSDK-Relation.podspec`)
-    - KwaiGameSDK-Report-Appsflyer (from `./../KwaiGameSDK-Report-Appsflyer.podspec`)
-    - KwaiGameSDK-Report-Firebase (from `./../KwaiGameSDK-Report-Firebase.podspec`)
-    - KwaiGameSDK-SpringFestival (from `./../KwaiGameSDK-SpringFestival.podspec`)
-    - KwaiGameSDK-Subgame (from `./../KwaiGameSDK-Subgame.podspec`)
-    - KwaiGameSDK-UniApi (from `./../KwaiGameSDK-UniApi.podspec`)
-    - KwaiGameSDK-UnitTest (from `./../KwaiGameSDK-UnitTest.podspec`)
-    - KwaiGameSDK-VideoRecordBase (from `./../KwaiGameSDK-VideoRecordBase.podspec`)
-    - KwaiGameSDK-VideoShare (from `./../KwaiGameSDK-VideoShare.podspec`)
-    - KwaiGameSDK-VisitorPasswordLogin (from `./../KwaiGameSDK-VisitorPasswordLogin.podspec`)
-    - KwaiGameSDK-Voip (from `./../KwaiGameSDK-Voip.podspec`)
-    - KwaiGameSDK-WeaponArmy (from `./../KwaiGameSDK-WeaponArmy.podspec`)
-    - KwaiGameSDK-WebView (from `./../KwaiGameSDK-WebView.podspec`)
-    - KwaiGameSDK-WWP (from `./../KwaiGameSDK-WWP.podspec`)
+    - KwaiGameSDK (from `../KwaiGameSDK.podspec`)
+    - KwaiGameSDK-ABtest-Firebase (from `../KwaiGameSDK-ABtest-Firebase.podspec`)
+    - KwaiGameSDK-AD (from `../KwaiGameSDK-AD.podspec`)
+    - KwaiGameSDK-ADPath-AppsFlyer (from `../KwaiGameSDK-ADPath-AppsFlyer.podspec`)
+    - KwaiGameSDK-AntiAddict (from `../KwaiGameSDK-AntiAddict.podspec`)
+    - KwaiGameSDK-AppBox (from `../KwaiGameSDK-AppBox.podspec`)
+    - KwaiGameSDK-AppsflyerCommon (from `../KwaiGameSDK-AppsflyerCommon.podspec`)
+    - KwaiGameSDK-Audio (from `../KwaiGameSDK-Audio.podspec`)
+    - KwaiGameSDK-Community (from `../KwaiGameSDK-Community.podspec`)
+    - KwaiGameSDK-Community-Kwai (from `../KwaiGameSDK-Community-Kwai.podspec`)
+    - KwaiGameSDK-CrashReport (from `../KwaiGameSDK-CrashReport.podspec`)
+    - KwaiGameSDK-CrashReport-Bugly (from `../KwaiGameSDK-CrashReport-Bugly.podspec`)
+    - KwaiGameSDK-CrashReport-Firebase (from `../KwaiGameSDK-CrashReport-Firebase.podspec`)
+    - KwaiGameSDK-Downloader (from `../KwaiGameSDK-Downloader.podspec`)
+    - KwaiGameSDK-IM (from `../KwaiGameSDK-IM.podspec`)
+    - KwaiGameSDK-KwaiJump (from `../KwaiGameSDK-KwaiJump.podspec`)
+    - KwaiGameSDK-Live (from `../KwaiGameSDK-Live.podspec`)
+    - KwaiGameSDK-LongLink (from `../KwaiGameSDK-LongLink.podspec`)
+    - KwaiGameSDK-Media (from `../KwaiGameSDK-Media.podspec`)
+    - KwaiGameSDK-OpenPlatform (from `../KwaiGameSDK-OpenPlatform.podspec`)
+    - KwaiGameSDK-Oversea (from `../KwaiGameSDK-Oversea.podspec`)
+    - KwaiGameSDK-Pay (from `../KwaiGameSDK-Pay.podspec`)
+    - KwaiGameSDK-Push (from `../KwaiGameSDK-Push.podspec`)
+    - KwaiGameSDK-PushReport (from `../KwaiGameSDK-PushReport.podspec`)
+    - KwaiGameSDK-QRScan (from `../KwaiGameSDK-QRScan.podspec`)
+    - KwaiGameSDK-QuickLogin (from `../KwaiGameSDK-QuickLogin.podspec`)
+    - KwaiGameSDK-Relation (from `../KwaiGameSDK-Relation.podspec`)
+    - KwaiGameSDK-Report-Appsflyer (from `../KwaiGameSDK-Report-Appsflyer.podspec`)
+    - KwaiGameSDK-Report-Firebase (from `../KwaiGameSDK-Report-Firebase.podspec`)
+    - KwaiGameSDK-SpringFestival (from `../KwaiGameSDK-SpringFestival.podspec`)
+    - KwaiGameSDK-Subgame (from `../KwaiGameSDK-Subgame.podspec`)
+    - KwaiGameSDK-UniApi (from `../KwaiGameSDK-UniApi.podspec`)
+    - KwaiGameSDK-UnitTest (from `../KwaiGameSDK-UnitTest.podspec`)
+    - KwaiGameSDK-VideoRecordBase (from `../KwaiGameSDK-VideoRecordBase.podspec`)
+    - KwaiGameSDK-VideoShare (from `../KwaiGameSDK-VideoShare.podspec`)
+    - KwaiGameSDK-VisitorPasswordLogin (from `../KwaiGameSDK-VisitorPasswordLogin.podspec`)
+    - KwaiGameSDK-Voip (from `../KwaiGameSDK-Voip.podspec`)
+    - KwaiGameSDK-WeaponArmy (from `../KwaiGameSDK-WeaponArmy.podspec`)
+    - KwaiGameSDK-WebView (from `../KwaiGameSDK-WebView.podspec`)
+    - KwaiGameSDK-WWP (from `../KwaiGameSDK-WWP.podspec`)
     - "KwaiGameVideoAryaEncode (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git`, tag `KwaiGameVideoRecord-0.0.21`)"
     - "KwaiGameVideoBase (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git`, tag `KwaiGameVideoRecord-0.0.21`)"
     - "KwaiGameVideoCapture (from `git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git`, tag `KwaiGameVideoRecord-0.0.21`)"
@@ -2938,7 +2818,7 @@ PODS_INFO:
       :git: "git@git.corp.kuaishou.com:lib-iOS/KWArya-Packager.git"
       :tag: 1.0.11
     KGSDKBase:
-      :path: "./../KGSDKBase.podspec"
+      :path: "../KGSDKBase.podspec"
     KRNSDK:
       :git: "git@git.corp.kuaishou.com:krn/sdk/krn-ios-sdk.git"
       :tag: 0.1.139.ks
@@ -3046,10 +2926,10 @@ PODS_INFO:
       :tag: 0.0.18
     KwaiGameBase:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git"
-      :tag: 0.0.41
+      :tag: 0.0.40
     KwaiGameBase-DemoSupport:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git"
-      :tag: 0.0.41
+      :tag: 0.0.40
     KwaiGameLive:
       :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameLive.git"
       :tag: KwaiGameLive-1.0.16
@@ -3063,87 +2943,85 @@ PODS_INFO:
       :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameNetworking.git"
       :tag: KwaiGameNetworking-0.0.7.3
     KwaiGameSDK:
-      :path: "./../KwaiGameSDK.podspec"
+      :path: "../KwaiGameSDK.podspec"
     KwaiGameSDK-ABtest-Firebase:
-      :path: "./../KwaiGameSDK-ABtest-Firebase.podspec"
+      :path: "../KwaiGameSDK-ABtest-Firebase.podspec"
     KwaiGameSDK-AD:
-      :path: "./../KwaiGameSDK-AD.podspec"
+      :path: "../KwaiGameSDK-AD.podspec"
     KwaiGameSDK-ADPath-AppsFlyer:
-      :path: "./../KwaiGameSDK-ADPath-AppsFlyer.podspec"
+      :path: "../KwaiGameSDK-ADPath-AppsFlyer.podspec"
     KwaiGameSDK-AntiAddict:
-      :path: "./../KwaiGameSDK-AntiAddict.podspec"
+      :path: "../KwaiGameSDK-AntiAddict.podspec"
     KwaiGameSDK-AppBox:
-      :path: "./../KwaiGameSDK-AppBox.podspec"
+      :path: "../KwaiGameSDK-AppBox.podspec"
     KwaiGameSDK-AppsflyerCommon:
-      :path: "./../KwaiGameSDK-AppsflyerCommon.podspec"
+      :path: "../KwaiGameSDK-AppsflyerCommon.podspec"
     KwaiGameSDK-Audio:
-      :path: "./../KwaiGameSDK-Audio.podspec"
+      :path: "../KwaiGameSDK-Audio.podspec"
     KwaiGameSDK-Community:
-      :path: "./../KwaiGameSDK-Community.podspec"
+      :path: "../KwaiGameSDK-Community.podspec"
     KwaiGameSDK-Community-Kwai:
-      :path: "./../KwaiGameSDK-Community-Kwai.podspec"
+      :path: "../KwaiGameSDK-Community-Kwai.podspec"
     KwaiGameSDK-CrashReport:
-      :path: "./../KwaiGameSDK-CrashReport.podspec"
+      :path: "../KwaiGameSDK-CrashReport.podspec"
     KwaiGameSDK-CrashReport-Bugly:
-      :path: "./../KwaiGameSDK-CrashReport-Bugly.podspec"
+      :path: "../KwaiGameSDK-CrashReport-Bugly.podspec"
     KwaiGameSDK-CrashReport-Firebase:
-      :path: "./../KwaiGameSDK-CrashReport-Firebase.podspec"
+      :path: "../KwaiGameSDK-CrashReport-Firebase.podspec"
     KwaiGameSDK-Downloader:
-      :path: "./../KwaiGameSDK-Downloader.podspec"
+      :path: "../KwaiGameSDK-Downloader.podspec"
     KwaiGameSDK-IM:
-      :path: "./../KwaiGameSDK-IM.podspec"
+      :path: "../KwaiGameSDK-IM.podspec"
     KwaiGameSDK-KwaiJump:
-      :path: "./../KwaiGameSDK-KwaiJump.podspec"
+      :path: "../KwaiGameSDK-KwaiJump.podspec"
     KwaiGameSDK-Live:
-      :path: "./../KwaiGameSDK-Live.podspec"
+      :path: "../KwaiGameSDK-Live.podspec"
     KwaiGameSDK-LongLink:
-      :path: "./../KwaiGameSDK-LongLink.podspec"
+      :path: "../KwaiGameSDK-LongLink.podspec"
     KwaiGameSDK-Media:
-      :path: "./../KwaiGameSDK-Media.podspec"
-    KwaiGameSDK-Mock:
-      :path: "./../KwaiGameSDK-Mock.podspec"
+      :path: "../KwaiGameSDK-Media.podspec"
     KwaiGameSDK-OpenPlatform:
-      :path: "./../KwaiGameSDK-OpenPlatform.podspec"
+      :path: "../KwaiGameSDK-OpenPlatform.podspec"
     KwaiGameSDK-Oversea:
-      :path: "./../KwaiGameSDK-Oversea.podspec"
+      :path: "../KwaiGameSDK-Oversea.podspec"
     KwaiGameSDK-Pay:
-      :path: "./../KwaiGameSDK-Pay.podspec"
+      :path: "../KwaiGameSDK-Pay.podspec"
     KwaiGameSDK-Push:
-      :path: "./../KwaiGameSDK-Push.podspec"
+      :path: "../KwaiGameSDK-Push.podspec"
     KwaiGameSDK-PushReport:
-      :path: "./../KwaiGameSDK-PushReport.podspec"
+      :path: "../KwaiGameSDK-PushReport.podspec"
     KwaiGameSDK-QRScan:
-      :path: "./../KwaiGameSDK-QRScan.podspec"
+      :path: "../KwaiGameSDK-QRScan.podspec"
     KwaiGameSDK-QuickLogin:
-      :path: "./../KwaiGameSDK-QuickLogin.podspec"
+      :path: "../KwaiGameSDK-QuickLogin.podspec"
     KwaiGameSDK-Relation:
-      :path: "./../KwaiGameSDK-Relation.podspec"
+      :path: "../KwaiGameSDK-Relation.podspec"
     KwaiGameSDK-Report-Appsflyer:
-      :path: "./../KwaiGameSDK-Report-Appsflyer.podspec"
+      :path: "../KwaiGameSDK-Report-Appsflyer.podspec"
     KwaiGameSDK-Report-Firebase:
-      :path: "./../KwaiGameSDK-Report-Firebase.podspec"
+      :path: "../KwaiGameSDK-Report-Firebase.podspec"
     KwaiGameSDK-SpringFestival:
-      :path: "./../KwaiGameSDK-SpringFestival.podspec"
+      :path: "../KwaiGameSDK-SpringFestival.podspec"
     KwaiGameSDK-Subgame:
-      :path: "./../KwaiGameSDK-Subgame.podspec"
+      :path: "../KwaiGameSDK-Subgame.podspec"
     KwaiGameSDK-UniApi:
-      :path: "./../KwaiGameSDK-UniApi.podspec"
+      :path: "../KwaiGameSDK-UniApi.podspec"
     KwaiGameSDK-UnitTest:
-      :path: "./../KwaiGameSDK-UnitTest.podspec"
+      :path: "../KwaiGameSDK-UnitTest.podspec"
     KwaiGameSDK-VideoRecordBase:
-      :path: "./../KwaiGameSDK-VideoRecordBase.podspec"
+      :path: "../KwaiGameSDK-VideoRecordBase.podspec"
     KwaiGameSDK-VideoShare:
-      :path: "./../KwaiGameSDK-VideoShare.podspec"
+      :path: "../KwaiGameSDK-VideoShare.podspec"
     KwaiGameSDK-VisitorPasswordLogin:
-      :path: "./../KwaiGameSDK-VisitorPasswordLogin.podspec"
+      :path: "../KwaiGameSDK-VisitorPasswordLogin.podspec"
     KwaiGameSDK-Voip:
-      :path: "./../KwaiGameSDK-Voip.podspec"
+      :path: "../KwaiGameSDK-Voip.podspec"
     KwaiGameSDK-WeaponArmy:
-      :path: "./../KwaiGameSDK-WeaponArmy.podspec"
+      :path: "../KwaiGameSDK-WeaponArmy.podspec"
     KwaiGameSDK-WebView:
-      :path: "./../KwaiGameSDK-WebView.podspec"
+      :path: "../KwaiGameSDK-WebView.podspec"
     KwaiGameSDK-WWP:
-      :path: "./../KwaiGameSDK-WWP.podspec"
+      :path: "../KwaiGameSDK-WWP.podspec"
     KwaiGameVideoAryaEncode:
       :git: "git@git.corp.kuaishou.com:open-iOS/KwaiGameVideoRecorder.git"
       :tag: KwaiGameVideoRecord-0.0.21
@@ -3230,30 +3108,20 @@ PODS_INFO:
     ZipKit:
       :git: "git@git.corp.kuaishou.com:open-iOS/zipkit.git"
       :tag: 1.0.3.1
-  PODFILE CHECKSUM: a34600f1743ae58708c4d0f7d6050775a978acc8
+  PODFILE CHECKSUM: c1be83d1271034af7c086e45aa16a15a753239b0
   PODS:
     - Ads-Global (4.0.0.2):
       - Ads-Global/APM (= 4.0.0.2)
       - Ads-Global/BUAdSDK (= 4.0.0.2)
+    - Ads-Global/APM (4.0.0.2):
       - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
       - RangersAPM-Pangle/Global (= 2.3.2-pangle)
-    - Ads-Global/APM (4.0.0.2):
-      - RangersAPM-Pangle/Crash (= 2.3.2-pangle, = 2.3.2-pangle)
-      - RangersAPM-Pangle/Global (= 2.3.2-pangle, = 2.3.2-pangle)
     - Ads-Global/BUAdSDK (4.0.0.2):
       - Ads-Global/BUFoundation
       - Ads-Global/International
-      - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
-      - RangersAPM-Pangle/Global (= 2.3.2-pangle)
-    - Ads-Global/BUFoundation (4.0.0.2):
-      - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
-      - RangersAPM-Pangle/Global (= 2.3.2-pangle)
-    - Ads-Global/Domestic (4.0.0.2):
-      - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
-      - RangersAPM-Pangle/Global (= 2.3.2-pangle)
-    - Ads-Global/International (4.0.0.2):
-      - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
-      - RangersAPM-Pangle/Global (= 2.3.2-pangle)
+    - Ads-Global/BUFoundation (4.0.0.2)
+    - Ads-Global/Domestic (4.0.0.2)
+    - Ads-Global/International (4.0.0.2)
     - Aegon_iOS (1.36.6)
     - AFNetworking (3.2.1.4):
       - AFNetworking/NSURLSession (= 3.2.1.4)
@@ -3342,22 +3210,17 @@ PODS_INFO:
       - ReactCommon/turbomodule/core (= 0.62.2.22)
     - FBSDKCoreKit (11.0.0):
       - FBSDKCoreKit/Core (= 11.0.0)
-      - FBSDKCoreKit_Basics (~> 11.0.0)
     - FBSDKCoreKit/Core (11.0.0):
       - FBSDKCoreKit_Basics (~> 11.0.0)
     - FBSDKCoreKit_Basics (11.0.1):
       - FBSDKCoreKit_Basics/Basics (= 11.0.1)
     - FBSDKCoreKit_Basics/Basics (11.0.1)
     - FBSDKLoginKit (11.0.0):
-      - FBSDKCoreKit (~> 11.0.0)
-      - FBSDKCoreKit_Basics (~> 11.0.0)
       - FBSDKLoginKit/Login (= 11.0.0)
     - FBSDKLoginKit/Login (11.0.0):
       - FBSDKCoreKit (~> 11.0.0)
       - FBSDKCoreKit_Basics (~> 11.0.0)
     - FBSDKShareKit (11.0.0):
-      - FBSDKCoreKit (~> 11.0.0)
-      - FBSDKCoreKit_Basics (~> 11.0.0)
       - FBSDKShareKit/Share (= 11.0.0)
     - FBSDKShareKit/Share (11.0.0):
       - FBSDKCoreKit (~> 11.0.0)
@@ -3365,32 +3228,16 @@ PODS_INFO:
     - FCFileManager (1.0.21)
     - Firebase/Analytics (8.14.0):
       - Firebase/Core
-      - FirebaseAnalytics (~> 8.14.0)
-      - FirebaseCore (= 8.14.0)
-      - FirebaseCrashlytics (~> 8.14.0)
-      - FirebaseRemoteConfig (~> 8.14.0)
     - Firebase/Core (8.14.0):
       - Firebase/CoreOnly
       - FirebaseAnalytics (~> 8.14.0)
-      - FirebaseCore (= 8.14.0)
-      - FirebaseCrashlytics (~> 8.14.0)
-      - FirebaseRemoteConfig (~> 8.14.0)
     - Firebase/CoreOnly (8.14.0):
-      - FirebaseAnalytics (~> 8.14.0)
-      - FirebaseCore (= 8.14.0, = 8.14.0)
-      - FirebaseCrashlytics (~> 8.14.0)
-      - FirebaseRemoteConfig (~> 8.14.0)
+      - FirebaseCore (= 8.14.0)
     - Firebase/Crashlytics (8.14.0):
       - Firebase/CoreOnly
-      - FirebaseAnalytics (~> 8.14.0)
-      - FirebaseCore (= 8.14.0)
       - FirebaseCrashlytics (~> 8.14.0)
-      - FirebaseRemoteConfig (~> 8.14.0)
     - Firebase/RemoteConfig (8.14.0):
       - Firebase/CoreOnly
-      - FirebaseAnalytics (~> 8.14.0)
-      - FirebaseCore (= 8.14.0)
-      - FirebaseCrashlytics (~> 8.14.0)
       - FirebaseRemoteConfig (~> 8.14.0)
     - FirebaseABTesting (8.14.0):
       - FirebaseCore (~> 8.0)
@@ -3398,7 +3245,6 @@ PODS_INFO:
       - FirebaseAnalytics/AdIdSupport (= 8.14.0)
       - FirebaseCore (~> 8.0)
       - FirebaseInstallations (~> 8.0)
-      - GoogleAppMeasurement (= 8.14.0)
       - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
       - GoogleUtilities/MethodSwizzler (~> 7.7)
       - GoogleUtilities/Network (~> 7.7)
@@ -3407,7 +3253,7 @@ PODS_INFO:
     - FirebaseAnalytics/AdIdSupport (8.14.0):
       - FirebaseCore (~> 8.0)
       - FirebaseInstallations (~> 8.0)
-      - GoogleAppMeasurement (= 8.14.0, = 8.14.0)
+      - GoogleAppMeasurement (= 8.14.0)
       - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
       - GoogleUtilities/MethodSwizzler (~> 7.7)
       - GoogleUtilities/Network (~> 7.7)
@@ -3518,28 +3364,21 @@ PODS_INFO:
       - GoogleUtilities/Environment
       - GoogleUtilities/Logger
       - GoogleUtilities/Network
-      - PromisesObjC (< 3.0, >= 1.2)
     - GoogleUtilities/Environment (7.7.0):
-      - PromisesObjC (< 3.0, >= 1.2, >= 1.2)
+      - PromisesObjC (< 3.0, >= 1.2)
     - GoogleUtilities/Logger (7.7.0):
       - GoogleUtilities/Environment
-      - PromisesObjC (< 3.0, >= 1.2)
     - GoogleUtilities/MethodSwizzler (7.7.0):
       - GoogleUtilities/Logger
-      - PromisesObjC (< 3.0, >= 1.2)
     - GoogleUtilities/Network (7.7.0):
       - GoogleUtilities/Logger
       - "GoogleUtilities/NSData+zlib"
       - GoogleUtilities/Reachability
-      - PromisesObjC (< 3.0, >= 1.2)
-    - "GoogleUtilities/NSData+zlib (7.7.0)":
-      - PromisesObjC (< 3.0, >= 1.2)
+    - "GoogleUtilities/NSData+zlib (7.7.0)"
     - GoogleUtilities/Reachability (7.7.0):
       - GoogleUtilities/Logger
-      - PromisesObjC (< 3.0, >= 1.2)
     - GoogleUtilities/UserDefaults (7.7.0):
       - GoogleUtilities/Logger
-      - PromisesObjC (< 3.0, >= 1.2)
     - GTMAppAuth (1.2.3):
       - AppAuth/Core (~> 1.4)
       - GTMSessionFetcher/Core (~> 1.5)
@@ -3549,7 +3388,6 @@ PODS_INFO:
       - boost (~> 1.64.0)
       - Hodor/Default (= 4.2.0)
       - KSFFmpeg_iOS
-      - Masonry
       - Reachability
     - Hodor/Core (4.2.0):
       - Aegon_iOS
@@ -3559,7 +3397,6 @@ PODS_INFO:
       - Hodor/native
       - Hodor/third_party
       - KSFFmpeg_iOS
-      - Masonry
       - Reachability
     - Hodor/Default (4.2.0):
       - Aegon_iOS
@@ -3567,20 +3404,17 @@ PODS_INFO:
       - Hodor/Core
       - Hodor/ios/DebugInfo
       - KSFFmpeg_iOS
-      - Masonry
       - Reachability
     - Hodor/Header (4.2.0):
       - Aegon_iOS
       - boost (~> 1.64.0)
       - KSFFmpeg_iOS
-      - Masonry
       - Reachability
     - Hodor/ios/Classes (4.2.0):
       - Aegon_iOS
       - boost (~> 1.64.0)
       - Hodor/native
       - KSFFmpeg_iOS
-      - Masonry
       - Reachability
     - Hodor/ios/DebugInfo (4.2.0):
       - Aegon_iOS
@@ -3594,7 +3428,6 @@ PODS_INFO:
       - boost (~> 1.64.0)
       - Hodor/third_party
       - KSFFmpeg_iOS
-      - Masonry
       - Reachability
     - Hodor/third_party (4.2.0):
       - Aegon_iOS
@@ -3602,24 +3435,20 @@ PODS_INFO:
       - Hodor/third_party/catelyn (= 4.2.0)
       - Hodor/third_party/json (= 4.2.0)
       - KSFFmpeg_iOS
-      - Masonry
       - Reachability
     - Hodor/third_party/catelyn (4.2.0):
       - Aegon_iOS
       - boost (~> 1.64.0)
       - KSFFmpeg_iOS
-      - Masonry
       - Reachability
     - Hodor/third_party/json (4.2.0):
       - Aegon_iOS
       - boost (~> 1.64.0)
       - KSFFmpeg_iOS
-      - Masonry
       - Reachability
     - IMSDKProto (0.8.2):
       - Protobuf
     - IronSourceSDK (7.2.1.0)
-    - JhtFloatingBall (1.0.3)
     - JNKeychain (0.1.6)
     - JRSwizzle (1.0)
     - kdiff (1.0.5):
@@ -3632,13 +3461,13 @@ PODS_INFO:
       - KSRtcKit/core
       - KwaiBase/LiteProxy
       - KWArya/Game
-    - KGSDKBase (1.30.4):
-      - KGSDKBase/Core (= 1.30.4)
-      - KGSDKBase/Env (= 1.30.4)
-      - KGSDKBase/Utils (= 1.30.4)
+    - KGSDKBase (1.31.1):
+      - KGSDKBase/Core (= 1.31.1)
+      - KGSDKBase/Env (= 1.31.1)
+      - KGSDKBase/Utils (= 1.31.1)
       - KwaiBase
       - KwaiGameBase
-    - KGSDKBase/Core (1.30.4):
+    - KGSDKBase/Core (1.31.1):
       - KwaiBase
       - KwaiBase/DDLog
       - KwaiGameBase
@@ -3647,11 +3476,11 @@ PODS_INFO:
       - KwaiGameNetworkStatusMonitor
       - KwaiReportCenter
       - ZipKit
-    - KGSDKBase/Env (1.30.4):
+    - KGSDKBase/Env (1.31.1):
       - KGSDKBase/Utils
       - KwaiBase
       - KwaiGameBase
-    - KGSDKBase/Utils (1.30.4):
+    - KGSDKBase/Utils (1.31.1):
       - KwaiBase
       - KwaiGameBase
     - klp (1.12.0.7.1a61a0cf)
@@ -3659,25 +3488,20 @@ PODS_INFO:
       - KRNSDK/Default (= 0.1.139.ks)
       - KSXPackageManager
       - KwaiBridgeCenter
-      - MMKV
       - React
       - SSZipArchive
-      - Tweaks
       - Yoga
     - KRNSDK/Container (0.1.139.ks):
       - KRNSDK/Debug
       - KSXPackageManager
       - KwaiBridgeCenter
-      - MMKV
       - React
       - SSZipArchive
-      - Tweaks
       - Yoga
     - KRNSDK/Debug (0.1.139.ks):
       - KRNSDK/Default
       - KSXPackageManager
       - KwaiBridgeCenter
-      - MMKV
       - React
       - SSZipArchive
       - Tweaks
@@ -3685,19 +3509,15 @@ PODS_INFO:
     - KRNSDK/Default (0.1.139.ks):
       - KSXPackageManager
       - KwaiBridgeCenter
-      - MMKV
       - React
       - SSZipArchive
-      - Tweaks
       - Yoga
     - KRNSDK/KdsAnimated (0.1.139.ks):
       - KRNSDK/Default
       - KSXPackageManager
       - KwaiBridgeCenter
-      - MMKV
       - React
       - SSZipArchive
-      - Tweaks
       - Yoga
     - KRNSDK/KRNStorage (0.1.139.ks):
       - KSXPackageManager
@@ -3705,15 +3525,12 @@ PODS_INFO:
       - MMKV
       - React
       - SSZipArchive
-      - Tweaks
       - Yoga
     - KRNSDK/WebLoggerHelper (0.1.139.ks):
       - KSXPackageManager
       - KwaiBridgeCenter
-      - MMKV
       - React
       - SSZipArchive
-      - Tweaks
       - Yoga
     - KSAudioProcessLib (3.4):
       - KSAudioProcessLib/Core (= 3.4)
@@ -3728,30 +3545,8 @@ PODS_INFO:
     - KSChinaTelecomSDK (3.7.0)
     - KSChinaUnicomSDK (4.0.0)
     - KSCommon (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/All (= 1.15.18)
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/All (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/AVFoundationUtils
       - KSCommon/Base
       - KSCommon/CollectionUtil
@@ -3768,307 +3563,69 @@ PODS_INFO:
       - KSCommon/StringUtil
       - KSCommon/TaskUtil
       - KSCommon/URLUtil
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/AVFoundationUtils (1.15.18):
-      - AFNetworking (~> 3.0)
       - BlocksKit
       - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
       - JRSwizzle
       - KSCommon/Base
       - KSCommon/Core
       - KSCommon/StringUtil
       - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
       - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
       - SDWebImage
       - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/Base (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
       - KSTLog
       - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/CollectionUtil (1.15.18):
-      - AFNetworking (~> 3.0)
       - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/Base
       - KSCommon/StringUtil
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/Core (1.15.18):
-      - AFNetworking (~> 3.0)
       - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/Base
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
       - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
-    - KSCommon/DataUtil (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
+    - KSCommon/DataUtil (1.15.18)
     - KSCommon/DateUtil (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/CollectionUtil
       - KSCommon/Network
       - KSCommon/NetworkUtil
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
       - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/DeviceUtil (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
       - JNKeychain
       - JRSwizzle
       - KSCommon/Core
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
       - KwaiSwizzle
-      - OpenSSL-Universal
       - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/FileUtil (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/CollectionUtil
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/GCDTimer (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/Base
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/Network (1.15.18):
       - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
-      - KSDiskCache
       - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
       - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/NetworkUtil (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
       - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/Base
       - KSCommon/Core
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/PasswordUtil (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/Base
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
-    - KSCommon/PhotoLibrary (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
+    - KSCommon/PhotoLibrary (1.15.18)
     - KSCommon/StringUtil (1.15.18):
-      - AFNetworking (~> 3.0)
       - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/Base
       - KSCommon/DataUtil
       - KSCommon/URLUtil
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
       - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
       - twitter-text
     - KSCommon/TaskUtil (1.15.18):
-      - AFNetworking (~> 3.0)
-      - BlocksKit
       - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
       - KSCommon/Base
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
-      - KSTLog
-      - KSUserDefaults
-      - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSCommon/URLUtil (1.15.18):
-      - AFNetworking (~> 3.0)
       - BlocksKit
-      - Bolts
-      - CocoaAsyncSocket
-      - JNKeychain
-      - JRSwizzle
-      - KSDiskCache
-      - KSMWAzeroth/NetworkingWrapper
       - KSTLog
-      - KSUserDefaults
       - KwaiSwizzle
-      - OpenSSL-Universal
-      - Reachability
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - twitter-text
     - KSDFP (4.9.2.230.2b11104e):
       - FCFileManager (~> 1.0.21)
       - JNKeychain (~> 0.1.2)
@@ -4121,38 +3678,19 @@ PODS_INFO:
       - KSSmartDns/Core
       - KwaiMediaPlayer
     - KSMWAzeroth (0.5.37):
-      - AFNetworking (~> 3.0)
-      - JNKeychain (~> 0.1.2)
-      - KSecurityWrapper (~> 0.0.9)
       - KSMWAzeroth/Core (= 0.5.37)
-      - MJExtension
-      - Reachability
     - KSMWAzeroth/Core (0.5.37):
-      - AFNetworking (~> 3.0)
       - JNKeychain (~> 0.1.2)
       - KSecurityWrapper (~> 0.0.9)
       - KSMWAzeroth/LoggerWrapper
-      - MJExtension
       - Reachability
     - KSMWAzeroth/DefaultNetworkingWrapper (0.5.37):
       - AFNetworking (~> 3.0)
-      - JNKeychain (~> 0.1.2)
-      - KSecurityWrapper (~> 0.0.9)
       - KSMWAzeroth/NetworkingWrapper
-      - MJExtension
-      - Reachability
     - KSMWAzeroth/LoggerWrapper (0.5.37):
-      - AFNetworking (~> 3.0)
-      - JNKeychain (~> 0.1.2)
-      - KSecurityWrapper (~> 0.0.9)
       - MJExtension
-      - Reachability
     - KSMWAzeroth/NetworkingWrapper (0.5.37):
-      - AFNetworking (~> 3.0)
-      - JNKeychain (~> 0.1.2)
-      - KSecurityWrapper (~> 0.0.9)
-      - MJExtension
-      - Reachability
+      - AFNetworking
     - KSMWDataCompress (0.1.2)
     - KSORM (0.8.7):
       - BlocksKit/Core
@@ -4189,28 +3727,19 @@ PODS_INFO:
       - KSMWAzeroth
       - MJExtension
     - KSTLog (0.1.15):
-      - CocoaLumberjack (~> 2.4.0.9)
       - KSTLog/Core (= 0.1.15)
     - KSTLog/Core (0.1.15):
       - CocoaLumberjack (~> 2.4.0.9)
     - KSUAccount (0.5.2):
-      - AFNetworking
-      - JNKeychain (~> 0.1.6)
-      - KSCommon
       - KSUAccount/Core (= 0.5.2)
       - KSUAccount/DeviceId (= 0.5.2)
-      - MJExtension
     - KSUAccount/Core (0.5.2):
       - AFNetworking
-      - JNKeychain (~> 0.1.6)
       - KSCommon
       - KSUAccount/DeviceId
       - MJExtension
     - KSUAccount/DeviceId (0.5.2):
-      - AFNetworking
       - JNKeychain (~> 0.1.6)
-      - KSCommon
-      - MJExtension
     - KSULiveStream/AnchorWithFeed (2.0.1):
       - Aspects
       - BlocksKit/Core
@@ -4229,48 +3758,24 @@ PODS_INFO:
       - MJExtension
       - Protobuf
     - KSULNetworking (1.1.0):
-      - AFNetworking
-      - Bolts
-      - JRSwizzle (= 1.0)
-      - KSCommon
       - KSULNetworking/All (= 1.1.0)
-      - MJExtension
-    - KSULNetworking/_JSONKit (1.1.0):
-      - AFNetworking
-      - Bolts
-      - JRSwizzle (= 1.0)
-      - KSCommon
-      - MJExtension
+    - KSULNetworking/_JSONKit (1.1.0)
     - KSULNetworking/All (1.1.0):
-      - AFNetworking
-      - Bolts
-      - JRSwizzle (= 1.0)
-      - KSCommon
       - KSULNetworking/Core
       - KSULNetworking/Downgrade
       - KSULNetworking/Promise
-      - MJExtension
     - KSULNetworking/Core (1.1.0):
       - AFNetworking
-      - Bolts
-      - JRSwizzle (= 1.0, = 1.0)
+      - JRSwizzle (= 1.0)
       - KSCommon
       - KSULNetworking/_JSONKit
       - MJExtension
     - KSULNetworking/Downgrade (1.1.0):
-      - AFNetworking
-      - Bolts
-      - JRSwizzle (= 1.0, = 1.0)
-      - KSCommon
-      - KSULNetworking/Core
-      - MJExtension
-    - KSULNetworking/Promise (1.1.0):
-      - AFNetworking
-      - Bolts
       - JRSwizzle (= 1.0)
-      - KSCommon
       - KSULNetworking/Core
-      - MJExtension
+    - KSULNetworking/Promise (1.1.0):
+      - Bolts
+      - KSULNetworking/Core
     - KSUploader (5.0.9.7bd49386):
       - boost
       - KSUProtoModel/common
@@ -4330,16 +3835,12 @@ PODS_INFO:
       - SSZipArchive
     - ktp (7.1.2-core)
     - KwaiAnalytics (0.2.8):
-      - KSKanas (>= 0.9.2)
       - KwaiAnalytics/Core (= 0.2.8)
-      - XFMulticastDelegate
     - KwaiAnalytics/Core (0.2.8):
-      - KSKanas (>= 0.9.2)
       - XFMulticastDelegate
     - KwaiAnalytics/Kanas (0.2.8):
-      - KSKanas (>= 0.9.2, >= 0.9.2)
+      - KSKanas (>= 0.9.2)
       - KwaiAnalytics/Core
-      - XFMulticastDelegate
     - KwaiAppBox (1.0.34):
       - AutoCoding
       - KwaiAppBox/Data (= 1.0.34)
@@ -4380,40 +3881,32 @@ PODS_INFO:
       - SDWebImage
       - SSZipArchive
     - KwaiBase (0.1.31):
-      - CocoaLumberjack/Extensions
-      - KSCommon
       - KwaiBase/Core (= 0.1.31)
     - KwaiBase/Core (0.1.31):
-      - CocoaLumberjack/Extensions
       - KSCommon
     - KwaiBase/DDLog (0.1.31):
       - CocoaLumberjack/Extensions
-      - KSCommon
       - KwaiBase/Core
     - KwaiBase/LiteProxy (0.1.31):
-      - CocoaLumberjack/Extensions
-      - KSCommon
       - KwaiBase/Core
-    - KwaiBridgeCenter (2.1.17)
+    - KwaiBridgeCenter (2.1.13)
     - KwaiCaptcha (0.4.0):
       - KSMWAzeroth
       - KwaiCaptcha/TXVerify (= 0.4.0)
       - Masonry
       - MJExtension
-      - WBCloudFace (= 6.3.2)
       - Yoda
     - KwaiCaptcha/ALiVerify (0.4.0):
       - KSMWAzeroth
       - KwaiCaptcha/TXVerify
       - Masonry
       - MJExtension
-      - WBCloudFace (= 6.3.2)
       - Yoda
     - KwaiCaptcha/TXVerify (0.4.0):
       - KSMWAzeroth
       - Masonry
       - MJExtension
-      - WBCloudFace (= 6.3.2, = 6.3.2)
+      - WBCloudFace (= 6.3.2)
       - Yoda
     - KwaiGameAD (1.31.0):
       - KwaiGameAD/PrivateHeader (= 1.31.0)
@@ -4474,46 +3967,29 @@ PODS_INFO:
     - KwaiGameADPath/PrivateHeader (0.0.1):
       - XFMulticastDelegate
     - KwaiGameBase (0.0.34):
-      - CocoaLumberjack
-      - KwaiAnalytics/Core
-      - KwaiAnalytics/Kanas
       - KwaiBase
-      - KwaiBase/DDLog
       - KwaiBase/LiteProxy
       - KwaiGameBase/Core (= 0.0.34)
-      - ZipKit
     - KwaiGameBase-DemoSupport (0.0.34):
       - KwaiBase
       - KwaiBase/LiteProxy
       - KwaiGameBase-DemoSupport/DemoSupport (= 0.0.34)
-      - KwaiGameBase/Core
-      - Toast
     - KwaiGameBase-DemoSupport/DemoSupport (0.0.34):
       - KwaiBase
       - KwaiBase/LiteProxy
       - KwaiGameBase/Core
       - Toast
     - KwaiGameBase/ActionLog (0.0.34):
-      - CocoaLumberjack
       - KwaiAnalytics/Core
       - KwaiAnalytics/Kanas
       - KwaiBase
-      - KwaiBase/DDLog
       - KwaiBase/LiteProxy
       - KwaiGameBase/Core
-      - ZipKit
     - KwaiGameBase/Core (0.0.34):
-      - CocoaLumberjack
-      - KwaiAnalytics/Core
-      - KwaiAnalytics/Kanas
       - KwaiBase
-      - KwaiBase/DDLog
       - KwaiBase/LiteProxy
-      - ZipKit
     - KwaiGameBase/Log (0.0.34):
       - CocoaLumberjack
-      - KwaiAnalytics/Core
-      - KwaiAnalytics/Kanas
       - KwaiBase
       - KwaiBase/DDLog
       - KwaiBase/LiteProxy
@@ -4574,24 +4050,24 @@ PODS_INFO:
     - KwaiGameNetworkStatusMonitor (1.0.6):
       - AFNetworking
       - XFMulticastDelegate
-    - KwaiGameSDK (1.30.4):
-      - KwaiGameSDK/Core (= 1.30.4)
-      - KwaiGameSDK/Header (= 1.30.4)
-    - KwaiGameSDK-ABtest-Firebase (1.30.4):
+    - KwaiGameSDK (1.31.1):
+      - KwaiGameSDK/Core (= 1.31.1)
+      - KwaiGameSDK/Header (= 1.31.1)
+    - KwaiGameSDK-ABtest-Firebase (1.31.1):
       - Firebase/RemoteConfig
       - KGSDKBase
       - KwaiGameBase
-    - KwaiGameSDK-AD (1.30.4):
+    - KwaiGameSDK-AD (1.31.1):
       - KwaiGameAD-Manager
       - KwaiGameSDK/Header
     - KwaiGameSDK-ADPath-AppsFlyer (1.8.4):
       - AppsFlyerFramework
       - KwaiGameADPath
       - KwaiGameBase
-    - KwaiGameSDK-AntiAddict (1.30.4):
+    - KwaiGameSDK-AntiAddict (1.31.1):
       - KGSDKBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-AppBox (1.30.4):
+    - KwaiGameSDK-AppBox (1.31.1):
       - Aegon_iOS
       - Hodor
       - KSVodPlayer
@@ -4599,19 +4075,19 @@ PODS_INFO:
       - KwaiGameBase
       - KwaiGameNetworkStatusMonitor
       - KwaiGameSDK/Header
-    - KwaiGameSDK-AppsflyerCommon (1.30.4):
+    - KwaiGameSDK-AppsflyerCommon (1.31.1):
       - AppsFlyerFramework
       - KGSDKBase
       - KwaiAnalytics
       - KwaiGameBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Audio (1.30.4)
-    - KwaiGameSDK-Community (1.30.4):
+    - KwaiGameSDK-Audio (1.31.1)
+    - KwaiGameSDK-Community (1.31.1):
       - KGSDKBase
-      - KwaiGameSDK-Community/Protocol (= 1.30.4)
+      - KwaiGameSDK-Community/Protocol (= 1.31.1)
       - KwaiGameSDK/Header
       - SDWebImage
-    - KwaiGameSDK-Community-Kwai (1.30.4):
+    - KwaiGameSDK-Community-Kwai (1.31.1):
       - BVLinearGradient
       - KGSDKBase
       - KRNSDK
@@ -4634,32 +4110,32 @@ PODS_INFO:
       - RNScreens
       - RNSVG
       - Yoga
-    - KwaiGameSDK-Community/Protocol (1.30.4):
+    - KwaiGameSDK-Community/Protocol (1.31.1):
       - KGSDKBase
       - KwaiGameSDK/Header
       - SDWebImage
-    - KwaiGameSDK-CrashReport (1.30.4):
+    - KwaiGameSDK-CrashReport (1.31.1):
       - KGSDKBase
       - KwaiGameBase
-      - KwaiGameSDK-CrashReport/Protocol (= 1.30.4)
+      - KwaiGameSDK-CrashReport/Protocol (= 1.31.1)
       - KwaiGameSDK/Header
-    - KwaiGameSDK-CrashReport-Bugly (1.30.4):
+    - KwaiGameSDK-CrashReport-Bugly (1.31.1):
       - Bugly
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK-CrashReport/Protocol
       - KwaiGameSDK/Header
-    - KwaiGameSDK-CrashReport-Firebase (1.30.4):
+    - KwaiGameSDK-CrashReport-Firebase (1.31.1):
       - Firebase/Crashlytics
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK-CrashReport/Protocol
       - KwaiGameSDK/Header
-    - KwaiGameSDK-CrashReport/Protocol (1.30.4):
+    - KwaiGameSDK-CrashReport/Protocol (1.31.1):
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Downloader (1.30.4):
+    - KwaiGameSDK-Downloader (1.31.1):
       - Aegon_iOS
       - Hodor
       - KSVodPlayer
@@ -4667,19 +4143,19 @@ PODS_INFO:
       - KwaiGameBase
       - KwaiGameNetworkStatusMonitor
       - KwaiGameSDK/Header
-    - KwaiGameSDK-IM (1.30.4):
+    - KwaiGameSDK-IM (1.31.1):
       - boost
       - ktp
       - KwaiGameSDK-LongLink
       - KwaiGameSDK/Header
       - KwaiIMSDK/Core
       - KwaiIMSDK/NetworkingWrapper
-    - KwaiGameSDK-KwaiJump (1.30.4):
+    - KwaiGameSDK-KwaiJump (1.31.1):
       - KGSDKBase
       - KwaiBase
       - KwaiGameBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Live (1.30.4):
+    - KwaiGameSDK-Live (1.31.1):
       - KGAryaManager
       - KwaiBase/LiteProxy
       - KwaiCaptcha
@@ -4687,100 +4163,93 @@ PODS_INFO:
       - KwaiGameLive-LiveMartPlugin
       - KwaiGameSDK/Header
       - Yoda
-    - KwaiGameSDK-LongLink (1.30.4):
+    - KwaiGameSDK-LongLink (1.31.1):
       - Aegon_iOS
       - KwaiGameSDK/Header
       - KwaiIMKwaiLink (~> 0.7.0)
       - Pigeon
       - Reachability
       - XFMulticastDelegate
-    - KwaiGameSDK-Media (1.30.4)
-    - KwaiGameSDK-Mock (1.30.4):
-      - JhtFloatingBall
-      - KGSDKBase
-      - KwaiGameBase
-      - KwaiGameSDK
-      - KwaiGameSDK-UniApi
-    - KwaiGameSDK-OpenPlatform (1.30.4):
+    - KwaiGameSDK-Media (1.31.1)
+    - KwaiGameSDK-OpenPlatform (1.31.1):
       - Diplomat/Tencent
       - Diplomat/Wechat
       - Diplomat/Weibo
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Oversea (1.30.4):
+    - KwaiGameSDK-Oversea (1.31.1):
       - FBSDKCoreKit
       - FBSDKLoginKit
       - FBSDKShareKit
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Pay (1.30.4):
+    - KwaiGameSDK-Pay (1.31.1):
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Push (1.30.4):
+    - KwaiGameSDK-Push (1.31.1):
       - KwaiGameSDK-PushReport
       - KwaiGameSDK/Header
-    - KwaiGameSDK-PushReport (1.30.4):
+    - KwaiGameSDK-PushReport (1.31.1):
       - KGSDKBase/Env
-    - KwaiGameSDK-QRScan (1.30.4):
+    - KwaiGameSDK-QRScan (1.31.1):
       - KGSDKBase
       - KwaiBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-QuickLogin (1.30.4):
+    - KwaiGameSDK-QuickLogin (1.31.1):
       - KGSDKBase
       - KSChinaMobileQuickLogin
       - KSChinaTelecomSDK
       - KSChinaUnicomSDK
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Relation (1.30.4):
+    - KwaiGameSDK-Relation (1.31.1):
       - KwaiGameSDK/Header
       - KwaiSDK
-    - KwaiGameSDK-Report-Appsflyer (1.30.4):
+    - KwaiGameSDK-Report-Appsflyer (1.31.1):
       - AppsFlyerFramework
       - KGSDKBase
       - KwaiAnalytics
       - KwaiGameBase
-    - KwaiGameSDK-Report-Firebase (1.30.4):
+    - KwaiGameSDK-Report-Firebase (1.31.1):
       - Firebase/Analytics
       - KGSDKBase
       - KwaiAnalytics
       - KwaiGameBase
-    - KwaiGameSDK-SpringFestival (1.30.4):
+    - KwaiGameSDK-SpringFestival (1.31.1):
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Subgame (1.30.4):
+    - KwaiGameSDK-Subgame (1.31.1):
       - KwaiGameSDK-Live
       - KwaiGameSDK-Pay
       - KwaiGameSDK/Header
       - XFMulticastDelegate
-    - KwaiGameSDK-UniApi (1.30.4):
+    - KwaiGameSDK-UniApi (1.31.1):
       - KGSDKBase
       - KwaiGameBase
-      - KwaiGameBase-DemoSupport
-    - KwaiGameSDK-UnitTest (1.30.4):
+    - KwaiGameSDK-UnitTest (1.31.1):
       - KGSDKBase
       - KwaiGameSDK/Header
       - OpenSSL-Universal
-    - KwaiGameSDK-VideoRecordBase (1.30.4):
+    - KwaiGameSDK-VideoRecordBase (1.31.1):
       - KwaiGameSDK/Header
       - KwaiGameVideoBase
-    - KwaiGameSDK-VideoShare (1.30.4):
+    - KwaiGameSDK-VideoShare (1.31.1):
       - KwaiGameSDK/Header
       - KwaiGameVideoShare
-    - KwaiGameSDK-VisitorPasswordLogin (1.30.4):
+    - KwaiGameSDK-VisitorPasswordLogin (1.31.1):
       - KGSDKBase
       - KwaiBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Voip (1.30.4):
+    - KwaiGameSDK-Voip (1.31.1):
       - KGAryaManager
       - KwaiGameSDK-LongLink
-    - KwaiGameSDK-WeaponArmy (1.30.4):
+    - KwaiGameSDK-WeaponArmy (1.31.1):
       - KGSDKBase
       - KSWeaponArmy
       - KwaiGameSDK/Header
-    - KwaiGameSDK-WebView (1.30.4):
+    - KwaiGameSDK-WebView (1.31.1):
       - KwaiGameSDK/Header
-    - KwaiGameSDK-WWP (1.30.4):
+    - KwaiGameSDK-WWP (1.31.1):
       - KSLivePlayer
       - KwaiGameSDK/Header
       - KwaiGameWWP
       - KwaiGameWWP-NativeUIPlugin
-    - KwaiGameSDK/Core (1.30.4):
+    - KwaiGameSDK/Core (1.31.1):
       - AFNetworking
       - KGSDKBase
       - KSDFP
@@ -4790,14 +4259,9 @@ PODS_INFO:
       - KwaiAnalytics
       - KwaiAnalytics/Kanas
       - KwaiBase
-      - KwaiGameADPath
       - KwaiGameBase
       - KwaiGameNetworking
       - KwaiGameSDK-AntiAddict
-      - KwaiGameSDK-CrashReport
-      - KwaiGameSDK-KwaiJump
-      - KwaiGameSDK-Push
-      - KwaiGameSDK-PushReport
       - KwaiGameSDK-WebView
       - KwaiSDK
       - KwaiUIRecorder
@@ -4806,7 +4270,7 @@ PODS_INFO:
       - MJExtension
       - Reachability
       - Yoda
-    - KwaiGameSDK/Header (1.30.4):
+    - KwaiGameSDK/Header (1.31.1):
       - KwaiGameSDK-UniApi
     - KwaiGameVideoAryaEncode (0.0.9):
       - KwaiBase
@@ -4896,62 +4360,25 @@ PODS_INFO:
       - TransitionKit
       - XFMulticastDelegate
     - KwaiIMSDK (3.14.13):
-      - BlocksKit/Core
-      - Bolts/Tasks
-      - IMSDKProto (~> 0.8.2)
-      - KSCommon (~> 1.2)
-      - KSMWAzeroth/DefaultNetworkingWrapper (~> 0.5.18)
-      - KSUploader
-      - KSUploaderKit
-      - KSUserDefaults
-      - KwaiIMKwaiLink (~> 0.7.38)
       - KwaiIMSDK/Core (= 3.14.13)
       - KwaiIMSDK/KTPKit (= 3.14.13)
       - KwaiIMSDK/NetworkingWrapper (= 3.14.13)
-      - KwaiIMTrace
-      - KwaiIMXFDB (~> 0.3.17)
-      - Pigeon/Core (~> 0.6.8)
     - KwaiIMSDK/Core (3.14.13):
       - BlocksKit/Core
       - Bolts/Tasks
       - IMSDKProto (~> 0.8.2)
       - KSCommon (~> 1.2)
-      - KSMWAzeroth/DefaultNetworkingWrapper (~> 0.5.18)
-      - KSUploader
-      - KSUploaderKit
       - KSUserDefaults
       - KwaiIMKwaiLink (~> 0.7.38)
       - KwaiIMTrace
       - KwaiIMXFDB (~> 0.3.17)
       - Pigeon/Core (~> 0.6.8)
     - KwaiIMSDK/KTPKit (3.14.13):
-      - BlocksKit/Core
-      - Bolts/Tasks
-      - IMSDKProto (~> 0.8.2)
-      - KSCommon (~> 1.2)
-      - KSMWAzeroth/DefaultNetworkingWrapper (~> 0.5.18)
-      - KSUploader
       - KSUploaderKit
-      - KSUserDefaults
-      - KwaiIMKwaiLink (~> 0.7.38)
       - KwaiIMSDK/Core
-      - KwaiIMTrace
-      - KwaiIMXFDB (~> 0.3.17)
-      - Pigeon/Core (~> 0.6.8)
     - KwaiIMSDK/NetworkingWrapper (3.14.13):
-      - BlocksKit/Core
-      - Bolts/Tasks
-      - IMSDKProto (~> 0.8.2)
-      - KSCommon (~> 1.2)
       - KSMWAzeroth/DefaultNetworkingWrapper (~> 0.5.18)
-      - KSUploader
-      - KSUploaderKit
-      - KSUserDefaults
-      - KwaiIMKwaiLink (~> 0.7.38)
       - KwaiIMSDK/Core
-      - KwaiIMTrace
-      - KwaiIMXFDB (~> 0.3.17)
-      - Pigeon/Core (~> 0.6.8)
     - KwaiIMTrace (1.0.17):
       - KSMWAzeroth/LoggerWrapper
     - KwaiIMXFDB (0.3.17):
@@ -4959,22 +4386,12 @@ PODS_INFO:
       - KSCommon (~> 1.3)
     - KwaiMediaPlayer (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/Default (= 4.2.0)
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/Classes-ARC/DebugInfo (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
       - Hodor/Header
       - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/Classes-Other
       - KwaiMediaPlayer/native
@@ -4982,57 +4399,29 @@ PODS_INFO:
       - MJExtension
     - KwaiMediaPlayer/Classes-ARC/Header (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
       - Hodor/Header
       - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/Classes-Other
       - KwaiMediaPlayer/native
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/Classes-ARC/MediaPlayer (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
       - Hodor/Header
       - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/Classes-Other
       - KwaiMediaPlayer/native
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/Classes-MRC (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/Classes-ARC/MediaPlayer
       - KwaiMediaPlayer/native
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/Classes-Other (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/Core (4.2.0):
       - boost (~> 1.64.0)
       - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/Classes-ARC/Header
       - KwaiMediaPlayer/Classes-ARC/MediaPlayer
@@ -5042,133 +4431,60 @@ PODS_INFO:
       - KwaiMediaPlayer/native
       - KwaiMediaPlayer/third_party
       - KwaiMediaPlayer/tools-script
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/Default (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/Classes-ARC/DebugInfo
       - KwaiMediaPlayer/Core
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/KSAudioProcessLib (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
-      - Hodor/native
       - KSAudioProcessLib
       - KSFFmpeg_iOS
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/native (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
       - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/native/ijkmedia (= 4.2.0)
       - KwaiMediaPlayer/native/libkwaivpp (= 4.2.0)
       - KwaiMediaPlayer/third_party
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/native/ijkmedia (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
       - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/native/libkwaivpp
       - KwaiMediaPlayer/third_party
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/native/libkwaivpp (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
       - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/native/libkwaivpp/include (= 4.2.0)
       - KwaiMediaPlayer/native/libkwaivpp/src (= 4.2.0)
       - KwaiMediaPlayer/third_party
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/native/libkwaivpp/include (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
       - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/third_party
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/native/libkwaivpp/src (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
       - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/native/libkwaivpp/include
       - KwaiMediaPlayer/third_party
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/third_party (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
       - KwaiMediaPlayer/third_party/placebo (= 4.2.0)
       - KwaiMediaPlayer/third_party/soundtouch (= 4.2.0)
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/third_party/placebo (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/third_party/soundtouch (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
-      - Masonry
-      - MJExtension
     - KwaiMediaPlayer/tools-script (4.2.0):
       - boost (~> 1.64.0)
-      - Hodor/Core
-      - Hodor/Header
-      - Hodor/ios/Classes
-      - Hodor/native
-      - KSAudioProcessLib
       - KSFFmpeg_iOS
-      - Masonry
-      - MJExtension
     - KwaiNetworking (0.1.0)
     - KwaiReportCenter (0.1.6):
       - AFNetworking
@@ -5245,8 +4561,6 @@ PODS_INFO:
     - OpenSSL-Universal (1.0.2.11)
     - p2pstun (0.4.9.5.22150be)
     - Pigeon (0.6.8):
-      - KSMWAzeroth (~> 0.5.3)
-      - KwaiIMKwaiLink (~> 0.7.2)
       - Pigeon/Core (= 0.6.8)
     - Pigeon/Core (0.6.8):
       - KSMWAzeroth (~> 0.5.3)
@@ -5254,26 +4568,18 @@ PODS_INFO:
     - PromisesObjC (2.1.0)
     - Protobuf (3.3.0)
     - RangersAPM-Pangle/Core (2.3.2-pangle):
-      - OneKit-Pangle/BaseKit (= 1.1.21-pangle, = 1.1.21-pangle)
-      - OneKit-Pangle/Database (= 1.1.21-pangle)
-    - RangersAPM-Pangle/Crash (2.3.2-pangle):
       - OneKit-Pangle/BaseKit (= 1.1.21-pangle)
-      - OneKit-Pangle/Database (= 1.1.21-pangle)
+    - RangersAPM-Pangle/Crash (2.3.2-pangle):
       - RangersAPM-Pangle/Core
       - RangersAPM-Pangle/HMD
       - RangersAPM-Pangle/Public
     - RangersAPM-Pangle/Global (2.3.2-pangle):
-      - OneKit-Pangle/BaseKit (= 1.1.21-pangle)
-      - OneKit-Pangle/Database (= 1.1.21-pangle)
       - RangersAPM-Pangle/Core
       - RangersAPM-Pangle/Public
     - RangersAPM-Pangle/HMD (2.3.2-pangle):
-      - OneKit-Pangle/BaseKit (= 1.1.21-pangle)
-      - OneKit-Pangle/Database (= 1.1.21-pangle, = 1.1.21-pangle)
+      - OneKit-Pangle/Database (= 1.1.21-pangle)
       - RangersAPM-Pangle/Core
     - RangersAPM-Pangle/Public (2.3.2-pangle):
-      - OneKit-Pangle/BaseKit (= 1.1.21-pangle)
-      - OneKit-Pangle/Database (= 1.1.21-pangle)
       - RangersAPM-Pangle/Core
     - RCTRequired (0.62.2.22)
     - RCTTypeSafety (0.62.2.22):
@@ -5307,7 +4613,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/CoreModulesHeaders (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5317,7 +4622,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/Default (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5326,7 +4630,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/DevSupport (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5337,7 +4640,7 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22, = 0.62.2.22)
+      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/RCTActionSheetHeaders (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5347,7 +4650,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/RCTAnimationHeaders (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5357,7 +4659,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/RCTBlobHeaders (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5367,7 +4668,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/RCTImageHeaders (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5377,7 +4677,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/RCTLinkingHeaders (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5387,7 +4686,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/RCTNetworkHeaders (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5397,7 +4695,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/RCTSettingsHeaders (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5407,7 +4704,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/RCTTextHeaders (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5417,7 +4713,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/RCTVibrationHeaders (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5427,7 +4722,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-Core/RCTWebSocket (0.62.2.22):
       - Folly (= 2018.10.22.00.1.1)
@@ -5437,7 +4731,6 @@ PODS_INFO:
       - React-cxxreact (= 0.62.2.22)
       - React-jsi (= 0.62.2.22)
       - React-jsiexecutor (= 0.62.2.22)
-      - React-jsinspector (= 0.62.2.22)
       - Yoga
     - React-CoreModules (0.62.2.22):
       - FBReactNativeSpec (= 0.62.2.22)
@@ -5533,14 +4826,14 @@ PODS_INFO:
       - React-jsi (= 0.62.2.22)
     - ReactCommon/turbomodule/core (0.62.2.22):
       - DoubleConversion
-      - Folly (= 2018.10.22.00.1.1, = 2018.10.22.00.1.1)
+      - Folly (= 2018.10.22.00.1.1)
       - glog
-      - RCTRequired (= 0.62.2.22, = 0.62.2.22)
-      - RCTTypeSafety (= 0.62.2.22, = 0.62.2.22)
-      - React-callinvoker (= 0.62.2.22, = 0.62.2.22)
-      - React-Core (= 0.62.2.22, = 0.62.2.22)
-      - React-cxxreact (= 0.62.2.22, = 0.62.2.22)
-      - React-jsi (= 0.62.2.22, = 0.62.2.22)
+      - RCTRequired (= 0.62.2.22)
+      - RCTTypeSafety (= 0.62.2.22)
+      - React-callinvoker (= 0.62.2.22)
+      - React-Core (= 0.62.2.22)
+      - React-cxxreact (= 0.62.2.22)
+      - React-jsi (= 0.62.2.22)
     - RNCMaskedView (0.1.10):
       - React
     - RNFastImage (8.3.3):
@@ -5578,15 +4871,6 @@ PODS_INFO:
     - XFMulticastDelegate (0.0.5)
     - ycnn2 (0.9.65)
     - Yoda (2.8.0.lite):
-      - BlocksKit
-      - Bolts
-      - CocoaLumberjack
-      - FMDB
-      - KSecurityWrapper
-      - KSMWAzeroth (>= 0.5.32)
-      - KwaiBridgeCenter
-      - MJExtension
-      - SSZipArchive
       - Yoda/Core (= 2.8.0.lite)
     - Yoda/Core (2.8.0.lite):
       - BlocksKit
@@ -5601,293 +4885,369 @@ PODS_INFO:
     - Yoga (1.14.0.3)
     - ZipKit (1.0.3)
   SPEC CHECKSUMS:
-    Ads-Global: 3ac5655db23ed30c733d1c5647998667e262fcb1
-    Aegon_iOS: d5c09372904ded682df940ce225fbc6830fb2eac
-    AFNetworking: 3e7cc56c7fde99c70971bc959e8ec487e0ea7bc7
-    AppAuth: e3abcba8267fad0529a85efeadf5978a4bf3a6fc
-    AppLovinSDK: 06ab6745a863b866c4eca96dbcf660a8e8978555
-    AppsFlyerFramework: 492d4b5fc5aa0b75ca5ffa525ce7e79c49ee474f
-    Aspects: fbdb53f476042d0ba2a6f5046bdd8749eabfd8ca
-    AutoCoding: 2e8542e3c61a899d673635bfc98bca46027f20d8
-    BlocksKit: 7614a3c7a305c336abfdff0e65bfa82cf627bc36
-    Bolts: 734a58452b6a1abf317fd7da026d6eccdceb4974
-    boost: deef2dd23c5f5786c2252afcbae7b66ee3ae72a3
+    Ads-Global: bec8382b80ceb6b3bbcd3d18bb73a45f3bfad96e
+    Aegon_iOS: 1e895911b37c7f64179ab5c6666d5d7f7e735ced
+    AFNetworking: 36f58d62dcd6b1c756003b75bbd905e2039366a5
+    AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
+    AppLovinSDK: 2ed08703a7e44477ef5dedc264a1ef1e8050dd6c
+    AppsFlyerFramework: e309a6cab366296bf891dc68b175de1e9a44f86c
+    Aspects: af45033e6e6cdbd2b1a09e6e40640309f505934e
+    AutoCoding: 58763cb1d3284640e19f2607bfd889f0e6f40bd4
+    BlocksKit: f720e2b8094f4af8cb20722bbde463851c4ed932
+    Bolts: eca723fa37cffa89aba152e69b7e555eb2d30114
+    boost: ac64e3be3442d4be7e9b81228eb0e9c4b80968ea
     boost-for-react-native: ecc011d1c3609ce756064a73cc2a9c50570aa426
-    Bugly: bdd18ee5fef215d20c575623a4939cc4854233be
-    BVLinearGradient: 07befbf144bb5121bdcba8e65f1e60f015641bcd
-    CocoaAsyncSocket: 523894a99ea268a958bca3190fff90aad992c6b5
-    CocoaLumberjack: 4ed544efbaad5669700dd03152512ba71ae48b24
-    Diplomat: 955485cbc1d7b4b0882905d095293830ef7044fa
-    DoubleConversion: c306cfadd1be613d3d2cd6da1bbd4aca67d43032
-    FBAudienceNetwork: 454a55af4c22360e2489ebf1eab92169f9b1ee6b
-    FBLazyVector: b1b136a8af700c7bcf2941e55d0d19147cd736c7
-    FBReactNativeSpec: 0f82048de1a798e6141c6fe75c16c02450897569
-    FBSDKCoreKit: a87b605f759f3a161d2cd48b6658ef8db7cf0f0f
-    FBSDKCoreKit_Basics: 10d7ef69acd9946af0528875528d030bfe9fb62c
-    FBSDKLoginKit: 82c139b4d1dca52b59d566e17dd4bc25b2bb0a9f
-    FBSDKShareKit: 74e329d8761cb9d8592885eadd11abcad256a614
-    FCFileManager: 57e74e4e6bc37beb1c9bc863e8339df33bdb15cb
-    Firebase: e0e887866b6d6c9642739588a933636e85ec37fb
-    FirebaseABTesting: 7fabf9ed144d2478e244fbd693007e008df3ce05
-    FirebaseAnalytics: 7de592f45abd48a9720086bb5dedcbf9d4bf8911
-    FirebaseCore: 0cd51fc52bfa353b7bbdb2b1ac26a58ef74550e0
-    FirebaseCoreDiagnostics: ee7cda18ababc6ecb1703df7e773e2c75352bc4d
-    FirebaseCrashlytics: 195ba8b9a52a4c09fcfdf172c0220dddbfdbb9ca
-    FirebaseInstallations: 4163b491ff1323cefb578172db4eaa34c77ba989
-    FirebaseRemoteConfig: 2b3d8c4d4039c0445456b1224d6977e8bc3fd23c
-    FLAnimatedImage: 0a7443a4059f4ff8ded78a521a41c5b3eff099b5
-    FMDB: e1ecf4675780ad523a96f294ba86b78eb5b71cea
-    Folly: 1652b2f62dffc19d3f0d877ec502703031d05955
-    GameLiveProtoModel: 63fcf7443d3aa2e4c4070b6d2519bdb86a204ed6
-    GDTMobSDK: dfd768486cab89d52a081fe10eab8c57d081bb51
-    glog: d07a2d3d7c80ba9c1f57eb4f6468d8463369462e
-    Godzippa: a849b7881f5dfd4b3f3b1c4f0b730f9db3680992
-    Google-Mobile-Ads-SDK: e1e31758a59792318019f99546aaec1bae26f92f
-    GoogleAppMeasurement: 8c860cf99dbc188f112effc13887812a9d9a8311
-    GoogleDataTransport: 76bb41f8bcde5fd0dc7b8745ef594ac140139451
-    GoogleMobileAdsMediationAppLovin: 826b94b34a49b5b6a5897edd3af9962bd8607d4e
-    GoogleMobileAdsMediationFacebook: aef69c59e8de525da518a594ab8252cc0ce0f0cb
-    GoogleMobileAdsMediationIronSource: 33fe03ac618ce0a7ae015b07f5cf0e4b03581d18
-    GoogleMobileAdsMediationUnity: 354b577623fede37455d95403e9b53f9dfc21383
-    GoogleMobileAdsMediationVungle: b4db7d940f26f39c1cfc3189777d4cf3d4186c70
-    GoogleSignIn: 860454d6271955570c02570832ea635af870957f
-    GoogleUserMessagingPlatform: d0643167c465d6db11d4d68e5a7e82e61627108d
-    GoogleUtilities: 08e710795ec12d9a4f5181d4d6b8f25949363b41
-    GTMAppAuth: 478f1be4b1a74352d512af91042d5903db72f828
-    GTMSessionFetcher: e8b995757beaebc19f41b03d887c5e08caf816c1
-    Hodor: 5456692960bcc27f6fcb572ace965d4e85ca57be
-    IMSDKProto: 280aed11089f2c7ea809737bd068f4ccad5eecb7
-    IronSourceSDK: 778e501d0af02a4abe0242222fc4d44536f2a4a4
-    JhtFloatingBall: e4102be6625b0769b1ca4fecf8335f58f457ba85
-    JNKeychain: 63fb14ca9c6af8c9346d252929ca890f3f323ad8
-    JRSwizzle: 88721a5c2fb21849b53a1174954384c9472f6806
-    kdiff: 0681d31e533d8577206ed2fb2ecef949acd00198
-    KGAryaManager: f59fca2378320d7ceaf62ddf9fc6744d4c2e692f
-    KGSDKBase: 02dc7e466f0c17be51091489ab4fb9dcaba6394c
-    klp: 9b50b02dc210fcd8512ee1e98a3b98798931ed79
-    KRNSDK: c86c58ea2e5ff0c281ff12c4406d62558b3546a1
-    KSAudioProcessLib: 565cbffcaa2230562b6cb890d4588b5b6b3e71ed
-    KSAVLogProtoModel: 70967cec7df0c62c6db191afb8dc3f3bf70e4601
-    KSChinaMobileQuickLogin: a8a5a87a514dcf381eb1592ed563941a1fc386ef
-    KSChinaTelecomSDK: 2975a4408b5efa63eb2b83838b2bb64530fe7a10
-    KSChinaUnicomSDK: 86bc495d1b947caa7752c24bf0c74a7c5e285dc3
-    KSCommon: 6a91472c5cb4af064ee47516fb1a47cb3e99aec7
-    KSDFP: 8574fd7ed02b7893b5b5bc46ec2b4ea5df7443cc
-    KSDiskCache: 8d08fc37a636bc96e843f32106e202cd6c245a91
-    KSecurityWrapper: f07cde4f65f46b321fa81e1a2e71d2c9e2818475
-    KSFastFolderSize: 3aa5a4b209550206f733292dcfa4c54967c64356
-    KSFFmpeg_iOS: 56a37bcd887c6a1ccd5a780305cd7753bae77182
-    KSKanas: aefb5b0e69307f73099c714a63db8c8a95c93e53
-    KSKanasProtoModel: 78cf1c7d2390eca12ec2e5915c65ddb9f0e40b32
-    KSLivePlayer: 1a4a8bbce96131f25243c42a3a2cac7fe0a825b0
-    KSMWAzeroth: 9f10792831207cc90e56d7bc17807f5514f0680e
-    KSMWDataCompress: 94e87798577d9617c04cc74e38ec7069fb70e0a7
-    KSORM: b202a80cbf536c96d4c5be4b092f9f192ab80b0b
-    KSPromise: 96b647628ed1733c014d9bbafab5ba849f3658fa
-    KSProtobufCpp_iOS: c3717914a6916b17eb9e1b2fa8f43f88b6cc0387
-    KSRSAUtil: 4d4c948dab0538a4e08ae681002de535828d744b
-    KSRtcKit: b32494341d80720d7506f21a150679625707b1bb
-    KSSecuring: c51d4e64b8d6e8573adab535eb54d7259c8795e3
-    KSSecurityRelease: 478ca1123a4d1181490cc0e17cbfeee894070d7c
-    KSSmartDns: fa9ffa48b88abac438a7ee4bb5c18ca9f32b9e05
-    KSTLog: 9f0a845b925b39c5a556ae183cfd7f0a78704abb
-    KSUAccount: 2ed5a8f4d21d4246a3c14f37d8bc374e24bd61d4
-    KSULiveStream: 7c126dbc49c32c79b28aebe514a77e0730dadef7
-    KSULNetworking: 15b078ccfc7b1e0d2f08e62178a439dbd24393e7
-    KSUploader: 45eb5ed8e9f48ed87452cb896c19369fb286b03c
-    KSUploaderKit: dd416c098f934af4d3cf0fe94f199893fafdb0bc
-    KSUProtoModel: f77e3dee89c4806c9ed7ec983c1f77f931a86027
-    KSUserDefaults: d5196e93ba40a440ab9ac830ef224ecee4dc511b
-    KSUStatistics: aca31183326d57020dcd0053a91d33801d23b612
-    KSVader: 43bba47c39313e05986b1454687c0c1480fbe25f
-    KSVodPlayer: b86974db8c6ecc65a93a53d277300e4c7df8d215
-    KSWeaponArmy: 2a86f08559cad70236329b182e0bfd9206ff3479
-    KSXLog_iOS: 338458adf33606591a92978f1540251f32e5f321
-    KSXPackageManager: b0aab90a050b01516c2a2de5c13ad618c5983690
-    ktp: f834e3ad4340b2a90e6eeaf57f7a7ead8b996632
-    KwaiAnalytics: 0f5721f4b5264f5337a519fae69dad6b86b7509e
-    KwaiAppBox: 37a25855cb92238d54b1964465b9c5ff7bb487e3
-    KwaiBase: 57de03ad265fb14326bd523a8f15a4f8ac0c23eb
-    KwaiBridgeCenter: 5a48f9f9dc053b1de02f2c6691bae26e9d1f26a4
-    KwaiCaptcha: fe130d0acf964c835827550bfec99ff7de7d905b
-    KwaiGameAD: 7fd264ac64e71fe8058a1344c42eaf49e1cbb54d
-    KwaiGameAD-BUAdSDK: fada0224e457d302f8a647f5634eb7cad1945d31
-    KwaiGameAD-KSAdSDK: b9e632ff4945e2a8ddc714d5fa177c66d2405229
-    KwaiGameAD-KwaiAppBox: 318f015c555d5a1d6b3f58785e36bff4d5bf35d8
-    KwaiGameAD-Manager: 9a24ae2929cf5e0893742d8ac223ca4585aa9f7f
-    KwaiGameAD-Mintegral: 744311f54666ab3b43c3cab35f57ae5b61a4577c
-    KwaiGameAD-MobAdSDK: 6806418254fa3b32e2f4da68beecec1e6855fe37
-    KwaiGameAD-OverSeaSDK: 0a44b43bf5256af4276663186d846af5a6880882
-    KwaiGameAD-TXAdSDK: a4072da12d6360c6b1cb25a91341d69cb7c592df
-    KwaiGameADPath: a96180a1c0f89b838c4ab6281bcdb25bf2325adb
-    KwaiGameADPath-SKAdNetwork: be7cc2d5fb7c0cb2d01f094112ecab5214212ee4
-    KwaiGameADPath-TrackingIO: 8cf2a9409f9b072b3034c0abdaab4feb38393cf9
-    KwaiGameBase: 97c0e30c1086c7cca75d519d3a025c3aa968eec0
-    KwaiGameBase-DemoSupport: 83dde1fcd0ecb0b06b1203be705c7b5cc3bc4142
-    KwaiGameImagePicker: 7ca03f2f8dd250acfc93e10d0bc998e88521d03c
-    KwaiGameLive: 3975c40eba641d6fdbe83e9cfd9fe1623a675ff8
-    KwaiGameLive-LiveMartPlugin: 4cf9573c3f423d47ebe7c7f7c4d2496ba2243324
-    KwaiGameLive-NativeUIPlugin: ee09335668f72dcd84d3e63cacb262239bdf9da3
-    KwaiGameNetworking: 263addc8b380a847707d4a5de060f29157ef788c
-    KwaiGameNetworkStatusMonitor: 595fac8af9454bbd4bb2d13a6d61380de15b7f39
-    KwaiGameSDK: 3999ed66c3417d1e1e29d9bbf05c4e81d8b21f1f
-    KwaiGameSDK-ABtest-Firebase: 14f6432dc7d7225f55140a955a4ba31a4d8f2e18
-    KwaiGameSDK-AD: 233bdf011b4d0fd0f23a605fb351a1c8390eecbf
-    KwaiGameSDK-ADPath-AppsFlyer: 8c208c0141a6a9b15cf359e987aa60f5041fabb9
-    KwaiGameSDK-AntiAddict: f6539b63a9065a693c4d5ab90f62823811f94c84
-    KwaiGameSDK-AppBox: 3c54c8cec033af7cca22e60974255ce47bd0df13
-    KwaiGameSDK-AppsflyerCommon: 8d255f797148268299e7099b40d6e233f46fe1e7
-    KwaiGameSDK-Audio: 8c07259720e35d22f2e0d01ae0561a4366cc587b
-    KwaiGameSDK-Community: 2fe01c0f122d0937fe14587f162fae57acede075
-    KwaiGameSDK-Community-Kwai: 5fefc7ac5a7c8beea261d8b3396a96e76e411356
-    KwaiGameSDK-CrashReport: e6e8635c0e0baa99f64650f793e484b872af707e
-    KwaiGameSDK-CrashReport-Bugly: 432e407bf0e866b00c91f8d10149e0233c9332c3
-    KwaiGameSDK-CrashReport-Firebase: 3606d855949b547650f9b28fb7188e7c065b72b9
-    KwaiGameSDK-Downloader: 9c8980a585f5c908f31b34848ffa2b8b6563bbc2
-    KwaiGameSDK-IM: 6ea9a5d063a789408d89e4698c509280c134ebbd
-    KwaiGameSDK-KwaiJump: ecd3e34fcf1adc5dad1587e8508b7774fbb25053
-    KwaiGameSDK-Live: 3335200b210e19b7863428634a4ae54fde465bec
-    KwaiGameSDK-LongLink: 611d37825cc79a23c850eaecd239d1054abeba4a
-    KwaiGameSDK-Media: 95950bd5247df70dee8047f965da505a4a8965e8
-    KwaiGameSDK-Mock: c59f2a9f4814478c836060680d7a0f56e4f3ab34
-    KwaiGameSDK-OpenPlatform: ecda7afc284857f0b69cba38b6680d8f0c4db62d
-    KwaiGameSDK-Oversea: 7a00f516bfefbfc8b3eed58d2bbd15aa2d442bd0
-    KwaiGameSDK-Pay: 6fa377b67db09304afdb6d7c02251e549b5484f4
-    KwaiGameSDK-Push: 13c11039685a845b19d9bda66128145a393b85cf
-    KwaiGameSDK-PushReport: 7841e9cede2648f5e8f860b9739b413725e00623
-    KwaiGameSDK-QRScan: db7aee8fc027923aeaca891c33cfc32ddaacf0b7
-    KwaiGameSDK-QuickLogin: a4ecf062fde7b55676c3a33e96ac5bc99e4390f4
-    KwaiGameSDK-Relation: 92e90203b281acf08d5a8294070606b70fce71de
-    KwaiGameSDK-Report-Appsflyer: a60926e4adc54bb59416b7f86941fd80e027a5fe
-    KwaiGameSDK-Report-Firebase: a25c0ffc7faddc49c55d1c562651b67c1d09bc7b
-    KwaiGameSDK-SpringFestival: 472696df6c96e94f848ede8e847397d13d1450be
-    KwaiGameSDK-Subgame: 1e743af5b06406f9627ce2cc19b7a7afdb1f4b24
-    KwaiGameSDK-UniApi: f6ab74091ca149fe6c6641c0b182fd94005eeb6b
-    KwaiGameSDK-UnitTest: 3fb48d19d490463590a87f63d40ad633ee5305b7
-    KwaiGameSDK-VideoRecordBase: fd3a0cbf021d530c1596bf77687f33a34f92349b
-    KwaiGameSDK-VideoShare: 0f66cb86ce85f4c1981562fa725d1000336bf6e8
-    KwaiGameSDK-VisitorPasswordLogin: c42c1d76f38ddcc33deb994b4b4fc3b300f6db21
-    KwaiGameSDK-Voip: 8a75b9af2e3788b749aa3f87a330e9d272a1a3bc
-    KwaiGameSDK-WeaponArmy: 5e34d19a43299b3549eee97b431f913d1df2c22d
-    KwaiGameSDK-WebView: 457d4cda4f1b7595aa292a2d145412e5b9b7f2cf
-    KwaiGameSDK-WWP: 79ed48273dde53dba57d6dc27931386ed5b24a60
-    KwaiGameVideoAryaEncode: 24a799a89712d770f5ee8caeb7fe48367d999a2e
-    KwaiGameVideoBase: ad7f952c7b06cbc1c4c94da0acf1528a6ca09105
-    KwaiGameVideoCapture: 6839a23fad11552fb48d4f06c49d003b80fd931c
-    KwaiGameVideoRecord: 815cb896ffc0b1bbe0daa37f5daf1b743f394b1d
-    KwaiGameVideoShare: a3c707a70f9c9a7a092d94e0a349d0f2d7a8f0ec
-    KwaiGameWWP: 5c2b070b22500537871ae52a9f645a3006a4acf7
-    KwaiGameWWP-NativeUIPlugin: 556c0b0961c04e43f6ce481d7c3efd2b11d4112a
-    KwaiIMKwaiLink: ae5ad6bdfa24350fa39a981962fab0623256e963
-    KwaiIMSDK: f2983d524c49f3b9b9193a6e4c9e389ae405079b
-    KwaiIMTrace: 71e37ce14ea690c294b8fce4c72fe2936c6d9dbd
-    KwaiIMXFDB: 85bcc4e61657ffc367bf3bd1f1321a300fdc3974
-    KwaiMediaPlayer: 11a233c146b656249021268ad2c0fc57b472bd1a
-    KwaiNetworking: 88091a7eaa318ff5d6e77b8b4d669de7d8b7d88d
-    KwaiReportCenter: 7406d488534bf7bb16712fc7f73b3f078f0d66ff
-    KwaiSDK: 08054f26a1c8edaffbacaf2954af8c9704d871e3
-    KwaiSwizzle: 35a1b0b69d49419ddfd3d6d63e0af7a65d10e1bc
-    KwaiUIRecorder: cd9ec123c9ae62304fd81c2d022c11953ba57ccd
-    KWArya: 28232677aab3fb97552ebf15230b7cd6db255a89
-    KWStannis_iOS: 081b786bde8f30ce7df568bf8f6d1b155c1e0967
-    libuv: 165660dbf6c084b9d882f19c7ff9adcaa0401708
-    libwebp: 229abc0be8778457addaa3634abe77213d30499f
-    libyuv: a0e3ebe383372e7e21ebe6f854d5f0c7b0096f00
-    lottie-ios: 9ee5169897ef873174a253e4e7213449d312d247
-    Masonry: dac59332ad1f6b2bc005fdce402097b9c9622eb9
-    MBProgressHUD: e174982076b37655329511d00f384e44f7f56b11
-    MJExtension: b856d352f492b582ff9d57fbaa4604858126e645
-    MMKV: bae9184479d4935f48b142250477b0cdc17eff1e
-    MMKVCore: 83b6bcc35c9ca1da93cb25c634738286f62e40fa
-    nanopb: a4c4e0bbcbd6f47ecec374fca7a70bc9e76060b7
-    Obiwan: 140e9fb4b0095575f510e08035a997c189e49f29
-    OneKit-Pangle: 4f0e7233b2055a84f807ed46718f7332af40adaf
-    OpenSSL-Universal: 83aa3b08583eaf7f1a8cf96531eb7861ef780d5e
-    p2pstun: fc74ab0fd5aad5193b738702f9c0064fc7638ca3
-    Pigeon: c66df9d603179cbd4a35a04e770ca9f3a8522ad4
-    PromisesObjC: c775fd0f003fcdcf0fb6a46718607614fd7357d1
-    Protobuf: e6ee55d14b36108e09cc5c5b5ed2264cfd5bc520
-    RangersAPM-Pangle: 7e17cb56e2acda1ae08729f8fb14898946a940db
-    RCTRequired: 37b5fbffa18151ac6aafcdcb1bf4b9e3bd6627d1
-    RCTTypeSafety: dff12fde52925808fcc165f0a60b1c22cec153c0
-    Reachability: ff3656dc4ee74a95dad0a846d928f9feab1236f2
-    React: ae4350ba5b7fceda3597aaf6a6a85f0299f3ee0f
-    React-callinvoker: 5a1039ff2c1971432afa45cb9a35dc8ba81a84a0
-    React-Core: 81b8d61c7cd646834de47c1e2c73053805f85e44
-    React-CoreModules: 7f0a858ad4a6c3d4e98d0c486a411e5a89ddc971
-    React-cxxreact: 03e1b5d1cbe993adc93065b3e976bfaffdf2503a
-    React-jsi: 864b8fe7128af81b4630c6b61f0ba78402b69272
-    React-jsiexecutor: 147f9309984277d9baeddac8d76c492636039995
-    React-jsinspector: 367782a1c31598d2d6233b9f7bec48339a43e9b3
-    react-native-image-picker: 58d808af89a182e45a5f471413ca08938cf83ae0
-    react-native-netinfo: 5281361135cdc23283f3836552ee8528a428c6e4
-    react-native-safe-area-context: 75cb08f0c71b9550edcc9f1075c2ee04d4e16d92
-    react-native-webview: c8f8d41f866f3a9cfa21a1bc375f5f51acbfda53
-    React-RCTActionSheet: 79210c72fbf4c0e701baf0c950ea9a96d23abc39
-    React-RCTAnimation: 26a46d8a4eeadd22775aabe6f776ce709f856c86
-    React-RCTBlob: 9f7a4e37c5ca10fcd4b1e1f6f94252da6e5f8440
-    React-RCTImage: fc700baf080984b5ca2a86e448a0fc46a9fb990d
-    React-RCTLinking: 5bf36f6bdd62ade8d0de19e47caa5c7b08668a58
-    React-RCTNetwork: e4af0a45c694f53d4d09ca38b4cb953b4230e33f
-    React-RCTSettings: a2a8183d23e078fdd4fe1bedac5f8919def26cd4
-    React-RCTText: b7c97e2d9636ecf1494c869f5567a71e3b6fa808
-    React-RCTVibration: f3415bccbe20eb44b8b94bcf58643084ed3ba094
-    React-trace: 46e13581a268ee57fa1a793a8b5ae3089cb22220
-    ReactCommon: 85e00e51a0d511256843e25061f865ee99cf021e
-    RNCMaskedView: b2354f18f730e1cfebfd6313b41c7b2fdb3ad581
-    RNFastImage: 96908d8f3dae8b32f075d010212f1ae5268ecc5b
-    RNGestureHandler: 62a6e8d07e77be5ccf421c572a1c2a3036ff9ab3
-    RNReanimated: fb32ccb38fa00cd67bac69f2fa17a8d3694074cd
-    RNScreens: aff2e91c2c34efbcb0b83febadf593927e0fa5d4
-    RNSVG: a82fa0eccc5a2e106373c5280bbe61e826244b66
-    SDWebImage: 53d2283c78d75ba7fa518e08510b455c0546f0b8
-    SDWebImageWebPCoder: fb41b30518f1aa8418dee2904ba6debf2f2a2963
-    SSZipArchive: 281aba4be35be7e56654ec4fad81b9c67015a969
-    TensorFlow-Lite: d4ca85891b034e3d98a891e46cc249ba3f5e7c42
-    Toast: 488b144712cc3a0ee98ff3115bf621c56926546e
-    TransitionKit: f80c370dae06c5d8d7f9f13997823a64a6811c11
-    Tweaks: e0633ef70319570cf5ddf5c44edbffcebe418c6d
-    twitter-text: 7878556298f5e0adda742c2c6372bde44ae9d37c
-    UnityAds: 411edefed35e999488b892cd76047c072d14c4f8
-    VungleSDK-iOS: 4f7b84d6d45e88ef9594354f66547ca20d47ddd2
-    WBCloudFace: 9044e5d857374dcd2a60ac3b32157496a8371d08
-    WechatSDK: 2202f05f3a7811960198b84f0b853ef1b2067dfa
-    WeiboSDK: 5d20716d1e2663ea761344edfa8794e5a4727a25
-    XFDB: 45ea44f0b679917720d3034cc3574e4c2135344c
-    XFMulticastDelegate: d9b986b094b55551db0359b2bb93486c6f648322
-    ycnn2: 612261ba9fa946259dc183c3524b351fb01dbc55
-    Yoda: 596cd53692aef2f9d3d22fb94aa9a8ab4dc53255
-    Yoga: 48a3bfb7ba51146fe225a5d984d8bea7624319ab
-    ZipKit: c3d0a04b9832e9f19dfc445457d2f087644fb2ce
+    Bugly: fd066c75c4a0eca1440f9b6a84bd37d51bfc85ac
+    BVLinearGradient: 0b42cd3c93bb3772fc61836f5091f961136f66e6
+    CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+    CocoaLumberjack: 0729d607231588e1e2a0c289b1329dd69fef5af2
+    Diplomat: 4836db31c7eca04ad062f3b1c8c9c9c8de00d102
+    DoubleConversion: 827de82484b5820e6dd2af4f928608359a72c568
+    FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
+    FBLazyVector: 18fbdb8ea6007fce2fa33d21e78d0ece8b193c6d
+    FBReactNativeSpec: a681171625a39ad191ac99f915e0f89f34c71f76
+    FBSDKCoreKit: 3e6f565de8b4fbe11f8ee5d499f5898b0bde2cdd
+    FBSDKCoreKit_Basics: 06780a4a12e16596bde8406add02c6aa1bf38616
+    FBSDKLoginKit: 0ba3e15e9bdbeb46716d0fa375e6b71c39d4c477
+    FBSDKShareKit: 0119c74ceddb5ae191c87808c93d2714231cc998
+    FCFileManager: a91cf719380f221b3ffe8b34d5d1fd750a053bc3
+    Firebase: 7e8fe528c161b9271d365217a74c16aaf834578e
+    FirebaseABTesting: aaa0e096c9fc9972ce6806d596e8fcc077d4371f
+    FirebaseAnalytics: 2fc3876e2eb347673ad2f35e249ae7b15d6c88f5
+    FirebaseCore: b84a44ee7ba999e0f9f76d198a9c7f60a797b848
+    FirebaseCoreDiagnostics: fd0c8490f34287229c1d6c103d3a55f81ec85712
+    FirebaseCrashlytics: 079ef36f5c4b7161188928faec40fa276ebefd84
+    FirebaseInstallations: 7d1d967a307c12f1aadd76844fc321cef699b1ce
+    FirebaseRemoteConfig: a5d9188d8f57f602636f111eca6460ebe32b9b71
+    FLAnimatedImage: 58084d75cec819869a5ee8c76463df798dbaa906
+    FMDB: 8248d247833097b5f101b2a99808cca30015189a
+    Folly: ec2fc7b29a0246f727235456105dfb362e6c46a8
+    GameLiveProtoModel: 80e0fe520cc1d5afb8f0d62bd465301f16dff1a7
+    GDTMobSDK: 3d36a2c7c606b1e5255442fcd609b09f322ca016
+    glog: 2e59f33496505acb2dede56751ccd38cba9d415d
+    Godzippa: f4a19f1032f9d2635efb4ed2a8f68c669fff7496
+    Google-Mobile-Ads-SDK: d6ebb0e05cc38f4fad82d77a6655552213ed5e38
+    GoogleAppMeasurement: 71156240babd3cc6ced03e0d54816f01a880c730
+    GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
+    GoogleMobileAdsMediationAppLovin: 2d41c3a4c97871c905fac68f9ab49ae7dc456a10
+    GoogleMobileAdsMediationFacebook: 094a78a19e7e1b0a6f971581c28f1f361c4f9618
+    GoogleMobileAdsMediationIronSource: 0e92e3ab71a2a8bd30de8d8616576100263739d0
+    GoogleMobileAdsMediationUnity: ce143747f8c1f16709a9ab35b737c4ebdcadce52
+    GoogleMobileAdsMediationVungle: dfaf1a1087d0e51890ef8b77f2674142880393a8
+    GoogleSignIn: c90b5bec45e780f54c6a8e1e3c182a86e3dda69d
+    GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
+    GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+    GTMAppAuth: 987526d41b07efb1bedda5e936fe0cb718a03113
+    GTMSessionFetcher: 4577a4cc914a5a07c40a8a0ad0acc22080418c2d
+    Hodor: 38d56f909302dce628ed2a6780b13854bf552b4f
+    IMSDKProto: 8302204962ca6fe5b6020d57986f656faf7df772
+    IronSourceSDK: 49c6abb070214a60ee9f201a30336eb733b4adf1
+    JNKeychain: ecf7a63977d312687d3064d35e5e728a349192c7
+    JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+    kdiff: 6dbb7ce9a7654d807dfaa00cf5fe880937b530b1
+    KGAryaManager: e3690a030acaa0ab6a97004853df48005a7ac726
+    KGSDKBase: c42ee23c02a3121c739c0ee329a3ed62a0574118
+    klp: 6847805365eb3a03a70d560760c0a5712c4f3a63
+    KRNSDK: e1ca01a96df8ce418e50a3659e46153894760208
+    KSAudioProcessLib: 3adb5ad6353750337030b5b4f6c7378e852f3e30
+    KSAVLogProtoModel: b25ccd06ab40a63dce2783987ef2815554ab0428
+    KSChinaMobileQuickLogin: 106ad08506d69231b6311100309e43fd73fdb2ca
+    KSChinaTelecomSDK: db6b468190d1a257fb310f5cfbe69d0dc3151c5c
+    KSChinaUnicomSDK: 436d2a015b09b64ac62a0712ba2e390541486b0e
+    KSCommon: 73e0fc29f035279bf820938d33926c182567ed74
+    KSDFP: 5340169ef4374d04970c4a5bb27811f83f69c35b
+    KSDiskCache: 0fd8a6e520f4ba2a4c02f425fcc8bd9207e368a0
+    KSecurityWrapper: 046b39cf29fbe75c9849b57a7a541d20e503c622
+    KSFastFolderSize: bd724774ca17b99ed14599980226b2eea3478a65
+    KSFFmpeg_iOS: 7545e65bc126bcca7d4e1a3c65e3e9252b48bdf0
+    KSKanas: 09337cf11d6e9dd2a6cd6dd13888d0120b5f4347
+    KSKanasProtoModel: ee138acbaeffe96fcb577286c4cdcbca1eccabeb
+    KSLivePlayer: f102655f042798b8cf1b6c36dca7ec25a20610d0
+    KSMWAzeroth: a5fb06810e2f3c2570b8e0a52cc4e06581591acb
+    KSMWDataCompress: a00898cae92199657d06e80967bd6a323b9beb96
+    KSORM: e39229adf40909852d9d9b1c4ff959963da0dd3e
+    KSPromise: a130ccb8afb53847c8a8f8cfa0ddc6fce8d1c54d
+    KSProtobufCpp_iOS: 2ceff3e8521191b48ca8cfed0dc856257b5d5a75
+    KSRSAUtil: 66d1e5bbec0b69e33478431a41834155870d768d
+    KSRtcKit: dbf3db8fa6069f9013e046bdf1bf704f86efb3e9
+    KSSecuring: 62badbe7c4375fa06114ff0c1f4eb82544783b68
+    KSSecurityRelease: ba55a6e978043ac28b3c7c3ab739f22c5a5a8f04
+    KSSmartDns: 3861817301907a9ff9f48f755973b638dfa90c7f
+    KSTLog: 45173e77e8ee5c12134b21df87cc71edeb5d3ec6
+    KSUAccount: 4745ce0a6b14df080e42358d7889d47640c42981
+    KSULiveStream: 7510276dbac380295c83bb6a62c263983bc53b59
+    KSULNetworking: 23c388914a0c5e87e0d4d8a7dcff1c45026c65c6
+    KSUploader: 717729d2f2ff607923f1d566bbe9ca1311bf172d
+    KSUploaderKit: f9e552c24842c4c5e3f6ad0734c259b70177fe09
+    KSUProtoModel: 8da02b26e879e154b97718bda74cf150cef59bc5
+    KSUserDefaults: a24d3d5a1acf132d551ce0df8f3fe7272f55e9f0
+    KSUStatistics: e2d0d80433190669eae62d18854f98c43e0251a4
+    KSVader: aa760c9aa8536156d573ffa3d57e3fd0a0bd979e
+    KSVodPlayer: 57d27b02ef986d4b24e5138429bcfc31f95c2b5a
+    KSWeaponArmy: b872805436c47c6024a6a74da46b107415432b7d
+    KSXLog_iOS: 4d35088b01a36d4f8aa702e74d0eb6cf6a16e624
+    KSXPackageManager: 110a61e1f868a24cccfc589df5017bc6c68049f7
+    ktp: 2694c7d85a28b6e6a2b42beacc760caa8e5511a1
+    KwaiAnalytics: 9e3fe70b732ef3c3ac133eeb11be50cdc9a5b06f
+    KwaiAppBox: 6d9f9bc0d3f43de1944cd364d7fad1f94f2df211
+    KwaiBase: dad6b5df0fd4c8a31b7c1b9ce9bd79efc104988c
+    KwaiBridgeCenter: e3ff464e1a6093d3386461ada8ee408563d546db
+    KwaiCaptcha: 79c5f26480ab2a5a40b05536a84bb9d39228b758
+    KwaiGameAD: cdba2732a03a4e911edb47f267666a0ab7c311d4
+    KwaiGameAD-BUAdSDK: 244bf7dd36e0b7d5a96abaf5936f454a5d29e14c
+    KwaiGameAD-KSAdSDK: b0f4c20854c0d532f4b61c7495032bf81f2b500f
+    KwaiGameAD-KwaiAppBox: ea72f580f5ce03bc225c424cc78025a853b1e284
+    KwaiGameAD-Manager: 089fd59a147f6aae2964b3424a668fc3171b7b2e
+    KwaiGameAD-Mintegral: c86a118fa95d9fcd092b5e16355d7dad77c11102
+    KwaiGameAD-MobAdSDK: e3c4ff86383e638259631984869131bd3396314b
+    KwaiGameAD-OverSeaSDK: 44623121598ca3898e5fcd8725006a40d6a43ce3
+    KwaiGameAD-TXAdSDK: b89c1631851c552f54a44d05f84d275368e269df
+    KwaiGameADPath: ce17951bd57edc3bfd6af3dafc0a3070a475345f
+    KwaiGameADPath-SKAdNetwork: 7f13538e6666f24a48316c718d4c39bc491cf430
+    KwaiGameADPath-TrackingIO: 300a84e1648efa93d19e4401de93d1883bb042c2
+    KwaiGameBase: aeb9f2ff65f6bcb57d29430169e72c1d57da24dc
+    KwaiGameBase-DemoSupport: e5d560fb2cfce4f8d7f86680b02bca9b74e312ac
+    KwaiGameImagePicker: 40570d489ee65e4978c7fbf43d5ca2a0b2c14dbb
+    KwaiGameLive: ceeeff457db8e533137a86f48f8c256efeda3d2a
+    KwaiGameLive-LiveMartPlugin: 0c34ec205647a23c8062701ccc37ef40454b8a4a
+    KwaiGameLive-NativeUIPlugin: b4df9815b2b7dcd9bbab2beb0d1363466794896c
+    KwaiGameNetworking: f065db43550911e5e184ee0eca53dacd9f0552f9
+    KwaiGameNetworkStatusMonitor: 2b23b27b8eda4d57d76c9addaecbd46ec0fd54a5
+    KwaiGameSDK: 16037bb80bee561ef4316feab1863435ef3c039c
+    KwaiGameSDK-ABtest-Firebase: c713bfafa8534cae6872d0948407a2a41211459a
+    KwaiGameSDK-AD: 9e23a64083e9f19c5791595ea37aacf30ff0e36d
+    KwaiGameSDK-ADPath-AppsFlyer: 68a7004fab93feb286bcc229677f71d0f43aaaf4
+    KwaiGameSDK-AntiAddict: 6640bd0262e42c6838341151b12bd8e6c881919c
+    KwaiGameSDK-AppBox: d522b31d6e82cc3c545ed3cad9d127b443c12c2e
+    KwaiGameSDK-AppsflyerCommon: dce6f42abb552ce2299523d36ec06f3f74758f40
+    KwaiGameSDK-Audio: 815c9b53241a4c6b3d562722c3ff4f9faa81a9f2
+    KwaiGameSDK-Community: edc2a60d1eaaf8cada5c1c09752416c293630db6
+    KwaiGameSDK-Community-Kwai: fac7d50f78e2cfa95c136dc4d8a2523b317edff1
+    KwaiGameSDK-CrashReport: f18832707e1631dcfe6c834ff7472929d13470c9
+    KwaiGameSDK-CrashReport-Bugly: b95490421b73734b46f8804eaa72ad54458acdb6
+    KwaiGameSDK-CrashReport-Firebase: 082406da199543cd36cfd0c3f23d40f5f5861e47
+    KwaiGameSDK-Downloader: b750fc6988bf8153644ed5f679705922364af71e
+    KwaiGameSDK-IM: 7c96501f117d9b5aec5c6a38303e0ec1a941d07d
+    KwaiGameSDK-KwaiJump: 1a5212ecaeb43ea0621a61422eee5d7df80d11a9
+    KwaiGameSDK-Live: 4666ec4eae1541e6c9a1e42a92cc3016f78785b2
+    KwaiGameSDK-LongLink: db2258b4a06de55adbd9864879c29aa7d8351223
+    KwaiGameSDK-Media: 856ee73ab269fa26fe624ae10ade2e7f344ae094
+    KwaiGameSDK-OpenPlatform: bf68dbf8c0c0677892b8d8eab16cbdb740fe1b39
+    KwaiGameSDK-Oversea: 0046c0b120c2c2be31d6bd01c1636b20b5c6f691
+    KwaiGameSDK-Pay: 67b5e7ef23b9a1a11f259dab896895ef782c442e
+    KwaiGameSDK-Push: ccea613245947e39e358a1bd5b0e82f8be6c2690
+    KwaiGameSDK-PushReport: 5a38d2e8d60537532159510ac26cd8ea72bcd38f
+    KwaiGameSDK-QRScan: 72367443b24ae203728e43c5d2699c23412ac3bb
+    KwaiGameSDK-QuickLogin: 8498ef092198b9ea65f1bc11511d645a80f2b13a
+    KwaiGameSDK-Relation: a573ed0112986db0497c64d6f8451ccff59efd0d
+    KwaiGameSDK-Report-Appsflyer: fda6e12563839eec1b6240e8ee772500014161c7
+    KwaiGameSDK-Report-Firebase: 0fa6e402b49b1ac02d0852947e3363fdb9adc715
+    KwaiGameSDK-SpringFestival: 6640d75972b156f0e0a75aed774bd28760a77874
+    KwaiGameSDK-Subgame: 0b95960d7acdd101b2009eb2f60dbbe0495ec739
+    KwaiGameSDK-UniApi: 37ec5b707908e2c4c4c03761809d982d6021e7d2
+    KwaiGameSDK-UnitTest: ee889e35ae355183bec1d2ed3b16dd720aa1b0cc
+    KwaiGameSDK-VideoRecordBase: ee6e5e99355a7144252be242cad9c8b6c9b825cb
+    KwaiGameSDK-VideoShare: c20b220fc8533007f582b64a8a7ecf7538a91d62
+    KwaiGameSDK-VisitorPasswordLogin: 8e86cb57776ed0cae5d8412f64a1ec55266eb1bd
+    KwaiGameSDK-Voip: e4c519ad77bd6162bb0d8f78503b509a7cd61484
+    KwaiGameSDK-WeaponArmy: c5e7eafafb2f7118c042917db09960c940df750a
+    KwaiGameSDK-WebView: 3758d05875eb7f0290dc8d13fb46364f3ae6ac43
+    KwaiGameSDK-WWP: d9733cf301d7c2acaa5ad7df6f06830aeffd757e
+    KwaiGameVideoAryaEncode: 3165bcd288b70feb851e1a80e2d8311a26d9c9d2
+    KwaiGameVideoBase: e4d29b0df6ae1fef5431f306b53a421e4f8a0276
+    KwaiGameVideoCapture: 34215831fbde2d86dcafdf9abac2809d7a9e20f8
+    KwaiGameVideoRecord: 44ceb73e76952c531ce6de34d9d441227cf53a40
+    KwaiGameVideoShare: f9d80774a2c371bdea9e0d539e37ef668cb3de85
+    KwaiGameWWP: 31050711a67db72ae29501837d6ab7181656e0ec
+    KwaiGameWWP-NativeUIPlugin: 1713e06bc5e548342c1916283bcd5aedab6ce220
+    KwaiIMKwaiLink: 9a9c1a1d1ddbe041f1dca21e0bd9fbbb0b02303d
+    KwaiIMSDK: 5600e8d99a02a562c491545f671239639712b35d
+    KwaiIMTrace: 6e8048bfc400b400704a38a1983370f5a1a84aed
+    KwaiIMXFDB: 2f2fe4ad0e241840354ecf83857b7a3ffbac418a
+    KwaiMediaPlayer: 49a9a8328803d87450489446467b847d9bbd79c8
+    KwaiNetworking: 233fa661f1decf31e6fc8b01e80baa8bc83e5839
+    KwaiReportCenter: 0d04112da6c05ec21a97ee17bebf8794aaadfcc6
+    KwaiSDK: fd7e2a59704db8cec693e2c3a06758edc2c71977
+    KwaiSwizzle: 5cf55fd6842a64b398bd4b0507b0035d4adbab09
+    KwaiUIRecorder: 4ad9a16d8de2b19fd76335fa5cfa127df71ff6c2
+    KWArya: cd7b37901a9677d2b062c2f2255faf9b648818c0
+    KWStannis_iOS: cb1735fc7db3776953d34f53a334a422a3a336cd
+    libuv: 791a411e4ee0b4ca8296d713966391a88dd42ca8
+    libwebp: 2447fdd08f0a3f62ac87a5c35e1e8ba7af30f137
+    libyuv: 9b8d4c29f02c46e5f8ce7da8b324e334dd6dcc06
+    lottie-ios: 746164461e89834050693e464e7c6082542b3c57
+    Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+    MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+    MJExtension: 0655eb3434592663842f988e6ce61e00dfea428e
+    MMKV: aac95d817a100479445633f2b3ed8961b4ac5043
+    MMKVCore: 3388952ded307e41b3ed8a05892736a236ed1b8e
+    nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+    Obiwan: 8ff36d975644d454b1d911f379ae9ad68762d5cc
+    OneKit-Pangle: 68a778c39d36ed8feffd667a6b49225427bcf286
+    OpenSSL-Universal: bcea8d73aec478029029164f9f0695b57cb94309
+    p2pstun: 26c1d44f8ca88f8f95bc7c75f15d3df23e79b6c0
+    Pigeon: 3a28505ec33e97e4c6444896c1c6145f7061ac68
+    PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
+    Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
+    RangersAPM-Pangle: 97c8fe91af08574a739cc72a714b735efb6c891f
+    RCTRequired: a097c8fbad28a637563b8467b5b5cb044a172d43
+    RCTTypeSafety: 403aa9d3716388cdb72a2c8ded485fea37ef53b8
+    Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+    React: 85bdc7d749416ccd6b46adf13131c5ea51781ac0
+    React-callinvoker: cec06f6902fced4305117bbe5dc4cd77112aee87
+    React-Core: bc5ea9d8c76cc6c3b006dfdd0736d674d1a0537d
+    React-CoreModules: 728995d9346889890498738ca6db5f8a136fb0e6
+    React-cxxreact: 1a53c89bd443c9968610cfc1191f457e88739eeb
+    React-jsi: a9d3ccef9f16f5690d31c6f22bf59d6a2c1b76ff
+    React-jsiexecutor: c2ab9c35c04e75db0cf77379b324cf0c6c47564e
+    React-jsinspector: c8417bb66ee599aea96cb82005de29ebff1e4077
+    react-native-image-picker: 92f51a85a62c2d829dcbd0dda5af99e6f988a113
+    react-native-netinfo: a53b00d949b6456913aaf507d9dba90c4008c611
+    react-native-safe-area-context: 344b969c45af3d8464d36e8dea264942992ef033
+    react-native-webview: d70bc760daaa0e2667dec569b93014882565819c
+    React-RCTActionSheet: 21ca938f7c011e37e615b433f5a2ff766cacb94a
+    React-RCTAnimation: b0ca05ff94665f6103a2f611c44a6aa6a1ba3106
+    React-RCTBlob: 4bfbfcd4d4eaa1b3ad49894fcaa22b143a8e3897
+    React-RCTImage: 6717c0753db3ff4968e4c8680b5a2a9274b1151c
+    React-RCTLinking: 5c2eaa90acd5afddcee2308db2898b00068ab69e
+    React-RCTNetwork: 7a38a51d98176b7e2d3584ebcaf09c912294c4be
+    React-RCTSettings: e25b51850f9545c58b733b9a05a36a43c66d6fff
+    React-RCTText: 0e9cfcf8e685326444a3be1365d00d0f907f3c9b
+    React-RCTVibration: 0752963befe122544cc7d1d82b5f9f78f6fb19b7
+    React-trace: 44056754fe10a973d3b4ed3a56ff6df4275fa35c
+    ReactCommon: fb76dbab9e8bc8f38afd58398f047c2645f883cd
+    RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
+    RNFastImage: ff7e055d085abe465b358ce5aa51e3c6d64b1efd
+    RNGestureHandler: b6b359bb800ae399a9c8b27032bdbf7c18f08a08
+    RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
+    RNScreens: 62211832af51e0aebcf6e8c36bcf7dd65592f244
+    RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
+    SDWebImage: 74ba6928501a7804a07e08b1621e82f595057c12
+    SDWebImageWebPCoder: 2aafe5b1e370b59b0a7edefc0189dbc7227be9c3
+    SSZipArchive: 5fd0cb164136240dad328cabdd3b3082c9de76d5
+    TensorFlow-Lite: e4806784171f7ead470a2536a867fbab0022adc4
+    Toast: 8041fe5a197d091da8c5c3bd36faa255555e7df1
+    TransitionKit: ebbd5853b5ad7eec3ea9caa122b427101b5cda7c
+    Tweaks: bfcdf1cea929670d4a709ed6adf5de8a4cebc7c7
+    twitter-text: ad35c8d3e0eec21098a670590ee28e67d3e95562
+    UnityAds: 6d2fecf09f314049993b9d1c0fcd2efc43dfa60e
+    VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
+    WBCloudFace: 78f2e3e7191f4c48d02497e0a694a9103a29999b
+    WechatSDK: e8b3d9084d2866cd64fc0ab7530b9cff0f8754e4
+    WeiboSDK: 2586a81a071af5184463722bf7412d0d9453d9e0
+    XFDB: e575f0bd75d363e83af47a2b2cb3c82f6f7ce724
+    XFMulticastDelegate: 051e5e82a0389d7c09fd7cdc30d2fdbdbe948566
+    ycnn2: d611e343c1a8c3726c3b2f62ecc7f87738b57bf1
+    Yoda: b5f5a5cfb5f3a9a9aa3469c429984f4c37729168
+    Yoga: 5ef1433dc5b9a5926b58034a9a2c186941dd25aa
+    ZipKit: 7cb260c679ec79b13a23e24e83721cdc8ce06aad
   SPEC REPOS:
-    "git@git.corp.kuaishou.com:krn/tools/react-native-spec.git":
-      - boost-for-react-native
-    "git@git.corp.kuaishou.com:open-iOS/cocoapods-gamesdk-binspec.git":
-      - Ads-Global
+    "git@git.corp.kuaishou.com:im_cloud/ios/KwaiIMFramework.git":
+      - IMSDKProto
+      - KwaiIMKwaiLink
+      - KwaiIMSDK
+      - KwaiIMTrace
+      - KwaiIMXFDB
+      - KwaiNetworking
+      - Pigeon
+    "git@git.corp.kuaishou.com:ios/dependents.git":
       - Aegon_iOS
       - AFNetworking
+      - Aspects
+      - boost
+      - CocoaLumberjack
+      - FCFileManager
+      - FMDB
+      - Godzippa
+      - JNKeychain
+      - kdiff
+      - klp
+      - KSAVLogProtoModel
+      - KSCommon
+      - KSDFP
+      - KSDiskCache
+      - KSecurityWrapper
+      - KSFastFolderSize
+      - KSKanas
+      - KSKanasProtoModel
+      - KSMWAzeroth
+      - KSMWDataCompress
+      - KSORM
+      - KSRSAUtil
+      - KSSecuring
+      - KSSecurityRelease
+      - KSTLog
+      - KSUploaderKit
+      - KSUserDefaults
+      - KSVader
+      - ktp
+      - KwaiBridgeCenter
+      - KwaiCaptcha
+      - KwaiSwizzle
+      - libwebp
+      - lottie-ios
+      - MJExtension
+      - Obiwan
+      - p2pstun
+      - SDWebImage
+      - SDWebImageWebPCoder
+      - TensorFlow-Lite
+      - TransitionKit
+      - twitter-text
+      - WBCloudFace
+      - Yoda
+      - Yoga
+    "git@git.corp.kuaishou.com:krn/tools/react-native-spec.git":
+      - boost-for-react-native
+      - BVLinearGradient
+      - DoubleConversion
+      - FBLazyVector
+      - FBReactNativeSpec
+      - Folly
+      - glog
+      - KSXPackageManager
+      - RCTRequired
+      - RCTTypeSafety
+      - React
+      - React-callinvoker
+      - React-Core
+      - React-CoreModules
+      - React-cxxreact
+      - React-jsi
+      - React-jsiexecutor
+      - React-jsinspector
+      - React-RCTActionSheet
+      - React-RCTAnimation
+      - React-RCTBlob
+      - React-RCTImage
+      - React-RCTLinking
+      - React-RCTNetwork
+      - React-RCTSettings
+      - React-RCTText
+      - React-RCTVibration
+      - React-trace
+      - ReactCommon
+    "git@git.corp.kuaishou.com:lib-iOS/repo.git":
+      - AutoCoding
+      - KwaiGameImagePicker
+      - KwaiGameNetworkStatusMonitor
+      - KwaiReportCenter
+      - KwaiUIRecorder
+      - Toast
+      - XFDB
+      - XFMulticastDelegate
+    https://github.com/CocoaPods/Specs.git:
+      - Ads-Global
       - AppAuth
       - AppLovinSDK
       - AppsFlyerFramework
-      - Aspects
-      - AutoCoding
-      - BlocksKit
-      - Bolts
-      - boost
       - Bugly
-      - BVLinearGradient
       - CocoaAsyncSocket
-      - CocoaLumberjack
-      - Diplomat
-      - DoubleConversion
       - FBAudienceNetwork
-      - FBLazyVector
-      - FBReactNativeSpec
       - FBSDKCoreKit
       - FBSDKCoreKit_Basics
       - FBSDKLoginKit
       - FBSDKShareKit
-      - FCFileManager
       - Firebase
       - FirebaseABTesting
       - FirebaseAnalytics
@@ -5896,13 +5256,7 @@ PODS_INFO:
       - FirebaseCrashlytics
       - FirebaseInstallations
       - FirebaseRemoteConfig
-      - FLAnimatedImage
-      - FMDB
-      - Folly
-      - GameLiveProtoModel
       - GDTMobSDK
-      - glog
-      - Godzippa
       - Google-Mobile-Ads-SDK
       - GoogleAppMeasurement
       - GoogleDataTransport
@@ -5916,165 +5270,18 @@ PODS_INFO:
       - GoogleUtilities
       - GTMAppAuth
       - GTMSessionFetcher
-      - Hodor
-      - IMSDKProto
       - IronSourceSDK
-      - JhtFloatingBall
-      - JNKeychain
       - JRSwizzle
-      - kdiff
-      - KGAryaManager
-      - klp
-      - KRNSDK
-      - KSAudioProcessLib
-      - KSAVLogProtoModel
-      - KSChinaMobileQuickLogin
-      - KSChinaTelecomSDK
-      - KSChinaUnicomSDK
-      - KSCommon
-      - KSDFP
-      - KSDiskCache
-      - KSecurityWrapper
-      - KSFastFolderSize
-      - KSFFmpeg_iOS
-      - KSKanas
-      - KSKanasProtoModel
-      - KSLivePlayer
-      - KSMWAzeroth
-      - KSMWDataCompress
-      - KSORM
-      - KSPromise
-      - KSProtobufCpp_iOS
-      - KSRSAUtil
-      - KSRtcKit
-      - KSSecuring
-      - KSSecurityRelease
-      - KSSmartDns
-      - KSTLog
-      - KSUAccount
-      - KSULiveStream
-      - KSULNetworking
-      - KSUploader
-      - KSUploaderKit
-      - KSUProtoModel
-      - KSUserDefaults
-      - KSUStatistics
-      - KSVader
-      - KSVodPlayer
-      - KSWeaponArmy
-      - KSXLog_iOS
-      - KSXPackageManager
-      - ktp
-      - KwaiAnalytics
-      - KwaiAppBox
-      - KwaiBase
-      - KwaiBridgeCenter
-      - KwaiCaptcha
-      - KwaiGameAD
-      - KwaiGameAD-BUAdSDK
-      - KwaiGameAD-KSAdSDK
-      - KwaiGameAD-KwaiAppBox
-      - KwaiGameAD-Manager
-      - KwaiGameAD-Mintegral
-      - KwaiGameAD-MobAdSDK
-      - KwaiGameAD-OverSeaSDK
-      - KwaiGameAD-TXAdSDK
-      - KwaiGameADPath
-      - KwaiGameADPath-SKAdNetwork
-      - KwaiGameADPath-TrackingIO
-      - KwaiGameBase
-      - KwaiGameBase-DemoSupport
-      - KwaiGameImagePicker
-      - KwaiGameLive
-      - KwaiGameLive-LiveMartPlugin
-      - KwaiGameLive-NativeUIPlugin
-      - KwaiGameNetworking
-      - KwaiGameNetworkStatusMonitor
-      - KwaiGameVideoAryaEncode
-      - KwaiGameVideoBase
-      - KwaiGameVideoCapture
-      - KwaiGameVideoRecord
-      - KwaiGameVideoShare
-      - KwaiGameWWP
-      - KwaiGameWWP-NativeUIPlugin
-      - KwaiIMKwaiLink
-      - KwaiIMSDK
-      - KwaiIMTrace
-      - KwaiIMXFDB
-      - KwaiMediaPlayer
-      - KwaiNetworking
-      - KwaiReportCenter
       - KwaiSDK
-      - KwaiSwizzle
-      - KwaiUIRecorder
-      - KWArya
-      - KWStannis_iOS
-      - libuv
-      - libwebp
-      - libyuv
-      - lottie-ios
       - Masonry
       - MBProgressHUD
-      - MJExtension
       - MMKV
       - MMKVCore
       - nanopb
-      - Obiwan
       - OneKit-Pangle
-      - OpenSSL-Universal
-      - p2pstun
-      - Pigeon
       - PromisesObjC
-      - Protobuf
       - RangersAPM-Pangle
-      - RCTRequired
-      - RCTTypeSafety
       - Reachability
-      - React
-      - React-callinvoker
-      - React-Core
-      - React-CoreModules
-      - React-cxxreact
-      - React-jsi
-      - React-jsiexecutor
-      - React-jsinspector
-      - react-native-image-picker
-      - react-native-netinfo
-      - react-native-safe-area-context
-      - react-native-webview
-      - React-RCTActionSheet
-      - React-RCTAnimation
-      - React-RCTBlob
-      - React-RCTImage
-      - React-RCTLinking
-      - React-RCTNetwork
-      - React-RCTSettings
-      - React-RCTText
-      - React-RCTVibration
-      - React-trace
-      - ReactCommon
-      - RNCMaskedView
-      - RNFastImage
-      - RNGestureHandler
-      - RNReanimated
-      - RNScreens
-      - RNSVG
-      - SDWebImage
-      - SDWebImageWebPCoder
-      - SSZipArchive
-      - TensorFlow-Lite
-      - Toast
-      - TransitionKit
       - Tweaks
-      - twitter-text
       - UnityAds
       - VungleSDK-iOS
-      - WBCloudFace
-      - WechatSDK
-      - WeiboSDK
-      - XFDB
-      - XFMulticastDelegate
-      - ycnn2
-      - Yoda
-      - Yoga
-      - ZipKit

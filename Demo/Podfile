@@ -3,7 +3,7 @@ platform :ios, 10.0
  
 install! 'cocoapods', :warn_for_unused_master_specs_repo => false
  
-@sdk_version="1.32.0-alpha-1.32.0" # 使用中替换为SDK的版本号即可
+@sdk_version="1.31.2-alpha-1.31.2" # 使用中替换为SDK的版本号即可
  
 source "git@github.com:KwaiGameCenter/kwaigame-sdk-spec.git"
  
@@ -53,7 +53,6 @@ target "KwaiGameSDK_Example" do
    pod "KwaiGameSDK-Report-Firebase", @sdk_version
    pod "KwaiGameSDK-Report-Appsflyer", @sdk_version
    pod "KwaiGameSDK-AppBox", @sdk_version
-#   pod "KwaiGameSDK-Mock", @sdk_version
 end
  
 target "NotificationService" do

@@ -9,7 +9,6 @@
 #import "KGReportViewController.h"
 #import "UIViewController+DemoSupport.h"
 #import <KwaiGameSDK/KwaiGameSDK.h>
-#import <KwaiGameSDK/KwaiGameSDK+CrashReport.h>
 #import "AFNetworking.h"
 #import "KwaiBase.h"
 #import "KGUtil.h"
@@ -54,10 +53,6 @@
     [self addSpliteLine:@"监测上报" frame:CGRectMake(15, 400, DemoUIScreenWidth - 30, 30)];
     
     [self addSubButton:@"自定义监测事件" frame:CGRectMake(0, 80, 200, 30) selector:@selector(reportADPath:)];
-    
-    [self addSpliteLine:@"异常上报" frame:CGRectMake(15, 400, DemoUIScreenWidth - 30, 30)];
-    
-    [self addSubButton:@"自定义异常" frame:CGRectMake(0, 80, 200, 30) selector:@selector(reprotCustomException:)];
     
     [[KwaiGameSDK sharedSDK] setGameExtension:@{
         @"CurrentSence":NSStringFromClass(self.class)
@@ -123,13 +118,6 @@
     if ([sender isKindOfClass:UIButton.class]) {
         [(UIButton *)sender setTitle:[NSString stringWithFormat:@"自定义监测事件:%@",conversionValue] forState:UIControlStateNormal];
     }
-}
-
-- (void)reprotCustomException:(id)sender {
-    [[KwaiGameSDK sharedSDK]reportCustomException:@"DemoCustomException" reason:@"test bugly custom exception" userInfo:@{
-        @"aaa":@"test"
-    }];
-    [self toast:@"已点击自定义异常上报"];
 }
 
 - (void)getAppsFlyerId {
