@@ -1,4 +1,4 @@
-GAMESDK_VERSION: 1.2.28
+GAMESDK_VERSION: 1.2.31
 
 GAME_SDK_INFO:
   AUTHOR: gamecenter
@@ -3461,13 +3461,13 @@ PODS_INFO:
       - KSRtcKit/core
       - KwaiBase/LiteProxy
       - KWArya/Game
-    - KGSDKBase (1.31.1):
-      - KGSDKBase/Core (= 1.31.1)
-      - KGSDKBase/Env (= 1.31.1)
-      - KGSDKBase/Utils (= 1.31.1)
+    - KGSDKBase (1.31.2):
+      - KGSDKBase/Core (= 1.31.2)
+      - KGSDKBase/Env (= 1.31.2)
+      - KGSDKBase/Utils (= 1.31.2)
       - KwaiBase
       - KwaiGameBase
-    - KGSDKBase/Core (1.31.1):
+    - KGSDKBase/Core (1.31.2):
       - KwaiBase
       - KwaiBase/DDLog
       - KwaiGameBase
@@ -3476,11 +3476,11 @@ PODS_INFO:
       - KwaiGameNetworkStatusMonitor
       - KwaiReportCenter
       - ZipKit
-    - KGSDKBase/Env (1.31.1):
+    - KGSDKBase/Env (1.31.2):
       - KGSDKBase/Utils
       - KwaiBase
       - KwaiGameBase
-    - KGSDKBase/Utils (1.31.1):
+    - KGSDKBase/Utils (1.31.2):
       - KwaiBase
       - KwaiGameBase
     - klp (1.12.0.7.1a61a0cf)
@@ -4050,24 +4050,24 @@ PODS_INFO:
     - KwaiGameNetworkStatusMonitor (1.0.6):
       - AFNetworking
       - XFMulticastDelegate
-    - KwaiGameSDK (1.31.1):
-      - KwaiGameSDK/Core (= 1.31.1)
-      - KwaiGameSDK/Header (= 1.31.1)
-    - KwaiGameSDK-ABtest-Firebase (1.31.1):
+    - KwaiGameSDK (1.31.2):
+      - KwaiGameSDK/Core (= 1.31.2)
+      - KwaiGameSDK/Header (= 1.31.2)
+    - KwaiGameSDK-ABtest-Firebase (1.31.2):
       - Firebase/RemoteConfig
       - KGSDKBase
       - KwaiGameBase
-    - KwaiGameSDK-AD (1.31.1):
+    - KwaiGameSDK-AD (1.31.2):
       - KwaiGameAD-Manager
       - KwaiGameSDK/Header
     - KwaiGameSDK-ADPath-AppsFlyer (1.8.4):
       - AppsFlyerFramework
       - KwaiGameADPath
       - KwaiGameBase
-    - KwaiGameSDK-AntiAddict (1.31.1):
+    - KwaiGameSDK-AntiAddict (1.31.2):
       - KGSDKBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-AppBox (1.31.1):
+    - KwaiGameSDK-AppBox (1.31.2):
       - Aegon_iOS
       - Hodor
       - KSVodPlayer
@@ -4075,19 +4075,19 @@ PODS_INFO:
       - KwaiGameBase
       - KwaiGameNetworkStatusMonitor
       - KwaiGameSDK/Header
-    - KwaiGameSDK-AppsflyerCommon (1.31.1):
+    - KwaiGameSDK-AppsflyerCommon (1.31.2):
       - AppsFlyerFramework
       - KGSDKBase
       - KwaiAnalytics
       - KwaiGameBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Audio (1.31.1)
-    - KwaiGameSDK-Community (1.31.1):
+    - KwaiGameSDK-Audio (1.31.2)
+    - KwaiGameSDK-Community (1.31.2):
       - KGSDKBase
-      - KwaiGameSDK-Community/Protocol (= 1.31.1)
+      - KwaiGameSDK-Community/Protocol (= 1.31.2)
       - KwaiGameSDK/Header
       - SDWebImage
-    - KwaiGameSDK-Community-Kwai (1.31.1):
+    - KwaiGameSDK-Community-Kwai (1.31.2):
       - BVLinearGradient
       - KGSDKBase
       - KRNSDK
@@ -4110,32 +4110,32 @@ PODS_INFO:
       - RNScreens
       - RNSVG
       - Yoga
-    - KwaiGameSDK-Community/Protocol (1.31.1):
+    - KwaiGameSDK-Community/Protocol (1.31.2):
       - KGSDKBase
       - KwaiGameSDK/Header
       - SDWebImage
-    - KwaiGameSDK-CrashReport (1.31.1):
+    - KwaiGameSDK-CrashReport (1.31.2):
       - KGSDKBase
       - KwaiGameBase
-      - KwaiGameSDK-CrashReport/Protocol (= 1.31.1)
+      - KwaiGameSDK-CrashReport/Protocol (= 1.31.2)
       - KwaiGameSDK/Header
-    - KwaiGameSDK-CrashReport-Bugly (1.31.1):
+    - KwaiGameSDK-CrashReport-Bugly (1.31.2):
       - Bugly
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK-CrashReport/Protocol
       - KwaiGameSDK/Header
-    - KwaiGameSDK-CrashReport-Firebase (1.31.1):
+    - KwaiGameSDK-CrashReport-Firebase (1.31.2):
       - Firebase/Crashlytics
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK-CrashReport/Protocol
       - KwaiGameSDK/Header
-    - KwaiGameSDK-CrashReport/Protocol (1.31.1):
+    - KwaiGameSDK-CrashReport/Protocol (1.31.2):
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Downloader (1.31.1):
+    - KwaiGameSDK-Downloader (1.31.2):
       - Aegon_iOS
       - Hodor
       - KSVodPlayer
@@ -4143,19 +4143,19 @@ PODS_INFO:
       - KwaiGameBase
       - KwaiGameNetworkStatusMonitor
       - KwaiGameSDK/Header
-    - KwaiGameSDK-IM (1.31.1):
+    - KwaiGameSDK-IM (1.31.2):
       - boost
       - ktp
       - KwaiGameSDK-LongLink
       - KwaiGameSDK/Header
       - KwaiIMSDK/Core
       - KwaiIMSDK/NetworkingWrapper
-    - KwaiGameSDK-KwaiJump (1.31.1):
+    - KwaiGameSDK-KwaiJump (1.31.2):
       - KGSDKBase
       - KwaiBase
       - KwaiGameBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Live (1.31.1):
+    - KwaiGameSDK-Live (1.31.2):
       - KGAryaManager
       - KwaiBase/LiteProxy
       - KwaiCaptcha
@@ -4163,93 +4163,93 @@ PODS_INFO:
       - KwaiGameLive-LiveMartPlugin
       - KwaiGameSDK/Header
       - Yoda
-    - KwaiGameSDK-LongLink (1.31.1):
+    - KwaiGameSDK-LongLink (1.31.2):
       - Aegon_iOS
       - KwaiGameSDK/Header
       - KwaiIMKwaiLink (~> 0.7.0)
       - Pigeon
       - Reachability
       - XFMulticastDelegate
-    - KwaiGameSDK-Media (1.31.1)
-    - KwaiGameSDK-OpenPlatform (1.31.1):
+    - KwaiGameSDK-Media (1.31.2)
+    - KwaiGameSDK-OpenPlatform (1.31.2):
       - Diplomat/Tencent
       - Diplomat/Wechat
       - Diplomat/Weibo
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Oversea (1.31.1):
+    - KwaiGameSDK-Oversea (1.31.2):
       - FBSDKCoreKit
       - FBSDKLoginKit
       - FBSDKShareKit
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Pay (1.31.1):
+    - KwaiGameSDK-Pay (1.31.2):
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Push (1.31.1):
+    - KwaiGameSDK-Push (1.31.2):
       - KwaiGameSDK-PushReport
       - KwaiGameSDK/Header
-    - KwaiGameSDK-PushReport (1.31.1):
+    - KwaiGameSDK-PushReport (1.31.2):
       - KGSDKBase/Env
-    - KwaiGameSDK-QRScan (1.31.1):
+    - KwaiGameSDK-QRScan (1.31.2):
       - KGSDKBase
       - KwaiBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-QuickLogin (1.31.1):
+    - KwaiGameSDK-QuickLogin (1.31.2):
       - KGSDKBase
       - KSChinaMobileQuickLogin
       - KSChinaTelecomSDK
       - KSChinaUnicomSDK
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Relation (1.31.1):
+    - KwaiGameSDK-Relation (1.31.2):
       - KwaiGameSDK/Header
       - KwaiSDK
-    - KwaiGameSDK-Report-Appsflyer (1.31.1):
+    - KwaiGameSDK-Report-Appsflyer (1.31.2):
       - AppsFlyerFramework
       - KGSDKBase
       - KwaiAnalytics
       - KwaiGameBase
-    - KwaiGameSDK-Report-Firebase (1.31.1):
+    - KwaiGameSDK-Report-Firebase (1.31.2):
       - Firebase/Analytics
       - KGSDKBase
       - KwaiAnalytics
       - KwaiGameBase
-    - KwaiGameSDK-SpringFestival (1.31.1):
+    - KwaiGameSDK-SpringFestival (1.31.2):
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Subgame (1.31.1):
+    - KwaiGameSDK-Subgame (1.31.2):
       - KwaiGameSDK-Live
       - KwaiGameSDK-Pay
       - KwaiGameSDK/Header
       - XFMulticastDelegate
-    - KwaiGameSDK-UniApi (1.31.1):
+    - KwaiGameSDK-UniApi (1.31.2):
       - KGSDKBase
       - KwaiGameBase
-    - KwaiGameSDK-UnitTest (1.31.1):
+    - KwaiGameSDK-UnitTest (1.31.2):
       - KGSDKBase
       - KwaiGameSDK/Header
       - OpenSSL-Universal
-    - KwaiGameSDK-VideoRecordBase (1.31.1):
+    - KwaiGameSDK-VideoRecordBase (1.31.2):
       - KwaiGameSDK/Header
       - KwaiGameVideoBase
-    - KwaiGameSDK-VideoShare (1.31.1):
+    - KwaiGameSDK-VideoShare (1.31.2):
       - KwaiGameSDK/Header
       - KwaiGameVideoShare
-    - KwaiGameSDK-VisitorPasswordLogin (1.31.1):
+    - KwaiGameSDK-VisitorPasswordLogin (1.31.2):
       - KGSDKBase
       - KwaiBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Voip (1.31.1):
+    - KwaiGameSDK-Voip (1.31.2):
       - KGAryaManager
       - KwaiGameSDK-LongLink
-    - KwaiGameSDK-WeaponArmy (1.31.1):
+    - KwaiGameSDK-WeaponArmy (1.31.2):
       - KGSDKBase
       - KSWeaponArmy
       - KwaiGameSDK/Header
-    - KwaiGameSDK-WebView (1.31.1):
+    - KwaiGameSDK-WebView (1.31.2):
       - KwaiGameSDK/Header
-    - KwaiGameSDK-WWP (1.31.1):
+    - KwaiGameSDK-WWP (1.31.2):
       - KSLivePlayer
       - KwaiGameSDK/Header
       - KwaiGameWWP
       - KwaiGameWWP-NativeUIPlugin
-    - KwaiGameSDK/Core (1.31.1):
+    - KwaiGameSDK/Core (1.31.2):
       - AFNetworking
       - KGSDKBase
       - KSDFP
@@ -4270,7 +4270,7 @@ PODS_INFO:
       - MJExtension
       - Reachability
       - Yoda
-    - KwaiGameSDK/Header (1.31.1):
+    - KwaiGameSDK/Header (1.31.2):
       - KwaiGameSDK-UniApi
     - KwaiGameVideoAryaEncode (0.0.9):
       - KwaiBase
@@ -4946,7 +4946,7 @@ PODS_INFO:
     JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
     kdiff: 6dbb7ce9a7654d807dfaa00cf5fe880937b530b1
     KGAryaManager: e3690a030acaa0ab6a97004853df48005a7ac726
-    KGSDKBase: c42ee23c02a3121c739c0ee329a3ed62a0574118
+    KGSDKBase: 89fc83cda5952fa8f41efcc87ef19a3d7e77e8bc
     klp: 6847805365eb3a03a70d560760c0a5712c4f3a63
     KRNSDK: e1ca01a96df8ce418e50a3659e46153894760208
     KSAudioProcessLib: 3adb5ad6353750337030b5b4f6c7378e852f3e30
@@ -5013,46 +5013,46 @@ PODS_INFO:
     KwaiGameLive-NativeUIPlugin: b4df9815b2b7dcd9bbab2beb0d1363466794896c
     KwaiGameNetworking: f065db43550911e5e184ee0eca53dacd9f0552f9
     KwaiGameNetworkStatusMonitor: 2b23b27b8eda4d57d76c9addaecbd46ec0fd54a5
-    KwaiGameSDK: 16037bb80bee561ef4316feab1863435ef3c039c
-    KwaiGameSDK-ABtest-Firebase: c713bfafa8534cae6872d0948407a2a41211459a
-    KwaiGameSDK-AD: 9e23a64083e9f19c5791595ea37aacf30ff0e36d
-    KwaiGameSDK-ADPath-AppsFlyer: 68a7004fab93feb286bcc229677f71d0f43aaaf4
-    KwaiGameSDK-AntiAddict: 6640bd0262e42c6838341151b12bd8e6c881919c
-    KwaiGameSDK-AppBox: d522b31d6e82cc3c545ed3cad9d127b443c12c2e
-    KwaiGameSDK-AppsflyerCommon: dce6f42abb552ce2299523d36ec06f3f74758f40
-    KwaiGameSDK-Audio: 815c9b53241a4c6b3d562722c3ff4f9faa81a9f2
-    KwaiGameSDK-Community: edc2a60d1eaaf8cada5c1c09752416c293630db6
-    KwaiGameSDK-Community-Kwai: fac7d50f78e2cfa95c136dc4d8a2523b317edff1
-    KwaiGameSDK-CrashReport: f18832707e1631dcfe6c834ff7472929d13470c9
-    KwaiGameSDK-CrashReport-Bugly: b95490421b73734b46f8804eaa72ad54458acdb6
-    KwaiGameSDK-CrashReport-Firebase: 082406da199543cd36cfd0c3f23d40f5f5861e47
-    KwaiGameSDK-Downloader: b750fc6988bf8153644ed5f679705922364af71e
-    KwaiGameSDK-IM: 7c96501f117d9b5aec5c6a38303e0ec1a941d07d
-    KwaiGameSDK-KwaiJump: 1a5212ecaeb43ea0621a61422eee5d7df80d11a9
-    KwaiGameSDK-Live: 4666ec4eae1541e6c9a1e42a92cc3016f78785b2
-    KwaiGameSDK-LongLink: db2258b4a06de55adbd9864879c29aa7d8351223
-    KwaiGameSDK-Media: 856ee73ab269fa26fe624ae10ade2e7f344ae094
-    KwaiGameSDK-OpenPlatform: bf68dbf8c0c0677892b8d8eab16cbdb740fe1b39
-    KwaiGameSDK-Oversea: 0046c0b120c2c2be31d6bd01c1636b20b5c6f691
-    KwaiGameSDK-Pay: 67b5e7ef23b9a1a11f259dab896895ef782c442e
-    KwaiGameSDK-Push: ccea613245947e39e358a1bd5b0e82f8be6c2690
-    KwaiGameSDK-PushReport: 5a38d2e8d60537532159510ac26cd8ea72bcd38f
-    KwaiGameSDK-QRScan: 72367443b24ae203728e43c5d2699c23412ac3bb
-    KwaiGameSDK-QuickLogin: 8498ef092198b9ea65f1bc11511d645a80f2b13a
-    KwaiGameSDK-Relation: a573ed0112986db0497c64d6f8451ccff59efd0d
-    KwaiGameSDK-Report-Appsflyer: fda6e12563839eec1b6240e8ee772500014161c7
-    KwaiGameSDK-Report-Firebase: 0fa6e402b49b1ac02d0852947e3363fdb9adc715
-    KwaiGameSDK-SpringFestival: 6640d75972b156f0e0a75aed774bd28760a77874
-    KwaiGameSDK-Subgame: 0b95960d7acdd101b2009eb2f60dbbe0495ec739
-    KwaiGameSDK-UniApi: 37ec5b707908e2c4c4c03761809d982d6021e7d2
-    KwaiGameSDK-UnitTest: ee889e35ae355183bec1d2ed3b16dd720aa1b0cc
-    KwaiGameSDK-VideoRecordBase: ee6e5e99355a7144252be242cad9c8b6c9b825cb
-    KwaiGameSDK-VideoShare: c20b220fc8533007f582b64a8a7ecf7538a91d62
-    KwaiGameSDK-VisitorPasswordLogin: 8e86cb57776ed0cae5d8412f64a1ec55266eb1bd
-    KwaiGameSDK-Voip: e4c519ad77bd6162bb0d8f78503b509a7cd61484
-    KwaiGameSDK-WeaponArmy: c5e7eafafb2f7118c042917db09960c940df750a
-    KwaiGameSDK-WebView: 3758d05875eb7f0290dc8d13fb46364f3ae6ac43
-    KwaiGameSDK-WWP: d9733cf301d7c2acaa5ad7df6f06830aeffd757e
+    KwaiGameSDK: a343318da24aa64f8351f33e14c7e9b3f3228b50
+    KwaiGameSDK-ABtest-Firebase: 02af5d72a77b711696e937464c61f00a33aa7d6c
+    KwaiGameSDK-AD: b6185d9a665cd2bcd2105c6530057e03719d5b4d
+    KwaiGameSDK-ADPath-AppsFlyer: f1c426efaadcfd5989578923adfbf0f868fd06b8
+    KwaiGameSDK-AntiAddict: f20e1cd3510edc69e8eb791bb3bf1b395648312c
+    KwaiGameSDK-AppBox: 0fb1f9326d7e23e640070817fc0e7b29d24ca9c8
+    KwaiGameSDK-AppsflyerCommon: 752b420d4d3a1d387c9cb5112816b0fb09035faf
+    KwaiGameSDK-Audio: 74d2c53d0c25b7ce80841c09637d7edf131a0dc7
+    KwaiGameSDK-Community: 73f6dad7cb5014a7571c070e5d18944b94a8918b
+    KwaiGameSDK-Community-Kwai: b73762d04c701c6ef1f31bb6c2cea884577d1ce2
+    KwaiGameSDK-CrashReport: be1748fde0d9efb4cbe80d7b520e79049f534fab
+    KwaiGameSDK-CrashReport-Bugly: 0586a266b90fc4b264266735ce851756a2cc1a1f
+    KwaiGameSDK-CrashReport-Firebase: 874094c93f8d2bb28154630397ae29a625108601
+    KwaiGameSDK-Downloader: 29092cfa0a65f4da19ab4fedce193ce29760cb6e
+    KwaiGameSDK-IM: e80614d88f0e1ea063a910e9ed349cea53ab66f0
+    KwaiGameSDK-KwaiJump: b33b7af2b7eb2bf489cbbe0a54171cceddb7d2fa
+    KwaiGameSDK-Live: 582bcbe1c433471368ba736dd685bf7de2cf16bf
+    KwaiGameSDK-LongLink: 08c2843033107bfd55ac9dde362b231b7bd781d9
+    KwaiGameSDK-Media: 12f7a861909ace9eaf9af53968eb182a4a0ef37b
+    KwaiGameSDK-OpenPlatform: 8d0aced7ea9788eb450a2b4b4a06919b92d3832b
+    KwaiGameSDK-Oversea: a7469e920f66a12940c81cdd51c056906a6ded8e
+    KwaiGameSDK-Pay: a751d111633f667ba87946882a2a60f65f084754
+    KwaiGameSDK-Push: 55052f698ba1a1a54b1480f00823d2712384a620
+    KwaiGameSDK-PushReport: 3b49da1befc7566922e7fbc09519971e88cad664
+    KwaiGameSDK-QRScan: 2292b2514421949e5d67cd5c1ea33e25695674fc
+    KwaiGameSDK-QuickLogin: 9c3b0e3ae7c20360d620675221294036793fa292
+    KwaiGameSDK-Relation: edb763b29a272d2e9b6aecfa77bb66d6a642ba8b
+    KwaiGameSDK-Report-Appsflyer: 19afbea69679ee6abc4cc793ef24c5d5e9e512b2
+    KwaiGameSDK-Report-Firebase: 844425aa1065e5b1f80e1a8f02178c3f3acf06e3
+    KwaiGameSDK-SpringFestival: 9dbd2256f73f53e6df3005bec40a0f54e53ec4e7
+    KwaiGameSDK-Subgame: 0b58c0bdeae78188f5dbb1640545e26e73b9d102
+    KwaiGameSDK-UniApi: d352ca640205466282b09d16fc6a66a967dea104
+    KwaiGameSDK-UnitTest: c1fb9699a26f8f3c6c218ded99f45d11d2c43bfc
+    KwaiGameSDK-VideoRecordBase: d5cc72f5ae895e9192fabdb94beead1418eeba32
+    KwaiGameSDK-VideoShare: 288f67db3e1d8ae50b748cc6c3ca8df660e61a47
+    KwaiGameSDK-VisitorPasswordLogin: 4be86fa1aa2b987565cf4d2280aa63abf7c6dca0
+    KwaiGameSDK-Voip: fc184e11be0a8e3aec029de28def73ff1f909008
+    KwaiGameSDK-WeaponArmy: 03d3293cdf8c86d4e5182f92ca1c7fd4482ef752
+    KwaiGameSDK-WebView: 5209aa57108e0aa144981d4fcf5f4cbf6d1d6400
+    KwaiGameSDK-WWP: b130f5f14da7e7b1f7ea85acd5ef14b6d139128a
     KwaiGameVideoAryaEncode: 3165bcd288b70feb851e1a80e2d8311a26d9c9d2
     KwaiGameVideoBase: e4d29b0df6ae1fef5431f306b53a421e4f8a0276
     KwaiGameVideoCapture: 34215831fbde2d86dcafdf9abac2809d7a9e20f8
