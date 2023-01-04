@@ -7,8 +7,10 @@
 //
 
 #import "KGReportViewController.h"
+#import "KGPerformanceReportViewController.h"
 #import "UIViewController+DemoSupport.h"
 #import <KwaiGameSDK/KwaiGameSDK.h>
+#import <KwaiGameSDK/KwaiGameSDK+CrashReport.h>
 #import "AFNetworking.h"
 #import "KwaiBase.h"
 #import "KGUtil.h"
@@ -28,6 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"性能埋点" style:UIBarButtonItemStylePlain target:self action:@selector(showPerformanceReportVC)];
     
     [self addSpliteLine:@"基础功能" frame:CGRectMake(15, 400, DemoUIScreenWidth - 30, 30)];
         
@@ -53,6 +57,10 @@
     [self addSpliteLine:@"监测上报" frame:CGRectMake(15, 400, DemoUIScreenWidth - 30, 30)];
     
     [self addSubButton:@"自定义监测事件" frame:CGRectMake(0, 80, 200, 30) selector:@selector(reportADPath:)];
+    
+    [self addSpliteLine:@"异常上报" frame:CGRectMake(15, 400, DemoUIScreenWidth - 30, 30)];
+    
+    [self addSubButton:@"自定义异常" frame:CGRectMake(0, 80, 200, 30) selector:@selector(reprotCustomException:)];
     
     [[KwaiGameSDK sharedSDK] setGameExtension:@{
         @"CurrentSence":NSStringFromClass(self.class)
@@ -120,6 +128,13 @@
     }
 }
 
+- (void)reprotCustomException:(id)sender {
+    [[KwaiGameSDK sharedSDK]reportCustomException:@"DemoCustomException" reason:@"test bugly custom exception" userInfo:@{
+        @"aaa":@"test"
+    }];
+    [self toast:@"已点击自定义异常上报"];
+}
+
 - (void)getAppsFlyerId {
     [UIPasteboard generalPasteboard].string =  [[KwaiGameSDK sharedSDK] getAppsFlyerId];
     [self toast:[NSString stringWithFormat:@"拷贝AppsFlyerId:%@", [[KwaiGameSDK sharedSDK] getAppsFlyerId]]];
@@ -127,6 +142,10 @@
 
 - (void)getAppsFlyerData {
     [self toast:[NSString stringWithFormat:@"AppsFlyerData = %@", [[KwaiGameSDK sharedSDK] getAppsFlyerData]]];
+}
+
+- (void)showPerformanceReportVC{
+    [self.navigationController pushViewController:[KGPerformanceReportViewController new] animated:YES];
 }
 
 #pragma mark - Time

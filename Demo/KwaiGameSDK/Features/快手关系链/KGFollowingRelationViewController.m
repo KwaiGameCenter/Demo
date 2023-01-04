@@ -56,6 +56,8 @@
     self.tableView.delegate = self;
     [self syncDataFromServer];
     [KwaiGameRelation relation].delegate = self;
+    [[KwaiGameSDK sharedSDK] log:@"快手关系链SDK Version:"];
+    [[KwaiGameSDK sharedSDK] log:[[KwaiGameRelation relation]apiVersion]];
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {

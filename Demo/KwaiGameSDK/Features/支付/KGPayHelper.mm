@@ -91,6 +91,7 @@
 @interface KGPayHelper()<KwaiGamePayQueueDelegate>
 
 @property (nonatomic, strong) NSArray<KGProductItem *> *allProducts;
+@property (nonatomic, strong) NSArray<NSString *> *ignoreSignParams;
 
 @end
 
@@ -298,7 +299,7 @@ SINGLETON_IMPLEMENTS(KGPayHelper, {
     NSDictionary *dict = [params toDictionary];
     NSMutableArray *valueArray = [NSMutableArray array];
     for (NSString *key in dict.allKeys) {
-        if (![key isEqualToString: @"gameToken"] && ![key isEqualToString: @"sign"]) {
+        if(![self.ignoreSignParams containsObject:key]){
             [valueArray addObject: [NSString stringWithFormat: @"%@=%@", [self translateToInsertName: key], dict[key]]];
         }
     }
@@ -308,6 +309,7 @@ SINGLETON_IMPLEMENTS(KGPayHelper, {
         return [value1 compare: value2];
     }];
     NSString *strValue = [sortArray componentsJoinedByString: @"&"];
+    [[KwaiGameSDK sharedSDK]log:strValue];
     return [KGRSAWithSha512 encryptString: strValue privateKey: privateKey];
 }
 
@@ -327,6 +329,13 @@ SINGLETON_IMPLEMENTS(KGPayHelper, {
     return appendName;
 }
 
+// 不参与签名的参数
+- (NSArray<NSString *> *)ignoreSignParams{
+    if(!_ignoreSignParams){
+        _ignoreSignParams = @[@"gameToken", @"sign", @"productDesc", @"serverName", @"roleName", @"roleLevel", @"vip", @"userIp", @"productName"];
+    }
+    return _ignoreSignParams;
+}
 
 @end
 

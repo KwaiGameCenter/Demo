@@ -36,6 +36,11 @@ DescClass(CommunityUser);
     [self addSpliteLine:@"通用功能" frame:CGRectMake(20.0f, 40, DemoUIScreenWidth - 40.0f, 20)];
     [self addSubButton:@"个人中心" frame:CGRectMake(0, 80, 200, 30) selector:@selector(showCenter)];
     [self addSubButton:@"账户管理" frame:CGRectMake(0, 80, 200, 30) selector:@selector(showAccountManager)];
+    
+    // 海外新增客服中心
+    if ([KwaiGameSDK sharedSDK].isOversea){
+        [self addSubButton:@"客服中心" frame:CGRectMake(0, 130, 200, 30) selector:@selector(showCustomCenter)];
+    }
     // 以下功能限制海外使用
     if (![KwaiGameSDK sharedSDK].isOversea) {
         [self addSubButton:@"用户反馈" frame:CGRectMake(0, 130, 200, 30) selector:@selector(showFeedback)];
@@ -75,7 +80,12 @@ DescClass(CommunityUser);
 
 
 - (void)showCustomCenter {
-    [[KwaiGameSDK sharedSDK] showCustomServicePage];
+   BOOL success = [[KwaiGameSDK sharedSDK] showCustomServicePage];
+    if(success){
+        [self toast:@"显示客服成功"];
+    } else {
+        [self toast:@"显示客服失败"];
+    }
 }
 
 - (void)showCustomLink {

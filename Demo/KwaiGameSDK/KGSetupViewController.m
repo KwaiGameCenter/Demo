@@ -18,6 +18,8 @@
 #import "KGUtil.h"
 #import "KwaiBase.h"
 
+#import <KwaiGamePay.h>
+
 #define kKwaiGameSDKDemoAppId [KGUtil feakScheme]
 #define kMainController       @"KGViewController"
 #define kSettingController    @"KGAppInfoViewController"
@@ -51,6 +53,10 @@ SINGLETON_IMPLEMENTS(KGGlobalDelegate, {
 - (void)forceLogout {
     [self.rootController popToRootViewControllerAnimated:YES];
     [[KwaiGameSDK sharedSDK] logoutWithCompletion:^(NSError *error) {}];
+}
+
+-(void)accountBackup {
+    [[KwaiGameSDK sharedSDK] log:@"accountBackup回调,需要游戏方自主处理结果"];
 }
 
 - (void)fetchGameServiceToken:(void (^)(NSError *, NSString *))fetchComplete {
@@ -186,7 +192,6 @@ SINGLETON_IMPLEMENTS(KGGlobalDelegate, {
             [KGGlobalDelegate delegate].rootController = navController;
             window.rootViewController = [KGGlobalDelegate delegate].rootController;
             [window makeKeyAndVisible];
-            [window setupFloatingBox];
         }
 
     } else {
@@ -281,7 +286,15 @@ SINGLETON_IMPLEMENTS(KGGlobalDelegate, {
 #pragma mark - UIViewController Style
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleDarkContent;
+    #ifndef DISABLE_XCODE11_BUILD
+        if (@available(iOS 13.0, *)) {
+            return UIStatusBarStyleDarkContent;
+        } else {
+            return UIStatusBarStyleDefault;
+        }
+    #else
+        return UIStatusBarStyleDefault;
+    #endif
 }
 
 @end

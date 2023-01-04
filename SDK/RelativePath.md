@@ -1,1 +1,0 @@
-SDK Path: Demo/output/

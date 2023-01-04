@@ -11,6 +11,7 @@
 #import <KwaiGameSDK/KwaiGameSDK.h>
 #import <KwaiGameSDK-Downloader/KwaiGameDownloader.h>
 #import <KwaiGameSDK/KwaiGameSDK+Tools.h>
+#import "KGAssetDownloaderViewController.h"
 
 #define kDemoTestFileName @"test.zip"
 #define kDemoUpdateDuration (0.2f)      // 1s
@@ -33,6 +34,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"asset" style:UIBarButtonItemStyleDone target:self action:@selector(assetDownload)];
     
     [self addSpliteLine:@"资源下载" frame:CGRectMake(15, 400, DemoUIScreenWidth - 30, 30)];
     
@@ -79,6 +82,10 @@
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     [self.updateTimer invalidate];
+}
+
+- (void)assetDownload{
+    [self.navigationController pushViewController:[KGAssetDownloaderViewController new] animated:YES];
 }
 
 - (void)startDownload {

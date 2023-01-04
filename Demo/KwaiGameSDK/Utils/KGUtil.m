@@ -76,7 +76,7 @@
     if (value) {
         return [value boolValue];
     }
-    return NO;
+    return YES;
 }
 
 + (BOOL)hideLogo {
@@ -241,6 +241,8 @@
                     @"roleName":[KwaiGameSDK sharedSDK].account.uid,
                     @"rolePower":@"12113",
                     @"avatarUrl":@"https://d2.game.kspkg.com/kos/nlav11526/game-cloud-community-4624d9c0-dc85-4ab6-9adc-a225b38ffff31%EF%BC%9A1.jpg?biz=100004",
+                    @"reportType": @(KwaiGameReportTypeCreate),
+                    @"roleCreateTime": @(11111)
                 };
             }
             if (completion) {
@@ -272,6 +274,8 @@
                 kroleName: [KGUtil util].userInfo[@"roleName"],
                 krolePower: [KGUtil util].userInfo[@"rolePower"],
                 kavatarUrl: [KGUtil util].userInfo[@"avatarUrl"],
+                kreportType:[KGUtil util].userInfo[@"reportType"],
+                kroleCreateTime:[KGUtil util].userInfo[@"roleCreateTime"]
             }];
         } else {
             if ([KwaiGameSDK sharedSDK].account != nil) {
@@ -292,6 +296,8 @@
                             kroleName:userInfo[@"roleName"],
                             krolePower:userInfo[@"rolePower"],
                             kavatarUrl:userInfo[@"avatarUrl"],
+                            kreportType:userInfo[@"reportType"],
+                            kroleCreateTime:userInfo[@"roleCreateTime"]
                         }];
                     }
                 }];
