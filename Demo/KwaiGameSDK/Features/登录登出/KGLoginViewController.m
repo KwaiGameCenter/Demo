@@ -74,8 +74,6 @@
         [self addSubButton:@"切换账号" frame:CGRectMake(0, 310, 200, 30) selector:@selector(switchAccount)];
     }
     
-    [self addSubButton:@"账号注销" frame:CGRectMake(0, 360, 200, 30) selector:@selector(logoffAccount)];
-    
         [self addSpliteLine:@"自定义登录方式" frame:CGRectMake(15, 400, DemoUIScreenWidth - 30, 30)];
         
         self.supportCustomLogin = [self addSubSwitch:@"自定义" frame:CGRectMake(10, 450, 80.0f, 80.0) selector:@selector(didChangedSupport:)];
@@ -456,12 +454,6 @@
     } else {
         [[KwaiGameSDK sharedSDK] switchAccountUsingBuiltUIWithCompletion:completion];
     }
-}
-
-- (void)logoffAccount {
-    [[KwaiGameSDK sharedSDK]logoffAccountWithCompletion: ^{
-        [self toast:@"账号注销中"];
-    }];
 }
 
 - (void)didChangedSupport:(id)sender {

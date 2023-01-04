@@ -76,7 +76,7 @@
     if (value) {
         return [value boolValue];
     }
-    return YES;
+    return NO;
 }
 
 + (BOOL)hideLogo {
