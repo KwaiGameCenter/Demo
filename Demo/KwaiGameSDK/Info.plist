@@ -28,6 +28,16 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
+			<string>kuaishou-staging</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>ks678636172427043890</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
 			<string>kuaishou</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
@@ -230,10 +240,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>kuaishou-staging</string>
+			<string>SensorsData.production</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>ks678636172427043890</string>
+				<string>sa7864fdbf</string>
 			</array>
 		</dict>
 	</array>
@@ -249,10 +259,24 @@
 	<string>ca-app-pub-5005023907208839~7690738200</string>
 	<key>KwaiGameSDKDirectLoad</key>
 	<dict>
+		<key>Sensors</key>
+		<dict>
+			<key>AppKey</key>
+			<string>production</string>
+		</dict>
 		<key>Thingking</key>
 		<dict>
 			<key>AppId</key>
 			<string>78f9adb4ad4344e493e45478ee07cdea</string>
+		</dict>
+		<key>AIHelp</key>
+		<dict>
+			<key>ApiKey</key>
+			<string>SNAPVERSE_app_42d6402ef1bb4819bf0b734b95a5759a</string>
+			<key>DomainName</key>
+			<string>snapverse.aihelp.net</string>
+			<key>AppId</key>
+			<string>snapverse_platform_4419a40be9d7a1d9cfd8523427b5c1aa</string>
 		</dict>
 		<key>AppsFlyer</key>
 		<dict>

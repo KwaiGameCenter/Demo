@@ -18,6 +18,8 @@
 #import "KGUtil.h"
 #import "KwaiBase.h"
 
+#import <KwaiGamePay.h>
+
 #define kKwaiGameSDKDemoAppId [KGUtil feakScheme]
 #define kMainController       @"KGViewController"
 #define kSettingController    @"KGAppInfoViewController"

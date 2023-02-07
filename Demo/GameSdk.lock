@@ -3,14 +3,14 @@ GAMESDK_VERSION: 1.2.33
 GAME_SDK_INFO:
   AUTHOR: gamecenter
   AUTHOR_EMAIL: "gamecenter@kuaishou.com"
-  BRANCH: "beta+2.2.1"
+  BRANCH: "beta+2.4.1"
   DEMO_GIT: "git@github.com:KwaiGameCenter/Demo.git"
   DESC: "快手游戏融合SDK"
   HOMEPAGE: "https://sdkdocs.game.kuaishou.com/#/"
   NAME: KwaiGameSDK
   SDK_GIT: "git@github.com:KwaiGameCenter/kwaigame-sdk-spec.git"
   SUMMARY: "快手游戏融合SDK"
-  VERSION: 2.2.1
+  VERSION: 2.4.1
 
 GAMESDK_FRAMEWORK_INFO:
   feak_target_KwaiGameSDK_Example:
@@ -559,12 +559,15 @@ GAMESDK_FRAMEWORK_INFO:
         - MessageUI
         - MobileCoreServices
         - OpenGLES
+        - QuartzCore
         - QuickLook
         - Security
         - SystemConfiguration
         - UIKit
+        - WebKit
       libraries:
         - "c++"
+        - sqlite3
         - z
       weak_frameworks:
         - AppTrackingTransparency
@@ -625,6 +628,7 @@ GAMESDK_FRAMEWORK_INFO:
     path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/iOS/KwaiGameSDK/Example/output/MainFrameworks"
     system:
       frameworks:
+        - AdServices
         - AdSupport
         - AVFoundation
         - CFNetwork
@@ -639,7 +643,7 @@ GAMESDK_FRAMEWORK_INFO:
         - sqlite3
         - z
       weak_frameworks:
-        - AdServices
+        []
   KwaiGameSDK-ADPath-SKAdNetwork:
     dependency_sdk_targets:
       - KwaiGameSDK
@@ -768,6 +772,55 @@ GAMESDK_FRAMEWORK_INFO:
         - AppTrackingTransparency
     tags:
       - support_oversea
+  KwaiGameSDK-AssetDownloader:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - KwaiGameSDK-Downloader
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-AssetDownloader
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/iOS/KwaiGameSDK/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - kwai_assetDownloader
+      - KwaiGameSDK-AssetDownloader
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/iOS/KwaiGameSDK/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AudioToolbox
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreMedia
+        - CoreServices
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - Metal
+        - MetalKit
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - VideoToolbox
+        - WebKit
+      libraries:
+        - "c++"
+        - "c++abi"
+        - iconv
+        - resolv
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
   KwaiGameSDK-Audio:
     dependency_sdk_targets:
       - KwaiGameSDK
@@ -1505,6 +1558,7 @@ GAMESDK_FRAMEWORK_INFO:
         - "c++abi"
         - compression
         - iconv
+        - icucore
         - resolv
         - resolv.9
         - sqlite3
@@ -1515,7 +1569,6 @@ GAMESDK_FRAMEWORK_INFO:
       weak_frameworks:
         - Accelerate
         - Accounts
-        - AdServices
         - AdSupport
         - AppTrackingTransparency
         - AudioToolbox
@@ -1588,6 +1641,7 @@ GAMESDK_FRAMEWORK_INFO:
       - KwaiGameSDK
       - MainFrameworks_dependency
     dependency_target:
+      - AIHelpSDK
       - AppAuth
       - FBSDKCoreKit
       - FBSDKCoreKit_Basics
@@ -1596,6 +1650,7 @@ GAMESDK_FRAMEWORK_INFO:
       - GoogleSignIn
       - GTMAppAuth
       - GTMSessionFetcher
+      - KwaiGameSDK-AIHelp
       - KwaiGameSDK-Oversea
     example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/iOS/KwaiGameSDK/Example/example_dependency/MainFrameworks"
     group: MainFrameworks
@@ -1693,6 +1748,49 @@ GAMESDK_FRAMEWORK_INFO:
         - AppTrackingTransparency
     tags:
       - support_oversea
+  KwaiGameSDK-Push-Kwai:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-Push-Kwai
+      - KwaiPush
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/iOS/KwaiGameSDK/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Push-Kwai
+      - push_kwai
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/iOS/KwaiGameSDK/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuartzCore
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
+    tags:
+      - support_oversea
+    uses_swift: true
   KwaiGameSDK-PushReport:
     dependency_sdk_targets:
       - NotificationService_dependency
@@ -1708,7 +1806,8 @@ GAMESDK_FRAMEWORK_INFO:
       - KGSDKBase-Env-Utils
       - KSCommon
       - KSDiskCache
-      - KSMWAzeroth-NetworkingWrapper
+      - KSecurityWrapper
+      - KSMWAzeroth-Core-LoggerWrapper-NetworkingWrapper
       - KSTLog
       - KSUserDefaults
       - KwaiBase.default-LiteProxy
@@ -1716,6 +1815,7 @@ GAMESDK_FRAMEWORK_INFO:
       - KwaiGameSDK-PushReport
       - KwaiSwizzle
       - libwebp
+      - MJExtension
       - MMKV
       - MMKVCore
       - OpenSSL-Universal
@@ -1957,6 +2057,46 @@ GAMESDK_FRAMEWORK_INFO:
         - AppTrackingTransparency
     tags:
       - support_oversea
+  KwaiGameSDK-Report-Sensors:
+    dependency_sdk_targets:
+      - KwaiGameSDK
+      - MainFrameworks_dependency
+    dependency_target:
+      - KwaiGameSDK-Report-Sensors
+      - SensorsAnalyticsSDK
+    example_dep: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/iOS/KwaiGameSDK/Example/example_dependency/MainFrameworks"
+    group: MainFrameworks
+    nicknames:
+      - KwaiGameSDK-Report-Sensors
+      - reportsensors
+    path: "/Users/ciserver/iOS_jenkins/workspace/vermouth-game-sdk-builder_keep/workspace/iOS/KwaiGameSDK/Example/output/MainFrameworks"
+    system:
+      frameworks:
+        - Accelerate
+        - AdSupport
+        - AVFoundation
+        - CFNetwork
+        - CoreFoundation
+        - CoreGraphics
+        - CoreTelephony
+        - CoreText
+        - Foundation
+        - ImageIO
+        - MessageUI
+        - MobileCoreServices
+        - OpenGLES
+        - QuickLook
+        - Security
+        - SystemConfiguration
+        - UIKit
+        - WebKit
+      libraries:
+        - "c++"
+        - icucore
+        - sqlite3
+        - z
+      weak_frameworks:
+        - AppTrackingTransparency
   KwaiGameSDK-Report-Thinking:
     dependency_sdk_targets:
       - KwaiGameSDK
@@ -2492,6 +2632,7 @@ GAMESDK_FRAMEWORK_INFO:
         - "c++abi"
         - compression
         - iconv
+        - icucore
         - resolv
         - resolv.9
         - sqlite3
@@ -2502,7 +2643,6 @@ GAMESDK_FRAMEWORK_INFO:
       weak_frameworks:
         - Accelerate
         - Accounts
-        - AdServices
         - AdSupport
         - AppTrackingTransparency
         - AudioToolbox
@@ -2652,40 +2792,40 @@ PODS_INFO:
       :tag: 0.1.32-bridge.1
     KwaiGameAD:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-BUAdSDK:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-KSAdSDK:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-KwaiAppBox:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-Manager:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-Mintegral:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-MobAdSDK:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-OverSeaSDK:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-TXAdSDK:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameADPath:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
-      :tag: 0.0.21
+      :tag: 0.0.22
     KwaiGameADPath-SKAdNetwork:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
-      :tag: 0.0.21
+      :tag: 0.0.22
     KwaiGameADPath-TrackingIO:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
-      :tag: 0.0.21
+      :tag: 0.0.22
     KwaiGameBase:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git"
       :tag: 0.0.41
@@ -2821,7 +2961,7 @@ PODS_INFO:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement (= 8.14.0)
     - GoogleDataTransport
-    - GoogleSignIn
+    - GoogleSignIn (= 6.2.4)
     - GoogleUserMessagingPlatform
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -2851,8 +2991,8 @@ PODS_INFO:
     - "KSFFmpeg_iOS (from `git@git.corp.kuaishou.com:video/KSFFmpeg_iOS.git`, tag `3.9.4_x264_game`)"
     - KSKanas (= 0.9.2)
     - "KSLivePlayer (from `git@git.corp.kuaishou.com:video/KSLivePlayer.git`, tag `v1.6.2.1`)"
-    - KSMWAzeroth/Core (= 0.5.37)
-    - KSMWAzeroth/NetworkingWrapper (= 0.5.37)
+    - KSMWAzeroth/Core (= 0.5.45)
+    - KSMWAzeroth/NetworkingWrapper (= 0.5.45)
     - "KSPromise (from `git@git.corp.kuaishou.com:ios/KSPromise.git`, commit `82d19a505c94427bbff4e6b9aee87c122adba52f`)"
     - "KSProtobufCpp_iOS (from `git@git.corp.kuaishou.com:video/KSProtobufCpp_iOS.git`, commit `4e162ab`)"
     - KSRSAUtil (= 0.1.7)
@@ -2881,18 +3021,18 @@ PODS_INFO:
     - "KwaiBase/LiteProxy (from `git@git.corp.kuaishou.com:im-client/KwaiBase.git`, tag `0.1.32-bridge.1`)"
     - KwaiCaptcha/ALiVerify (= 0.4.0)
     - KwaiCaptcha/TXVerify (= 0.4.0)
-    - "KwaiGameAD (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
-    - "KwaiGameAD-BUAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
-    - "KwaiGameAD-KSAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
-    - "KwaiGameAD-KwaiAppBox (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
-    - "KwaiGameAD-Manager (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
-    - "KwaiGameAD-Mintegral (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
-    - "KwaiGameAD-MobAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
-    - "KwaiGameAD-OverSeaSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
-    - "KwaiGameAD-TXAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+1.31.0`)"
-    - "KwaiGameADPath (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.21`)"
-    - "KwaiGameADPath-SKAdNetwork (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.21`)"
-    - "KwaiGameADPath-TrackingIO (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.21`)"
+    - "KwaiGameAD (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+2.3.0`)"
+    - "KwaiGameAD-BUAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+2.3.0`)"
+    - "KwaiGameAD-KSAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+2.3.0`)"
+    - "KwaiGameAD-KwaiAppBox (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+2.3.0`)"
+    - "KwaiGameAD-Manager (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+2.3.0`)"
+    - "KwaiGameAD-Mintegral (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+2.3.0`)"
+    - "KwaiGameAD-MobAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+2.3.0`)"
+    - "KwaiGameAD-OverSeaSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+2.3.0`)"
+    - "KwaiGameAD-TXAdSDK (from `git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git`, tag `stable+2.3.0`)"
+    - "KwaiGameADPath (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.22`)"
+    - "KwaiGameADPath-SKAdNetwork (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.22`)"
+    - "KwaiGameADPath-TrackingIO (from `git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git`, tag `0.0.22`)"
     - "KwaiGameBase-DemoSupport (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
     - "KwaiGameBase/ActionLog (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
     - "KwaiGameBase/Core (from `git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git`, tag `0.0.41`)"
@@ -2908,9 +3048,11 @@ PODS_INFO:
     - KwaiGameSDK-AD (from `./../KwaiGameSDK-AD.podspec`)
     - KwaiGameSDK-ADPath-AppsFlyer (from `./../KwaiGameSDK-ADPath-AppsFlyer.podspec`)
     - KwaiGameSDK-ADPath-ASA (from `./../KwaiGameSDK-ADPath-ASA.podspec`)
+    - KwaiGameSDK-AIHelp (from `./../KwaiGameSDK-AIHelp.podspec`)
     - KwaiGameSDK-AntiAddict (from `./../KwaiGameSDK-AntiAddict.podspec`)
     - KwaiGameSDK-AppBox (from `./../KwaiGameSDK-AppBox.podspec`)
     - KwaiGameSDK-AppsflyerCommon (from `./../KwaiGameSDK-AppsflyerCommon.podspec`)
+    - KwaiGameSDK-AssetDownloader (from `./../KwaiGameSDK-AssetDownloader.podspec`)
     - KwaiGameSDK-Audio (from `./../KwaiGameSDK-Audio.podspec`)
     - KwaiGameSDK-Community (from `./../KwaiGameSDK-Community.podspec`)
     - KwaiGameSDK-Community-Kwai (from `./../KwaiGameSDK-Community-Kwai.podspec`)
@@ -2928,12 +3070,14 @@ PODS_INFO:
     - KwaiGameSDK-Oversea (from `./../KwaiGameSDK-Oversea.podspec`)
     - KwaiGameSDK-Pay (from `./../KwaiGameSDK-Pay.podspec`)
     - KwaiGameSDK-Push (from `./../KwaiGameSDK-Push.podspec`)
+    - KwaiGameSDK-Push-Kwai (from `./../KwaiGameSDK-Push-Kwai.podspec`)
     - KwaiGameSDK-PushReport (from `./../KwaiGameSDK-PushReport.podspec`)
     - KwaiGameSDK-QRScan (from `./../KwaiGameSDK-QRScan.podspec`)
     - KwaiGameSDK-QuickLogin (from `./../KwaiGameSDK-QuickLogin.podspec`)
     - KwaiGameSDK-Relation (from `./../KwaiGameSDK-Relation.podspec`)
     - KwaiGameSDK-Report-Appsflyer (from `./../KwaiGameSDK-Report-Appsflyer.podspec`)
     - KwaiGameSDK-Report-Firebase (from `./../KwaiGameSDK-Report-Firebase.podspec`)
+    - KwaiGameSDK-Report-Sensors (from `./../KwaiGameSDK-Report-Sensors.podspec`)
     - KwaiGameSDK-Report-Thinking (from `./../KwaiGameSDK-Report-Thinking.podspec`)
     - KwaiGameSDK-SpringFestival (from `./../KwaiGameSDK-SpringFestival.podspec`)
     - KwaiGameSDK-Subgame (from `./../KwaiGameSDK-Subgame.podspec`)
@@ -2961,6 +3105,7 @@ PODS_INFO:
     - KwaiIMXFDB (= 0.3.17)
     - "KwaiMediaPlayer (from `git@git.corp.kuaishou.com:video/pruned-ijkplayer.git`, commit `df209bfe`)"
     - KwaiNetworking (= 0.1.0)
+    - KwaiPush (= 3.0.0-rc3.3)
     - KwaiSDK (= 3.6.5)
     - KwaiUIRecorder (= 1.0.6)
     - "KWArya/Game (from `git@git.corp.kuaishou.com:video/kuaishou-voip-sdk.git`, tag `4.47.163.83e717f37`)"
@@ -3100,40 +3245,40 @@ PODS_INFO:
       :tag: 0.1.32-bridge.1
     KwaiGameAD:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-BUAdSDK:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-KSAdSDK:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-KwaiAppBox:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-Manager:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-Mintegral:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-MobAdSDK:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-OverSeaSDK:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameAD-TXAdSDK:
       :git: "git@git.corp.kuaishou.com:game-demo/iOS/KwaiGameAD.git"
-      :tag: "stable+1.31.0"
+      :tag: "stable+2.3.0"
     KwaiGameADPath:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
-      :tag: 0.0.21
+      :tag: 0.0.22
     KwaiGameADPath-SKAdNetwork:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
-      :tag: 0.0.21
+      :tag: 0.0.22
     KwaiGameADPath-TrackingIO:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigameadpath.git"
-      :tag: 0.0.21
+      :tag: 0.0.22
     KwaiGameBase:
       :git: "git@git.corp.kuaishou.com:open-iOS/kwaigamebase.git"
       :tag: 0.0.41
@@ -3162,12 +3307,16 @@ PODS_INFO:
       :path: "./../KwaiGameSDK-ADPath-AppsFlyer.podspec"
     KwaiGameSDK-ADPath-ASA:
       :path: "./../KwaiGameSDK-ADPath-ASA.podspec"
+    KwaiGameSDK-AIHelp:
+      :path: "./../KwaiGameSDK-AIHelp.podspec"
     KwaiGameSDK-AntiAddict:
       :path: "./../KwaiGameSDK-AntiAddict.podspec"
     KwaiGameSDK-AppBox:
       :path: "./../KwaiGameSDK-AppBox.podspec"
     KwaiGameSDK-AppsflyerCommon:
       :path: "./../KwaiGameSDK-AppsflyerCommon.podspec"
+    KwaiGameSDK-AssetDownloader:
+      :path: "./../KwaiGameSDK-AssetDownloader.podspec"
     KwaiGameSDK-Audio:
       :path: "./../KwaiGameSDK-Audio.podspec"
     KwaiGameSDK-Community:
@@ -3202,6 +3351,8 @@ PODS_INFO:
       :path: "./../KwaiGameSDK-Pay.podspec"
     KwaiGameSDK-Push:
       :path: "./../KwaiGameSDK-Push.podspec"
+    KwaiGameSDK-Push-Kwai:
+      :path: "./../KwaiGameSDK-Push-Kwai.podspec"
     KwaiGameSDK-PushReport:
       :path: "./../KwaiGameSDK-PushReport.podspec"
     KwaiGameSDK-QRScan:
@@ -3214,6 +3365,8 @@ PODS_INFO:
       :path: "./../KwaiGameSDK-Report-Appsflyer.podspec"
     KwaiGameSDK-Report-Firebase:
       :path: "./../KwaiGameSDK-Report-Firebase.podspec"
+    KwaiGameSDK-Report-Sensors:
+      :path: "./../KwaiGameSDK-Report-Sensors.podspec"
     KwaiGameSDK-Report-Thinking:
       :path: "./../KwaiGameSDK-Report-Thinking.podspec"
     KwaiGameSDK-SpringFestival:
@@ -3324,7 +3477,7 @@ PODS_INFO:
     ZipKit:
       :git: "git@git.corp.kuaishou.com:open-iOS/zipkit.git"
       :tag: 1.0.3.1
-  PODFILE CHECKSUM: 4fcba1c77b385a2eb7c777019ad585910e588717
+  PODFILE CHECKSUM: db603c4f2c07d09df5f00936b2ef96e610e43349
   PODS:
     - Ads-Global (4.0.0.2):
       - Ads-Global/APM (= 4.0.0.2)
@@ -3354,11 +3507,12 @@ PODS_INFO:
     - AFNetworking/Serialization (3.2.1.4)
     - AFNetworking/UIKit (3.2.1.4):
       - AFNetworking/NSURLSession
-    - AppAuth (1.5.0):
-      - AppAuth/Core (= 1.5.0)
-      - AppAuth/ExternalUserAgent (= 1.5.0)
-    - AppAuth/Core (1.5.0)
-    - AppAuth/ExternalUserAgent (1.5.0):
+    - AIHelpSDK (4.1.8)
+    - AppAuth (1.6.0):
+      - AppAuth/Core (= 1.6.0)
+      - AppAuth/ExternalUserAgent (= 1.6.0)
+    - AppAuth/Core (1.6.0)
+    - AppAuth/ExternalUserAgent (1.6.0):
       - AppAuth/Core
     - AppLovinSDK (11.2.1)
     - AppsFlyerFramework (6.5.4):
@@ -3571,10 +3725,10 @@ PODS_INFO:
     - GoogleMobileAdsMediationVungle (6.10.6.0):
       - Google-Mobile-Ads-SDK (~> 9.0)
       - VungleSDK-iOS (= 6.10.6)
-    - GoogleSignIn (6.1.0):
-      - AppAuth (~> 1.4)
-      - GTMAppAuth (~> 1.0)
-      - GTMSessionFetcher/Core (~> 1.1)
+    - GoogleSignIn (6.2.4):
+      - AppAuth (~> 1.5)
+      - GTMAppAuth (~> 1.3)
+      - GTMSessionFetcher/Core (< 3.0, >= 1.1)
     - GoogleUserMessagingPlatform (2.0.0)
     - GoogleUtilities/AppDelegateSwizzler (7.7.0):
       - GoogleUtilities/Environment
@@ -3595,10 +3749,10 @@ PODS_INFO:
       - GoogleUtilities/Logger
     - GoogleUtilities/UserDefaults (7.7.0):
       - GoogleUtilities/Logger
-    - GTMAppAuth (1.2.3):
-      - AppAuth/Core (~> 1.4)
-      - GTMSessionFetcher/Core (~> 1.5)
-    - GTMSessionFetcher/Core (1.7.1)
+    - GTMAppAuth (1.3.1):
+      - AppAuth/Core (~> 1.6)
+      - GTMSessionFetcher/Core (< 3.0, >= 1.5)
+    - GTMSessionFetcher/Core (2.3.0)
     - Hodor (4.2.0):
       - Aegon_iOS
       - boost (~> 1.64.0)
@@ -3678,13 +3832,13 @@ PODS_INFO:
       - KSRtcKit/core
       - KwaiBase/LiteProxy
       - KWArya/Game
-    - KGSDKBase (2.2.1):
-      - KGSDKBase/Core (= 2.2.1)
-      - KGSDKBase/Env (= 2.2.1)
-      - KGSDKBase/Utils (= 2.2.1)
+    - KGSDKBase (2.4.0):
+      - KGSDKBase/Core (= 2.4.0)
+      - KGSDKBase/Env (= 2.4.0)
+      - KGSDKBase/Utils (= 2.4.0)
       - KwaiBase
       - KwaiGameBase
-    - KGSDKBase/Core (2.2.1):
+    - KGSDKBase/Core (2.4.0):
       - KwaiBase
       - KwaiBase/DDLog
       - KwaiGameBase
@@ -3693,11 +3847,11 @@ PODS_INFO:
       - KwaiGameNetworkStatusMonitor
       - KwaiReportCenter
       - ZipKit
-    - KGSDKBase/Env (2.2.1):
+    - KGSDKBase/Env (2.4.0):
       - KGSDKBase/Utils
       - KwaiBase
       - KwaiGameBase
-    - KGSDKBase/Utils (2.2.1):
+    - KGSDKBase/Utils (2.4.0):
       - KwaiBase
       - KwaiGameBase
     - klp (1.12.0.7.1a61a0cf)
@@ -3894,19 +4048,19 @@ PODS_INFO:
       - KSKanas
       - KSSmartDns/Core
       - KwaiMediaPlayer
-    - KSMWAzeroth (0.5.37):
-      - KSMWAzeroth/Core (= 0.5.37)
-    - KSMWAzeroth/Core (0.5.37):
+    - KSMWAzeroth (0.5.45):
+      - KSMWAzeroth/Core (= 0.5.45)
+    - KSMWAzeroth/Core (0.5.45):
       - JNKeychain (~> 0.1.2)
       - KSecurityWrapper (~> 0.0.9)
       - KSMWAzeroth/LoggerWrapper
       - Reachability
-    - KSMWAzeroth/DefaultNetworkingWrapper (0.5.37):
+    - KSMWAzeroth/DefaultNetworkingWrapper (0.5.45):
       - AFNetworking (~> 3.0)
       - KSMWAzeroth/NetworkingWrapper
-    - KSMWAzeroth/LoggerWrapper (0.5.37):
+    - KSMWAzeroth/LoggerWrapper (0.5.45):
       - MJExtension
-    - KSMWAzeroth/NetworkingWrapper (0.5.37):
+    - KSMWAzeroth/NetworkingWrapper (0.5.45):
       - AFNetworking
     - KSMWDataCompress (0.1.2)
     - KSORM (0.8.7):
@@ -4268,28 +4422,34 @@ PODS_INFO:
     - KwaiGameNetworkStatusMonitor (1.0.6):
       - AFNetworking
       - XFMulticastDelegate
-    - KwaiGameSDK (2.2.1):
-      - KwaiGameSDK/Core (= 2.2.1)
-      - KwaiGameSDK/Header (= 2.2.1)
-    - KwaiGameSDK-ABtest-Firebase (2.2.1):
+    - KwaiGameSDK (2.4.0):
+      - KwaiGameSDK/Core (= 2.4.0)
+      - KwaiGameSDK/Header (= 2.4.0)
+    - KwaiGameSDK-ABtest-Firebase (2.4.0):
       - Firebase/RemoteConfig
       - KGSDKBase
       - KwaiGameBase
-    - KwaiGameSDK-AD (2.2.1):
+    - KwaiGameSDK-AD (2.4.0):
       - KwaiGameAD-Manager
       - KwaiGameSDK/Header
     - KwaiGameSDK-ADPath-AppsFlyer (1.8.4):
       - AppsFlyerFramework
       - KwaiGameADPath
       - KwaiGameBase
-    - KwaiGameSDK-ADPath-ASA (2.2.1):
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-ADPath-ASA (2.4.0):
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-AntiAddict (2.2.1):
+    - KwaiGameSDK-AIHelp (2.4.0):
+      - AIHelpSDK (~> 4.1.8)
+      - KGSDKBase
+      - KwaiGameBase
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-AntiAddict (2.4.0):
       - KGSDKBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-AppBox (2.2.1):
+    - KwaiGameSDK-AppBox (2.4.0):
       - Aegon_iOS
       - Hodor
       - KSVodPlayer
@@ -4297,19 +4457,22 @@ PODS_INFO:
       - KwaiGameBase
       - KwaiGameNetworkStatusMonitor
       - KwaiGameSDK/Header
-    - KwaiGameSDK-AppsflyerCommon (2.2.1):
+    - KwaiGameSDK-AppsflyerCommon (2.4.0):
       - AppsFlyerFramework
       - KGSDKBase
       - KwaiAnalytics
       - KwaiGameBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Audio (2.2.1)
-    - KwaiGameSDK-Community (2.2.1):
+    - KwaiGameSDK-AssetDownloader (2.4.0):
+      - KwaiGameSDK-Downloader
+      - KwaiGameSDK/Header
+    - KwaiGameSDK-Audio (2.4.0)
+    - KwaiGameSDK-Community (2.4.0):
       - KGSDKBase
-      - KwaiGameSDK-Community/Protocol (= 2.2.1)
+      - KwaiGameSDK-Community/Protocol (= 2.4.0)
       - KwaiGameSDK/Header
       - SDWebImage
-    - KwaiGameSDK-Community-Kwai (2.2.1):
+    - KwaiGameSDK-Community-Kwai (2.4.0):
       - BVLinearGradient
       - KGSDKBase
       - KRNSDK
@@ -4332,32 +4495,32 @@ PODS_INFO:
       - RNScreens
       - RNSVG
       - Yoga
-    - KwaiGameSDK-Community/Protocol (2.2.1):
+    - KwaiGameSDK-Community/Protocol (2.4.0):
       - KGSDKBase
       - KwaiGameSDK/Header
       - SDWebImage
-    - KwaiGameSDK-CrashReport (2.2.1):
+    - KwaiGameSDK-CrashReport (2.4.0):
       - KGSDKBase
       - KwaiGameBase
-      - KwaiGameSDK-CrashReport/Protocol (= 2.2.1)
+      - KwaiGameSDK-CrashReport/Protocol (= 2.4.0)
       - KwaiGameSDK/Header
-    - KwaiGameSDK-CrashReport-Bugly (2.2.1):
+    - KwaiGameSDK-CrashReport-Bugly (2.4.0):
       - Bugly
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK-CrashReport/Protocol
       - KwaiGameSDK/Header
-    - KwaiGameSDK-CrashReport-Firebase (2.2.1):
+    - KwaiGameSDK-CrashReport-Firebase (2.4.0):
       - Firebase/Crashlytics
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK-CrashReport/Protocol
       - KwaiGameSDK/Header
-    - KwaiGameSDK-CrashReport/Protocol (2.2.1):
+    - KwaiGameSDK-CrashReport/Protocol (2.4.0):
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Downloader (2.2.1):
+    - KwaiGameSDK-Downloader (2.4.0):
       - Aegon_iOS
       - Hodor
       - KSVodPlayer
@@ -4365,19 +4528,19 @@ PODS_INFO:
       - KwaiGameBase
       - KwaiGameNetworkStatusMonitor
       - KwaiGameSDK/Header
-    - KwaiGameSDK-IM (2.2.1):
+    - KwaiGameSDK-IM (2.4.0):
       - boost
       - ktp
       - KwaiGameSDK-LongLink
       - KwaiGameSDK/Header
       - KwaiIMSDK/Core
       - KwaiIMSDK/NetworkingWrapper
-    - KwaiGameSDK-KwaiJump (2.2.1):
+    - KwaiGameSDK-KwaiJump (2.4.0):
       - KGSDKBase
       - KwaiBase
       - KwaiGameBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Live (2.2.1):
+    - KwaiGameSDK-Live (2.4.0):
       - KGAryaManager
       - KwaiBase/LiteProxy
       - KwaiCaptcha
@@ -4385,107 +4548,115 @@ PODS_INFO:
       - KwaiGameLive-LiveMartPlugin
       - KwaiGameSDK/Header
       - Yoda
-    - KwaiGameSDK-LongLink (2.2.1):
+    - KwaiGameSDK-LongLink (2.4.0):
       - Aegon_iOS
       - KwaiGameSDK/Header
       - KwaiIMKwaiLink (~> 0.7.0)
       - Pigeon
       - Reachability
       - XFMulticastDelegate
-    - KwaiGameSDK-Media (2.2.1)
-    - KwaiGameSDK-Mock (2.2.1):
+    - KwaiGameSDK-Media (2.4.0)
+    - KwaiGameSDK-Mock (2.4.0):
       - JhtFloatingBall
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameSDK
       - KwaiGameSDK-UniApi
-    - KwaiGameSDK-OpenPlatform (2.2.1):
+    - KwaiGameSDK-OpenPlatform (2.4.0):
       - Diplomat/Tencent
       - Diplomat/Wechat
       - Diplomat/Weibo
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Oversea (2.2.1):
+    - KwaiGameSDK-Oversea (2.4.0):
       - FBSDKCoreKit
       - FBSDKLoginKit
       - FBSDKShareKit
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Pay (2.2.1):
+    - KwaiGameSDK-Pay (2.4.0):
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Push (2.2.1):
+    - KwaiGameSDK-Push (2.4.0):
       - KwaiGameSDK-PushReport
       - KwaiGameSDK/Header
-    - KwaiGameSDK-PushReport (2.2.1):
+    - KwaiGameSDK-Push-Kwai (2.4.0):
+      - KwaiGameSDK/Header
+      - KwaiPush
+    - KwaiGameSDK-PushReport (2.4.0):
       - KGSDKBase/Env
-    - KwaiGameSDK-QRScan (2.2.1):
+    - KwaiGameSDK-QRScan (2.4.0):
       - KGSDKBase
       - KwaiBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-QuickLogin (2.2.1):
+    - KwaiGameSDK-QuickLogin (2.4.0):
       - KGSDKBase
       - KSChinaMobileQuickLogin
       - KSChinaTelecomSDK
       - KSChinaUnicomSDK
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Relation (2.2.1):
+    - KwaiGameSDK-Relation (2.4.0):
       - KwaiGameSDK/Header
       - KwaiGameVideoRecord
       - KwaiGameVideoShare
       - KwaiSDK
-    - KwaiGameSDK-Report-Appsflyer (2.2.1):
+    - KwaiGameSDK-Report-Appsflyer (2.4.0):
       - AppsFlyerFramework
       - KGSDKBase
       - KwaiAnalytics
       - KwaiGameBase
-    - KwaiGameSDK-Report-Firebase (2.2.1):
+    - KwaiGameSDK-Report-Firebase (2.4.0):
       - Firebase/Analytics
       - KGSDKBase
       - KwaiAnalytics
       - KwaiGameBase
-    - KwaiGameSDK-Report-Thinking (2.2.1):
+    - KwaiGameSDK-Report-Sensors (2.4.0):
+      - KGSDKBase
+      - KwaiAnalytics
+      - KwaiGameBase
+      - SensorsAnalyticsSDK (~> 4.5.0)
+    - KwaiGameSDK-Report-Thinking (2.4.0):
       - KGSDKBase
       - KwaiAnalytics
       - KwaiGameBase
       - ThinkingSDK (~> 2.8.1.2)
-    - KwaiGameSDK-SpringFestival (2.2.1):
+    - KwaiGameSDK-SpringFestival (2.4.0):
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Subgame (2.2.1):
+    - KwaiGameSDK-Subgame (2.4.0):
       - KwaiGameSDK-Live
       - KwaiGameSDK-Pay
       - KwaiGameSDK/Header
       - XFMulticastDelegate
-    - KwaiGameSDK-UniApi (2.2.1):
+    - KwaiGameSDK-UniApi (2.4.0):
       - KGSDKBase
       - KwaiGameBase
       - KwaiGameBase-DemoSupport
-    - KwaiGameSDK-UnitTest (2.2.1):
+    - KwaiGameSDK-UnitTest (2.4.0):
       - KGSDKBase
       - KwaiGameSDK/Header
       - OpenSSL-Universal
-    - KwaiGameSDK-VideoRecordBase (2.2.1):
+    - KwaiGameSDK-VideoRecordBase (2.4.0):
       - KwaiGameSDK/Header
       - KwaiGameVideoBase
-    - KwaiGameSDK-VideoShare (2.2.1):
+    - KwaiGameSDK-VideoShare (2.4.0):
       - KwaiGameSDK/Header
       - KwaiGameVideoShare
-    - KwaiGameSDK-VisitorPasswordLogin (2.2.1):
+    - KwaiGameSDK-VisitorPasswordLogin (2.4.0):
       - KGSDKBase
       - KwaiBase
       - KwaiGameSDK/Header
-    - KwaiGameSDK-Voip (2.2.1):
+    - KwaiGameSDK-Voip (2.4.0):
       - KGAryaManager
       - KwaiGameSDK-LongLink
-    - KwaiGameSDK-WeaponArmy (2.2.1):
+    - KwaiGameSDK-WeaponArmy (2.4.0):
       - KGSDKBase
       - KSWeaponArmy
       - KwaiGameSDK/Header
-    - KwaiGameSDK-WebView (2.2.1):
+    - KwaiGameSDK-WebView (2.4.0):
       - KwaiGameSDK/Header
-    - KwaiGameSDK-WWP (2.2.1):
+    - KwaiGameSDK-WWP (2.4.0):
       - KSLivePlayer
       - KwaiGameSDK/Header
       - KwaiGameWWP
       - KwaiGameWWP-NativeUIPlugin
-    - KwaiGameSDK/Core (2.2.1):
+    - KwaiGameSDK/Core (2.4.0):
       - AFNetworking
       - KGSDKBase
       - KSDFP
@@ -4512,7 +4683,7 @@ PODS_INFO:
       - MJExtension
       - Reachability
       - Yoda
-    - KwaiGameSDK/Header (2.2.1):
+    - KwaiGameSDK/Header (2.4.0):
       - KwaiGameSDK-UniApi
     - KwaiGameVideoAryaEncode (0.0.9):
       - KwaiBase
@@ -4728,6 +4899,17 @@ PODS_INFO:
       - boost (~> 1.64.0)
       - KSFFmpeg_iOS
     - KwaiNetworking (0.1.0)
+    - KwaiPush (3.0.0-rc3.3):
+      - KwaiPush/App/Core (= 3.0.0-rc3.3)
+      - KwaiPush/App/Service (= 3.0.0-rc3.3)
+    - KwaiPush/App/Core (3.0.0-rc3.3):
+      - KSMWAzeroth
+      - KwaiPush/Common
+    - KwaiPush/App/Service (3.0.0-rc3.3):
+      - KSMWAzeroth (~> 0.5.0)
+      - KwaiPush/App/Core
+      - KwaiPush/Common
+    - KwaiPush/Common (3.0.0-rc3.3)
     - KwaiReportCenter (0.1.6):
       - AFNetworking
       - KwaiBase
@@ -5096,6 +5278,22 @@ PODS_INFO:
     - SDWebImageWebPCoder (0.6.1.1):
       - libwebp (~> 1.0)
       - SDWebImage/Core (~> 5.7)
+    - SensorsAnalyticsSDK (4.5.1):
+      - SensorsAnalyticsSDK/Core (= 4.5.1)
+    - SensorsAnalyticsSDK/__Store (4.5.1)
+    - SensorsAnalyticsSDK/AutoTrack (4.5.1):
+      - SensorsAnalyticsSDK/Common
+    - SensorsAnalyticsSDK/Base (4.5.1):
+      - SensorsAnalyticsSDK/__Store
+    - SensorsAnalyticsSDK/Common (4.5.1):
+      - SensorsAnalyticsSDK/Extension
+    - SensorsAnalyticsSDK/Core (4.5.1):
+      - SensorsAnalyticsSDK/Common
+      - SensorsAnalyticsSDK/Visualized
+    - SensorsAnalyticsSDK/Extension (4.5.1):
+      - SensorsAnalyticsSDK/Base
+    - SensorsAnalyticsSDK/Visualized (4.5.1):
+      - SensorsAnalyticsSDK/AutoTrack
     - SSZipArchive (1.2.1)
     - TensorFlow-Lite (1.0.0)
     - ThinkingSDK (2.8.1.7):
@@ -5136,7 +5334,8 @@ PODS_INFO:
     Ads-Global: bec8382b80ceb6b3bbcd3d18bb73a45f3bfad96e
     Aegon_iOS: 1e895911b37c7f64179ab5c6666d5d7f7e735ced
     AFNetworking: 36f58d62dcd6b1c756003b75bbd905e2039366a5
-    AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
+    AIHelpSDK: 19c2503cd8a68ea73455f724c88fd2ba81eae070
+    AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
     AppLovinSDK: 2ed08703a7e44477ef5dedc264a1ef1e8050dd6c
     AppsFlyerFramework: e309a6cab366296bf891dc68b175de1e9a44f86c
     Aspects: af45033e6e6cdbd2b1a09e6e40640309f505934e
@@ -5182,11 +5381,11 @@ PODS_INFO:
     GoogleMobileAdsMediationIronSource: 0e92e3ab71a2a8bd30de8d8616576100263739d0
     GoogleMobileAdsMediationUnity: ce143747f8c1f16709a9ab35b737c4ebdcadce52
     GoogleMobileAdsMediationVungle: dfaf1a1087d0e51890ef8b77f2674142880393a8
-    GoogleSignIn: c90b5bec45e780f54c6a8e1e3c182a86e3dda69d
+    GoogleSignIn: 5651ce3a61e56ca864160e79b484cd9ed3f49b7a
     GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
     GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
-    GTMAppAuth: 987526d41b07efb1bedda5e936fe0cb718a03113
-    GTMSessionFetcher: 4577a4cc914a5a07c40a8a0ad0acc22080418c2d
+    GTMAppAuth: 0ff230db599948a9ad7470ca667337803b3fc4dd
+    GTMSessionFetcher: 3a63d75eecd6aa32c2fc79f578064e1214dfdec2
     Hodor: 38d56f909302dce628ed2a6780b13854bf552b4f
     IMSDKProto: 8302204962ca6fe5b6020d57986f656faf7df772
     IronSourceSDK: 49c6abb070214a60ee9f201a30336eb733b4adf1
@@ -5195,7 +5394,7 @@ PODS_INFO:
     JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
     kdiff: 6dbb7ce9a7654d807dfaa00cf5fe880937b530b1
     KGAryaManager: e3690a030acaa0ab6a97004853df48005a7ac726
-    KGSDKBase: 81ed798a2231d9d34dc229a14f09e38d2b625548
+    KGSDKBase: ed8554b0798445d67e76872947b9c81848ebbc44
     klp: 6847805365eb3a03a70d560760c0a5712c4f3a63
     KRNSDK: e1ca01a96df8ce418e50a3659e46153894760208
     KSAudioProcessLib: 3adb5ad6353750337030b5b4f6c7378e852f3e30
@@ -5212,7 +5411,7 @@ PODS_INFO:
     KSKanas: 09337cf11d6e9dd2a6cd6dd13888d0120b5f4347
     KSKanasProtoModel: ee138acbaeffe96fcb577286c4cdcbca1eccabeb
     KSLivePlayer: f102655f042798b8cf1b6c36dca7ec25a20610d0
-    KSMWAzeroth: a5fb06810e2f3c2570b8e0a52cc4e06581591acb
+    KSMWAzeroth: aad8693bf9cacbe4cc633fdba3780efe41b01cef
     KSMWDataCompress: a00898cae92199657d06e80967bd6a323b9beb96
     KSORM: e39229adf40909852d9d9b1c4ff959963da0dd3e
     KSPromise: a130ccb8afb53847c8a8f8cfa0ddc6fce8d1c54d
@@ -5253,7 +5452,7 @@ PODS_INFO:
     KwaiGameAD-TXAdSDK: b89c1631851c552f54a44d05f84d275368e269df
     KwaiGameADPath: ce17951bd57edc3bfd6af3dafc0a3070a475345f
     KwaiGameADPath-SKAdNetwork: 7f13538e6666f24a48316c718d4c39bc491cf430
-    KwaiGameADPath-TrackingIO: 92714d5a28e4398c8a4c76228a1b475ebaadf6f9
+    KwaiGameADPath-TrackingIO: baf40477ed74352c28ad405c3798d521d324cafc
     KwaiGameBase: aeb9f2ff65f6bcb57d29430169e72c1d57da24dc
     KwaiGameBase-DemoSupport: e5d560fb2cfce4f8d7f86680b02bca9b74e312ac
     KwaiGameImagePicker: 40570d489ee65e4978c7fbf43d5ca2a0b2c14dbb
@@ -5262,49 +5461,53 @@ PODS_INFO:
     KwaiGameLive-NativeUIPlugin: b4df9815b2b7dcd9bbab2beb0d1363466794896c
     KwaiGameNetworking: f065db43550911e5e184ee0eca53dacd9f0552f9
     KwaiGameNetworkStatusMonitor: 2b23b27b8eda4d57d76c9addaecbd46ec0fd54a5
-    KwaiGameSDK: 4336321dc6892983f7fa60205587cc16cbef6db5
-    KwaiGameSDK-ABtest-Firebase: 678d49254838986ebae5314ba65559617bc0fc77
-    KwaiGameSDK-AD: 84783ebf8a3b92eba902d5b11955d0e1aebf85bf
-    KwaiGameSDK-ADPath-AppsFlyer: 7b8909b4c9f28ab4852082310d88d3b2af2d5783
-    KwaiGameSDK-ADPath-ASA: fe4d68c00ba44a2fc4fbb4dd90d7fc5f28ca9838
-    KwaiGameSDK-AntiAddict: d53066ba23d1a81accb28c4c068fcaddcc37afd2
-    KwaiGameSDK-AppBox: ccd9ec2a8d4150ed6e01934a25bc2290df143687
-    KwaiGameSDK-AppsflyerCommon: 420fdf4c027802db0b085b1a54e64552b1cfdb8e
-    KwaiGameSDK-Audio: 8702fc56966c3ba03e77cacb9b05fa0ff4f5204a
-    KwaiGameSDK-Community: 6bfb2d2fe875934b055026f286336899dca03f31
-    KwaiGameSDK-Community-Kwai: 8dee06df3639087984947e91d9289ff5a4fa0959
-    KwaiGameSDK-CrashReport: 6af4e78dd34efc8c65e4eebcbfb2094e32de6f4a
-    KwaiGameSDK-CrashReport-Bugly: b527a0d4d6c96bea2f9e4c5b0e97030ce0951134
-    KwaiGameSDK-CrashReport-Firebase: f314845c8d67fa04d79d930a171f009c5971aa4f
-    KwaiGameSDK-Downloader: 30ae868c2fe0101cdf9e0a0faaf846c91dfff36a
-    KwaiGameSDK-IM: 14a491f6e8a489af59f87f95d7b88d5fc57aae91
-    KwaiGameSDK-KwaiJump: 3217a082cfec79b3a905ccc8851d089aaf5a4e58
-    KwaiGameSDK-Live: cec9fbab776abebf0a391e8ab55e9b2943011708
-    KwaiGameSDK-LongLink: b40913690584a8b0ddcf4473c679276ad3b2d335
-    KwaiGameSDK-Media: 56b4f7b10e8dbd04976785c66078fcadbb7c0c1d
-    KwaiGameSDK-Mock: 42478e0687a1f757bf096b54b1160f7e5c5e218d
-    KwaiGameSDK-OpenPlatform: dd11c97fd16520143b6e823c1e652724c7888e83
-    KwaiGameSDK-Oversea: 8eed83f3411647e0d4e6f697f62779cf3612b8a8
-    KwaiGameSDK-Pay: 0d78bf12b9b7a3a22c97b894942b295e30ee57f7
-    KwaiGameSDK-Push: 414f5a7a831e97b34af07b8c4227092d7526a28b
-    KwaiGameSDK-PushReport: 32a7a3021f374635494919dcea165b98f3103f6b
-    KwaiGameSDK-QRScan: 161c0cf2ffd7d54492e7b49df4b3f07468c06733
-    KwaiGameSDK-QuickLogin: 7b81060370a3ee71bdf9a2d8b488488880b5a754
-    KwaiGameSDK-Relation: 9251cedff607494f11eef2ed133d4bd7792ded35
-    KwaiGameSDK-Report-Appsflyer: ada7eb87e0a7ba2f5fc167672027dd7584ba3871
-    KwaiGameSDK-Report-Firebase: 8cfed84754411e75ff952a829ad20a25e879cf88
-    KwaiGameSDK-Report-Thinking: 6b15a28063922bbbeca2bd1ca4c7c3d89e6148aa
-    KwaiGameSDK-SpringFestival: b862d380377ee97c8d201fa4352e946393674e0e
-    KwaiGameSDK-Subgame: fedbdd12f9f53643607d2385031a5855485a9cd0
-    KwaiGameSDK-UniApi: 6ea778a76bb66034bebe21be7f7e433a89d39116
-    KwaiGameSDK-UnitTest: b9e543efe88528ec60f0871cf7310250bec4762d
-    KwaiGameSDK-VideoRecordBase: 994091252d35a5938b4f06d5d7e8089540552f0e
-    KwaiGameSDK-VideoShare: 7c6d9d3c4fa11d38fd33c5fd6ccdc913f027006a
-    KwaiGameSDK-VisitorPasswordLogin: 363d6fbad49d9c3b5d726e5898542d83aaccb677
-    KwaiGameSDK-Voip: a4dc5b9e00ffe9281decc8c103426665bdc543d3
-    KwaiGameSDK-WeaponArmy: 41ef8d78c56ba8b479fa998e8deb64e6019a7635
-    KwaiGameSDK-WebView: b079904c081eebc198f64d2c78562863c2593e2f
-    KwaiGameSDK-WWP: 6196d693fcc4ebcc5f4f578432b19935f0f6d547
+    KwaiGameSDK: 4bc8cdd0b62b29053de5a1025b53db630ab3b862
+    KwaiGameSDK-ABtest-Firebase: d9ff79df971af5060689721cbd5f7e2d33c0ce43
+    KwaiGameSDK-AD: c9b63b83a69ed4ad7709324c5f5920e105989054
+    KwaiGameSDK-ADPath-AppsFlyer: bb99a96fc0d4236f76195593174663e14a25ffda
+    KwaiGameSDK-ADPath-ASA: 55d38a578e5ac5ae3daa8b5524bcfdc53e9bfd2c
+    KwaiGameSDK-AIHelp: 908763660fc6f03e895b133b12199f9123d1d948
+    KwaiGameSDK-AntiAddict: 4dcb3dbfb6258b11b6f39ccf36a1fc9bd3b5e47e
+    KwaiGameSDK-AppBox: 7267869264ceead1a731c7022040bf1ac941e65d
+    KwaiGameSDK-AppsflyerCommon: 8f767f681f2842bb3863529785fd65596f0c9307
+    KwaiGameSDK-AssetDownloader: 745fb75d7b21e9ae2dce46321e4e112fc2b6b1ae
+    KwaiGameSDK-Audio: b0657dcfbada27d30cc3f960a987cb2994bcea98
+    KwaiGameSDK-Community: d130a751976613506499cbbd24aad7238a756fbe
+    KwaiGameSDK-Community-Kwai: 6bdcc1507a98d22f63b9f71632281b36cf4e01ca
+    KwaiGameSDK-CrashReport: def813156362d5248191f0e7cb158ba599911a33
+    KwaiGameSDK-CrashReport-Bugly: 9b7db13f4f3e23330e89395e73f30d6e17852801
+    KwaiGameSDK-CrashReport-Firebase: 483c63eb050f2b8f59b7cfa4d342ecc750b000b3
+    KwaiGameSDK-Downloader: d6f2f67099ea6eed65a52b28103f36319d52bd6c
+    KwaiGameSDK-IM: e8be304b1664be42547e5dab9550cdc76541df24
+    KwaiGameSDK-KwaiJump: 6154ae017da736487720a2726b15f3f4509ee148
+    KwaiGameSDK-Live: 3a7b70bb005e5a2e3d8d7e000aa6651f8d002f2a
+    KwaiGameSDK-LongLink: 8da00e186dcd9ae5c4abd4a103377f9c21bf2a8d
+    KwaiGameSDK-Media: 20bfb694b98d17ea5cba4f2c46e86bd77602d8ac
+    KwaiGameSDK-Mock: 2ec200dddc6e71dc97a3abafa63dcf16de8593cb
+    KwaiGameSDK-OpenPlatform: c70fc7da53d1bfba3ed7e39ae2759ae8bc23269b
+    KwaiGameSDK-Oversea: f1bf86fd8f22dfdccd09998ae461fbd25936e438
+    KwaiGameSDK-Pay: 0cc5f3cea7ad6555b59192c037dda2b08ddfba6d
+    KwaiGameSDK-Push: a1fabc8d60f2dcd0b8b48ab9d794d761bfccdb04
+    KwaiGameSDK-Push-Kwai: b9c1b74b6f4b4a2fbce46e8fffda12ef6c8c2a27
+    KwaiGameSDK-PushReport: 972ebf0b420542be8ace64480575371fc887e1c4
+    KwaiGameSDK-QRScan: 519bce8a91102762f51ea74fbf2a7fc9fac8ab97
+    KwaiGameSDK-QuickLogin: 71d229092ed357bd8fe759f6b19b4d90493060da
+    KwaiGameSDK-Relation: 5bf7f03de123f93cf8265cb4ff4599e1787f6fd5
+    KwaiGameSDK-Report-Appsflyer: 542c62367054126012672e4f58c9eb825889fd11
+    KwaiGameSDK-Report-Firebase: 3c05fb1ceac75a3a834e619734a20bac10e3be5f
+    KwaiGameSDK-Report-Sensors: 53cf0c19e2d58436b326667cfb538a2bc56abae0
+    KwaiGameSDK-Report-Thinking: 617631fd1938b68c5f27f7347dd06d69f167e0a9
+    KwaiGameSDK-SpringFestival: d81aedc37a465db499fead50a79fe8894d0a70a1
+    KwaiGameSDK-Subgame: 514e9755fcc33968a0b00f1cdf470bf5897c12b1
+    KwaiGameSDK-UniApi: e842ba9484ff4ce444db8cdc6da00b3b305df873
+    KwaiGameSDK-UnitTest: ae976863c2b3b4ce409a955bca0084c52c035ebb
+    KwaiGameSDK-VideoRecordBase: 1865d55ecce31b2ad15f1b016a8652146d98f7db
+    KwaiGameSDK-VideoShare: df3cbc680210a243f751602aa89f89097c2ef6e8
+    KwaiGameSDK-VisitorPasswordLogin: a2e6a22a55abcd9e8d16ccda8014a3244bab30fd
+    KwaiGameSDK-Voip: 741a12fbd2bcaddc6daa6c3affbea8c90da681e3
+    KwaiGameSDK-WeaponArmy: eb1cd80e867797fc6660be298a07797287963b4b
+    KwaiGameSDK-WebView: 40702b9efb59ea09ab76b6da95cf9de1829ae331
+    KwaiGameSDK-WWP: 40c7d45d0c95db5de7958ed80fb2c7bd21e4839e
     KwaiGameVideoAryaEncode: 3165bcd288b70feb851e1a80e2d8311a26d9c9d2
     KwaiGameVideoBase: e4d29b0df6ae1fef5431f306b53a421e4f8a0276
     KwaiGameVideoCapture: 34215831fbde2d86dcafdf9abac2809d7a9e20f8
@@ -5318,6 +5521,7 @@ PODS_INFO:
     KwaiIMXFDB: 2f2fe4ad0e241840354ecf83857b7a3ffbac418a
     KwaiMediaPlayer: 49a9a8328803d87450489446467b847d9bbd79c8
     KwaiNetworking: 233fa661f1decf31e6fc8b01e80baa8bc83e5839
+    KwaiPush: 14755cd96ab8098c5afdb5499935782fe113934d
     KwaiReportCenter: 0d04112da6c05ec21a97ee17bebf8794aaadfcc6
     KwaiSDK: eedcd22e56865e15fb292d31da3b307de8d1088c
     KwaiSwizzle: 5cf55fd6842a64b398bd4b0507b0035d4adbab09
@@ -5376,6 +5580,7 @@ PODS_INFO:
     RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
     SDWebImage: 74ba6928501a7804a07e08b1621e82f595057c12
     SDWebImageWebPCoder: 2aafe5b1e370b59b0a7edefc0189dbc7227be9c3
+    SensorsAnalyticsSDK: 307c25f80675d45eb965497097512548a2860942
     SSZipArchive: 5fd0cb164136240dad328cabdd3b3082c9de76d5
     TensorFlow-Lite: e4806784171f7ead470a2536a867fbab0022adc4
     ThinkingSDK: baa689f43d5704a2571b693894417f6f5f261019
@@ -5436,6 +5641,7 @@ PODS_INFO:
       - ktp
       - KwaiBridgeCenter
       - KwaiCaptcha
+      - KwaiPush
       - KwaiSwizzle
       - libwebp
       - lottie-ios
@@ -5491,6 +5697,7 @@ PODS_INFO:
       - XFMulticastDelegate
     https://github.com/CocoaPods/Specs.git:
       - Ads-Global
+      - AIHelpSDK
       - AppAuth
       - AppLovinSDK
       - AppsFlyerFramework
@@ -5536,6 +5743,7 @@ PODS_INFO:
       - PromisesObjC
       - RangersAPM-Pangle
       - Reachability
+      - SensorsAnalyticsSDK
       - ThinkingSDK
       - Tweaks
       - UnityAds
